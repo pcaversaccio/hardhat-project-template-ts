@@ -4,6 +4,7 @@
   "description": "A fully-fledged Hardhat project template based on TypeScript.",
   "keywords": [
     "template",
+    "typescript",
     "ethereum",
     "smart-contracts",
     "solidity",
