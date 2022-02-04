@@ -8,6 +8,7 @@ import "@typechain/hardhat";
 import "xdeployer";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
+import "hardhat-contract-sizer";
 
 dotenv.config();
 
@@ -197,6 +198,14 @@ const config: HardhatUserConfig = {
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
     currency: "USD",
+  },
+  contractSizer: {
+    alphaSort: true,
+    runOnCompile: true,
+    disambiguatePaths: false,
+    strict: true,
+    only: [],
+    except: [],
   },
   etherscan: {
     apiKey: {
