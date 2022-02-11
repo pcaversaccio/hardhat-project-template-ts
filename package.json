@@ -28,6 +28,7 @@
     "coverage": "npx hardhat coverage",
     "compile": "npx hardhat compile",
     "size": "npx hardhat size-contracts",
+    "xdeploy": "npx hardhat xdeploy",
     "deploy:hh": "npx hardhat run --network hardhat scripts/deploy.ts",
     "deploy:rinkeby": "npx hardhat run --network rinkeby scripts/deploy.ts",
     "deploy:ropsten": "npx hardhat run --network ropsten scripts/deploy.ts",
