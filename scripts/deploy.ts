@@ -1,4 +1,4 @@
-import { ethers } from "hardhat";
+import hre, { ethers } from "hardhat";
 
 async function main() {
   const Contract = await ethers.getContractFactory("Greeter");
@@ -7,6 +7,11 @@ async function main() {
   await contract.deployed();
 
   console.log("Greeter deployed to:", contract.address);
+
+  await hre.tenderly.verify({
+    name: "Greeter",
+    address: contract.address,
+  });
 }
 
 main().catch((error) => {

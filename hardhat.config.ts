@@ -9,6 +9,7 @@ import "xdeployer";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
 import "hardhat-contract-sizer";
+import "@tenderly/hardhat-tenderly";
 
 dotenv.config();
 
@@ -49,6 +50,9 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       initialBaseFeePerGas: 0,
+    },
+    localhost: {
+      url: "http://127.0.0.1:8545",
     },
     rinkeby: {
       url: process.env.RINKEBY_URL || "",
@@ -244,6 +248,10 @@ const config: HardhatUserConfig = {
       xdai: "wagmi",
       sokol: "wagmi",
     },
+  },
+  tenderly: {
+    project: "MyAwesomeUsername",
+    username: "super-awesome-project",
   },
 };
 
