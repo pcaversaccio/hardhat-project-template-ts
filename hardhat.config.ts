@@ -10,6 +10,7 @@ import "hardhat-gas-reporter";
 import "solidity-coverage";
 import "hardhat-contract-sizer";
 import "@tenderly/hardhat-tenderly";
+import "hardhat-abi-exporter";
 
 dotenv.config();
 
@@ -210,6 +211,15 @@ const config: HardhatUserConfig = {
     strict: true,
     only: [],
     except: [],
+  },
+  abiExporter: {
+    path: "./abis",
+    runOnCompile: true,
+    clear: true,
+    flat: true,
+    only: [],
+    spacing: 2,
+    pretty: true,
   },
   etherscan: {
     apiKey: {
