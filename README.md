@@ -29,7 +29,7 @@ This template uses the [xdeploy](https://github.com/pcaversaccio/xdeployer) Hard
 
 ## `.env` File 
 
-In the .env file, place your wallets private key in the PRIVATE_KEY section, this allows access to your wallet to use both testnet and mainnet funds.
+In the `.env` file place the private key of your wallet in the `PRIVATE_KEY` section. This allows secure access to your wallet to use with both testnet and mainnet funds during Hardhat deployments. For more information on how this works, please read the documentation of the `npm` package [`dotenv`](https://www.npmjs.com/package/dotenv).
 
 ## Verification
 
