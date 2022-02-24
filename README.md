@@ -19,7 +19,7 @@ After having installed Yarn, simply run:
 yarn install
 ```
 
-## Running Deployments 
+## Running Deployments
 
 ```bash
 yarn xdeploy
@@ -27,7 +27,7 @@ yarn xdeploy
 
 This template uses the [xdeploy](https://github.com/pcaversaccio/xdeployer) Hardhat plugin. Check out the documentation for more information on the specifics of the deployments.
 
-## `.env` File 
+## `.env` File
 
 In the `.env` file place the private key of your wallet in the `PRIVATE_KEY` section. This allows secure access to your wallet to use with both testnet and mainnet funds during Hardhat deployments. For more information on how this works, please read the documentation of the `npm` package [`dotenv`](https://www.npmjs.com/package/dotenv).
 
@@ -36,6 +36,8 @@ In the `.env` file place the private key of your wallet in the `PRIVATE_KEY` sec
 Change the contract address to your contract after the deployment has been successful. This works for both testnet and mainnet. You will need to get an API key from [etherscan](https://etherscan.io), [snowtrace](https://snowtrace.io) etc.
 
 **Example:**
+
 ```ts
 npx hardhat verify --network fantomMain <YOUR_CONTRACT_ADDRESS> --constructor-args deploy-arg.ts
 
+```
