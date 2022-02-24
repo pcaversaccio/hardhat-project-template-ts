@@ -195,7 +195,7 @@ const config: HardhatUserConfig = {
     },
   },
   xdeploy: {
-    contract: "Greeter", // Change this name to the name of your main .sol file, "Token.sol" would be "Token"
+    contract: "Greeter", // Change this name to the name of your main .sol file; e.g. "Token.sol" would be "Token"
     constructorArgsPath: "./deploy-args.ts", // Change to undefined if your constructor does not have any input arguments
     salt: "WAGMI", // The salt must be the same for each EVM chain for which you want to have a single contract address. Change the salt if you are doing a re-deployment with the same codebase
     signer: process.env.PRIVATE_KEY, // This is your wallet's private key
