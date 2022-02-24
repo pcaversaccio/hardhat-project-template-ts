@@ -201,7 +201,7 @@ const config: HardhatUserConfig = {
     signer: process.env.PRIVATE_KEY, // This is your metamask or other wallet private key
     networks: ["hardhat", "rinkeby", "bscTestnet"], // Use network name found above ex: 'fantomTestnet', 'bscTestnet'. Use localhost or hardhat for local testing
     rpcUrls: ["hardhat", process.env.ETH_RINKEBY_TESTNET_URL, process.env.BSC_TESTNET_URL], // Use the matching ENV URL with your chosen RPC in the env file
-    gasLimit: 1.2 * 10 ** 6, // Maximum limit is 15 * 10 ** 6 or 15,000,000. If deployments are failing, try increasing this number
+    gasLimit: 1.2 * 10 ** 6, // Maximum limit is 15 * 10 ** 6 or 15,000,000. If the deployments are failing, try increasing this number. However, keep in mind that this costs money in a production environment!
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
