@@ -38,6 +38,9 @@ task(
   }
 );
 
+
+// Input the Solidity version you use in your files in the folder `contracts`
+
 const config: HardhatUserConfig = {
   solidity: {
     version: "0.8.9",
@@ -56,37 +59,37 @@ const config: HardhatUserConfig = {
       url: "http://127.0.0.1:8545",
     },
     rinkeby: {
-      url: process.env.RINKEBY_URL || "",
+      url: process.env.ETH_RINKEBY_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     kovan: {
-      url: process.env.KOVAN_URL || "",
+      url: process.env.ETH_KOVAN_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     ropsten: {
-      url: process.env.ROPSTEN_URL || "",
+      url: process.env.ETH_ROPSTEN_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     goerli: {
-      url: process.env.GOERLI_URL || "",
+      url: process.env.ETH_GOERLI_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     mainnet: {
-      url: process.env.MAIN_URL || "",
+      url: process.env.ETH_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     bscTestnet: {
-      url: "https://data-seed-prebsc-1-s1.binance.org:8545", // Publicly known RPC
+      url: process.env.BSC_TESTNET_URL, 
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     bscMain: {
-      url: "https://bsc-dataseed.binance.org", // Publicly known RPC
+      url: process.env.BSC_MAINNET_URL, 
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
@@ -96,7 +99,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     optimismMain: {
-      url: process.env.OPTIMISM_MAIN_URL || "",
+      url: process.env.OPTIMISM_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
@@ -106,99 +109,99 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     arbitrumMain: {
-      url: process.env.ARBITRUM_MAIN_URL || "",
+      url: process.env.ARBITRUM_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     mumbai: {
-      url: process.env.MUMBAI_URL || "",
+      url: process.env.POLYGON_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     polygon: {
-      url: process.env.POLYGON_URL || "",
+      url: process.env.POLYGON_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     hecoTestnet: {
-      url: "https://http-testnet.hecochain.com", // Publicly known RPC
+      url: process.env.HECO_TESTNET_URL, 
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     hecoMain: {
-      url: "https://http-mainnet.hecochain.com", // Publicly known RPC
+      url: process.env.HECO_MAINNET_URL, 
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     fantomTestnet: {
-      url: "https://rpc.testnet.fantom.network", // Publicly known RPC
+      url: process.env.FANTOM_TESTNET_URL, 
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     fantomMain: {
-      url: "https://rpc.ftm.tools", // Publicly known RPC
+      url: process.env.FANTOM_MAINNET_URL, 
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     fuji: {
-      url: "https://api.avax-test.network/ext/bc/C/rpc", // Publicly known RPC
+      url: process.env.AVALANCHE_TESTNET_URL, 
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     avalanche: {
-      url: "https://api.avax.network/ext/bc/C/rpc", // Publicly known RPC
+      url: process.env.AVALANCHE_MAINNET_URL, 
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     sokol: {
-      url: "https://sokol.poa.network", // Publicly known RPC
+      url: process.env.GNOSIS_TESTNET_URL, 
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     gnosis: {
-      url: "https://rpc.xdaichain.com", // Publicly known RPC
+      url: process.env.GNOSIS_MAINNET_URL, 
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     moonbaseAlpha: {
-      url: "https://rpc.api.moonbase.moonbeam.network", // Publicly known RPC
+      url: process.env.MOONBEAM_TESTNET_URL, 
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     moonriver: {
-      url: "https://rpc.moonriver.moonbeam.network", // Publicly known RPC
+      url: process.env.MOONBEAM_MAINNET_URL, 
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     alfajores: {
-      url: "https://alfajores-forno.celo-testnet.org", // Publicly known RPC
+      url: process.env.CELO_TESTNET_URL, 
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     celo: {
-      url: "https://forno.celo.org", // Publicly known RPC
+      url: process.env.CELO_MAINNET_URL, 
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     auroraTestnet: {
-      url: "https://testnet.aurora.dev", // Publicly known RPC
+      url: process.env.AURORA_TESTNET_URL, 
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     auroraMain: {
-      url: "https://mainnet.aurora.dev", // Publicly known RPC
+      url: process.env.AURORA_MAINNET_URL, 
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
   },
   xdeploy: {
-    contract: "Greeter",
-    constructorArgsPath: "./deploy-args.ts",
-    salt: "WAGMI",
-    signer: process.env.PRIVATE_KEY,
-    networks: ["hardhat", "rinkeby", "kovan"],
-    rpcUrls: ["hardhat", process.env.RINKEBY_URL, process.env.KOVAN_URL],
-    gasLimit: 1.2 * 10 ** 6,
+    contract: "Greeter", // Change this name to the name of your main .sol file; e.g. "Token.sol" would be "Token"
+    constructorArgsPath: "./deploy-args.ts", // Change to undefined if your constructor does not have any input arguments
+    salt: "WAGMI", // The salt must be the same for each EVM chain for which you want to have a single contract address. Change the salt if you are doing a re-deployment with the same codebase
+    signer: process.env.PRIVATE_KEY, // This is your wallet's private key
+    networks: ["hardhat", "rinkeby", "bscTestnet"], // Use the network names specified here: https://github.com/pcaversaccio/xdeployer#configuration. Use `localhost` or `hardhat` for local testing
+    rpcUrls: ["hardhat", process.env.ETH_RINKEBY_TESTNET_URL, process.env.BSC_TESTNET_URL], // Use the matching env URL with your chosen RPC in the `.env` file
+    gasLimit: 1.2 * 10 ** 6, // Maximum limit is 15 * 10 ** 6 or 15,000,000. If the deployments are failing, try increasing this number. However, keep in mind that this costs money in a production environment!
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
