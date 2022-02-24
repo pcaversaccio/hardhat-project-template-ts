@@ -18,3 +18,24 @@ After having installed Yarn, simply run:
 ```bash
 yarn install
 ```
+
+## Running deployments 
+
+```npx hardhat xdeploy
+```
+
+This starter use [xdeploy](https://github.com/pcaversaccio/xdeployer) check the documentation for more on deployments.
+
+## env file 
+
+In the .env file, place your wallets private key in the PRIVATE_KEY section, this allows access to your wallet to use both testnet and mainnet funds.
+
+## Verification
+
+Change the contract address to your contract after deployment has been successful. This works for both testnet & mainnet. You will need to get an API key from etherscan.io, bscscan, snowtrace etc. 
+
+Typescript deployment example:
+npx hardhat verify --network fantomMain YOUR_CONTRACT_HERE --constructor-args deploy-arg.ts 
+
+Javascript deployment args example:
+npx hardhat verify --network bscTestnet YOUR_CONTRACT_HERE --constructor-args arguments.js 
