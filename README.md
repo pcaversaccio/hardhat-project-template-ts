@@ -21,6 +21,14 @@ yarn install
 
 ## Running Deployments
 
+**Example Rinkeby:**
+
+```bash
+yarn deploy:rinkeby
+```
+
+## Running `CREATE2` Deployments
+
 ```bash
 yarn xdeploy
 ```
