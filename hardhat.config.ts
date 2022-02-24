@@ -38,6 +38,9 @@ task(
   }
 );
 
+
+// Input the solidity version that you are using in your make .sol file
+
 const config: HardhatUserConfig = {
   solidity: {
     version: "0.8.9",
@@ -192,13 +195,13 @@ const config: HardhatUserConfig = {
     },
   },
   xdeploy: {
-    contract: "Greeter",
-    constructorArgsPath: "./deploy-args.ts",
-    salt: "WAGMI",
-    signer: process.env.PRIVATE_KEY,
-    networks: ["hardhat", "rinkeby", "kovan", "bscTestnet"], // Use nework name found above ex: 'fantomTestnet', 'bscTestnet'. Use localhost or hardhat for local testing
-    rpcUrls: ["hardhat", process.env.ETH_RINKEBY_TESTNET_URL, process.env.ETH_KOVAN_TESTNET_URL, process.env.BSC_TESTNET_URL], // Use the matching ENV URL with your chosen RPC in the env file
-    gasLimit: 1.2 * 10 ** 6, // Maximum limit is 15 * 10 ** 6 or 15,000,000
+    contract: "Greeter", // Change this name to the name of your main .sol file, "Token.sol" would be "Token"
+    constructorArgsPath: "./deploy-args.ts", // Change to undefined if your constructor does not have any input arguments
+    salt: "WAGMI", // The salt must be the same for each chain you want to have a single contract address on. Change the salt if you are doing a re-deployment of the same codebase.
+    signer: process.env.PRIVATE_KEY, // This is your metamask or other wallet private key
+    networks: ["hardhat", "rinkeby", "bscTestnet"], // Use network name found above ex: 'fantomTestnet', 'bscTestnet'. Use localhost or hardhat for local testing
+    rpcUrls: ["hardhat", process.env.ETH_RINKEBY_TESTNET_URL, process.env.BSC_TESTNET_URL], // Use the matching ENV URL with your chosen RPC in the env file
+    gasLimit: 1.2 * 10 ** 6, // Maximum limit is 15 * 10 ** 6 or 15,000,000. If deployments are failing, try increasing this number
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
