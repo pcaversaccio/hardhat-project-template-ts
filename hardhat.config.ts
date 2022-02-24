@@ -200,7 +200,7 @@ const config: HardhatUserConfig = {
     salt: "WAGMI", // The salt must be the same for each chain you want to have a single contract address on. Change the salt if you are doing a re-deployment of the same codebase.
     signer: process.env.PRIVATE_KEY, // This is your metamask or other wallet private key
     networks: ["hardhat", "rinkeby", "bscTestnet"], // Use network name found above ex: 'fantomTestnet', 'bscTestnet'. Use localhost or hardhat for local testing
-    rpcUrls: ["hardhat", process.env.ETH_RINKEBY_TESTNET_URL, process.env.BSC_TESTNET_URL], // Use the matching ENV URL with your chosen RPC in the env file
+    rpcUrls: ["hardhat", process.env.ETH_RINKEBY_TESTNET_URL, process.env.BSC_TESTNET_URL], // Use the matching env URL with your chosen RPC in the `.env` file
     gasLimit: 1.2 * 10 ** 6, // Maximum limit is 15 * 10 ** 6 or 15,000,000. If the deployments are failing, try increasing this number. However, keep in mind that this costs money in a production environment!
   },
   gasReporter: {
