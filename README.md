@@ -21,7 +21,8 @@ yarn install
 
 ## Running deployments 
 
-```npx hardhat xdeploy
+```
+npx hardhat xdeploy
 ```
 
 This starter use [xdeploy](https://github.com/pcaversaccio/xdeployer) check the documentation for more on deployments.
