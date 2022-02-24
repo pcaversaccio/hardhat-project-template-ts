@@ -27,7 +27,7 @@ yarn xdeploy
 
 This template uses the [xdeploy](https://github.com/pcaversaccio/xdeployer) Hardhat plugin. Check out the documentation for more information on the specifics of the deployments.
 
-## env file 
+## `.env` File 
 
 In the .env file, place your wallets private key in the PRIVATE_KEY section, this allows access to your wallet to use both testnet and mainnet funds.
 
