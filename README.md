@@ -38,4 +38,3 @@ Change the contract address to your contract after the deployment has been succe
 **Example:**
 npx hardhat verify --network fantomMain YOUR_CONTRACT_HERE --constructor-args deploy-arg.ts 
 
-npx hardhat verify --network bscTestnet YOUR_CONTRACT_HERE --constructor-args arguments.js 
