@@ -25,7 +25,7 @@ yarn install
 yarn xdeploy
 ```
 
-This starter use [xdeploy](https://github.com/pcaversaccio/xdeployer) check the documentation for more on deployments.
+This template uses the [xdeploy](https://github.com/pcaversaccio/xdeployer) Hardhat plugin. Check out the documentation for more information on the specifics of the deployments.
 
 ## env file 
 
