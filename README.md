@@ -19,7 +19,7 @@ After having installed Yarn, simply run:
 yarn install
 ```
 
-## Running deployments 
+## Running Deployments 
 
 ```
 npx hardhat xdeploy
