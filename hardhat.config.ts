@@ -39,7 +39,7 @@ task(
 );
 
 
-// Input the solidity version that you are using in your make .sol file
+// Input the Solidity version you use in your files in the folder `contracts`
 
 const config: HardhatUserConfig = {
   solidity: {
