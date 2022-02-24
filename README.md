@@ -22,7 +22,7 @@ yarn install
 ## Running Deployments 
 
 ```bash
-npx hardhat xdeploy
+yarn xdeploy
 ```
 
 This starter use [xdeploy](https://github.com/pcaversaccio/xdeployer) check the documentation for more on deployments.
