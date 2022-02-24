@@ -21,7 +21,7 @@ yarn install
 
 ## Running Deployments 
 
-```
+```bash
 npx hardhat xdeploy
 ```
 
