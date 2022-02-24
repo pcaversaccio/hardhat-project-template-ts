@@ -83,12 +83,12 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     bscTestnet: {
-      url: process.env.BSC_TESTNET_URL,
+      url: process.env.BSC_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     bscMain: {
-      url: process.env.BSC_MAINNET_URL,
+      url: process.env.BSC_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
@@ -123,88 +123,104 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     hecoTestnet: {
-      url: process.env.HECO_TESTNET_URL,
+      url: process.env.HECO_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     hecoMain: {
-      url: process.env.HECO_MAINNET_URL,
+      url: process.env.HECO_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     fantomTestnet: {
-      url: process.env.FANTOM_TESTNET_URL,
+      url: process.env.FANTOM_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     fantomMain: {
-      url: process.env.FANTOM_MAINNET_URL,
+      url: process.env.FANTOM_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     fuji: {
-      url: process.env.AVALANCHE_TESTNET_URL,
+      url: process.env.AVALANCHE_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     avalanche: {
-      url: process.env.AVALANCHE_MAINNET_URL,
+      url: process.env.AVALANCHE_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     sokol: {
-      url: process.env.GNOSIS_TESTNET_URL,
+      url: process.env.GNOSIS_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     gnosis: {
-      url: process.env.GNOSIS_MAINNET_URL,
+      url: process.env.GNOSIS_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     moonbaseAlpha: {
-      url: process.env.MOONBEAM_TESTNET_URL,
+      url: process.env.MOONBEAM_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     moonriver: {
-      url: process.env.MOONBEAM_MAINNET_URL,
+      url: process.env.MOONBEAM_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     alfajores: {
-      url: process.env.CELO_TESTNET_URL,
+      url: process.env.CELO_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     celo: {
-      url: process.env.CELO_MAINNET_URL,
+      url: process.env.CELO_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     auroraTestnet: {
-      url: process.env.AURORA_TESTNET_URL,
+      url: process.env.AURORA_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     auroraMain: {
-      url: process.env.AURORA_MAINNET_URL,
+      url: process.env.AURORA_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
   },
   xdeploy: {
-    contract: "Greeter", // Change this name to the name of your main .sol file; e.g. "Token.sol" would be "Token"
-    constructorArgsPath: "./deploy-args.ts", // Change to undefined if your constructor does not have any input arguments
-    salt: "WAGMI", // The salt must be the same for each EVM chain for which you want to have a single contract address. Change the salt if you are doing a re-deployment with the same codebase
-    signer: process.env.PRIVATE_KEY, // This is your wallet's private key
-    networks: ["hardhat", "rinkeby", "bscTestnet"], // Use the network names specified here: https://github.com/pcaversaccio/xdeployer#configuration. Use `localhost` or `hardhat` for local testing
+    // Change this name to the name of your main .sol file; e.g. "Token.sol" would be "Token"
+    contract: "Greeter",
+
+    // Change to `undefined` if your constructor does not have any input arguments
+    constructorArgsPath: "./deploy-args.ts",
+
+    // The salt must be the same for each EVM chain for which you want to have a single contract address.
+    // Change the salt if you are doing a re-deployment with the same codebase
+    salt: "WAGMI",
+
+    // This is your wallet's private key
+    signer: process.env.PRIVATE_KEY,
+
+    // Use the network names specified here: https://github.com/pcaversaccio/xdeployer#configuration.
+    // Use `localhost` or `hardhat` for local testing
+    networks: ["hardhat", "rinkeby", "bscTestnet"],
+
+    // Use the matching env URL with your chosen RPC in the `.env` file
     rpcUrls: [
       "hardhat",
       process.env.ETH_RINKEBY_TESTNET_URL,
       process.env.BSC_TESTNET_URL,
-    ], // Use the matching env URL with your chosen RPC in the `.env` file
-    gasLimit: 1.2 * 10 ** 6, // Maximum limit is 15 * 10 ** 6 or 15,000,000. If the deployments are failing, try increasing this number. However, keep in mind that this costs money in a production environment!
+    ],
+
+    // Maximum limit is 15 * 10 ** 6 or 15,000,000. If the deployments are failing, try increasing this number.
+    // However, keep in mind that this costs money in a production environment!
+    gasLimit: 1.2 * 10 ** 6,
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
