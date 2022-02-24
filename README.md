@@ -38,5 +38,4 @@ Change the contract address to your contract after deployment has been successfu
 Typescript deployment example:
 npx hardhat verify --network fantomMain YOUR_CONTRACT_HERE --constructor-args deploy-arg.ts 
 
-Javascript deployment args example:
 npx hardhat verify --network bscTestnet YOUR_CONTRACT_HERE --constructor-args arguments.js 
