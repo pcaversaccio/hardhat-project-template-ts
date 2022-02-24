@@ -33,7 +33,7 @@ In the `.env` file place the private key of your wallet in the `PRIVATE_KEY` sec
 
 ## Verification
 
-Change the contract address to your contract after deployment has been successful. This works for both testnet & mainnet. You will need to get an API key from etherscan.io, bscscan, snowtrace etc. 
+Change the contract address to your contract after the deployment has been successful. This works for both testnet and mainnet. You will need to get an API key from [etherscan](https://etherscan.io), [snowtrace](https://snowtrace.io) etc.
 
 Typescript deployment example:
 npx hardhat verify --network fantomMain YOUR_CONTRACT_HERE --constructor-args deploy-arg.ts 
