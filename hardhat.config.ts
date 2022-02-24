@@ -197,7 +197,7 @@ const config: HardhatUserConfig = {
   xdeploy: {
     contract: "Greeter", // Change this name to the name of your main .sol file, "Token.sol" would be "Token"
     constructorArgsPath: "./deploy-args.ts", // Change to undefined if your constructor does not have any input arguments
-    salt: "WAGMI", // The salt must be the same for each chain you want to have a single contract address on. Change the salt if you are doing a re-deployment of the same codebase.
+    salt: "WAGMI", // The salt must be the same for each EVM chain for which you want to have a single contract address. Change the salt if you are doing a re-deployment with the same codebase
     signer: process.env.PRIVATE_KEY, // This is your wallet's private key
     networks: ["hardhat", "rinkeby", "bscTestnet"], // Use the network names specified here: https://github.com/pcaversaccio/xdeployer#configuration. Use `localhost` or `hardhat` for local testing
     rpcUrls: ["hardhat", process.env.ETH_RINKEBY_TESTNET_URL, process.env.BSC_TESTNET_URL], // Use the matching env URL with your chosen RPC in the `.env` file
