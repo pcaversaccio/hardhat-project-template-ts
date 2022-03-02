@@ -27,6 +27,8 @@ yarn install
 yarn deploy:rinkeby
 ```
 
+> The deployment script [`deploy.ts`](https://github.com/pcaversaccio/hardhat-project-template-ts/blob/main/scripts/deploy.ts) includes the `tenderly` Hardhat Runtime Environment (HRE) extension with the `verify` method. Please consider configuring the Tenderly `project` and `username` in the [`hardhat.config.ts`](https://github.com/pcaversaccio/hardhat-project-template-ts/blob/main/hardhat.config.ts) file or remove this call.
+
 ## Running `CREATE2` Deployments
 
 ```bash
@@ -47,5 +49,4 @@ Change the contract address to your contract after the deployment has been succe
 
 ```bash
 npx hardhat verify --network fantomMain <YOUR_CONTRACT_ADDRESS> --constructor-args deploy-arg.ts
-
 ```
