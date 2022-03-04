@@ -232,7 +232,7 @@ const config: HardhatUserConfig = {
 
     // The salt must be the same for each EVM chain for which you want to have a single contract address.
     // Change the salt if you are doing a re-deployment with the same codebase
-    salt: "WAGMI",
+    salt: process.env.SALT,
 
     // This is your wallet's private key
     signer: process.env.PRIVATE_KEY,
