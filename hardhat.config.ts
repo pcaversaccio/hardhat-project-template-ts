@@ -212,6 +212,16 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    spark: {
+      url: process.env.FUSE_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    fuse: {
+      url: process.env.FUSE_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   xdeploy: {
     // Change this name to the name of your main .sol file; e.g. "Token.sol" would be "Token"

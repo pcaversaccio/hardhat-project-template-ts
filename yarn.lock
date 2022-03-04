@@ -2356,9 +2356,9 @@ camelcase@^6.0.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30000844:
-  version "1.0.30001312"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001312.tgz#e11eba4b87e24d22697dae05455d5aea28550d5f"
-  integrity sha512-Wiz1Psk2MEK0pX3rUzWaunLTZzqS2JYZFzNKqAiJGiuxIjRPLgV6+VDPOg6lQOUxmDwhTlh198JsTTi8Hzw6aQ==
+  version "1.0.30001313"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001313.tgz#a380b079db91621e1b7120895874e2fd62ed2e2f"
+  integrity sha512-rI1UN0koZUiKINjysQDuRi2VeSCce3bYJNmDcj3PIKREiAmjakugBul1QSkg/fPrlULYl6oWfGg3PbgOSY9X4Q==
 
 caseless@^0.12.0, caseless@~0.12.0:
   version "0.12.0"
@@ -9790,9 +9790,9 @@ ws@^7.4.6:
   integrity sha512-KMvVuFzpKBuiIXW3E4u3mySRO2/mCHSyZDJQM5NQ9Q9KHWHWh0NHgfbRMLLrceUK5qAL4ytALJbpRMjixFZh8A==
 
 xdeployer@^1.1.1:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/xdeployer/-/xdeployer-1.1.4.tgz#adbaf9ac796db332dc3277f098cf8818c2a7cf2c"
-  integrity sha512-4kywS86Sy0SZFOn3Uqa6ec/Mc8/PPuNx5tMMmsA0Ua7V2o8b0N67tTuPpNT4eDVKiv9I86VbUMzDUGcL4LYVFQ==
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/xdeployer/-/xdeployer-1.1.5.tgz#0321a0e37bdca4c2027cb32350d3b5022af48c72"
+  integrity sha512-unOws0IY9/X9hAgmoUPUHJGeDbRT8mMMVTJBSVNFI+WDEMWdJ90440TG4KSqBAEvNHtlrDjOMobWM3vW+b5Ieg==
 
 xhr-request-promise@^0.1.2:
   version "0.1.3"
