@@ -319,8 +319,8 @@ const config: HardhatUserConfig = {
     },
   },
   tenderly: {
-    project: "MyAwesomeUsername",
-    username: "super-awesome-project",
+    username: "MyAwesomeUsername",
+    project: "super-awesome-project",
   },
 };
 
