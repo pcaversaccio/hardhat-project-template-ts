@@ -1,6 +1,6 @@
 # Fully-Fledged Hardhat Project Template Based on TypeScript
 
-[![build status](./actions/workflows/test-contracts.yml/badge.svg)](./actions)
+[![build status](https://github.com/pcaversaccio/hardhat-project-template-ts/actions/workflows/test-contracts.yml/badge.svg)](./actions)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## Installation
