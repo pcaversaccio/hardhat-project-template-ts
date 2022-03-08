@@ -41,7 +41,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Hardhat tests
-        run: npx hardhat test
+        run: yarn test
 
       - name: Slither static analyser
         uses: crytic/slither-action@v0.1.0
