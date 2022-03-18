@@ -60,6 +60,7 @@ This repository also includes the [Foundry](https://github.com/gakonst/foundry) 
 ### Setup
 
 We use git _submodules_ in this project. In order to update, i.e. pull, the latest commits simply run
+
 ```bash
 git pull --recurse-submodules
 ```
