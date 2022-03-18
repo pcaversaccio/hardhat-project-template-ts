@@ -51,7 +51,7 @@ jobs:
           version: nightly
 
       - name: Foundry tests
-        run: test:forge
+        run: yarn test:forge
 
       - name: Slither static analyser
         uses: crytic/slither-action@v0.1.0
