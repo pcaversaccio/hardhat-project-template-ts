@@ -55,7 +55,7 @@ npx hardhat verify --network fantomMain <YOUR_CONTRACT_ADDRESS> --constructor-ar
 
 This repository also includes the [Foundry](https://github.com/gakonst/foundry) toolkit.
 
-> If you need help getting started with Foundry, I recommend reading the [📖 Foundry Book][foundry-book].
+> If you need help getting started with Foundry, I recommend reading the [📖 Foundry Book](https://onbjerg.github.io/foundry-book).
 
 ### Dependencies
 
