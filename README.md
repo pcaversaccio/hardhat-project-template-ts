@@ -57,6 +57,13 @@ This repository also includes the [Foundry](https://github.com/gakonst/foundry) 
 
 > If you need help getting started with Foundry, I recommend reading the [📖 Foundry Book](https://onbjerg.github.io/foundry-book).
 
+### Setup
+
+We use git _submodules_ in this project. In order to update, i.e. pull, the latest commits simply run
+```bash
+git pull --recurse-submodules
+```
+
 ### Dependencies
 
 ```bash
