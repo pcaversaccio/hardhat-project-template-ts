@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          submodules: recursive
 
       - name: Get Yarn cache directory path
         id: yarn-cache-dir-path
@@ -42,6 +44,14 @@ jobs:
 
       - name: Hardhat tests
         run: yarn test
+
+      - name: Install Foundry
+        uses: onbjerg/foundry-toolchain@v1
+        with:
+          version: nightly
+
+      - name: Foundry tests
+        run: forge test
 
       - name: Slither static analyser
         uses: crytic/slither-action@v0.1.0
