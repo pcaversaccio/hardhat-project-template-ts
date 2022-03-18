@@ -14,7 +14,7 @@ import "hardhat-abi-exporter";
 
 dotenv.config();
 
-task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
+task("accounts", "Prints the list of accounts", async (_, hre) => {
   const accounts = await hre.ethers.getSigners();
 
   for (const account of accounts) {
@@ -25,7 +25,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 task(
   "balances",
   "Prints the list of accounts and their balances",
-  async (args, hre) => {
+  async (_, hre) => {
     const accounts = await hre.ethers.getSigners();
 
     for (const account of accounts) {
@@ -37,8 +37,6 @@ task(
     }
   }
 );
-
-// Input the Solidity version you use in your files in the folder `contracts`
 
 const config: HardhatUserConfig = {
   solidity: {

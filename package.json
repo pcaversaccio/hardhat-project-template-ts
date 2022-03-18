@@ -8,6 +8,7 @@
     "ethereum",
     "smart-contracts",
     "solidity",
+    "foundry",
     "hardhat"
   ],
   "repository": {
@@ -22,6 +23,7 @@
   "scripts": {
     "help": "npx hardhat help",
     "accounts": "npx hardhat accounts",
+    "balances": "npx hardhat balances",
     "node:hh": "npx hardhat node",
     "clean": "npx hardhat clean",
     "test:hh": "npx hardhat test",

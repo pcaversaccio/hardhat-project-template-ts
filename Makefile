@@ -1,11 +1,11 @@
-# include .env file and export its env vars
+# include `.env` file and export its env vars
 # (-include to ignore error if it does not exist)
 -include .env
 
-# deps
+# dependencies
 update:; forge update
 
-# Build & test
+# build & test
 build  :; forge build
 test   :; forge test
 trace   :; forge test -vvv
