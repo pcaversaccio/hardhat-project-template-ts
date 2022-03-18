@@ -10,6 +10,10 @@ out
 # Hardhat files
 cache
 artifacts
+.deps
 
 # xdeployer files
 deployments
+
+# foundry files
+forge-artifacts
