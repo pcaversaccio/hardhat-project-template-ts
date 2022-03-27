@@ -1,7 +1,9 @@
 node_modules
-artifacts
 cache
-coverage*
-typechain
+artifacts
 typechain-types
-gasReporterOutput.json
+coverage
+deployments
+forge-artifacts
+bin
+out

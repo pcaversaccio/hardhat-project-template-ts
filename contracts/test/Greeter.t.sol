@@ -8,8 +8,6 @@ import "../lib/ds-test/src/test.sol";
 contract ContractTest is DSTest {
     Greeter public greeter;
 
-    function setUp() public {}
-
     function testCreateGreeter() public {
         greeter = new Greeter("Hello, world!");
 

@@ -1,6 +1,9 @@
 node_modules
-artifacts
 cache
-coverage
-typechain
+artifacts
 typechain-types
+coverage
+deployments
+forge-artifacts
+bin
+out
