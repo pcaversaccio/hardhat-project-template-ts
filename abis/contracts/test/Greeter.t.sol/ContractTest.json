@@ -18,6 +18,5 @@
   "function IS_TEST() view returns (bool)",
   "function failed() view returns (bool)",
   "function greeter() view returns (address)",
-  "function setUp()",
   "function testCreateGreeter()"
 ]
