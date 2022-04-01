@@ -100,3 +100,11 @@ or
 ```bash
 make test
 ```
+
+### Deployment and Etherscan Verification
+
+Inside the [`scripts/`](./scripts) folder are a few preconfigured scripts that can be used to deploy and verify contracts via Foundry. These scripts are required to be _executable_ meaning they must be made executable by running:
+
+```bash
+make scripts
+```

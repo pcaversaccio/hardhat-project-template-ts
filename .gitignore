@@ -1,3 +1,17 @@
+# Ignore all Visual Studio Code settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local history for Visual Studio Code
+.history
+
+# Built Visual Studio Code extensions
+*.vsix
+
 # Dependency directory
 node_modules
 
@@ -46,6 +60,9 @@ deployments
 
 # Foundry output directory
 forge-artifacts
+
+# Ignore flattened files
+flattened.sol
 
 # Miscellaneous files
 bin
