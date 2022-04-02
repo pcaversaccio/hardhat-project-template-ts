@@ -1,10 +1,9 @@
 ---
 name: Bug report
 about: Report a bug in this Hardhat project template.
-title: ''
+title: ""
 labels: bug
-assignees: ''
-
+assignees: ""
 ---
 
 **Describe the bug**
