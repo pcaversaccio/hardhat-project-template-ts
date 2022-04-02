@@ -1,10 +1,9 @@
 ---
 name: Feature request
 about: Suggest an idea for this Hardhat project template.
-title: ''
+title: ""
 labels: enhancement
 assignees: pcaversaccio
-
 ---
 
 **Is your feature request related to a problem? Please describe.**
