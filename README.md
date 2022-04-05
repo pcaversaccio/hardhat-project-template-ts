@@ -51,10 +51,10 @@ First, it is recommended that you install Truffle globally by running:
 npm install -g truffle
 ```
 
-To start a Truffle Dashboard, you need to run the `truffle dashboard` command in a separate terminal window:
+To start a Truffle Dashboard, you need to run the following command in a separate terminal window:
 
 ```bash
-truffle dashboard [--port <number>] [--host <string>] [--verbose]
+truffle dashboard
 ```
 
 By default, the command above starts a Truffle Dashboard at http://localhost:24012 and opens the Dashboard in a new tab in your default browser. The Dashboard then prompts you to connect your wallet and confirm that you're connected to the right network. **You should double check your connected network at this point, since switching to a different network during a deployment can have unintended consequences.**
