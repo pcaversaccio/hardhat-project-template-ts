@@ -55,6 +55,9 @@ const config: HardhatUserConfig = {
     localhost: {
       url: "http://127.0.0.1:8545",
     },
+    "truffle-dashboard": {
+      url: "http://localhost:24012/rpc",
+    },
     rinkeby: {
       url: process.env.ETH_RINKEBY_TESTNET_URL || "",
       accounts:
@@ -222,32 +225,32 @@ const config: HardhatUserConfig = {
     },
   },
   xdeploy: {
-    // Change this name to the name of your main contract.
-    // Does not necessarily have to match the contract file name.
+    // Change this name to the name of your main contract
+    // Does not necessarily have to match the contract file name
     contract: "Greeter",
 
-    // Change to `undefined` if your constructor does not have any input arguments.
+    // Change to `undefined` if your constructor does not have any input arguments
     constructorArgsPath: "./deploy-args.ts",
 
-    // The salt must be the same for each EVM chain for which you want to have a single contract address.
-    // Change the salt if you are doing a re-deployment with the same codebase.
+    // The salt must be the same for each EVM chain for which you want to have a single contract address
+    // Change the salt if you are doing a re-deployment with the same codebase
     salt: process.env.SALT,
 
-    // This is your wallet's private key.
+    // This is your wallet's private key
     signer: process.env.PRIVATE_KEY,
 
-    // Use the network names specified here: https://github.com/pcaversaccio/xdeployer#configuration.
-    // Use `localhost` or `hardhat` for local testing.
+    // Use the network names specified here: https://github.com/pcaversaccio/xdeployer#configuration
+    // Use `localhost` or `hardhat` for local testing
     networks: ["hardhat", "rinkeby", "bscTestnet"],
 
-    // Use the matching env URL with your chosen RPC in the `.env` file.
+    // Use the matching env URL with your chosen RPC in the `.env` file
     rpcUrls: [
       "hardhat",
       process.env.ETH_RINKEBY_TESTNET_URL,
       process.env.BSC_TESTNET_URL,
     ],
 
-    // Maximum limit is 15 * 10 ** 6 or 15,000,000. If the deployments are failing, try increasing this number.
+    // Maximum limit is 15 * 10 ** 6 or 15,000,000. If the deployments are failing, try increasing this number
     // However, keep in mind that this costs money in a production environment!
     gasLimit: 1.2 * 10 ** 6,
   },
@@ -274,45 +277,45 @@ const config: HardhatUserConfig = {
   },
   etherscan: {
     apiKey: {
-      // For Rinkeby, Ropsten, Kovan, Goerli, Mainnet.
+      // For Rinkeby, Ropsten, Kovan, Goerli, Mainnet
       mainnet: process.env.ETHERSCAN_API_KEY,
       ropsten: process.env.ETHERSCAN_API_KEY,
       rinkeby: process.env.ETHERSCAN_API_KEY,
       goerli: process.env.ETHERSCAN_API_KEY,
       kovan: process.env.ETHERSCAN_API_KEY,
-      // For BSC testnet & mainnet.
+      // For BSC testnet & mainnet
       bsc: process.env.BSC_API_KEY,
       bscTestnet: process.env.BSC_API_KEY,
-      // For Heco testnet & mainnet.
+      // For Heco testnet & mainnet
       heco: process.env.HECO_API_KEY,
       hecoTestnet: process.env.HECO_API_KEY,
-      // For Fantom testnet & mainnet.
+      // For Fantom testnet & mainnet
       opera: process.env.FANTOM_API_KEY,
       ftmTestnet: process.env.FANTOM_API_KEY,
-      // For Optimism testnet & mainnet.
+      // For Optimism testnet & mainnet
       optimisticEthereum: process.env.OPTIMISM_API_KEY,
       optimisticKovan: process.env.OPTIMISM_API_KEY,
-      // For Polygon testnet & mainnet.
+      // For Polygon testnet & mainnet
       polygon: process.env.POLYGON_API_KEY,
       polygonMumbai: process.env.POLYGON_API_KEY,
-      // For Arbitrum testnet & mainnet.
+      // For Arbitrum testnet & mainnet
       arbitrumOne: process.env.ARBITRUM_API_KEY,
       arbitrumTestnet: process.env.ARBITRUM_API_KEY,
-      // For Avalanche testnet & mainnet.
+      // For Avalanche testnet & mainnet
       avalanche: process.env.AVALANCHE_API_KEY,
       avalancheFujiTestnet: process.env.AVALANCHE_API_KEY,
-      // For Moonbeam testnet & mainnets.
+      // For Moonbeam testnet & mainnets
       moonbeam: process.env.MOONBEAM_API_KEY,
       moonriver: process.env.MOONBEAM_API_KEY,
       moonbaseAlpha: process.env.MOONBEAM_API_KEY,
-      // For Harmony testnet & mainnet.
+      // For Harmony testnet & mainnet
       harmony: process.env.HARMONY_API_KEY,
       harmonyTest: process.env.HARMONY_API_KEY,
-      // For Aurora testnet & mainnet.
+      // For Aurora testnet & mainnet
       aurora: process.env.AURORA_API_KEY,
       auroraTestnet: process.env.AURORA_API_KEY,
       // xdai and sokol don't need an API key, but you still need
-      // to specify one; any string placeholder will work.
+      // to specify one; any string placeholder will work
       xdai: "wagmi",
       sokol: "wagmi",
     },

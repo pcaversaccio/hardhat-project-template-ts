@@ -41,6 +41,33 @@ This template uses the [xdeploy](https://github.com/pcaversaccio/xdeployer) Hard
 
 In the `.env` file place the private key of your wallet in the `PRIVATE_KEY` section. This allows secure access to your wallet to use with both testnet and mainnet funds during Hardhat deployments. For more information on how this works, please read the documentation of the `npm` package [`dotenv`](https://www.npmjs.com/package/dotenv).
 
+## Using the Truffle Dashboard
+
+[Truffle](https://trufflesuite.com) developed the [Truffle Dashboard](https://trufflesuite.com/docs/truffle/getting-started/using-the-truffle-dashboard.html) to provide an easy way to use your existing MetaMask wallet for your deployments and for other transactions that you need to send from a command line context. Because the Truffle Dashboard connects directly to MetaMask it is also possible to use it in combination with hardware wallets like [Ledger](https://www.ledger.com) or [Trezor](https://trezor.io).
+
+First, it is recommended that you install Truffle globally by running:
+
+```bash
+npm install -g truffle
+```
+
+To start a Truffle Dashboard, you need to run the `truffle dashboard` command in a separate terminal window:
+
+```bash
+> truffle dashboard [--port <number>] [--host <string>] [--verbose]
+
+Truffle Dashboard running at http://localhost:24012
+DashboardProvider RPC endpoint running at http://localhost:24012/rpc
+```
+
+By default, the command above starts a Truffle Dashboard at http://localhost:24012 and opens the Dashboard in a new tab in your default browser. The Dashboard then prompts you to connect your wallet and confirm that you're connected to the right network. **You should double check your connected network at this point, since switching to a different network during a deployment can have unintended consequences.**
+
+Eventually, in order to interact with the Truffle Dashboard, you can simply run:
+
+```bash
+yarn deploy:dashboard
+```
+
 ## Contract Verification
 
 Change the contract address to your contract after the deployment has been successful. This works for both testnet and mainnet. You will need to get an API key from [etherscan](https://etherscan.io), [snowtrace](https://snowtrace.io) etc.
@@ -48,7 +75,7 @@ Change the contract address to your contract after the deployment has been succe
 **Example:**
 
 ```bash
-npx hardhat verify --network fantomMain <YOUR_CONTRACT_ADDRESS> --constructor-args deploy-arg.ts
+npx hardhat verify --network fantomMain --constructor-args arguments.js <YOUR_CONTRACT_ADDRESS>
 ```
 
 ## Foundry
