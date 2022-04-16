@@ -79,7 +79,7 @@ npx hardhat verify --network fantomMain --constructor-args arguments.js <YOUR_CO
 
 This template repository also includes the [Foundry](https://github.com/gakonst/foundry) toolkit.
 
-> If you need help getting started with Foundry, I recommend reading the [📖 Foundry Book](https://book.getfoundry.sh/).
+> If you need help getting started with Foundry, I recommend reading the [📖 Foundry Book](https://book.getfoundry.sh).
 
 ### Dependencies
 
