@@ -16,5 +16,5 @@
   "event log_uint(uint256)",
   "event logs(bytes)",
   "function IS_TEST() view returns (bool)",
-  "function failed() view returns (bool)"
+  "function failed() returns (bool)"
 ]
