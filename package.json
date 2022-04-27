@@ -15,7 +15,8 @@
     "type": "git",
     "url": "https://github.com/pcaversaccio/hardhat-project-template-ts"
   },
-  "bug": {
+  "homepage": "https://github.com/pcaversaccio/hardhat-project-template-ts#readme",
+  "bugs": {
     "url": "https://github.com/pcaversaccio/hardhat-project-template-ts/issues"
   },
   "author": "Pascal Marco Caversaccio <pascal.caversaccio@hotmail.ch>",
