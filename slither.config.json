@@ -1,3 +1,3 @@
 {
-    "filter_paths": "contracts/lib, contracts/Create2Deployer.sol"
+    "filter_paths": "contracts/lib, node_modules/xdeployer/src/contracts, node_modules/hardhat/console.sol"
 }
