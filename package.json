@@ -27,7 +27,7 @@
     "node:hh": "npx hardhat node",
     "clean": "npx hardhat clean",
     "test:hh": "npx hardhat test",
-    "test:forge": "forge test --root . -c contracts --out forge-artifacts",
+    "test:forge": "forge test -vvv --root . -c contracts --out forge-artifacts",
     "coverage": "npx hardhat coverage",
     "compile": "npx hardhat compile",
     "build": "forge build --root . -c contracts --out forge-artifacts",
