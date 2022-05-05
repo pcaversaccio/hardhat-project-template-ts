@@ -38,8 +38,7 @@ jobs:
           node-version: ${{ matrix.node_version }}
 
       - name: Install Yarn project with a clean slate
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn install --frozen-lockfile
+        run: yarn install --prefer-offline --frozen-lockfile
 
       - name: Prettier
         run: yarn prettier:check
