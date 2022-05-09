@@ -71,7 +71,7 @@ You can start an instance of the Hardhat network that forks the mainnet. This me
 
 This template is currently configured via the [hardhat.config.ts](./hardhat.config.ts) as follows:
 
-```json
+```ts
 forking: {
     url: process.env.ETH_MAINNET_URL || "",
     // The Hardhat network will by default fork from the latest mainnet block
