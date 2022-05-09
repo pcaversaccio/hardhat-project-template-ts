@@ -51,6 +51,16 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       initialBaseFeePerGas: 0,
+      chainId: 31337,
+      forking: {
+        url: process.env.ETH_MAINNET_URL || "",
+        // The Hardhat network will by default fork from the latest mainnet block
+        // To pin the block number, specify it below
+        // You will need access to a node with archival data for this to work!
+        // blockNumber: 14743877,
+        // If you want to do some forking, set `enabled` to true
+        enabled: false,
+      },
     },
     localhost: {
       url: "http://127.0.0.1:8545",

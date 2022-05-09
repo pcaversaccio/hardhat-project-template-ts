@@ -65,6 +65,24 @@ Eventually, in order to deploy with the Truffle Dashboard, you can simply run:
 yarn deploy:dashboard
 ```
 
+## Mainnet Forking
+
+You can start an instance of the Hardhat network that forks the mainnet. This means that it will simulate having the same state as the mainnet, but it will work as a local development network. That way you can interact with deployed protocols and test complex interactions locally. To use this feature, you need to connect to an archive node.
+
+This template is currently configured via the [hardhat.config.ts](./hardhat.config.ts) as follows:
+
+```json
+forking: {
+    url: process.env.ETH_MAINNET_URL || "",
+    // The Hardhat network will by default fork from the latest mainnet block
+    // To pin the block number, specify it below
+    // You will need access to a node with archival data for this to work!
+    // blockNumber: 14743877,
+    // If you want to do some forking, set `enabled` to true
+    enabled: false,
+}
+```
+
 ## Contract Verification
 
 Change the contract address to your contract after the deployment has been successful. This works for both testnet and mainnet. You will need to get an API key from [etherscan](https://etherscan.io), [snowtrace](https://snowtrace.io) etc.
