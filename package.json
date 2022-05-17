@@ -42,6 +42,7 @@
     "deploy:ropsten": "npx hardhat run --network ropsten scripts/deploy.ts",
     "deploy:kovan": "npx hardhat run --network kovan scripts/deploy.ts",
     "deploy:goerli": "npx hardhat run --network goerli scripts/deploy.ts",
+    "deploy:sepolia": "npx hardhat run --network sepolia scripts/deploy.ts",
     "deploy:ethmain": "npx hardhat run --network ethMain scripts/deploy.ts",
     "deploy:bsctestnet": "npx hardhat run --network bscTestnet scripts/deploy.ts",
     "deploy:bscmain": "npx hardhat run --network bscMain scripts/deploy.ts",
@@ -110,6 +111,6 @@
     "ts-node": "^10.7.0",
     "typechain": "^8.0.0",
     "typescript": "^4.6.4",
-    "xdeployer": "^1.1.11"
+    "xdeployer": "^1.1.12"
   }
 }

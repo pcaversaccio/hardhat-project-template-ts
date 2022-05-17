@@ -9805,10 +9805,10 @@ ws@^7.4.6:
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.7.tgz#9e0ac77ee50af70d58326ecff7e85eb3fa375e67"
   integrity sha512-KMvVuFzpKBuiIXW3E4u3mySRO2/mCHSyZDJQM5NQ9Q9KHWHWh0NHgfbRMLLrceUK5qAL4ytALJbpRMjixFZh8A==
 
-xdeployer@^1.1.11:
-  version "1.1.11"
-  resolved "https://registry.yarnpkg.com/xdeployer/-/xdeployer-1.1.11.tgz#b1ff8ab250eab96ee9b213822a8c24a51488730c"
-  integrity sha512-QjJPnJIl91MoXVWtK7T0bw51norgCoou6mO33468ImnE9bNTrFvMUm38MIlSHVCW+6qq9KCAMgZNyS0m2FYs/Q==
+xdeployer@^1.1.12:
+  version "1.1.12"
+  resolved "https://registry.yarnpkg.com/xdeployer/-/xdeployer-1.1.12.tgz#de7fc6585aff7528b0edf0c91081398b1d955010"
+  integrity sha512-JdKPhuuSMsT9+4N29afiELwXbhMsUzp/vCp//lztsyBwrTD+0lg1HAjl3dajRu1AQMk8LpNpB+tF6nQlQi5d2A==
 
 xhr-request-promise@^0.1.2:
   version "0.1.3"
