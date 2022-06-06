@@ -789,10 +789,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tenderly/hardhat-tenderly@^1.0.13":
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/@tenderly/hardhat-tenderly/-/hardhat-tenderly-1.0.13.tgz#6182a2d32bf12d110622f0b24263dc964ed7aa6d"
-  integrity sha512-XsrF2QIUh8YmzCcWHmPnSNQjZNBQkyrHER8bcrWsFIgL7ub49hmPbpGVB2Isb6gUV/IGBpBm7R69jpmoTvJ17g==
+"@tenderly/hardhat-tenderly@^1.0.14":
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/@tenderly/hardhat-tenderly/-/hardhat-tenderly-1.0.14.tgz#ed912e4fc9cf972573b7fde977062dc8ca0959ba"
+  integrity sha512-zWz1YNhREahXkq1tPtC8gngsPRNXrcomlYE6R8xyLw0KKR8Fauh69WYqQkPWYxR3S39AwRHDz9k83bouYoEbJA==
   dependencies:
     axios "^0.21.1"
     fs-extra "^9.0.1"
