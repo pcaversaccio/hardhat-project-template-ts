@@ -789,7 +789,7 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tenderly/hardhat-tenderly@^1.0.14":
+"@tenderly/hardhat-tenderly@^1.0.13":
   version "1.0.14"
   resolved "https://registry.yarnpkg.com/@tenderly/hardhat-tenderly/-/hardhat-tenderly-1.0.14.tgz#ed912e4fc9cf972573b7fde977062dc8ca0959ba"
   integrity sha512-zWz1YNhREahXkq1tPtC8gngsPRNXrcomlYE6R8xyLw0KKR8Fauh69WYqQkPWYxR3S39AwRHDz9k83bouYoEbJA==
