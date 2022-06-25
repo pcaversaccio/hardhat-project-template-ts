@@ -64,6 +64,9 @@ forge-artifacts
 # Ignore flattened files
 flattened.sol
 
+# Tenderly fork deployment directory
+deployments_tenderly
+
 # Miscellaneous files
 bin
 out

@@ -9,7 +9,7 @@ import "xdeployer";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
 import "hardhat-contract-sizer";
-import "@tenderly/hardhat-tenderly";
+// import "@tenderly/hardhat-tenderly"; Uncomment if you want to enable the `tenderly` extension
 import "hardhat-abi-exporter";
 
 dotenv.config();
@@ -367,13 +367,14 @@ const config: HardhatUserConfig = {
       },
     ],
   },
-  tenderly: {
-    username: "MyAwesomeUsername",
-    project: "super-awesome-project",
-    forkNetwork: "",
-    privateVerification: false,
-    deploymentsDir: "deployments_tenderly",
-  },
+  // Uncomment if you want to enable the `tenderly` extension
+  // tenderly: {
+  //   username: "MyAwesomeUsername",
+  //   project: "super-awesome-project",
+  //   forkNetwork: "",
+  //   privateVerification: false,
+  //   deploymentsDir: "deployments_tenderly",
+  // },
 };
 
 export default config;

@@ -8,10 +8,11 @@ async function main() {
 
   console.log("Greeter deployed to:", contract.address);
 
-  await hre.tenderly.verify({
-    name: "Greeter",
-    address: contract.address,
-  });
+  // Uncomment if you want to enable the `tenderly` extension
+  // await hre.tenderly.verify({
+  //   name: "Greeter",
+  //   address: contract.address,
+  // });
 }
 
 main().catch((error) => {
