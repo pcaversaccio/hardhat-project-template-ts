@@ -27,7 +27,7 @@ yarn install
 yarn deploy:rinkeby
 ```
 
-> The deployment script [`deploy.ts`](./scripts/deploy.ts) includes the `tenderly` Hardhat Runtime Environment (HRE) extension with the `verify` method. Please consider configuring the Tenderly `project` and `username` in the [`hardhat.config.ts`](./hardhat.config.ts) file before deploying or remove this call.
+> The deployment script [`deploy.ts`](./scripts/deploy.ts) includes the `tenderly` Hardhat Runtime Environment (HRE) extension with the `verify` method. Please consider configuring the Tenderly `project`, `username`, `forkNetwork`, `privateVerification`, and `deploymentsDir` in the [`hardhat.config.ts`](./hardhat.config.ts) file before deploying or remove this call.
 
 ## Running `CREATE2` Deployments
 
