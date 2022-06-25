@@ -370,6 +370,9 @@ const config: HardhatUserConfig = {
   tenderly: {
     username: "MyAwesomeUsername",
     project: "super-awesome-project",
+    forkNetwork: "",
+    privateVerification: false,
+    deploymentsDir: "deployments_tenderly"
   },
 };
 
