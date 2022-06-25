@@ -372,7 +372,7 @@ const config: HardhatUserConfig = {
     project: "super-awesome-project",
     forkNetwork: "",
     privateVerification: false,
-    deploymentsDir: "deployments_tenderly"
+    deploymentsDir: "deployments_tenderly",
   },
 };
 
