@@ -9,10 +9,13 @@ import "xdeployer";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
 import "hardhat-contract-sizer";
-// import "@tenderly/hardhat-tenderly"; Uncomment if you want to enable the `tenderly` extension
+import * as tdly from "@tenderly/hardhat-tenderly";
 import "hardhat-abi-exporter";
 
 dotenv.config();
+
+// Turning off the automatic Tenderly verification
+tdly.setup({ automaticVerifications: false });
 
 task("accounts", "Prints the list of accounts", async (_, hre) => {
   const accounts = await hre.ethers.getSigners();
@@ -69,181 +72,217 @@ const config: HardhatUserConfig = {
       url: "http://localhost:24012/rpc",
     },
     rinkeby: {
+      chainId: 4,
       url: process.env.ETH_RINKEBY_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     kovan: {
+      chainId: 42,
       url: process.env.ETH_KOVAN_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     ropsten: {
+      chainId: 3,
       url: process.env.ETH_ROPSTEN_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     goerli: {
+      chainId: 5,
       url: process.env.ETH_GOERLI_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     sepolia: {
+      chainId: 11155111,
       url: process.env.ETH_SEPOLIA_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     ethMain: {
+      chainId: 1,
       url: process.env.ETH_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     bscTestnet: {
+      chainId: 97,
       url: process.env.BSC_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     bscMain: {
+      chainId: 56,
       url: process.env.BSC_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     optimismTestnet: {
+      chainId: 69,
       url: process.env.OPTIMISM_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     optimismMain: {
+      chainId: 10,
       url: process.env.OPTIMISM_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     arbitrumTestnet: {
+      chainId: 421611,
       url: process.env.ARBITRUM_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     arbitrumMain: {
+      chainId: 42161,
       url: process.env.ARBITRUM_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     mumbai: {
+      chainId: 80001,
       url: process.env.POLYGON_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     polygon: {
+      chainId: 137,
       url: process.env.POLYGON_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     hecoTestnet: {
+      chainId: 256,
       url: process.env.HECO_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     hecoMain: {
+      chainId: 128,
       url: process.env.HECO_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     fantomTestnet: {
+      chainId: 4002,
       url: process.env.FANTOM_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     fantomMain: {
+      chainId: 250,
       url: process.env.FANTOM_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     fuji: {
+      chainId: 43113,
       url: process.env.AVALANCHE_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     avalanche: {
+      chainId: 43114,
       url: process.env.AVALANCHE_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     sokol: {
+      chainId: 77,
       url: process.env.GNOSIS_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     gnosis: {
+      chainId: 100,
       url: process.env.GNOSIS_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     moonbaseAlpha: {
+      chainId: 1287,
       url: process.env.MOONBEAM_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     moonriver: {
+      chainId: 1285,
       url: process.env.MOONRIVER_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     moonbeam: {
+      chainId: 1284,
       url: process.env.MOONBEAM_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     alfajores: {
+      chainId: 44787,
       url: process.env.CELO_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     celo: {
+      chainId: 42220,
       url: process.env.CELO_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     auroraTestnet: {
+      chainId: 1313161555,
       url: process.env.AURORA_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     auroraMain: {
+      chainId: 1313161554,
       url: process.env.AURORA_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     harmonyTestnet: {
+      chainId: 1666700000,
       url: process.env.HARMONY_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     harmonyMain: {
+      chainId: 1666600000,
       url: process.env.HARMONY_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     autobahn: {
+      chainId: 45000,
       url: process.env.AUTOBAHN_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     spark: {
+      chainId: 123,
       url: process.env.FUSE_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     fuse: {
+      chainId: 122,
       url: process.env.FUSE_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     cronosTestnet: {
+      chainId: 338,
       url: process.env.CRONOS_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     cronosMain: {
+      chainId: 25,
       url: process.env.CRONOS_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -367,14 +406,13 @@ const config: HardhatUserConfig = {
       },
     ],
   },
-  // Uncomment if you want to enable the `tenderly` extension
-  // tenderly: {
-  //   username: "MyAwesomeUsername",
-  //   project: "super-awesome-project",
-  //   forkNetwork: "",
-  //   privateVerification: false,
-  //   deploymentsDir: "deployments_tenderly",
-  // },
+  tenderly: {
+    username: "MyAwesomeUsername",
+    project: "super-awesome-project",
+    forkNetwork: "",
+    privateVerification: false,
+    deploymentsDir: "deployments_tenderly",
+  },
 };
 
 export default config;

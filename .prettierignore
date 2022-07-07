@@ -4,7 +4,9 @@ cache
 artifacts
 typechain-types
 coverage
+abis
 deployments
+deployments_tenderly
 forge-artifacts
 bin
 out
