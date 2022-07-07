@@ -38,6 +38,7 @@
     "deploy:hh": "npx hardhat run --network hardhat scripts/deploy.ts",
     "deploy:localhost": "npx hardhat run --network localhost scripts/deploy.ts",
     "deploy:dashboard": "npx hardhat run --network truffle-dashboard scripts/deploy.ts",
+    "deploy:tenderly": "npx hardhat run --network tenderly scripts/deploy.ts",
     "deploy:rinkeby": "npx hardhat run --network rinkeby scripts/deploy.ts",
     "deploy:ropsten": "npx hardhat run --network ropsten scripts/deploy.ts",
     "deploy:kovan": "npx hardhat run --network kovan scripts/deploy.ts",
