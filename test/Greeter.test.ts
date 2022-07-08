@@ -18,6 +18,7 @@ describe("Greeter", function () {
     expect(await greeter.greet()).to.equal("Hola, mundo!");
   });
 
+  // showcase test on how to use the Hardhat network helpers library
   it("Should mine the given number of blocks", async function () {
     const blockNumberBefore = await time.latestBlock();
 
