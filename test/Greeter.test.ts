@@ -1,5 +1,6 @@
-import { expect } from "chai";
+import { expect, assert } from "chai";
 import { ethers } from "hardhat";
+import { mine, time } from "@nomicfoundation/hardhat-network-helpers";
 
 describe("Greeter", function () {
   it("Should return the new greeting once it's changed", async function () {
@@ -15,5 +16,13 @@ describe("Greeter", function () {
     await setGreetingTx.wait();
 
     expect(await greeter.greet()).to.equal("Hola, mundo!");
+  });
+
+  it("Should mine the given number of blocks", async function () {
+    const blockNumberBefore = await time.latestBlock();
+
+    await mine(100);
+
+    assert.equal(await time.latestBlock(), blockNumberBefore + 100);
   });
 });
