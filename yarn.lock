@@ -537,10 +537,10 @@
   dependencies:
     ethereumjs-util "^7.1.4"
 
-"@nomicfoundation/hardhat-toolbox@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@nomicfoundation/hardhat-toolbox/-/hardhat-toolbox-1.0.1.tgz#54fd35f383b47fcade5ec395a5481354fdc7b4cc"
-  integrity sha512-wX3TsRnL2G7s9pZ3594a+NE6ffTocs4kENH4xTeo2ZVaYPx4xG9SqcX1Qyr5nZSmNs5prQUZx060kcF9nk4vkA==
+"@nomicfoundation/hardhat-toolbox@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@nomicfoundation/hardhat-toolbox/-/hardhat-toolbox-1.0.2.tgz#342b79e19c456a56d8e76bc2e9cc8474cbcfc774"
+  integrity sha512-8CEgWSKUK2aMit+76Sez8n7UB0Ze1lwT+LcWxj4EFP30lQWOwOws048t6MTPfThH0BlSWjC6hJRr0LncIkc1Sw==
 
 "@nomiclabs/hardhat-ethers@^2.0.6", "@nomiclabs/hardhat-ethers@^2.1.0":
   version "2.1.0"
@@ -1850,9 +1850,9 @@ cookiejar@^2.1.1:
   integrity sha512-JxbCBUdrfr6AQjOXrxoTvAMJO4HBTUIlBzslcJPAz+/KT8yk53fXun51u+RenNYvad/+Vc2DIz5o9UxlCDymFQ==
 
 core-js-pure@^3.0.1:
-  version "3.23.3"
-  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.23.3.tgz#bcd02d3d8ec68ad871ef50d5ccbb248ddb54f401"
-  integrity sha512-XpoouuqIj4P+GWtdyV8ZO3/u4KftkeDVMfvp+308eGMhCrA3lVDSmAxO0c6GGOcmgVlaKDrgWVMo49h2ab/TDA==
+  version "3.23.4"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.23.4.tgz#aba5c7fb297063444f6bf93afb0362151679a012"
+  integrity sha512-lizxkcgj3XDmi7TUBFe+bQ1vNpD5E4t76BrBWI3HdUxdw/Mq1VF4CkiHzIKyieECKtcODK2asJttoofEeUKICQ==
 
 core-util-is@1.0.2:
   version "1.0.2"
@@ -2172,7 +2172,7 @@ elliptic@6.5.4, elliptic@^6.4.0, elliptic@^6.5.2, elliptic@^6.5.3, elliptic@^6.5
     minimalistic-assert "^1.0.1"
     minimalistic-crypto-utils "^1.0.1"
 
-emoji-regex@^10.0.0:
+emoji-regex@^10.1.0:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-10.1.0.tgz#d50e383743c0f7a5945c47087295afc112e3cf66"
   integrity sha512-xAEnNCT3w2Tg6MA7ly6QqYJvEoY1tm9iIjJ3yMKK9JPlWuRHAMoe5iETwQnx3M9TVbFMfsrBgWKR+IsmswwNjg==
@@ -4927,15 +4927,15 @@ prepend-http@^2.0.0:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha512-ravE6m9Atw9Z/jjttRUZ+clIXogdghyZAuWJ3qEzjT+jI/dL1ifAqhZeC5VHzQp1MSt1+jxKkFNemj/iO7tVUA==
 
-prettier-plugin-solidity@^1.0.0-beta.19:
-  version "1.0.0-beta.19"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-solidity/-/prettier-plugin-solidity-1.0.0-beta.19.tgz#7c3607fc4028f5e6a425259ff03e45eedf733df3"
-  integrity sha512-xxRQ5ZiiZyUoMFLE9h7HnUDXI/daf1tnmL1msEdcKmyh7ZGQ4YklkYLC71bfBpYU2WruTb5/SFLUaEb3RApg5g==
+prettier-plugin-solidity@^1.0.0-dev.22:
+  version "1.0.0-dev.22"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-solidity/-/prettier-plugin-solidity-1.0.0-dev.22.tgz#08c07816884d17bd9171c073c2421559057230c3"
+  integrity sha512-0v+O2/sqq6WMlZ2TsnRBXaNmKF4zANn0uLLWuvNra4BjmKUtp33EZ4AVKB26fzWy14BkVGeJfPAtKry0x3SFfQ==
   dependencies:
-    "@solidity-parser/parser" "^0.14.0"
-    emoji-regex "^10.0.0"
+    "@solidity-parser/parser" "^0.14.2"
+    emoji-regex "^10.1.0"
     escape-string-regexp "^4.0.0"
-    semver "^7.3.5"
+    semver "^7.3.7"
     solidity-comments-extractor "^0.0.7"
     string-width "^4.2.3"
 
@@ -5365,7 +5365,7 @@ semver@^6.3.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
-semver@^7.3.4, semver@^7.3.5, semver@^7.3.7:
+semver@^7.3.4, semver@^7.3.7:
   version "7.3.7"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.7.tgz#12c5b649afdbf9049707796e22a4028814ce523f"
   integrity sha512-QlYTucUYOews+WeEujDoEGziz4K6c47V/Bd+LjSSYcA94p+DmINdf7ncaUinThfvZyu13lN9OY1XDxt8C0Tw0g==
@@ -6567,10 +6567,10 @@ ws@^7.4.6:
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.8.tgz#ac2729881ab9e7cbaf8787fe3469a48c5c7f636a"
   integrity sha512-ri1Id1WinAX5Jqn9HejiGb8crfRio0Qgu8+MtL36rlTA6RLsMdWt1Az/19A2Qij6uSHUMphEFaTKa4WG+UNHNw==
 
-xdeployer@^1.1.14:
-  version "1.1.14"
-  resolved "https://registry.yarnpkg.com/xdeployer/-/xdeployer-1.1.14.tgz#63df546514aa0354bbc225f16b5c044477013bb3"
-  integrity sha512-pNJpfCJCKQv1zGgQXLk4H9TJ1g/GlaUviDu6yuWPgtZqSN/IlZU/t2SwH+VnIDTovA7uCC3a2kKdme4itACVvg==
+xdeployer@^1.1.15:
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/xdeployer/-/xdeployer-1.1.15.tgz#5ed69abe662450efb412721361f535bfb393edc2"
+  integrity sha512-0YShd0RQMBphsTTgLpmBkKdeY5Wa4tHOyyJT7e9JqlrIbX+QHChU+NZ5DGktdfR7G20pX+8k7L7YmdmvufsJbg==
 
 xhr-request-promise@^0.1.2:
   version "0.1.3"
