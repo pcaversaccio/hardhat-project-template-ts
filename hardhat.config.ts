@@ -290,6 +290,30 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    evmosTestnet: {
+      chainId: 9000,
+      url: process.env.EVMOS_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    evmosMain: {
+      chainId: 9001,
+      url: process.env.EVMOS_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    bobaTestnet: {
+      chainId: 28,
+      url: process.env.BOBA_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    bobaMain: {
+      chainId: 288,
+      url: process.env.BOBA_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   xdeploy: {
     // Change this name to the name of your main contract
@@ -360,9 +384,11 @@ const config: HardhatUserConfig = {
       // For Fantom testnet & mainnet
       opera: process.env.FANTOM_API_KEY || "",
       ftmTestnet: process.env.FANTOM_API_KEY || "",
-      // For Optimism testnet & mainnet
+      // For Optimism testnets & mainnet; we use the same
+      // string placeholder for Optimism Goerli as for xdai and sokol
       optimisticEthereum: process.env.OPTIMISM_API_KEY || "",
       optimisticKovan: process.env.OPTIMISM_API_KEY || "",
+      optimisticGoerli: "wagmi",
       // For Polygon testnet & mainnet
       polygon: process.env.POLYGON_API_KEY || "",
       polygonMumbai: process.env.POLYGON_API_KEY || "",
@@ -389,6 +415,16 @@ const config: HardhatUserConfig = {
       // to specify one; any string placeholder will work
       xdai: "wagmi",
       sokol: "wagmi",
+      // For Fuse testnet; we use the same string placeholder as for
+      // xdai and sokol
+      spark: "wagmi",
+      // For Evmos testnet & mainnet; we use the same string placeholder
+      // as for xdai and sokol
+      evmos: "wagmi",
+      evmosTestnet: "wagmi",
+      // For Boba network testnet & mainnet
+      boba: process.env.BOBA_API_KEY || "",
+      bobaTestnet: process.env.BOBA_API_KEY || "",
     },
     customChains: [
       {
@@ -405,6 +441,54 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-testnet.cronoscan.com/api",
           browserURL: "https://testnet.cronoscan.com",
+        },
+      },
+      {
+        network: "optimisticGoerli",
+        chainId: 420,
+        urls: {
+          apiURL: "https://blockscout.com/optimism/goerli/api",
+          browserURL: "https://blockscout.com/optimism/goerli",
+        },
+      },
+      {
+        network: "spark",
+        chainId: 123,
+        urls: {
+          apiURL: "https://explorer.fusespark.io/api",
+          browserURL: "https://explorer.fusespark.io",
+        },
+      },
+      {
+        network: "evmos",
+        chainId: 9001,
+        urls: {
+          apiURL: "https://evm.evmos.org/api",
+          browserURL: "https://evm.evmos.org",
+        },
+      },
+      {
+        network: "evmosTestnet",
+        chainId: 9000,
+        urls: {
+          apiURL: "https://evm.evmos.dev/api",
+          browserURL: "https://evm.evmos.dev",
+        },
+      },
+      {
+        network: "boba",
+        chainId: 288,
+        urls: {
+          apiURL: "https://api.bobascan.com/api",
+          browserURL: "https://bobascan.com",
+        },
+      },
+      {
+        network: "bobaTestnet",
+        chainId: 28,
+        urls: {
+          apiURL: "https://evm.evmos.dev/api",
+          browserURL: "https://api-testnet.bobascan.com/api",
         },
       },
     ],
