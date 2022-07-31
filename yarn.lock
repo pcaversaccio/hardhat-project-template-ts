@@ -689,22 +689,22 @@
   resolved "https://registry.yarnpkg.com/@truffle/error/-/error-0.1.0.tgz#5e9fed79e6cda624c926d314b280a576f8b22a36"
   integrity sha512-RbUfp5VreNhsa2Q4YbBjz18rOQI909pG32bghl1hulO7IpvcqTS+C3Ge5cNbiWQ1WGzy1wIeKLW0tmQtHFB7qg==
 
-"@truffle/interface-adapter@^0.5.19":
-  version "0.5.19"
-  resolved "https://registry.yarnpkg.com/@truffle/interface-adapter/-/interface-adapter-0.5.19.tgz#57529cacb09c72ebfd584ec003af55face18a3de"
-  integrity sha512-x7IZvsyx36DAJCJVZ9gUe1Lh8AhODhJoW7I+lJXIlGxj3EmZbao4/sHo+cN4u9i94yVTyGwYd78NzbP0a/LAog==
+"@truffle/interface-adapter@^0.5.20":
+  version "0.5.20"
+  resolved "https://registry.yarnpkg.com/@truffle/interface-adapter/-/interface-adapter-0.5.20.tgz#c342d52c0f7aaa4f3a780c8ae85ed2baeea9c380"
+  integrity sha512-GL0pNZ8vshlU4SokKD0L7Pb/Vrxcb5ZALGhH9+uKvm6bXnY6XjnxvEYZ1KgK/p+uoYCLY53g9Sgn/CXvcWmGLg==
   dependencies:
     bn.js "^5.1.3"
     ethers "^4.0.32"
     web3 "1.7.4"
 
 "@truffle/provider@^0.2.24":
-  version "0.2.57"
-  resolved "https://registry.yarnpkg.com/@truffle/provider/-/provider-0.2.57.tgz#c6d079748c99427c1ce283a19921b450aa9920ee"
-  integrity sha512-O8VxF2uQwa+KB4HDg9lG7uhQ/+AOvchX+1STpQBSSAGfov1+EROM0iRZUNoPm71Pu0C9ji2WmXbNW/COjUMaMA==
+  version "0.2.58"
+  resolved "https://registry.yarnpkg.com/@truffle/provider/-/provider-0.2.58.tgz#fdaf4109d70ba07014f7c0dcfebd0684b5458f38"
+  integrity sha512-WxglXYNz+YhgtLlocU9KjllmguP5xyFLcT/YHkEXvY6MuqLV2hcANswsTiB8axD+qaauBtwmVyJ0LS+ObJTzSw==
   dependencies:
     "@truffle/error" "^0.1.0"
-    "@truffle/interface-adapter" "^0.5.19"
+    "@truffle/interface-adapter" "^0.5.20"
     debug "^4.3.1"
     web3 "1.7.4"
 
@@ -831,10 +831,10 @@
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-9.1.1.tgz#e7c4f1001eefa4b8afbd1eee27a237fee3bf29c4"
   integrity sha512-Z61JK7DKDtdKTWwLeElSEBcWGRLY8g95ic5FoQqI9CMx0ns/Ghep3B4DfcEimiKMvtamNVULVNKEsiwV3aQmXw==
 
-"@types/node@*", "@types/node@^18.6.2":
-  version "18.6.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.6.2.tgz#ffc5f0f099d27887c8d9067b54e55090fcd54126"
-  integrity sha512-KcfkBq9H4PI6Vpu5B/KoPeuVDAbmi+2mDBqGPGUgoL7yXQtcWGu2vJWmmRkneWK3Rh0nIAX192Aa87AqKHYChQ==
+"@types/node@*", "@types/node@^18.6.3":
+  version "18.6.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.6.3.tgz#4e4a95b6fe44014563ceb514b2598b3e623d1c98"
+  integrity sha512-6qKpDtoaYLM+5+AFChLhHermMQxc3TOEFIDzrZLPRGHPrLEwqFkkT5Kx3ju05g6X7uDPazz3jHbKPX0KzCjntg==
 
 "@types/node@^10.0.3":
   version "10.17.60"
@@ -1845,9 +1845,9 @@ cookiejar@^2.1.1:
   integrity sha512-JxbCBUdrfr6AQjOXrxoTvAMJO4HBTUIlBzslcJPAz+/KT8yk53fXun51u+RenNYvad/+Vc2DIz5o9UxlCDymFQ==
 
 core-js-pure@^3.0.1:
-  version "3.24.0"
-  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.24.0.tgz#10eeb90dbf0d670a6b22b081aecc7deb2faec7e1"
-  integrity sha512-uzMmW8cRh7uYw4JQtzqvGWRyC2T5+4zipQLQdi2FmiRqP83k3d6F3stv2iAlNhOs6cXN401FCD5TL0vvleuHgA==
+  version "3.24.1"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.24.1.tgz#8839dde5da545521bf282feb7dc6d0b425f39fd3"
+  integrity sha512-r1nJk41QLLPyozHUUPmILCEMtMw24NG4oWK6RbsDdjzQgg9ZvrUsPBj1MnG0wXXp1DCDU6j+wUvEmBSrtRbLXg==
 
 core-util-is@1.0.2:
   version "1.0.2"
@@ -6007,9 +6007,9 @@ type@^1.0.1:
   integrity sha512-+5nt5AAniqsCnu2cEQQdpzCAh33kVx8n0VoFidKpB1dVVLAN/F+bgVOqOJqOnEnrhp222clB5p3vUlD+1QAnfg==
 
 type@^2.5.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/type/-/type-2.6.0.tgz#3ca6099af5981d36ca86b78442973694278a219f"
-  integrity sha512-eiDBDOmkih5pMbo9OqsqPRGMljLodLcwd5XD5JbtNB0o89xZAwynY9EdCDsJU7LtcVCClu9DvM7/0Ep1hYX3EQ==
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/type/-/type-2.6.1.tgz#808f389ec777205cc3cd97c1c88ec1a913105aae"
+  integrity sha512-OvgH5rB0XM+iDZGQ1Eg/o7IZn0XYJFVrN/9FQ4OWIYILyJJgVP2s1hLTOFn6UOZoDUI/HctGa0PFlE2n2HW3NQ==
 
 typechain@^8.1.0:
   version "8.1.0"
