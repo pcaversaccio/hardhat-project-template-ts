@@ -1,0 +1,24 @@
+name: Feature Request
+description: Suggest an idea for Hardhat project template.
+title: "[Feature-Request]: "
+labels:
+  - "enhancement"
+body:
+  - attributes:
+      value: |
+        Please check the [issues tab](https://github.com/pcaversaccio/hardhat-project-template-ts/issues) to avoid duplicates.
+        Thanks for taking the time to provide feedback on my Hardhat project template!
+    type: markdown
+  - attributes:
+      label: Describe the desired feature
+      description: Explain what the feature solves/improves.
+    id: feature-request
+    type: textarea
+    validations:
+      required: true
+  - attributes:
+      description: "It can be a GitHub repository/gist or a simple code snippet."
+      label: "Code example that solves the feature:"
+      placeholder: "```ts\nasync function main() {}\n```"
+    id: reproduce
+    type: textarea

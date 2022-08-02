@@ -1,0 +1,41 @@
+name: "Bug Report"
+description: "Report a bug for Hardhat project template."
+title: "[Bug-Candidate]: "
+labels:
+  - bug
+body:
+  - attributes:
+      value: |
+        Please check the [issues tab](https://github.com/pcaversaccio/hardhat-project-template-ts/issues) to avoid duplicates.
+        Thanks for taking the time to fill out this bug report!
+    type: markdown
+  - attributes:
+      label: "Describe the issue:"
+    id: what-happened
+    type: textarea
+    validations:
+      required: true
+  - attributes:
+      description: "It can be a GitHub repository/gist or a simple code snippet."
+      label: "Code example to reproduce the issue:"
+      placeholder: "```ts\nasync function main() {}\n```"
+    id: reproduce
+    type: textarea
+    validations:
+      required: true
+  - attributes:
+      description: |
+        What version of Hardhat are you running? 
+        Run `npx hardhat --version`
+      label: "Version:"
+    id: version
+    type: textarea
+    validations:
+      required: true
+  - attributes:
+      description: |
+        Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+      label: "Relevant log output:"
+    id: logs
+    type: textarea
