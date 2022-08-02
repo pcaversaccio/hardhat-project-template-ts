@@ -1,5 +1,5 @@
 ## defaults for all profiles
-[default]
+[profile.default]
 src = 'contracts'                                             # the source directory
 test = 'contracts/test'                                       # the test directory
 out = 'artifacts/contracts'                                   # the output directory (for artifacts)
