@@ -3,6 +3,8 @@ description: Suggest an idea for Hardhat project template.
 title: "[Feature-Request]: "
 labels:
   - "enhancement"
+assignees:
+  - pcaversaccio
 body:
   - attributes:
       value: |

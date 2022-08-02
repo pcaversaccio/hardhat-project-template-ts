@@ -3,6 +3,8 @@ description: "Report a bug for Hardhat project template."
 title: "[Bug-Candidate]: "
 labels:
   - bug
+assignees:
+  - pcaversaccio
 body:
   - attributes:
       value: |
