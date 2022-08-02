@@ -29,7 +29,7 @@ body:
       label: "Version:"
       description: |
         What version of Hardhat are you running? 
-        Run `npx hardhat --version`
+        Run `npx hardhat --version`.
     id: version
     type: textarea
     validations:
