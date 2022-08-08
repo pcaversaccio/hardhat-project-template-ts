@@ -98,7 +98,7 @@
     "@tenderly/hardhat-tenderly": "^1.1.5",
     "@typechain/ethers-v5": "^10.1.0",
     "@typechain/hardhat": "^6.1.2",
-    "@types/chai": "^4.3.1",
+    "@types/chai": "^4.3.3",
     "@types/mocha": "^9.1.1",
     "@types/node": "^18.6.4",
     "@typescript-eslint/eslint-plugin": "^5.32.0",
@@ -118,6 +118,6 @@
     "ts-node": "^10.9.1",
     "typechain": "^8.1.0",
     "typescript": "^4.7.4",
-    "xdeployer": "^1.1.16"
+    "xdeployer": "^1.1.17"
   }
 }
