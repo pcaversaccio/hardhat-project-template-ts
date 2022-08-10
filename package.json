@@ -51,6 +51,7 @@
     "deploy:optimismmain": "npx hardhat run --network optimismMain scripts/deploy.ts",
     "deploy:arbitrumtestnet": "npx hardhat run --network arbitrumTestnet scripts/deploy.ts",
     "deploy:arbitrummain": "npx hardhat run --network arbitrumMain scripts/deploy.ts",
+    "deploy:arbitrumnova": "npx hardhat run --network arbitrumNova scripts/deploy.ts",
     "deploy:mumbai": "npx hardhat run --network mumbai scripts/deploy.ts",
     "deploy:polygon": "npx hardhat run --network polygon scripts/deploy.ts",
     "deploy:hecotestnet": "npx hardhat run --network hecoTestnet scripts/deploy.ts",
@@ -118,6 +119,6 @@
     "ts-node": "^10.9.1",
     "typechain": "^8.1.0",
     "typescript": "^4.7.4",
-    "xdeployer": "^1.1.17"
+    "xdeployer": "^1.1.18"
   }
 }
