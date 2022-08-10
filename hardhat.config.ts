@@ -146,6 +146,11 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    arbitrumNova: {
+      url: process.env.ARBITRUM_NOVA_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     mumbai: {
       chainId: 80001,
       url: process.env.POLYGON_TESTNET_URL || "",
