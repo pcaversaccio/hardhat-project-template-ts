@@ -419,8 +419,10 @@ const config: HardhatUserConfig = {
       // For Cronos testnet & mainnet
       cronos: process.env.CRONOS_API_KEY || "",
       cronosTestnet: process.env.CRONOS_API_KEY || "",
-      // xdai and sokol don't need an API key, but you still need
-      // to specify one; any string placeholder will work
+      // For Gnosis testnet & mainnet. xdai and sokol don't
+      // need an API key, but you still need to specify one;
+      // any string placeholder will work
+      gnosis: process.env.GNOSIS_API_KEY || "",
       xdai: "wagmi",
       sokol: "wagmi",
       // For Fuse testnet; we use the same string placeholder as for
@@ -435,6 +437,14 @@ const config: HardhatUserConfig = {
       bobaTestnet: process.env.BOBA_API_KEY || "",
     },
     customChains: [
+      {
+        network: "gnosis",
+        chainId: 100,
+        urls: {
+          apiURL: "https://api.gnosisscan.io/api",
+          browserURL: "https://gnosisscan.io",
+        },
+      },
       {
         network: "cronos",
         chainId: 25,
@@ -455,8 +465,8 @@ const config: HardhatUserConfig = {
         network: "optimisticGoerli",
         chainId: 420,
         urls: {
-          apiURL: "https://blockscout.com/optimism/goerli/api",
-          browserURL: "https://blockscout.com/optimism/goerli",
+          apiURL: "https://api-goerli-optimism.etherscan.io/api",
+          browserURL: "https://goerli-optimism.etherscan.io",
         },
       },
       {
