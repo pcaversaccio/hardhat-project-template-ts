@@ -202,6 +202,12 @@ const config: HardhatUserConfig = {
     },
     sokol: {
       chainId: 77,
+      url: process.env.SOKOL_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    chiado: {
+      chainId: 100100,
       url: process.env.GNOSIS_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
