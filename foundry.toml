@@ -32,6 +32,7 @@ block_base_fee_per_gas = 0                                    # the base fee (in
 block_coinbase = '0x0000000000000000000000000000000000000000' # the address of `block.coinbase` in tests
 block_timestamp = 0                                           # the value of `block.timestamp` in tests
 block_difficulty = 0                                          # the value of `block.difficulty` in tests
+fs_permissions = [{ access = "read-write", path = "./"}]      # set read-write access to project root
 
 ## optimizer details for the default profile
 [default.optimizer_details]
