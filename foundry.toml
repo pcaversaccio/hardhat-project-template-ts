@@ -35,11 +35,11 @@ block_difficulty = 0                                          # the value of `bl
 fs_permissions = [{ access = "read-write", path = "./"}]      # set read-write access to project root
 
 ## optimizer details for the default profile
-[default.optimizer_details]
+[profile.default.optimizer_details]
 constantOptimizer = true                                      # whether to enable the optimizer for literal numbers and strings or not
 yul = true                                                    # whether to enable the new Yul optimizer or not
 
 # sets the `yulDetails` of the `optimizer_details` for the `default` profile
-[default.optimizer_details.yulDetails]
+[profile.default.optimizer_details.yulDetails]
 stackAllocation = true                                        # whether to enable the improvement of allocation of stack slots for variables or not
 optimizerSteps = 'dhfoDgvulfnTUtnIf'                          # the optimization steps to be applied
