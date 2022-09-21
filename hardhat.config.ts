@@ -124,7 +124,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     optimismTestnet: {
-      chainId: 69,
+      chainId: 420,
       url: process.env.OPTIMISM_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -397,11 +397,10 @@ const config: HardhatUserConfig = {
       // For Fantom testnet & mainnet
       opera: process.env.FANTOM_API_KEY || "",
       ftmTestnet: process.env.FANTOM_API_KEY || "",
-      // For Optimism testnets & mainnet; we use the same
-      // string placeholder for Optimism Goerli as for xdai and sokol
+      // For Optimism testnets & mainnet
       optimisticEthereum: process.env.OPTIMISM_API_KEY || "",
       optimisticKovan: process.env.OPTIMISM_API_KEY || "",
-      optimisticGoerli: "wagmi",
+      optimisticGoerli: process.env.OPTIMISM_API_KEY || "",
       // For Polygon testnet & mainnet
       polygon: process.env.POLYGON_API_KEY || "",
       polygonMumbai: process.env.POLYGON_API_KEY || "",
