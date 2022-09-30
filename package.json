@@ -101,12 +101,12 @@
     "@typechain/ethers-v5": "^10.1.0",
     "@typechain/hardhat": "^6.1.3",
     "@types/chai": "^4.3.3",
-    "@types/mocha": "^9.1.1",
+    "@types/mocha": "^10.0.0",
     "@types/node": "^18.7.23",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
     "@typescript-eslint/parser": "^5.38.1",
     "chai": "^4.3.6",
-    "dotenv": "^16.0.2",
+    "dotenv": "^16.0.3",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "ethers": "^5.7.1",
@@ -119,7 +119,7 @@
     "solidity-coverage": "^0.8.2",
     "ts-node": "^10.9.1",
     "typechain": "^8.1.0",
-    "typescript": "^4.8.3",
+    "typescript": "^4.8.4",
     "xdeployer": "^1.1.20"
   }
 }
