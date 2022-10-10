@@ -1,8 +1,7 @@
 import hre, { ethers } from "hardhat";
 
 async function main() {
-  const Contract = await ethers.getContractFactory("Greeter");
-  const contract = await Contract.deploy("Hello, Hardhat!");
+  const contract = await ethers.deployContract("Greeter", ["Hello, Hardhat!"]);
 
   await contract.deployed();
 
