@@ -397,17 +397,15 @@ const config: HardhatUserConfig = {
       // For Fantom testnet & mainnet
       opera: process.env.FANTOM_API_KEY || "",
       ftmTestnet: process.env.FANTOM_API_KEY || "",
-      // For Optimism testnets & mainnet
+      // For Optimism testnet & mainnet
       optimisticEthereum: process.env.OPTIMISM_API_KEY || "",
-      optimisticKovan: process.env.OPTIMISM_API_KEY || "",
       optimisticGoerli: process.env.OPTIMISM_API_KEY || "",
       // For Polygon testnet & mainnet
       polygon: process.env.POLYGON_API_KEY || "",
       polygonMumbai: process.env.POLYGON_API_KEY || "",
-      // For Arbitrum testnet & mainnets; we use the same
-      // string placeholder for Arbitrum Nova as for xdai and sokol
+      // For Arbitrum testnet & mainnets
       arbitrumOne: process.env.ARBITRUM_API_KEY || "",
-      arbitrumNova: "wagmi",
+      arbitrumNova: process.env.ARBITRUM_API_KEY || "",
       arbitrumTestnet: process.env.ARBITRUM_API_KEY || "",
       // For Avalanche testnet & mainnet
       avalanche: process.env.AVALANCHE_API_KEY || "",
@@ -425,30 +423,28 @@ const config: HardhatUserConfig = {
       // For Cronos testnet & mainnet
       cronos: process.env.CRONOS_API_KEY || "",
       cronosTestnet: process.env.CRONOS_API_KEY || "",
-      // For Gnosis testnet & mainnet. xdai and sokol don't
-      // need an API key, but you still need to specify one;
-      // any string placeholder will work
+      // For Gnosis/xDai testnets & mainnets
       gnosis: process.env.GNOSIS_API_KEY || "",
-      xdai: "wagmi",
-      sokol: "wagmi",
-      // For Fuse testnet; we use the same string placeholder as for
-      // xdai and sokol
-      spark: "wagmi",
-      // For Evmos testnet & mainnet; we use the same string placeholder
-      // as for xdai and sokol
-      evmos: "wagmi",
-      evmosTestnet: "wagmi",
+      xdai: process.env.GNOSIS_API_KEY || "",
+      sokol: process.env.GNOSIS_API_KEY || "",
+      chiado: process.env.GNOSIS_API_KEY || "",
+      // For Fuse testnet & mainnet
+      fuse: process.env.FUSE_API_KEY || "",
+      spark: process.env.FUSE_API_KEY || "",
+      // For Evmos testnet & mainnet
+      evmos: process.env.EVMOS_API_KEY || "",
+      evmosTestnet: process.env.EVMOS_API_KEY || "",
       // For Boba network testnet & mainnet
       boba: process.env.BOBA_API_KEY || "",
       bobaTestnet: process.env.BOBA_API_KEY || "",
     },
     customChains: [
       {
-        network: "gnosis",
-        chainId: 100,
+        network: "chiado",
+        chainId: 100100,
         urls: {
-          apiURL: "https://api.gnosisscan.io/api",
-          browserURL: "https://gnosisscan.io",
+          apiURL: "https://blockscout.chiadochain.net/api",
+          browserURL: "https://blockscout.chiadochain.net",
         },
       },
       {
@@ -468,11 +464,11 @@ const config: HardhatUserConfig = {
         },
       },
       {
-        network: "optimisticGoerli",
-        chainId: 420,
+        network: "fuse",
+        chainId: 122,
         urls: {
-          apiURL: "https://api-goerli-optimism.etherscan.io/api",
-          browserURL: "https://goerli-optimism.etherscan.io",
+          apiURL: "https://explorer.fuse.io/api",
+          browserURL: "https://explorer.fuse.io",
         },
       },
       {
