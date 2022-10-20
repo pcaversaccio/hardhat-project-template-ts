@@ -417,6 +417,8 @@ const config: HardhatUserConfig = {
       // For Harmony testnet & mainnet
       harmony: process.env.HARMONY_API_KEY || "",
       harmonyTest: process.env.HARMONY_API_KEY || "",
+      // For Autobahn mainnet
+      autobahn: process.env.AUTOBAHN_API_KEY || "",
       // For Aurora testnet & mainnet
       aurora: process.env.AURORA_API_KEY || "",
       auroraTestnet: process.env.AURORA_API_KEY || "",
@@ -439,6 +441,14 @@ const config: HardhatUserConfig = {
       bobaTestnet: process.env.BOBA_API_KEY || "",
     },
     customChains: [
+      {
+        network: "autobahn",
+        chainId: 45000,
+        urls: {
+          apiURL: "https://autobahn-explorer.com/api",
+          browserURL: "https://autobahn-explorer.com",
+        },
+      },
       {
         network: "chiado",
         chainId: 10200,
