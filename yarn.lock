@@ -5282,10 +5282,10 @@ ws@^7.4.6:
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.9.tgz#54fa7db29f4c7cec68b1ddd3a89de099942bb591"
   integrity sha512-F+P9Jil7UiSKSkppIiD94dN07AwvFixvLIj1Og1Rl9GGMuNipJnV9JzjD6XuqmAeiswGvUmNLjr5cFuXwNS77Q==
 
-xdeployer@^1.1.21:
-  version "1.1.21"
-  resolved "https://registry.yarnpkg.com/xdeployer/-/xdeployer-1.1.21.tgz#8e19d1b760f6a63e7d939ed9a11338518e120233"
-  integrity sha512-jMzbXbeBbq0xrUy2HFuCM42cx/ujIycUIwPSMQ2HWL78Zhb2myaZSJtEc+ujhQH6QDSb189N/sQul1QQq71dow==
+xdeployer@^1.1.22:
+  version "1.1.22"
+  resolved "https://registry.yarnpkg.com/xdeployer/-/xdeployer-1.1.22.tgz#8cc2037feff88cb9c7fd8f7c0131ebf93d77a58f"
+  integrity sha512-NedC6XzDBj0UvGuMBgx/KvvIgdcF0xNgvB7wLnvQhWOvQzxApKTIgczh0DTNPMBqv3yJAQL1x8YRk668WlpgMw==
 
 xmlhttprequest@1.8.0:
   version "1.8.0"

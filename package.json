@@ -72,6 +72,7 @@
     "deploy:auroramain": "npx hardhat run --network auroraMain scripts/deploy.ts",
     "deploy:harmonytestnet": "npx hardhat run --network harmonyTestnet scripts/deploy.ts",
     "deploy:harmonymain": "npx hardhat run --network harmonyMain scripts/deploy.ts",
+    "deploy:autobahntestnet": "npx hardhat run --network autobahnTestnet scripts/deploy.ts",
     "deploy:autobahn": "npx hardhat run --network autobahn scripts/deploy.ts",
     "deploy:spark": "npx hardhat run --network spark scripts/deploy.ts",
     "deploy:fuse": "npx hardhat run --network fuse scripts/deploy.ts",
@@ -120,6 +121,6 @@
     "ts-node": "^10.9.1",
     "typechain": "^8.1.0",
     "typescript": "^4.8.4",
-    "xdeployer": "^1.1.21"
+    "xdeployer": "^1.1.22"
   }
 }

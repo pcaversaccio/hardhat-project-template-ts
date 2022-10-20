@@ -273,6 +273,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    autobahnTestnet: {
+      chainId: 45001,
+      url: process.env.AUTOBAHN_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     autobahn: {
       chainId: 45000,
       url: process.env.AUTOBAHN_MAINNET_URL || "",
@@ -417,8 +423,9 @@ const config: HardhatUserConfig = {
       // For Harmony testnet & mainnet
       harmony: process.env.HARMONY_API_KEY || "",
       harmonyTest: process.env.HARMONY_API_KEY || "",
-      // For Autobahn mainnet
+      // For Autobahn testnet & mainnet
       autobahn: process.env.AUTOBAHN_API_KEY || "",
+      autobahnTestnet: process.env.AUTOBAHN_API_KEY || "",
       // For Aurora testnet & mainnet
       aurora: process.env.AURORA_API_KEY || "",
       auroraTestnet: process.env.AURORA_API_KEY || "",
@@ -447,6 +454,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://autobahn-explorer.com/api",
           browserURL: "https://autobahn-explorer.com",
+        },
+      },
+      {
+        network: "autobahnTestnet",
+        chainId: 45001,
+        urls: {
+          apiURL: "https://testnet.autobahn-explorer.com/api",
+          browserURL: "https://testnet.autobahn-explorer.com",
         },
       },
       {
