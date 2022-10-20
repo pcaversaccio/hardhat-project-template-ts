@@ -208,7 +208,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     chiado: {
-      chainId: 100100,
+      chainId: 10200,
       url: process.env.GNOSIS_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -441,7 +441,7 @@ const config: HardhatUserConfig = {
     customChains: [
       {
         network: "chiado",
-        chainId: 100100,
+        chainId: 10200,
         urls: {
           apiURL: "https://blockscout.chiadochain.net/api",
           browserURL: "https://blockscout.chiadochain.net",
