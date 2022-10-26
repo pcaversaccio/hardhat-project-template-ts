@@ -921,10 +921,10 @@
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-10.0.0.tgz#3d9018c575f0e3f7386c1de80ee66cc21fbb7a52"
   integrity sha512-rADY+HtTOA52l9VZWtgQfn4p+UDVM2eDVkMZT1I6syp0YKxW2F9v+0pbRZLsvskhQv/vMb6ZfCay81GHbz5SHg==
 
-"@types/node@*", "@types/node@^18.11.5":
-  version "18.11.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.5.tgz#1bc94cf2f9ab5fe33353bc7c79c797dcc5325bef"
-  integrity sha512-3JRwhbjI+cHLAkUorhf8RnqUbFXajvzX4q6fMn5JwkgtuwfYtRQYI3u4V92vI6NJuTsbBQWWh3RZjFsuevyMGQ==
+"@types/node@*", "@types/node@^18.11.7":
+  version "18.11.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.7.tgz#8ccef136f240770c1379d50100796a6952f01f94"
+  integrity sha512-LhFTglglr63mNXUSRYD8A+ZAIu5sFqNJ4Y2fPuY7UlrySJH87rRRlhtVmMHplmfk5WkoJGmDjE9oiTfyX94CpQ==
 
 "@types/node@^10.0.3":
   version "10.17.60"
@@ -961,9 +961,9 @@
     "@types/node" "*"
 
 "@types/semver@^7.3.12":
-  version "7.3.12"
-  resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.3.12.tgz#920447fdd78d76b19de0438b7f60df3c4a80bf1c"
-  integrity sha512-WwA1MW0++RfXmCr12xeYOOC5baSC9mSb0ZqCquFzKhcoF4TvHu5MKOuXsncgZcpVFhB1pXd5hZmM0ryAoCp12A==
+  version "7.3.13"
+  resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.3.13.tgz#da4bfd73f49bd541d28920ab0e2bf0ee80f71c91"
+  integrity sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==
 
 "@typescript-eslint/eslint-plugin@^5.41.0":
   version "5.41.0"
@@ -5288,10 +5288,10 @@ ws@^7.4.6:
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.9.tgz#54fa7db29f4c7cec68b1ddd3a89de099942bb591"
   integrity sha512-F+P9Jil7UiSKSkppIiD94dN07AwvFixvLIj1Og1Rl9GGMuNipJnV9JzjD6XuqmAeiswGvUmNLjr5cFuXwNS77Q==
 
-xdeployer@^1.1.22:
-  version "1.1.22"
-  resolved "https://registry.yarnpkg.com/xdeployer/-/xdeployer-1.1.22.tgz#8cc2037feff88cb9c7fd8f7c0131ebf93d77a58f"
-  integrity sha512-NedC6XzDBj0UvGuMBgx/KvvIgdcF0xNgvB7wLnvQhWOvQzxApKTIgczh0DTNPMBqv3yJAQL1x8YRk668WlpgMw==
+xdeployer@^1.1.23:
+  version "1.1.23"
+  resolved "https://registry.yarnpkg.com/xdeployer/-/xdeployer-1.1.23.tgz#c793b0cd62d77b3a933aa6cabc1dd2d6b0dbd0c0"
+  integrity sha512-l7kA/2KKL8Z17VOVoVEmud0onMjIXu3fHk8GSnodtdj8KQWFj63KX9f5PkK/7JxiKry2f7icvQ6JxMys1hfHYw==
 
 xmlhttprequest@1.8.0:
   version "1.8.0"
