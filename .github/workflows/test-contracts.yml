@@ -55,7 +55,7 @@ jobs:
         run: yarn test:forge
 
       - name: Slither static analyser
-        uses: crytic/slither-action@v0.1.1
+        uses: crytic/slither-action@v0.2.0
         continue-on-error: true
         with:
           node-version: ${{ matrix.node_version }}
