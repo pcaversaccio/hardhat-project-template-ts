@@ -6,11 +6,11 @@
 update          :; forge update
 
 # install proper solc version
-solc            :; nix-env -f https://github.com/dapphub/dapptools/archive/master.tar.gz -iA solc-static-versions.solc_0_8_15
+solc            :; nix-env -f https://github.com/dapphub/dapptools/archive/master.tar.gz -iA solc-static-versions.solc_0_8_17
 
 # build & test
 build           :; forge build
-test            :; forge test
+test-forge      :; forge test
 test-gasreport 	:; forge test --gas-report
 trace           :; forge test -vvv
 clean           :; forge clean

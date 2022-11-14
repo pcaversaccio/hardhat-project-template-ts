@@ -140,7 +140,7 @@ yarn test:forge
 or
 
 ```bash
-make test
+make test-forge
 ```
 
 To additionally display the gas report, you can run:
