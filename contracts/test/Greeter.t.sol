@@ -1,20 +1,19 @@
 // SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.9;
 
-import "hardhat/console.sol";
-import "../Greeter.sol";
-import "../lib/ds-test/src/test.sol";
+import {Greeter} from "../Greeter.sol";
+import {Test} from "../lib/forge-std/src/Test.sol";
 
-contract ContractTest is DSTest {
+contract ContractTest is Test {
     Greeter public greeter;
 
-    function testCreateGreeter() public {
+    function setUp() public {
         greeter = new Greeter("Hello, world!");
+    }
 
+    function testCreateGreeter() public {
         assertEq(greeter.greet(), "Hello, world!");
-
         greeter.setGreeting("Hola, mundo!");
-
         assertEq(greeter.greet(), "Hola, mundo!");
     }
 }

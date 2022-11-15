@@ -1,0 +1,15 @@
+[
+  "event Approval(address indexed,address indexed,uint256 indexed)",
+  "event ApprovalForAll(address indexed,address indexed,bool)",
+  "event Transfer(address indexed,address indexed,uint256 indexed)",
+  "function approve(address,uint256) payable",
+  "function balanceOf(address) view returns (uint256)",
+  "function getApproved(uint256) view returns (address)",
+  "function isApprovedForAll(address,address) view returns (bool)",
+  "function ownerOf(uint256) view returns (address)",
+  "function safeTransferFrom(address,address,uint256) payable",
+  "function safeTransferFrom(address,address,uint256,bytes) payable",
+  "function setApprovalForAll(address,bool)",
+  "function supportsInterface(bytes4) view returns (bool)",
+  "function transferFrom(address,address,uint256) payable"
+]
