@@ -10,6 +10,7 @@ solc            :; nix-env -f https://github.com/dapphub/dapptools/archive/maste
 
 # build & test
 build           :; forge build
+build-optimised :; forge build --optimize
 test-forge      :; forge test
 test-gasreport 	:; forge test --gas-report
 trace           :; forge test -vvv

@@ -1,4 +1,0 @@
-[
-  "event SlotFound(address,bytes4,bytes32,uint256)",
-  "event WARNING_UninitedSlot(address,uint256)"
-]
