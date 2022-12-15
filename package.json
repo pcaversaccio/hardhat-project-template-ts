@@ -82,6 +82,8 @@
     "deploy:evmosmain": "npx hardhat run --network evmosMain scripts/deploy.ts",
     "deploy:bobatestnet": "npx hardhat run --network bobaTestnet scripts/deploy.ts",
     "deploy:bobamain": "npx hardhat run --network bobaMain scripts/deploy.ts",
+    "deploy:cantotestnet": "npx hardhat run --network cantoTestnet scripts/deploy.ts",
+    "deploy:cantomain": "npx hardhat run --network cantoMain scripts/deploy.ts",
     "prettier:check": "prettier -c **/*.{js,ts,md,sol,json,yml}",
     "prettier:fix": "prettier -w **/*.{js,ts,md,sol,json,yml}",
     "solhint:check": "npx solhint 'contracts/**/*.sol'",
