@@ -548,7 +548,7 @@ const config: HardhatUserConfig = {
       },
       {
         network: "bobaTestnet",
-        chainId: 28,
+        chainId: 2888,
         urls: {
           apiURL: "https://api-testnet.bobascan.com/api",
           browserURL: "https://testnet.bobascan.com",
