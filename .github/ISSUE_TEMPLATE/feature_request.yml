@@ -2,7 +2,7 @@ name: Feature Request
 description: Suggest an idea for Hardhat project template.
 title: "[Feature-Request]: "
 labels:
-  - "enhancement"
+  - enhancement
 assignees:
   - pcaversaccio
 body:
