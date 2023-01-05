@@ -366,12 +366,12 @@ const config: HardhatUserConfig = {
 
     // Use the network names specified here: https://github.com/pcaversaccio/xdeployer#configuration
     // Use `localhost` or `hardhat` for local testing
-    networks: ["hardhat", "rinkeby", "bscTestnet"],
+    networks: ["hardhat", "sepolia", "bscTestnet"],
 
     // Use the matching env URL with your chosen RPC in the `.env` file
     rpcUrls: [
       "hardhat",
-      process.env.ETH_RINKEBY_TESTNET_URL,
+      process.env.ETH_SEPOLIA_TESTNET_URL,
       process.env.BSC_TESTNET_URL,
     ],
 
