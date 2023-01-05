@@ -1,5 +1,5 @@
 hardhat/=node_modules/hardhat/
 xdeployer/=node_modules/xdeployer/
 forge-std/=contracts/lib/forge-std/src/
+@openzeppelin/=node_modules/@openzeppelin/
 ds-test/=contracts/lib/forge-std/lib/ds-test/src/
-openzeppelin/=lib/openzeppelin-contracts/contracts/
