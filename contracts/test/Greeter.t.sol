@@ -2,7 +2,7 @@
 pragma solidity ^0.8.9;
 
 import {Greeter} from "../src/Greeter.sol";
-import {Test} from "../lib/forge-std/src/Test.sol";
+import {Test} from "forge-std/Test.sol";
 
 contract ContractTest is Test {
     Greeter public greeter;
