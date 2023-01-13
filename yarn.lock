@@ -800,10 +800,10 @@
   dependencies:
     antlr4ts "^0.5.0-alpha.4"
 
-"@tenderly/hardhat-tenderly@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@tenderly/hardhat-tenderly/-/hardhat-tenderly-1.4.1.tgz#1dee0f28de8351caa33c32c9b44ba1c6d654811c"
-  integrity sha512-kdzuAIvsTsgCsw0SCOD+E5OkNFB+LM/LUgtyEInNyJVlCrD3LYjtY/iArvpva4+TxY8GYKv3aRBKumaItyYNow==
+"@tenderly/hardhat-tenderly@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@tenderly/hardhat-tenderly/-/hardhat-tenderly-1.5.1.tgz#878ac0a1c2d3f8ba47aece0d2e49de5ad482f229"
+  integrity sha512-VUYJbSXKkpQrHuCXWtXozgHPEEod782Z865AqDF8qLDW71WgyhK6YxhTubMA+au0xnZfN8TjWJz0hnNhWOk/6Q==
   dependencies:
     "@ethersproject/bignumber" "^5.7.0"
     "@nomiclabs/hardhat-ethers" "^2.1.1"
@@ -813,7 +813,7 @@
     hardhat "^2.10.2"
     hardhat-deploy "^0.11.14"
     js-yaml "^4.1.0"
-    tenderly "^0.2.0"
+    tenderly "^0.3.0"
     tslog "^4.3.1"
 
 "@tsconfig/node10@^1.0.7":
@@ -3071,10 +3071,10 @@ hardhat-abi-exporter@^2.10.1:
     "@ethersproject/abi" "^5.5.0"
     delete-empty "^3.0.0"
 
-hardhat-contract-sizer@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/hardhat-contract-sizer/-/hardhat-contract-sizer-2.6.1.tgz#2b0046a55fa1ec96f19fdab7fde372377401c874"
-  integrity sha512-b8wS7DBvyo22kmVwpzstAQTdDCThpl/ySBqZh5ga9Yxjf61/uTL12TEg5nl7lDeWy73ntEUzxMwY6XxbQEc2wA==
+hardhat-contract-sizer@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/hardhat-contract-sizer/-/hardhat-contract-sizer-2.7.0.tgz#d892a741135628a77d25709a29ae164f2750b7eb"
+  integrity sha512-QcncKiEku9TInKH++frfCPaYaVvw6OR5C5dNUcb05WozeVOJGspbWbHOkOlfiaZUbEKTvHA6OY9LtMMvja9nzQ==
   dependencies:
     chalk "^4.0.0"
     cli-table3 "^0.6.0"
@@ -4205,9 +4205,9 @@ object-assign@^4.1.0:
   integrity sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==
 
 object-inspect@^1.12.2, object-inspect@^1.9.0:
-  version "1.12.2"
-  resolved "https://registry.yarnpkg.com/object-inspect/-/object-inspect-1.12.2.tgz#c0641f26394532f28ab8d796ab954e43c009a8ea"
-  integrity sha512-z+cPxW0QGUp0mcqcsgQyLVRDoXFQbXOwBaqyF7VIgI4TWNQsDHrBpUQslRmIfAoYWdYzs6UlKJtB2XJpTaNSpQ==
+  version "1.12.3"
+  resolved "https://registry.yarnpkg.com/object-inspect/-/object-inspect-1.12.3.tgz#ba62dffd67ee256c8c086dfae69e016cd1f198b9"
+  integrity sha512-geUvdk7c+eizMNUDkRpW1wJwgfOiOeHbxBR/hLXK1aT6zmVSO0jsQcs7fj6MGw89jC/cjGfLcNOrtMYtGqm81g==
 
 object-keys@^1.0.11, object-keys@^1.1.1:
   version "1.1.1"
@@ -5265,10 +5265,10 @@ table@^6.8.0:
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
 
-tenderly@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/tenderly/-/tenderly-0.2.0.tgz#614027ce58e2465c7707b5815d44c9d6ee92ab9e"
-  integrity sha512-VsYKJfvNOKypcSXzba7o1w1on/lWuSdjZNK0UeHkRuhKYxo/RrvoOpTB2nuaSPQ1dhczy4FNH/mpGU+kqvNr5g==
+tenderly@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/tenderly/-/tenderly-0.3.0.tgz#0c24e33b21b9b546eb8ff545589e38c0b08e9afb"
+  integrity sha512-JulOh626MZUzfur4YGJeIjpGS+1e3f+dfutHg+JkaDTFaGdEzhE68qVyBAmhynbCcXUItkZTpLARdhQEpEXW5w==
   dependencies:
     axios "^0.27.2"
     cli-table3 "^0.6.2"
