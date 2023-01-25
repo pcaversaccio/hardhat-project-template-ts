@@ -419,6 +419,14 @@
     tweetnacl "^1.0.3"
     tweetnacl-util "^0.15.1"
 
+"@morgan-stanley/ts-mocking-bird@^0.6.2":
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/@morgan-stanley/ts-mocking-bird/-/ts-mocking-bird-0.6.4.tgz#2e4b60d42957bab3b50b67dbf14c3da2f62a39f7"
+  integrity sha512-57VJIflP8eR2xXa9cD1LUawh+Gh+BVQfVu0n6GALyg/AqV/Nz25kDRvws3i9kIe1PTrbsZZOYpsYp6bXPd6nVA==
+  dependencies:
+    lodash "^4.17.16"
+    uuid "^7.0.3"
+
 "@noble/hashes@1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.1.2.tgz#e9e035b9b166ca0af657a7848eb2718f0f22f183"
@@ -800,10 +808,10 @@
   dependencies:
     antlr4ts "^0.5.0-alpha.4"
 
-"@tenderly/hardhat-tenderly@^1.5.2":
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/@tenderly/hardhat-tenderly/-/hardhat-tenderly-1.5.2.tgz#0a5a9df50e0430097c58fcb9ae6e40981bd4b2e9"
-  integrity sha512-qITow77BqF88lUCz+9OL5eanAdCNXRN/9IeU1GwtJ2NmR7e8o9qgz1XYTTQUVmtqnqcZzf3jT0nwlqKUGRimqw==
+"@tenderly/hardhat-tenderly@^1.5.3":
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/@tenderly/hardhat-tenderly/-/hardhat-tenderly-1.5.3.tgz#778926d8194e815a0159163aa28d8b40650b7dac"
+  integrity sha512-DuWp8Lm2lHQeDujM6szvMmE+wx1dE7PLILgtBnfGfhJy4Hv3SJHZDCOiP/V3X3InYPoKjMxNL/TN1jQbT+AXQA==
   dependencies:
     "@ethersproject/bignumber" "^5.7.0"
     "@nomiclabs/hardhat-ethers" "^2.1.1"
@@ -3797,7 +3805,7 @@ lodash.truncate@^4.4.2:
   resolved "https://registry.yarnpkg.com/lodash.truncate/-/lodash.truncate-4.4.2.tgz#5a350da0b1113b837ecfffd5812cbe58d6eae193"
   integrity sha512-jttmRe7bRse52OsWIMDLaXxWqRAmtIUccAQ3garviCqJjafXOfNMO0yMfNpdD6zbGaTU0P5Nz7e7gAT6cKmJRw==
 
-lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.21:
+lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.16, lodash@^4.17.19, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -5330,10 +5338,11 @@ tough-cookie@^2.3.3, tough-cookie@~2.5.0:
     punycode "^2.1.1"
 
 ts-command-line-args@^2.2.0:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/ts-command-line-args/-/ts-command-line-args-2.3.1.tgz#b6188e42efc6cf7a8898e438a873fbb15505ddd6"
-  integrity sha512-FR3y7pLl/fuUNSmnPhfLArGqRrpojQgIEEOVzYx9DhTmfIN7C9RWSfpkJEF4J+Gk7aVx5pak8I7vWZsaN4N84g==
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/ts-command-line-args/-/ts-command-line-args-2.4.2.tgz#b4815b23c35f8a0159d4e69e01012d95690bc448"
+  integrity sha512-mJLQQBOdyD4XI/ZWQY44PIdYde47JhV2xl380O7twPkTQ+Y5vFDHsk8LOeXKuz7dVY5aDCfAzRarNfSqtKOkQQ==
   dependencies:
+    "@morgan-stanley/ts-mocking-bird" "^0.6.2"
     chalk "^4.1.0"
     command-line-args "^5.1.1"
     command-line-usage "^6.1.0"
@@ -5562,6 +5571,11 @@ uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
+
+uuid@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.3.tgz#c5c9f2c8cf25dc0a372c4df1441c41f5bd0c680b"
+  integrity sha512-DPSke0pXhTZgoF/d+WSt2QaKMCFSfx7QegxEWT+JOuHF5aWrKEn0G+ztjuJg/gG8/ItK+rbPCD/yNv8yyih6Cg==
 
 uuid@^8.3.2:
   version "8.3.2"
