@@ -1199,10 +1199,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.55.tgz#c329cbd434c42164f846b909bd6f85b5537f6240"
   integrity sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==
 
-"@types/node@^18.15.2":
-  version "18.15.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.15.2.tgz#0407ceb15647f186318101546d5ae40725b73810"
-  integrity sha512-sDPHm2wfx2QhrMDK0pOt2J4KLJMAcerqWNvnED0itPRJWvI+bK+uNHzcH1dFsBlf7G3u8tqXmRF3wkvL9yUwMw==
+"@types/node@^18.15.3":
+  version "18.15.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.15.3.tgz#f0b991c32cfc6a4e7f3399d6cb4b8cf9a0315014"
+  integrity sha512-p6ua9zBxz5otCmbpb5D3U4B5Nanw6Pk3PPyX05xnxbB/fRv71N7CPmORg7uAD5P70T0xmx1pzAx/FUfa5X+3cw==
 
 "@types/node@^8.0.0":
   version "8.10.66"
@@ -7190,10 +7190,10 @@ ws@^7.2.0, ws@^7.4.6:
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.9.tgz#54fa7db29f4c7cec68b1ddd3a89de099942bb591"
   integrity sha512-F+P9Jil7UiSKSkppIiD94dN07AwvFixvLIj1Og1Rl9GGMuNipJnV9JzjD6XuqmAeiswGvUmNLjr5cFuXwNS77Q==
 
-xdeployer@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/xdeployer/-/xdeployer-1.2.0.tgz#62a91d4638661bab709a258a639d38d44b8a280c"
-  integrity sha512-AP3C9Q3W5qsSagh7arccgwubzn7WNrvfc7ITBNJCyOtYMPbcYFhVapEBbBhSV6lJz49oQNGsg3HK+f0GAl79fQ==
+xdeployer@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/xdeployer/-/xdeployer-1.2.1.tgz#67e687ff5f1b8dbc55e2ec51bbc90f76022c0063"
+  integrity sha512-uRMd2BhvvxfFvKCEtuRD48u9/Jc6ltD41L7mzL9iEkT+6edcLX6/HIbFYSUrr+n1b0SNOdt7+QAvlcSivkUUeQ==
 
 xhr-request-promise@^0.1.2:
   version "0.1.3"
