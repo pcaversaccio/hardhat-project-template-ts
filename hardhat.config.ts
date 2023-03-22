@@ -5,7 +5,7 @@ import "@nomiclabs/hardhat-ethers";
 import "@nomicfoundation/hardhat-chai-matchers";
 import "@nomiclabs/hardhat-etherscan";
 import "@typechain/hardhat";
-// import "@truffle/dashboard-hardhat-plugin";
+import "@truffle/dashboard-hardhat-plugin";
 import "xdeployer";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
@@ -160,6 +160,12 @@ const config: HardhatUserConfig = {
     mumbai: {
       chainId: 80001,
       url: process.env.POLYGON_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    polygonZkEVMTestnet: {
+      chainId: 1442,
+      url: process.env.POLYGON_ZKEVM_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
@@ -428,9 +434,10 @@ const config: HardhatUserConfig = {
       // For Optimism testnet & mainnet
       optimisticEthereum: process.env.OPTIMISM_API_KEY || "",
       optimisticGoerli: process.env.OPTIMISM_API_KEY || "",
-      // For Polygon testnet & mainnet
+      // For Polygon testnets & mainnet
       polygon: process.env.POLYGON_API_KEY || "",
       polygonMumbai: process.env.POLYGON_API_KEY || "",
+      polygonZkEVMTestnet: process.env.POLYGON_API_KEY || "",
       // For Arbitrum testnet & mainnets
       arbitrumOne: process.env.ARBITRUM_API_KEY || "",
       arbitrumNova: process.env.ARBITRUM_API_KEY || "",
@@ -593,6 +600,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-goerli.basescan.org/api",
           browserURL: "https://goerli.basescan.org",
+        },
+      },
+      {
+        network: "polygonZkEVMTestnet",
+        chainId: 1442,
+        urls: {
+          apiURL: "https://api-testnet-zkevm.polygonscan.com/api",
+          browserURL: "https://testnet-zkevm.polygonscan.com",
         },
       },
     ],
