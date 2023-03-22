@@ -75,6 +75,7 @@ const config: HardhatUserConfig = {
     },
     "truffle-dashboard": {
       url: "http://localhost:24012/rpc",
+      timeout: 0,
     },
     tenderly: {
       url: `https://rpc.tenderly.co/fork/${process.env.TENDERLY_FORK_ID}`,
