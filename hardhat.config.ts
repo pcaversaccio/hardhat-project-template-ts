@@ -382,15 +382,15 @@ const config: HardhatUserConfig = {
     },
     zkSyncTestnet: {
       chainId: 280,
-      url: process.env.ZKSYNC_TESTNET_URL || "https://testnet.era.zksync.dev",
-      ethNetwork: process.env.ETH_GOERLI_TESTNET_URL || "goerli",
+      url: process.env.ZKSYNC_TESTNET_URL || "",
+      ethNetwork: process.env.ETH_GOERLI_TESTNET_URL || "",
       zksync: true,
       verifyURL:
         "https://zksync2-testnet-explorer.zksync.dev/contract_verification",
     },
-    zkSyncMainnet: {
+    zkSyncMain: {
       chainId: 324,
-      url: process.env.ZKSYNC_MAINNET_URL || "https://mainnet.era.zksync.io",
+      url: process.env.ZKSYNC_MAINNET_URL || "",
       ethNetwork: process.env.ETH_MAINNET_URL || "",
       zksync: true,
       verifyURL:
