@@ -6,9 +6,9 @@ import "@nomicfoundation/hardhat-chai-matchers";
 import "@nomiclabs/hardhat-etherscan";
 import "@typechain/hardhat";
 import "@truffle/dashboard-hardhat-plugin";
-import "@matterlabs/hardhat-zksync-solc";
-import "@matterlabs/hardhat-zksync-deploy";
-import "@matterlabs/hardhat-zksync-verify";
+// import "@matterlabs/hardhat-zksync-solc";
+// import "@matterlabs/hardhat-zksync-deploy";
+// import "@matterlabs/hardhat-zksync-verify";
 import "xdeployer";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
@@ -58,14 +58,14 @@ const config: HardhatUserConfig = {
       },
     },
   },
-  zksolc: {
-    version: "1.3.7",
-    compilerSource: "binary",
-    settings: {
-      isSystem: false,
-      forceEvmla: false,
-    },
-  },
+  // zksolc: {
+  //   version: "1.3.7",
+  //   compilerSource: "binary",
+  //   settings: {
+  //     isSystem: false,
+  //     forceEvmla: false,
+  //   },
+  // },
   networks: {
     hardhat: {
       initialBaseFeePerGas: 0,
@@ -80,7 +80,7 @@ const config: HardhatUserConfig = {
         // If you want to do some forking, set `enabled` to true
         enabled: false,
       },
-      zksync: true, // Enables zksync in the Hardhat local network
+      // zksync: true, // Enables zkSync in the Hardhat local network
     },
     localhost: {
       url: "http://127.0.0.1:8545",
@@ -380,14 +380,14 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    zkSyncTestnet: {
-      chainId: 280,
-      url: process.env.ZKSYNC_TESTNET_URL || "",
-      ethNetwork: "goerli",
-      zksync: true,
-      verifyURL:
-        "https://zksync2-testnet-explorer.zksync.dev/contract_verification",
-    },
+    // zkSyncTestnet: {
+    //   chainId: 280,
+    //   url: process.env.ZKSYNC_TESTNET_URL || "",
+    //   ethNetwork: "goerli",
+    //   zksync: true,
+    //   verifyURL:
+    //     "https://zksync2-testnet-explorer.zksync.dev/contract_verification",
+    // },
     mantleTestnet: {
       chainId: 5001,
       url: process.env.MANTLE_TESTNET_URL || "",
