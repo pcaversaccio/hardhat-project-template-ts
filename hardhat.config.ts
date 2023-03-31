@@ -412,6 +412,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    shimmerevmTestnet: {
+      chainId: 1071,
+      url: process.env.SHIMMEREVM_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },    
   },
   xdeploy: {
     // Change this name to the name of your main contract
@@ -698,6 +704,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://explorer.goerli.linea.build/api",
           browserURL: "https://explorer.goerli.linea.build",
+        },
+      },
+      {
+        network: "shimmerevmTestnet",
+        chainId: 1071,
+        urls: {
+          apiURL: "https://explorer.evm.testnet.shimmer.network/api",
+          browserURL: "https://explorer.evm.testnet.shimmer.network/",
         },
       },
     ],
