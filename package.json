@@ -87,6 +87,7 @@
     "deploy:cantotestnet": "npx hardhat run --network cantoTestnet scripts/deploy.ts",
     "deploy:cantomain": "npx hardhat run --network cantoMain scripts/deploy.ts",
     "deploy:basetestnet": "npx hardhat run --network baseTestnet scripts/deploy.ts",
+    "deploy:lineatestnet": "npx hardhat run --network lineaTestnet scripts/deploy.ts",
     "prettier:check": "prettier -c **/*.{js,ts,md,sol,json,yml}",
     "prettier:fix": "prettier -w **/*.{js,ts,md,sol,json,yml}",
     "solhint:check": "npx solhint 'contracts/**/*.sol'",
@@ -126,8 +127,8 @@
     "solidity-coverage": "^0.8.2",
     "ts-node": "^10.9.1",
     "typechain": "^8.1.1",
-    "typescript": "^5.0.2",
+    "typescript": "^5.0.3",
     "undici": "^5.21.0",
-    "xdeployer": "^1.2.3"
+    "xdeployer": "^1.2.4"
   }
 }

@@ -6674,10 +6674,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==
 
-typescript@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.0.2.tgz#891e1a90c5189d8506af64b9ef929fca99ba1ee5"
-  integrity sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==
+typescript@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.0.3.tgz#fe976f0c826a88d0a382007681cbb2da44afdedf"
+  integrity sha512-xv8mOEDnigb/tN9PSMTwSEqAnUvkoXMQlicOb0IUVDBSQCgBSaAAROUZYy2IcUy5qU6XajK5jjjO7TMWqBTKZA==
 
 typical@^4.0.0:
   version "4.0.0"
@@ -7200,10 +7200,10 @@ ws@^7.2.0, ws@^7.4.6:
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.9.tgz#54fa7db29f4c7cec68b1ddd3a89de099942bb591"
   integrity sha512-F+P9Jil7UiSKSkppIiD94dN07AwvFixvLIj1Og1Rl9GGMuNipJnV9JzjD6XuqmAeiswGvUmNLjr5cFuXwNS77Q==
 
-xdeployer@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/xdeployer/-/xdeployer-1.2.3.tgz#39c478e87e1e9b5f1952a1666bb06f274b0e22f2"
-  integrity sha512-bI3U4s8V7Q0CdQ2J9kw8QA6Lcb25u7eLGIvJPFsRxdZw/GufK1IqLb8ifqpPqoM3n/2EZfkHYXlsB1qPRr92Mw==
+xdeployer@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/xdeployer/-/xdeployer-1.2.4.tgz#801ade54591e84a3815c810b47bba47f9167e945"
+  integrity sha512-ZIN2Bemsv0Qya27CeWphv0i7to8mYHwdGdzbI01WbtVqyNHzWyWrr0WKy4bGgpjOKthYJYyVi87lj+ThUJvqXg==
 
 xhr-request-promise@^0.1.2:
   version "0.1.3"
