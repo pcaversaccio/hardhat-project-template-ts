@@ -93,6 +93,7 @@
     "deploy:filecointestnet": "npx hardhat run --network filecoinTestnet scripts/deploy.ts",
     "deploy:scrolltestnet": "npx hardhat run --network scrollTestnet scripts/deploy.ts",
     "deploy:lineatestnet": "npx hardhat run --network lineaTestnet scripts/deploy.ts",
+    "deploy:shimmerevmtestnet": "npx hardhat run --network shimmerEVMTestnet scripts/deploy.ts",
     "prettier:check": "prettier -c **/*.{js,ts,md,sol,json,yml}",
     "prettier:fix": "prettier -w **/*.{js,ts,md,sol,json,yml}",
     "solhint:check": "npx solhint 'contracts/**/*.sol'",

@@ -1,7 +1,7 @@
 // Two different examples of network setups for the `xdeployer` plugin (https://github.com/pcaversaccio/xdeployer)
 
-networks: ["mumbai", "fuji", "bscTestnet", "fantomTestnet", "ropsten"],
-rpcUrls: [process.env.POLYGON_TESTNET_URL, process.env.AVALANCHE_TESTNET_URL, process.env.BSC_TESTNET_URL, process.env.FANTOM_TESTNET_URL, process.env.ROPSTEN_TESTNET_URL],
+networks: ["mumbai", "fuji", "bscTestnet", "fantomTestnet", "goerli"],
+rpcUrls: [process.env.POLYGON_TESTNET_URL, process.env.AVALANCHE_TESTNET_URL, process.env.BSC_TESTNET_URL, process.env.FANTOM_TESTNET_URL, process.env.ETH_GOERLI_TESTNET_URL],
 
 networks: ["polygon", "avalanche", "bscMain", "fantomMain", "ethMain"],
 rpcUrls: [process.env.POLYGON_MAINNET_URL, process.env.AVALANCHE_MAINNET_URL, process.env.BSC_MAINNET_URL, process.env.FANTOM_MAINNET_URL, process.env.ETH_MAINNET_URL],
