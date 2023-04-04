@@ -5,5 +5,6 @@
   "exclude_low": false,
   "exclude_medium": false,
   "exclude_high": false,
-  "filter_paths": "contracts/lib|contracts/test|contracts/src/Create2DeployerLocal.sol|@openzeppelin|hardhat/console.sol|xdeployer"
+  "filter_paths": "contracts/lib|contracts/test|contracts/src/Create2DeployerLocal.sol|@openzeppelin|hardhat/console.sol|xdeployer",
+  "compile_force_framework": "hardhat"
 }
