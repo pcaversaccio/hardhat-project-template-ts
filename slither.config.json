@@ -1,10 +1,10 @@
 {
+  "compile_force_framework": "hardhat",
   "hardhat_ignore_compile": false,
   "detectors_to_exclude": "pragma,solc-version",
   "exclude_informational": false,
   "exclude_low": false,
   "exclude_medium": false,
   "exclude_high": false,
-  "filter_paths": "contracts/lib|contracts/test|contracts/src/Create2DeployerLocal.sol|@openzeppelin|hardhat/console.sol|xdeployer",
-  "compile_force_framework": "hardhat"
+  "filter_paths": "contracts/lib|contracts/test|contracts/src/Create2DeployerLocal.sol|@openzeppelin|hardhat/console.sol|xdeployer"
 }
