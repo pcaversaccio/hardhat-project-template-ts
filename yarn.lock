@@ -1095,10 +1095,10 @@
   dependencies:
     defer-to-connect "^2.0.1"
 
-"@tenderly/hardhat-tenderly@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@tenderly/hardhat-tenderly/-/hardhat-tenderly-1.7.0.tgz#07397a3a4a8435da589ffc031c3645f448612ea2"
-  integrity sha512-K+1Z4S2DC3ttNYlCvhTQxIj3eGWz/uGEMHni9nPDQlFpxZnv4pDM4zuLesAlq8P9jSPTHV82NETsXHKWW1ao8w==
+"@tenderly/hardhat-tenderly@^1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@tenderly/hardhat-tenderly/-/hardhat-tenderly-1.7.1.tgz#95f535576516afccde75806ffd23cb85fbfaeb4c"
+  integrity sha512-DPRmTlyx0GHnEx6yryotTf0AE/4EHkdGjC3QnaRaJ/jZDXRjfva8QDTdPo4MId0Yc1q/NxFMYxQzodD6+HD/hw==
   dependencies:
     "@ethersproject/bignumber" "^5.7.0"
     "@nomiclabs/hardhat-ethers" "^2.1.1"
@@ -1108,7 +1108,7 @@
     hardhat "^2.10.2"
     hardhat-deploy "^0.11.14"
     js-yaml "^4.1.0"
-    tenderly "^0.5.0"
+    tenderly "^0.5.1"
     tslog "^4.3.1"
 
 "@truffle/compile-common@^0.9.4":
@@ -6907,10 +6907,10 @@ tar@^4.0.2:
     safe-buffer "^5.2.1"
     yallist "^3.1.1"
 
-tenderly@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/tenderly/-/tenderly-0.5.0.tgz#13f1325033e90c4198b42c4643752b85260c2125"
-  integrity sha512-zPWRmJSaWe00rTsjlbTrGUleUa65ij2j7+2VQ3P4kf11/zzojtdxzyOYWiqIXgvF5Hivg4tH5R+z32+APKFc/g==
+tenderly@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/tenderly/-/tenderly-0.5.1.tgz#68f17d400683171dbb8c76fc2fb276f910e389e6"
+  integrity sha512-yeZjziS+SaV2pRKHBCDAy3mZOW0k7EvD76a3/ptRToU+l6BSZA9+DQi31j2onlP7hTaPidmbizs0wky69AEJQw==
   dependencies:
     axios "^0.27.2"
     cli-table3 "^0.6.2"

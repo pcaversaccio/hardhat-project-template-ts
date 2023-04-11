@@ -97,6 +97,14 @@ Change the contract address to your contract after the deployment has been succe
 npx hardhat verify --network fantomMain --constructor-args arguments.js <YOUR_CONTRACT_ADDRESS>
 ```
 
+## Contract Interaction
+
+This template includes an [example script](./scripts/interact.ts) that shows how to interact programmatically with a deployed contract. You must customise it according to your contract's specifications. The script can be simply invoked via:
+
+```bash
+npx hardhat run scripts/interact.ts --network <network_name>
+```
+
 ## Foundry
 
 This template repository also includes the [Foundry](https://github.com/foundry-rs/foundry) toolkit.
