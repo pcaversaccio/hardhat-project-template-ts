@@ -66,6 +66,14 @@ const config: HardhatUserConfig = {
       forceEvmla: false,
     },
   },
+  truffle: {
+    dashboardNetworkName: "truffleDashboard", // Truffle's default value is "truffleDashboard"
+    dashboardNetworkConfig: {
+      // Truffle's default value is 0 (i.e. no timeout), while Hardhat's default
+      // value is 40000 (40 seconds)
+      timeout: 0,
+    },
+  },
   networks: {
     hardhat: {
       initialBaseFeePerGas: 0,
