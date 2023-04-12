@@ -96,6 +96,11 @@ const config: HardhatUserConfig = {
     tenderly: {
       url: `https://rpc.tenderly.co/fork/${process.env.TENDERLY_FORK_ID}`,
     },
+    devnet: {
+      url: `https://rpc.vnet.tenderly.co/devnet/${process.env.TENDERLY_DEVNET_ID}`,
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     rinkeby: {
       chainId: 4,
       url: process.env.ETH_RINKEBY_TESTNET_URL || "",
