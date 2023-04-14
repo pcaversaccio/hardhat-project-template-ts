@@ -522,10 +522,10 @@
     chalk "4.1.2"
     dockerode "^3.3.4"
 
-"@matterlabs/hardhat-zksync-verify@^0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@matterlabs/hardhat-zksync-verify/-/hardhat-zksync-verify-0.1.4.tgz#9e175fa156934fad5f89a5b2c995df752e84928b"
-  integrity sha512-bjdPvG4UPWTkLg6t1bmG6XkGq/PFhlRy1EfZmFA1etKUcyabsnM0TGHofXtJUbCUo9u7aySC436nzY/O8E7MBQ==
+"@matterlabs/hardhat-zksync-verify@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@matterlabs/hardhat-zksync-verify/-/hardhat-zksync-verify-0.1.5.tgz#300a03d5533581a8cca775cc7a7968b22e8a2d62"
+  integrity sha512-o79DsXaEfa4ou4z07KLhCVOk4vX593QZME5cNq1wDD4DG3+ZYAjxwqplCpLhUmSSVjUKAVRGfEfqvuRMcvis2w==
   dependencies:
     "@matterlabs/hardhat-zksync-solc" "0.3.14"
     axios "^1.3.4"
@@ -967,10 +967,10 @@
     table "^6.8.0"
     undici "^5.14.0"
 
-"@openzeppelin/contracts@^4.8.2":
-  version "4.8.2"
-  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.8.2.tgz#d815ade0027b50beb9bcca67143c6bcc3e3923d6"
-  integrity sha512-kEUOgPQszC0fSYWpbh2kT94ltOJwj1qfT2DWo+zVttmGmf97JZ99LspePNaeeaLhCImaHVeBbjaQFZQn7+Zc5g==
+"@openzeppelin/contracts@^4.8.3":
+  version "4.8.3"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.8.3.tgz#cbef3146bfc570849405f59cba18235da95a252a"
+  integrity sha512-bQHV8R9Me8IaJoJ2vPG4rXcL7seB7YVuskr4f+f5RyOStSZetwzkWtoqDMl5erkBJy0lDRUnIR2WIkPiC0GJlg==
 
 "@scure/base@~1.1.0":
   version "1.1.1"
