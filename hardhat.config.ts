@@ -59,11 +59,15 @@ const config: HardhatUserConfig = {
     },
   },
   zksolc: {
-    version: "1.3.8",
+    version: "1.3.10",
     compilerSource: "binary",
     settings: {
       isSystem: false,
       forceEvmla: false,
+      optimizer: {
+        enabled: true,
+        mode: "3",
+      },
     },
   },
   truffle: {

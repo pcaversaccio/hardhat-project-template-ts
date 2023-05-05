@@ -504,31 +504,22 @@
   dependencies:
     chalk "4.1.2"
 
-"@matterlabs/hardhat-zksync-solc@0.3.14":
-  version "0.3.14"
-  resolved "https://registry.yarnpkg.com/@matterlabs/hardhat-zksync-solc/-/hardhat-zksync-solc-0.3.14.tgz#0a32f01b4cd8631ecd8dfe0547e3ac49ab8290d5"
-  integrity sha512-iKuQ+vvnpv3K2lkFO41xpJcNWH0KHJ/5JbOboTlPZATVR7F3GJeHfJL+GG4wkxKXnxZczpxyQqC4rAfMKvRaDg==
+"@matterlabs/hardhat-zksync-solc@0.3.17", "@matterlabs/hardhat-zksync-solc@^0.3.17":
+  version "0.3.17"
+  resolved "https://registry.yarnpkg.com/@matterlabs/hardhat-zksync-solc/-/hardhat-zksync-solc-0.3.17.tgz#72f199544dc89b268d7bfc06d022a311042752fd"
+  integrity sha512-aZgQ0yfXW5xPkfuEH1d44ncWV4T2LzKZd0VVPo4PL5cUrYs2/II1FaEDp5zsf3FxOR1xT3mBsjuSrtJkk4AL8Q==
   dependencies:
     "@nomiclabs/hardhat-docker" "^2.0.0"
     chalk "4.1.2"
     dockerode "^3.3.4"
 
-"@matterlabs/hardhat-zksync-solc@^0.3.16":
-  version "0.3.16"
-  resolved "https://registry.yarnpkg.com/@matterlabs/hardhat-zksync-solc/-/hardhat-zksync-solc-0.3.16.tgz#dd8ed44f1a580f282794a15fee995f418b040158"
-  integrity sha512-gw46yyiCfj49I/nbUcOlnF5xE80WyeW/i8i9ouHom4KWJNt1kioQIwOPkN7aJURhXpJJxKSdeWBrQHLWTZDnTA==
+"@matterlabs/hardhat-zksync-verify@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@matterlabs/hardhat-zksync-verify/-/hardhat-zksync-verify-0.1.6.tgz#c6f5cc4c414e60bbf8685c9eafdf3dd9ecdd2f10"
+  integrity sha512-Il/VzFXS7QQ2M19/hf3POfBYtNbTzZXTZWa8EYzTWViMdanVYKPSAy7ZMwfB1CVBqrPwZUgGEmvdkpkLPr5+pQ==
   dependencies:
-    "@nomiclabs/hardhat-docker" "^2.0.0"
-    chalk "4.1.2"
-    dockerode "^3.3.4"
-
-"@matterlabs/hardhat-zksync-verify@^0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@matterlabs/hardhat-zksync-verify/-/hardhat-zksync-verify-0.1.5.tgz#300a03d5533581a8cca775cc7a7968b22e8a2d62"
-  integrity sha512-o79DsXaEfa4ou4z07KLhCVOk4vX593QZME5cNq1wDD4DG3+ZYAjxwqplCpLhUmSSVjUKAVRGfEfqvuRMcvis2w==
-  dependencies:
-    "@matterlabs/hardhat-zksync-solc" "0.3.14"
-    axios "^1.3.4"
+    "@matterlabs/hardhat-zksync-solc" "0.3.17"
+    axios "^1.3.6"
     chalk "4.1.2"
     dockerode "^3.3.4"
 
@@ -1291,10 +1282,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.55.tgz#c329cbd434c42164f846b909bd6f85b5537f6240"
   integrity sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==
 
-"@types/node@^18.16.3":
-  version "18.16.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.16.3.tgz#6bda7819aae6ea0b386ebc5b24bdf602f1b42b01"
-  integrity sha512-OPs5WnnT1xkCBiuQrZA4+YAV4HEJejmHneyraIaxsbev5yCEr6KMwINNFP9wQeFIw8FWcoTqF3vQsa5CDaI+8Q==
+"@types/node@^20.0.0":
+  version "20.0.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.0.0.tgz#081d9afd28421be956c1a47ced1c9a0034b467e2"
+  integrity sha512-cD2uPTDnQQCVpmRefonO98/PPijuOnnEy5oytWJFPY1N9aJCz2wJ5kSGWO+zJoed2cY2JxQh6yBuUq4vIn61hw==
 
 "@types/node@^8.0.0":
   version "8.10.66"
@@ -1773,10 +1764,10 @@ axios@^0.27.2:
     follow-redirects "^1.14.9"
     form-data "^4.0.0"
 
-axios@^1.3.4:
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.3.4.tgz#f5760cefd9cfb51fd2481acf88c05f67c4523024"
-  integrity sha512-toYm+Bsyl6VC5wSkfkbbNB6ROv7KY93PEBBL6xyDczaIHasAiv4wPqQ/c4RjoQzipxRD2W5g21cOqQulZ7rHwQ==
+axios@^1.3.6:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.4.0.tgz#38a7bf1224cd308de271146038b551d725f0be1f"
+  integrity sha512-S4XCWMEmzvo64T9GfvQDOXgYRDJ/wsSZc7Jvdgx5u1sd0JwsuPLqb3SYmusag+edF6ziyMensPVqLTSc1PiSEA==
   dependencies:
     follow-redirects "^1.15.0"
     form-data "^4.0.0"
