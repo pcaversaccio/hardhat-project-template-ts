@@ -1,8 +1,8 @@
 ## defaults for all profiles
 [profile.default]
-src = 'contracts'                                             # the source directory
+src = 'contracts/src'                                         # the source directory
 test = 'contracts/test'                                       # the test directory
-out = 'artifacts/contracts'                                   # the output directory (for artifacts)
+out = 'forge-artifacts'                                       # the output directory (for artifacts)
 libs = ['contracts/lib']                                      # a list of library directories
 remappings = []                                               # a list of remappings
 libraries = []                                                # a list of deployed libraries to link against
