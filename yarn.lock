@@ -89,10 +89,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@eslint/js@8.40.0":
-  version "8.40.0"
-  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.40.0.tgz#3ba73359e11f5a7bd3e407f70b3528abfae69cec"
-  integrity sha512-ElyB54bJIhXQYVKjDSvCkPO1iU1tSAeVQJbllWJq1XQSmmA4dgFk8CbiBGpiOPxleE48vDogxCtmMYku4HSVLA==
+"@eslint/js@8.41.0":
+  version "8.41.0"
+  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.41.0.tgz#080321c3b68253522f7646b55b577dd99d2950b3"
+  integrity sha512-LxcyMGxwmTh2lY9FwHPGWOHmYFCZvbrFCBZL4FzSSsxsRPuhrYUg/49/0KDfW8tnIEaEHtfmn6+NPN+1DqaNmA==
 
 "@ethereumjs/common@2.5.0":
   version "2.5.0"
@@ -959,10 +959,10 @@
   dependencies:
     defer-to-connect "^2.0.1"
 
-"@tenderly/hardhat-tenderly@^1.7.3":
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/@tenderly/hardhat-tenderly/-/hardhat-tenderly-1.7.3.tgz#cf3ade285c198d0c4424f482a622dcfd7d314c52"
-  integrity sha512-Bwh/ppDirgeEQmr4hA2JM9Canm7aKUtrDmJHCieBh6pAAbIx8nOjDc6VJ8uyqI8M+02QFRXm+WM8p3NCZoJGYw==
+"@tenderly/hardhat-tenderly@^1.7.4":
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/@tenderly/hardhat-tenderly/-/hardhat-tenderly-1.7.4.tgz#1fae19005679cbc5e67c8bd6a93a58294b270eef"
+  integrity sha512-N1eVr/kiQQeMVAikjAEg5grEGBSl6ldvGoOF1Eg1ee7G+XRF0wWp3UF5kmsU3aBfvyLsJ1nt6wcBf/hGu/LWKA==
   dependencies:
     "@ethersproject/bignumber" "^5.7.0"
     "@nomiclabs/hardhat-ethers" "^2.1.1"
@@ -974,20 +974,20 @@
     tenderly "^0.5.1"
     tslog "^4.3.1"
 
-"@truffle/compile-common@^0.9.4":
-  version "0.9.4"
-  resolved "https://registry.yarnpkg.com/@truffle/compile-common/-/compile-common-0.9.4.tgz#064208cda70491692b538f717809bb904a122c20"
-  integrity sha512-mnqJB/hLiPHNf+WKwt/2MH6lv34xSG/SFCib7+ckAklutUqVLeFo8EwQxinuHNkU7LY0C+YgZXhK1WTCO5YRJQ==
+"@truffle/compile-common@^0.9.5":
+  version "0.9.5"
+  resolved "https://registry.yarnpkg.com/@truffle/compile-common/-/compile-common-0.9.5.tgz#0b1ce143145cb696b903e51dca0a0cf6d038854b"
+  integrity sha512-qOIT7nYzQsrnpjk8LurKE6EYYvvJIk3rCHfn+xed88aG6F1l4WYtkUKl+Dcwgxgv3LH0khcQOpjqkXK5kUIJ8A==
   dependencies:
     "@truffle/error" "^0.2.0"
     colors "1.4.0"
 
-"@truffle/compile-solidity@^6.0.68":
-  version "6.0.68"
-  resolved "https://registry.yarnpkg.com/@truffle/compile-solidity/-/compile-solidity-6.0.68.tgz#24734742e9fdddedaf143c20a4f31524218550e6"
-  integrity sha512-AGozBkYMKZcrxVSPr3qRWs1OpTlMJ/f0mYaZtB7LRUBwW55eGspNblmQRnr5JJCNmHjFOdQ2/yiABcmgtczHcQ==
+"@truffle/compile-solidity@^6.0.69":
+  version "6.0.69"
+  resolved "https://registry.yarnpkg.com/@truffle/compile-solidity/-/compile-solidity-6.0.69.tgz#b0dc4e5efc5eff2d64501bfe803aa54cbb8686ef"
+  integrity sha512-MA23iea1KoUM3ndfHctCj9do56Lf9/4yxl41gtLKyNrMnlCyQqW3tjwVI4BZmgEip09qHKTil0BXJ6ECsJ+pSA==
   dependencies:
-    "@truffle/compile-common" "^0.9.4"
+    "@truffle/compile-common" "^0.9.5"
     "@truffle/config" "^1.3.56"
     "@truffle/contract-sources" "^0.2.0"
     "@truffle/expect" "^0.1.5"
@@ -1002,7 +1002,7 @@
     original-require "^1.0.1"
     require-from-string "^2.0.2"
     semver "7.3.7"
-    solc "0.8.19"
+    solc "0.8.20"
 
 "@truffle/config@^1.3.56":
   version "1.3.56"
@@ -1026,14 +1026,14 @@
     debug "^4.3.1"
     glob "^7.1.6"
 
-"@truffle/dashboard-hardhat-plugin@^0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@truffle/dashboard-hardhat-plugin/-/dashboard-hardhat-plugin-0.2.3.tgz#da4aefd2ad3f2c6288e2bbde9e02bbd967224ad0"
-  integrity sha512-r+HZINHVN1bgc0S7qoi3h8Td1EzCex5ktNa2bwWiPfl0ZHOiSijEXqqWHl9msod58YFLgAQfxFijEn5vBw7+dA==
+"@truffle/dashboard-hardhat-plugin@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@truffle/dashboard-hardhat-plugin/-/dashboard-hardhat-plugin-0.2.4.tgz#b838dbbb7bce5ecd36f392c0140aeecb2057c692"
+  integrity sha512-4LsQbpyVd7O+V6xG4BaWIv386uHkWCbwn4+d5MpqAnoC8CzCvK0XizxLGTSKayoCqHK37WWOhKtpE0BxE6DB5Q==
   dependencies:
     "@truffle/config" "^1.3.56"
     "@truffle/dashboard-message-bus-client" "^0.1.10"
-    "@truffle/from-hardhat" "^0.2.9"
+    "@truffle/from-hardhat" "^0.2.10"
 
 "@truffle/dashboard-message-bus-client@^0.1.10":
   version "0.1.10"
@@ -1076,13 +1076,13 @@
   resolved "https://registry.yarnpkg.com/@truffle/expect/-/expect-0.1.5.tgz#9b6d3d8e2f3765d8975506d50cd70a47e71161f7"
   integrity sha512-CkrR2BbT2ORwy1l39few03JlXysthXQIjWPk8vC2uA8orcUpMv7PWC4AoVbTvE2OgcnbClpYekGFyaQ9iToyAg==
 
-"@truffle/from-hardhat@^0.2.9":
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/@truffle/from-hardhat/-/from-hardhat-0.2.9.tgz#7ff4207318956aec9e16ae0bb835a58500d0b371"
-  integrity sha512-d057zYKnXjZlJYxQ6E4Hz+hcJFLqkXHTfT2BOT24TVvrV0ILkoDa3GbxDC0ZvFfBxntiwXubXOcCVzScePx0FQ==
+"@truffle/from-hardhat@^0.2.10":
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/@truffle/from-hardhat/-/from-hardhat-0.2.10.tgz#a5f6f98f126375dd9a3f2b848da2fc6a0da00a6e"
+  integrity sha512-jPLJuV7qclosIOAWRSBKNpdg1e1kXkU+g/Jf7743YcJhyZuKn3735SNyhPjmWhKvpmLfoFfgrkw+z61Wdquv/Q==
   dependencies:
-    "@truffle/compile-common" "^0.9.4"
-    "@truffle/compile-solidity" "^6.0.68"
+    "@truffle/compile-common" "^0.9.5"
+    "@truffle/compile-solidity" "^6.0.69"
     "@truffle/config" "^1.3.56"
     debug "^4.3.1"
     find-up "^2.1.0"
@@ -1282,10 +1282,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.55.tgz#c329cbd434c42164f846b909bd6f85b5537f6240"
   integrity sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==
 
-"@types/node@^20.2.0":
-  version "20.2.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.2.0.tgz#e33da33171ac4eba79b9cfe30b68a4f1561e74ec"
-  integrity sha512-3iD2jaCCziTx04uudpJKwe39QxXgSUnpxXSvRQjRvHPxFQfmfP4NXIm/NURVeNlTCc+ru4WqjYGTmpXrW9uMlw==
+"@types/node@^20.2.3":
+  version "20.2.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.2.3.tgz#b31eb300610c3835ac008d690de6f87e28f9b878"
+  integrity sha512-pg9d0yC4rVNWQzX8U7xb4olIOFuuVL9za3bzMT2pu2SU0SNEi66i2qrvhE2qt0HvkhuCaWJu7pLNOt/Pj8BIrw==
 
 "@types/node@^8.0.0":
   version "8.10.66"
@@ -2983,15 +2983,15 @@ eslint-visitor-keys@^3.3.0, eslint-visitor-keys@^3.4.1:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.4.1.tgz#c22c48f48942d08ca824cc526211ae400478a994"
   integrity sha512-pZnmmLwYzf+kWaM/Qgrvpen51upAktaaiI01nsJD/Yr3lMOdNtq0cxkrrg16w64VtisN6okbs7Q8AfGqj4c9fA==
 
-eslint@^8.39.0:
-  version "8.40.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.40.0.tgz#a564cd0099f38542c4e9a2f630fa45bf33bc42a4"
-  integrity sha512-bvR+TsP9EHL3TqNtj9sCNJVAFK3fBN8Q7g5waghxyRsPLIMwL73XSKnZFK0hk/O2ANC+iAoq6PWMQ+IfBAJIiQ==
+eslint@^8.41.0:
+  version "8.41.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.41.0.tgz#3062ca73363b4714b16dbc1e60f035e6134b6f1c"
+  integrity sha512-WQDQpzGBOP5IrXPo4Hc0814r4/v2rrIsB0rhT7jtunIalgg6gYXWhRMOejVO8yH21T/FGaxjmFjBMNqcIlmH1Q==
   dependencies:
     "@eslint-community/eslint-utils" "^4.2.0"
     "@eslint-community/regexpp" "^4.4.0"
     "@eslint/eslintrc" "^2.0.3"
-    "@eslint/js" "8.40.0"
+    "@eslint/js" "8.41.0"
     "@humanwhocodes/config-array" "^0.11.8"
     "@humanwhocodes/module-importer" "^1.0.1"
     "@nodelib/fs.walk" "^1.2.8"
@@ -3011,13 +3011,12 @@ eslint@^8.39.0:
     find-up "^5.0.0"
     glob-parent "^6.0.2"
     globals "^13.19.0"
-    grapheme-splitter "^1.0.4"
+    graphemer "^1.4.0"
     ignore "^5.2.0"
     import-fresh "^3.0.0"
     imurmurhash "^0.1.4"
     is-glob "^4.0.0"
     is-path-inside "^3.0.3"
-    js-sdsl "^4.1.4"
     js-yaml "^4.1.0"
     json-stable-stringify-without-jsonify "^1.0.1"
     levn "^0.4.1"
@@ -3909,6 +3908,11 @@ grapheme-splitter@^1.0.4:
   resolved "https://registry.yarnpkg.com/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz#9cf3a665c6247479896834af35cf1dbb4400767e"
   integrity sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==
 
+graphemer@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/graphemer/-/graphemer-1.4.0.tgz#fb2f1d55e0e3a1849aeffc90c4fa0dd53a0e66c6"
+  integrity sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==
+
 growl@1.10.5:
   version "1.10.5"
   resolved "https://registry.yarnpkg.com/growl/-/growl-1.10.5.tgz#f2735dc2283674fa67478b10181059355c369e5e"
@@ -3947,10 +3951,10 @@ hardhat-abi-exporter@^2.10.1:
     "@ethersproject/abi" "^5.5.0"
     delete-empty "^3.0.0"
 
-hardhat-contract-sizer@^2.8.0:
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/hardhat-contract-sizer/-/hardhat-contract-sizer-2.8.0.tgz#730a9bf35ed200ba57b6865bd3f459a91c90f205"
-  integrity sha512-jXt2Si3uIDx5z99J+gvKa0yvIw156pE4dpH9X/PvTQv652BUd+qGj7WT93PXnHXGh5qhQLkjDYeZMYNOThfjFg==
+hardhat-contract-sizer@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/hardhat-contract-sizer/-/hardhat-contract-sizer-2.9.0.tgz#2db75a676034ad9657cfe38793d38514ed6349a7"
+  integrity sha512-0I5lJo0iVPfK3YQNRv+zF4KHcdPbXPp9VCCOTcpDK/mfjWHiPxQwZv7eVt9S1JjvegjAVRtJPe9U5zQtd8LJGA==
   dependencies:
     chalk "^4.0.0"
     cli-table3 "^0.6.0"
@@ -6316,10 +6320,10 @@ solc@0.7.3:
     semver "^5.5.0"
     tmp "0.0.33"
 
-solc@0.8.19:
-  version "0.8.19"
-  resolved "https://registry.yarnpkg.com/solc/-/solc-0.8.19.tgz#cac6541106ae3cff101c740042c7742aa56a2ed3"
-  integrity sha512-yqurS3wzC4LdEvmMobODXqprV4MYJcVtinuxgrp61ac8K2zz40vXA0eSAskSHPgv8dQo7Nux39i3QBsHx4pqyA==
+solc@0.8.20:
+  version "0.8.20"
+  resolved "https://registry.yarnpkg.com/solc/-/solc-0.8.20.tgz#b49151cf5ecc8de088d3d32b0afb607b3522ba8d"
+  integrity sha512-fPRnGspIEqmhu63RFO3pc79sLA7ZmzO0Uy0L5l6hEt2wAsq0o7UV6pXkAp3Mfv9IBhg7Px/oTu3a+y4gs3BWrQ==
   dependencies:
     command-exists "^1.2.8"
     commander "^8.1.0"
