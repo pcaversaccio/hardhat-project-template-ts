@@ -7500,10 +7500,10 @@ ws@^7.2.0, ws@^7.4.6:
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.9.tgz#54fa7db29f4c7cec68b1ddd3a89de099942bb591"
   integrity sha512-F+P9Jil7UiSKSkppIiD94dN07AwvFixvLIj1Og1Rl9GGMuNipJnV9JzjD6XuqmAeiswGvUmNLjr5cFuXwNS77Q==
 
-xdeployer@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/xdeployer/-/xdeployer-1.2.5.tgz#946c7202cd551ff332c01b683a5c0e9675740096"
-  integrity sha512-dCHvqr/w4liJHQzBSc0ocEpdEKL/FlhNF0dP9LpzuYRvQFED0XC+x8cvSm0j9fAHa5vOVqbd+2pOvE4b4W1dGA==
+xdeployer@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/xdeployer/-/xdeployer-1.2.6.tgz#28b620781b19b6055799e21ef82ad510e594bd5f"
+  integrity sha512-RB0+jBecKObYdjP0zbaieHM/5Ga7mMV2SbQGICq8ZLDV4ERfcXaiZPxYGtlb3iItVDwnl+u45Z6Qqi+hg3bNfQ==
 
 xhr-request-promise@^0.1.2:
   version "0.1.3"

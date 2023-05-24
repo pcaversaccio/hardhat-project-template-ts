@@ -139,7 +139,7 @@
     "typechain": "^8.1.1",
     "typescript": "^5.0.4",
     "undici": "^5.22.1",
-    "xdeployer": "^1.2.5",
+    "xdeployer": "^1.2.6",
     "zksync-web3": "^0.14.3"
   }
 }
