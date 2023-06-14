@@ -513,10 +513,10 @@
     chalk "4.1.2"
     dockerode "^3.3.4"
 
-"@matterlabs/hardhat-zksync-verify@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@matterlabs/hardhat-zksync-verify/-/hardhat-zksync-verify-0.1.7.tgz#3387a6cdfa0ada4f3dcbf686c0b5539b922b4e7b"
-  integrity sha512-8+UiwqJEm3Q1XO/shZN8aaiN46Vt8EeoMF0IPJb41TM7AubEMsaJNRY/8OMtzbGIhgJwVopcLJ0cT8bm1pfmzg==
+"@matterlabs/hardhat-zksync-verify@^0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@matterlabs/hardhat-zksync-verify/-/hardhat-zksync-verify-0.1.8.tgz#0f975bb6354c8762e6d2f5b683453e3dc11dbbab"
+  integrity sha512-Ss8smBeX/h58NOaGQwQCGdYjkcQE9C0BX+iak5fWt49E58mDunnMsVhVogkWqO1QWq0LsdKLAuQO3blbvgVzFQ==
   dependencies:
     "@matterlabs/hardhat-zksync-solc" "0.3.17"
     axios "^1.4.0"
@@ -3926,10 +3926,10 @@ hardhat-abi-exporter@^2.10.1:
     "@ethersproject/abi" "^5.5.0"
     delete-empty "^3.0.0"
 
-hardhat-contract-sizer@^2.9.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/hardhat-contract-sizer/-/hardhat-contract-sizer-2.9.0.tgz#2db75a676034ad9657cfe38793d38514ed6349a7"
-  integrity sha512-0I5lJo0iVPfK3YQNRv+zF4KHcdPbXPp9VCCOTcpDK/mfjWHiPxQwZv7eVt9S1JjvegjAVRtJPe9U5zQtd8LJGA==
+hardhat-contract-sizer@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/hardhat-contract-sizer/-/hardhat-contract-sizer-2.10.0.tgz#72646f43bfe50e9a5702c9720c9bc3e77d93a2c9"
+  integrity sha512-QiinUgBD5MqJZJh1hl1jc9dNnpJg7eE/w4/4GEnrcmZJJTDbVFNe3+/3Ep24XqISSkYxRz36czcPHKHd/a0dwA==
   dependencies:
     chalk "^4.0.0"
     cli-table3 "^0.6.0"
