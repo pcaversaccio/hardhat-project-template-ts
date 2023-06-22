@@ -41,7 +41,11 @@ This template uses the [xdeploy](https://github.com/pcaversaccio/xdeployer) Hard
 
 ## `.env` File
 
-In the `.env` file place the private key of your wallet in the `PRIVATE_KEY` section. This allows secure access to your wallet to use with both testnet and mainnet funds during Hardhat deployments. For more information on how this works, please read the documentation of the `npm` package [`dotenv`](https://www.npmjs.com/package/dotenv).
+In the `.env` file, place the private key of your wallet in the `PRIVATE_KEY` variable. This allows secure access to your wallet to use with both testnet and mainnet funds during Hardhat deployments. For more information on how this works, please read the documentation of the `npm` package [`dotenv`](https://www.npmjs.com/package/dotenv).
+
+## Using a Ledger Hardware Wallet
+
+This template implements the [`hardhat-ledger`](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-ledger) plugin. In the `.env` file, place your Ledger accounts in the `LEDGER_ACCOUNT` variable.
 
 ## Using the Truffle Dashboard
 
