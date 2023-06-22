@@ -45,7 +45,7 @@ In the `.env` file, place the private key of your wallet in the `PRIVATE_KEY` va
 
 ## Using a Ledger Hardware Wallet
 
-This template implements the [`hardhat-ledger`](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-ledger) plugin. In the `.env` file, place your Ledger accounts in the `LEDGER_ACCOUNT` variable.
+This template implements the [`hardhat-ledger`](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-ledger) plugin. In the `.env` file, place your Ledger account in the `LEDGER_ACCOUNT` variable.
 
 ## Using the Truffle Dashboard
 
