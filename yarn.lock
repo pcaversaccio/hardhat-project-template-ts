@@ -3,9 +3,9 @@
 
 
 "@aashutoshrathi/word-wrap@^1.2.3":
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/@aashutoshrathi/word-wrap/-/word-wrap-1.2.5.tgz#383aeebd5c176c320d6364fb869669559bbdbac9"
-  integrity sha512-plhoNEfSVdHMKXQyAxvH0Zyv3/4NL8r6pwgMQdmHR2vBUXn2t74PN2pBRppqKUa6RMT0yldyvOHG5Dbjwy2mBQ==
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@aashutoshrathi/word-wrap/-/word-wrap-1.2.6.tgz#bd9154aec9983f77b3a034ecaa015c2e4201f6cf"
+  integrity sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==
 
 "@adraffy/ens-normalize@1.9.2":
   version "1.9.2"
@@ -631,10 +631,10 @@
     chalk "4.1.2"
     dockerode "^3.3.4"
 
-"@matterlabs/hardhat-zksync-solc@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@matterlabs/hardhat-zksync-solc/-/hardhat-zksync-solc-0.4.0.tgz#4f0352398a9de9144fd2c0e32295e212318e164c"
-  integrity sha512-lCHozNmgLco7WOKSCG0FaywAT2Hdymlb2EZF3J4ly4gMVkz54LXXXFLtibggWH5OdYmYkMLGRvUdq8w/ilJUjQ==
+"@matterlabs/hardhat-zksync-solc@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@matterlabs/hardhat-zksync-solc/-/hardhat-zksync-solc-0.4.1.tgz#e8e67d947098d7bb8925f968544d34e522af5a9c"
+  integrity sha512-fdlGf/2yZR5ihVNc2ubea1R/nNFXRONL29Fgz5FwB3azB13rPb76fkQgcFIg9zSufHsEy6zUUT029NkxLNA9Sw==
   dependencies:
     "@nomiclabs/hardhat-docker" "^2.0.0"
     chalk "4.1.2"
@@ -7342,10 +7342,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==
 
-typescript@^5.1.5:
-  version "5.1.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.1.5.tgz#a3ae755082488b6046fe64345d293ef26af08671"
-  integrity sha512-FOH+WN/DQjUvN6WgW+c4Ml3yi0PH+a/8q+kNIfRehv1wLhWONedw85iu+vQ39Wp49IzTJEsZ2lyLXpBF7mkF1g==
+typescript@^5.1.6:
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.1.6.tgz#02f8ac202b6dad2c0dd5e0913745b47a37998274"
+  integrity sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==
 
 typical@^4.0.0:
   version "4.0.0"
