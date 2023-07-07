@@ -9,13 +9,13 @@ It is recommended to install [Yarn](https://classic.yarnpkg.com) through the `np
 
 Once you have `npm` installed, you can run the following both to install and upgrade Yarn:
 
-```bash
+```console
 npm install --global yarn
 ```
 
 After having installed Yarn, simply run:
 
-```bash
+```console
 yarn install
 ```
 
@@ -23,7 +23,7 @@ yarn install
 
 **Example Goerli:**
 
-```bash
+```console
 yarn deploy:goerli
 ```
 
@@ -33,7 +33,7 @@ yarn deploy:goerli
 
 ## Running `CREATE2` Deployments
 
-```bash
+```console
 yarn xdeploy
 ```
 
@@ -53,7 +53,7 @@ This template implements the [`hardhat-ledger`](https://hardhat.org/hardhat-runn
 
 First, it is recommended that you install Truffle globally by running:
 
-```bash
+```console
 npm install -g truffle
 ```
 
@@ -61,7 +61,7 @@ npm install -g truffle
 
 To start a Truffle Dashboard, you need to run the following command in a separate terminal window:
 
-```bash
+```console
 truffle dashboard
 ```
 
@@ -69,7 +69,7 @@ By default, the command above starts a Truffle Dashboard at http://localhost:240
 
 Eventually, in order to deploy with the Truffle Dashboard, you can simply run:
 
-```bash
+```console
 yarn deploy:dashboard
 ```
 
@@ -97,7 +97,7 @@ Change the contract address to your contract after the deployment has been succe
 
 **Example:**
 
-```bash
+```console
 npx hardhat verify --network fantomMain --constructor-args arguments.js <YOUR_CONTRACT_ADDRESS>
 ```
 
@@ -105,7 +105,7 @@ npx hardhat verify --network fantomMain --constructor-args arguments.js <YOUR_CO
 
 This template includes an [example script](./scripts/interact.ts) that shows how to interact programmatically with a deployed contract. You must customise it according to your contract's specifications. The script can be simply invoked via:
 
-```bash
+```console
 npx hardhat run scripts/interact.ts --network <network_name>
 ```
 
@@ -117,25 +117,25 @@ This template repository also includes the [Foundry](https://github.com/foundry-
 
 ### Dependencies
 
-```bash
+```console
 make update
 ```
 
 or
 
-```
+```console
 forge update
 ```
 
 ### Compilation
 
-```bash
+```console
 make build
 ```
 
 or
 
-```
+```console
 forge build
 ```
 
@@ -143,25 +143,25 @@ forge build
 
 To run only TypeScript tests:
 
-```bash
+```console
 yarn test:hh
 ```
 
 To run only Solidity tests:
 
-```bash
+```console
 yarn test:forge
 ```
 
 or
 
-```bash
+```console
 make test-forge
 ```
 
 To additionally display the gas report, you can run:
 
-```bash
+```console
 make test-gasreport
 ```
 
@@ -169,6 +169,6 @@ make test-gasreport
 
 Inside the [`scripts/`](./scripts) folder are a few preconfigured scripts that can be used to deploy and verify contracts via Foundry. These scripts are required to be _executable_ meaning they must be made executable by running:
 
-```bash
+```console
 make scripts
 ```
