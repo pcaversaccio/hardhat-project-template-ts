@@ -27,7 +27,7 @@ async function main() {
   const receipt = await tx.wait();
   console.log(
     "The transaction returned the following transaction receipt:\n",
-    receipt
+    receipt,
   );
 }
 
