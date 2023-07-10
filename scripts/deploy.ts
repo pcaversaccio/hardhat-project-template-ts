@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import hre, { ethers } from "hardhat";
 
 async function main() {
