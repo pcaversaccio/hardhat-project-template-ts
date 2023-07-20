@@ -554,6 +554,16 @@ const config: HardhatUserConfig = {
           ? [process.env.LEDGER_ACCOUNT]
           : [],
     },
+    baseMain: {
+      chainId: 8453,
+      url: process.env.BASE_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      ledgerAccounts:
+        process.env.LEDGER_ACCOUNT !== undefined
+          ? [process.env.LEDGER_ACCOUNT]
+          : [],
+    },
     zkSyncTestnet: {
       chainId: 280,
       url: process.env.ZKSYNC_TESTNET_URL || "",
@@ -581,6 +591,16 @@ const config: HardhatUserConfig = {
     mantleTestnet: {
       chainId: 5001,
       url: process.env.MANTLE_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      ledgerAccounts:
+        process.env.LEDGER_ACCOUNT !== undefined
+          ? [process.env.LEDGER_ACCOUNT]
+          : [],
+    },
+    mantleMain: {
+      chainId: 5000,
+      url: process.env.MANTLE_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
       ledgerAccounts:
@@ -618,6 +638,16 @@ const config: HardhatUserConfig = {
           ? [process.env.LEDGER_ACCOUNT]
           : [],
     },
+    lineaMain: {
+      chainId: 59144,
+      url: process.env.LINEA_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      ledgerAccounts:
+        process.env.LEDGER_ACCOUNT !== undefined
+          ? [process.env.LEDGER_ACCOUNT]
+          : [],
+    },
     shimmerEVMTestnet: {
       chainId: 1071,
       url: process.env.SHIMMEREVM_TESTNET_URL || "",
@@ -641,6 +671,26 @@ const config: HardhatUserConfig = {
     zoraMain: {
       chainId: 7777777,
       url: process.env.ZORA_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      ledgerAccounts:
+        process.env.LEDGER_ACCOUNT !== undefined
+          ? [process.env.LEDGER_ACCOUNT]
+          : [],
+    },
+    luksoTestnet: {
+      chainId: 4201,
+      url: process.env.LUKSO_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      ledgerAccounts:
+        process.env.LEDGER_ACCOUNT !== undefined
+          ? [process.env.LEDGER_ACCOUNT]
+          : [],
+    },
+    luksoMain: {
+      chainId: 42,
+      url: process.env.LUKSO_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
       ledgerAccounts:
@@ -760,19 +810,25 @@ const config: HardhatUserConfig = {
       // For Canto testnet & mainnet
       canto: process.env.CANTO_API_KEY || "",
       cantoTestnet: process.env.CANTO_API_KEY || "",
-      // For Base testnet
+      // For Base testnet & mainnet
+      base: process.env.BASE_API_KEY || "",
       baseTestnet: process.env.BASE_API_KEY || "",
-      // For Mantle testnet
+      // For Mantle testnet & mainnet
+      mantle: process.env.MANTLE_API_KEY || "",
       mantleTestnet: process.env.MANTLE_API_KEY || "",
       // For Scroll testnet
       scrollTestnet: process.env.SCROLL_API_KEY || "",
-      // For Linea testnet
+      // For Linea testnet & mainnet
+      linea: process.env.LINEA_API_KEY || "",
       lineaTestnet: process.env.LINEA_API_KEY || "",
       // For ShimmerEVM testnet
       shimmerEVMTestnet: process.env.SHIMMEREVM_API_KEY || "",
       // For Zora testnet & mainnet
       zora: process.env.ZORA_API_KEY || "",
       zoraTestnet: process.env.ZORA_API_KEY || "",
+      // For Lukso testnet & mainnet
+      lukso: process.env.LUKSO_API_KEY || "",
+      luksoTestnet: process.env.LUKSO_API_KEY || "",
     },
     customChains: [
       {
@@ -872,11 +928,27 @@ const config: HardhatUserConfig = {
         },
       },
       {
+        network: "base",
+        chainId: 8453,
+        urls: {
+          apiURL: "https://api.basescan.org/api",
+          browserURL: "https://basescan.org",
+        },
+      },
+      {
         network: "baseTestnet",
         chainId: 84531,
         urls: {
           apiURL: "https://api-goerli.basescan.org/api",
           browserURL: "https://goerli.basescan.org",
+        },
+      },
+      {
+        network: "mantle",
+        chainId: 5000,
+        urls: {
+          apiURL: "https://explorer.mantle.xyz/api",
+          browserURL: "https://explorer.mantle.xyz",
         },
       },
       {
@@ -912,11 +984,19 @@ const config: HardhatUserConfig = {
         },
       },
       {
+        network: "linea",
+        chainId: 59144,
+        urls: {
+          apiURL: "https://api.lineascan.build/api",
+          browserURL: "https://lineascan.build",
+        },
+      },
+      {
         network: "lineaTestnet",
         chainId: 59140,
         urls: {
-          apiURL: "https://explorer.goerli.linea.build/api",
-          browserURL: "https://explorer.goerli.linea.build",
+          apiURL: "https://api-testnet.lineascan.build/api",
+          browserURL: "https://goerli.lineascan.build",
         },
       },
       {
@@ -941,6 +1021,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://testnet.explorer.zora.energy/api",
           browserURL: "https://testnet.explorer.zora.energy",
+        },
+      },
+      {
+        network: "lukso",
+        chainId: 42,
+        urls: {
+          apiURL: "https://explorer.execution.mainnet.lukso.network/api",
+          browserURL: "https://explorer.execution.mainnet.lukso.network",
+        },
+      },
+      {
+        network: "luksoTestnet",
+        chainId: 4201,
+        urls: {
+          apiURL: "https://explorer.execution.testnet.lukso.network/api",
+          browserURL: "https://explorer.execution.testnet.lukso.network",
         },
       },
     ],
