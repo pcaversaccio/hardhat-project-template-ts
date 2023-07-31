@@ -116,7 +116,7 @@
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
     "@nomiclabs/hardhat-ethers": "^2.2.3",
     "@nomiclabs/hardhat-etherscan": "^3.1.7",
-    "@openzeppelin/contracts": "^4.9.2",
+    "@openzeppelin/contracts": "^4.9.3",
     "@tenderly/hardhat-tenderly": "^1.7.7",
     "@truffle/dashboard-hardhat-plugin": "^0.2.11",
     "@typechain/ethers-v5": "^10.2.0",
