@@ -84,4 +84,4 @@ jobs:
         run: gem install awesome_bot
 
       - name: Validate URLs
-        run: awesome_bot ./*.md contracts/src/*.sol contracts/test/*.sol --request-delay 0.4 --white-list http://localhost:24012
+        run: awesome_bot ./*.md contracts/src/*.sol contracts/test/*.sol --request-delay 0.4 --white-list http://localhost:24012,https://trezor.io
