@@ -34,7 +34,7 @@
     "build": "forge build --root . -C contracts/src --optimize --out forge-artifacts",
     "size": "npx hardhat size-contracts",
     "xdeploy": "npx hardhat xdeploy",
-    "abi": "hardhat export-abi",
+    "abi": "npx hardhat export-abi",
     "deploy:hh": "npx hardhat run --network hardhat scripts/deploy.ts",
     "deploy:localhost": "npx hardhat run --network localhost scripts/deploy.ts",
     "deploy:dashboard": "npx hardhat run --network truffleDashboard scripts/deploy.ts",
