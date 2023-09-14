@@ -718,6 +718,16 @@ const config: HardhatUserConfig = {
           ? [process.env.LEDGER_ACCOUNT]
           : [],
     },
+    mantaMain: {
+      chainId: 169,
+      url: process.env.MANTA_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      ledgerAccounts:
+        process.env.LEDGER_ACCOUNT !== undefined
+          ? [process.env.LEDGER_ACCOUNT]
+          : [],
+    },
   },
   xdeploy: {
     // Change this name to the name of your main contract
@@ -850,7 +860,8 @@ const config: HardhatUserConfig = {
       // For Lukso testnet & mainnet
       lukso: process.env.LUKSO_API_KEY || "",
       luksoTestnet: process.env.LUKSO_API_KEY || "",
-      // For Manta testnet
+      // For Manta testnet & mainnet
+      manta: process.env.MANTA_API_KEY || "",
       mantaTestnet: process.env.MANTA_API_KEY || "",
     },
     customChains: [
@@ -1071,11 +1082,19 @@ const config: HardhatUserConfig = {
         },
       },
       {
-        network: "mantaTestnet",
-        chainId: 3441005,
+        network: "manta",
+        chainId: 169,
         urls: {
           apiURL: "https://pacific-explorer.manta.network/api",
           browserURL: "https://pacific-explorer.manta.network",
+        },
+      },
+      {
+        network: "mantaTestnet",
+        chainId: 3441005,
+        urls: {
+          apiURL: "https://pacific-explorer.testnet.manta.network/api",
+          browserURL: "https://pacific-explorer.testnet.manta.network",
         },
       },
     ],
