@@ -57,7 +57,7 @@ First, it is recommended that you install Truffle globally by running:
 npm install -g truffle
 ```
 
-> If you have already installed Truffle, you need to ensure that you have at least version [`5.11.3`](https://github.com/trufflesuite/truffle/releases/tag/v5.11.3) installed and otherwise upgrade.
+> If you have already installed Truffle, you need to ensure that you have at least version [`5.11.5`](https://github.com/trufflesuite/truffle/releases/tag/v5.11.5) installed and otherwise upgrade.
 
 To start a Truffle Dashboard, you need to run the following command in a separate terminal window:
 
