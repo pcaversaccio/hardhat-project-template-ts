@@ -144,6 +144,16 @@ const config: HardhatUserConfig = {
           ? [process.env.LEDGER_ACCOUNT]
           : [],
     },
+    holesky: {
+      chainId: 17000,
+      url: process.env.ETH_HOLESKY_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      ledgerAccounts:
+        process.env.LEDGER_ACCOUNT !== undefined
+          ? [process.env.LEDGER_ACCOUNT]
+          : [],
+    },
     ethMain: {
       chainId: 1,
       url: process.env.ETH_MAINNET_URL || "",
@@ -806,6 +816,7 @@ const config: HardhatUserConfig = {
       mainnet: process.env.ETHERSCAN_API_KEY || "",
       goerli: process.env.ETHERSCAN_API_KEY || "",
       sepolia: process.env.ETHERSCAN_API_KEY || "",
+      holesky: process.env.ETHERSCAN_API_KEY || "",
       // For BSC testnet & mainnet
       bsc: process.env.BSC_API_KEY || "",
       bscTestnet: process.env.BSC_API_KEY || "",
@@ -887,6 +898,14 @@ const config: HardhatUserConfig = {
       artheraTestnet: process.env.ARTHERA_API_KEY || "",
     },
     customChains: [
+      {
+        network: "holesky",
+        chainId: 17000,
+        urls: {
+          apiURL: "https://api-holesky.etherscan.io/api",
+          browserURL: "https://holesky.etherscan.io",
+        },
+      },
       {
         network: "chiado",
         chainId: 10200,
