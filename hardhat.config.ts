@@ -194,6 +194,16 @@ const config: HardhatUserConfig = {
           ? [process.env.LEDGER_ACCOUNT]
           : [],
     },
+    optimismSepolia: {
+      chainId: 11155420,
+      url: process.env.OPTIMISM_SEPOLIA_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      ledgerAccounts:
+        process.env.LEDGER_ACCOUNT !== undefined
+          ? [process.env.LEDGER_ACCOUNT]
+          : [],
+    },
     optimismMain: {
       chainId: 10,
       url: process.env.OPTIMISM_MAINNET_URL || "",
@@ -846,9 +856,10 @@ const config: HardhatUserConfig = {
       // For Fantom testnet & mainnet
       opera: process.env.FANTOM_API_KEY || "",
       ftmTestnet: process.env.FANTOM_API_KEY || "",
-      // For Optimism testnet & mainnet
+      // For Optimism testnets & mainnet
       optimisticEthereum: process.env.OPTIMISM_API_KEY || "",
       optimisticGoerli: process.env.OPTIMISM_API_KEY || "",
+      optimisticSepolia: process.env.OPTIMISM_API_KEY || "",
       // For Polygon testnets & mainnets
       polygon: process.env.POLYGON_API_KEY || "",
       polygonZkEVM: process.env.POLYGON_ZKEVM_API_KEY || "",
@@ -926,6 +937,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-holesky.etherscan.io/api",
           browserURL: "https://holesky.etherscan.io",
+        },
+      },
+      {
+        network: "optimisticSepolia",
+        chainId: 11155420,
+        urls: {
+          apiURL: "https://optimism-sepolia.blockscout.com/api",
+          browserURL: "https://optimism-sepolia.blockscout.com",
         },
       },
       {
