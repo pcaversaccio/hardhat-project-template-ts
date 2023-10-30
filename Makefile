@@ -6,7 +6,7 @@
 update          :; forge update
 
 # install proper solc version
-solc            :; nix-env -f https://github.com/dapphub/dapptools/archive/master.tar.gz -iA solc-static-versions.solc_0_8_19
+solc            :; nix-env -f https://github.com/dapphub/dapptools/archive/master.tar.gz -iA solc-static-versions.solc_0_8_22
 
 # build & test
 build           :; forge build
