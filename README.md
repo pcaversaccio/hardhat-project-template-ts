@@ -29,7 +29,7 @@ yarn deploy:goerli
 
 > The deployment script [`deploy.ts`](./scripts/deploy.ts) includes the `tenderly` Hardhat Runtime Environment (HRE) extension with the `verify` method. Please consider uncommenting and configuring the Tenderly `project`, `username`, `forkNetwork`, `privateVerification`, and `deploymentsDir` attributes in the [`hardhat.config.ts`](./hardhat.config.ts) file before deploying or remove this call. Also, for this plugin to function you need to create a `config.yaml` file at `$HOME/.tenderly/config.yaml` or `%HOMEPATH%\.tenderly\config.yaml` and add an `access_key` field to it. For further information, see [here](https://www.npmjs.com/package/@tenderly/hardhat-tenderly#installing-tenderly-cli).
 
-> For the deployment on the [zkSync Era](https://era.zksync.io/docs/) test network, you must add your to-be-deployed contract artifact to [`deploy-zksync.ts`](./deploy/deploy-zksync.ts), enable `zksync` in the [`hardhat.config.ts`](./hardhat.config.ts#L83) file, and then run `yarn compile`. Next, fund your deployer account on zkSync Era Testnet, configure your `.env` file accordingly, and simply run `yarn deploy:zksynctestnet`. Eventually, to verify the contract you can invoke: `npx hardhat verify --network zkSyncTestnet --constructor-args arguments.js <YOUR_CONTRACT_ADDRESS>`. The same approach applies if you want to deploy on the production network, except that you need to run `yarn deploy:zksyncmain` and use `--network zkSyncMain` for the contract verification.
+> For the deployment on the [zkSync Era](https://era.zksync.io/docs/) test network, you must add your to-be-deployed contract artifact to [`deploy-zksync.ts`](./deploy/deploy-zksync.ts), enable `zksync` in the [`hardhat.config.ts`](./hardhat.config.ts#L83) file, and then run `yarn compile`. Next, fund your deployer account on zkSync Era Testnet, setup the zkSync-related configuration variables accordingly, and simply run `yarn deploy:zksynctestnet`. Eventually, to verify the contract you can invoke: `npx hardhat verify --network zkSyncTestnet --constructor-args arguments.js <YOUR_CONTRACT_ADDRESS>`. The same approach applies if you want to deploy on the production network, except that you need to run `yarn deploy:zksyncmain` and use `--network zkSyncMain` for the contract verification.
 
 ## Running `CREATE2` Deployments
 
@@ -39,13 +39,15 @@ yarn xdeploy
 
 This template uses the [xdeploy](https://github.com/pcaversaccio/xdeployer) Hardhat plugin. Check out the documentation for more information on the specifics of the deployments.
 
-## `.env` File
+## Configuration variables
 
-In the `.env` file, place the private key of your wallet in the `PRIVATE_KEY` variable. This allows secure access to your wallet to use with both testnet and mainnet funds during Hardhat deployments. For more information on how this works, please read the documentation of the `npm` package [`dotenv`](https://www.npmjs.com/package/dotenv).
+Run `npx hardhat vars set PRIVATE_KEY` to set the private key of your wallet. This allows secure access to your wallet to use with both testnet and mainnet funds during Hardhat deployments.
+
+You can also run `npx hardhat vars setup` to see which other [configuration variables](https://hardhat.org/hardhat-runner/docs/guides/configuration-variables) are available.
 
 ## Using a Ledger Hardware Wallet
 
-This template implements the [`hardhat-ledger`](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-ledger) plugin. In the `.env` file, place your Ledger account in the `LEDGER_ACCOUNT` variable.
+This template implements the [`hardhat-ledger`](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-ledger) plugin. Run `npx hardhat set LEDGER_ACCOUNT` and enter the address of the Ledger account you want to use.
 
 ## Using the Truffle Dashboard
 
@@ -81,14 +83,14 @@ This template is currently configured via the [hardhat.config.ts](./hardhat.conf
 
 ```ts
 forking: {
-    url: process.env.ETH_MAINNET_URL || "",
-    // The Hardhat network will by default fork from the latest mainnet block
-    // To pin the block number, specify it below
-    // You will need access to a node with archival data for this to work!
-    // blockNumber: 14743877,
-    // If you want to do some forking, set `enabled` to true
-    enabled: false,
-}
+  url: vars.get("ETH_MAINNET_URL", ""),
+  // The Hardhat network will by default fork from the latest mainnet block
+  // To pin the block number, specify it below
+  // You will need access to a node with archival data for this to work!
+  // blockNumber: 14743877,
+  // If you want to do some forking, set `enabled` to true
+  enabled: false,
+},
 ```
 
 ## Contract Verification

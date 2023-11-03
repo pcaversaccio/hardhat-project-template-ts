@@ -1,6 +1,4 @@
-import * as dotenv from "dotenv";
-
-import { HardhatUserConfig, task } from "hardhat/config";
+import { HardhatUserConfig, task, vars } from "hardhat/config";
 import "@nomiclabs/hardhat-ethers";
 import "@nomicfoundation/hardhat-chai-matchers";
 import "@nomiclabs/hardhat-etherscan";
@@ -17,10 +15,14 @@ import "hardhat-contract-sizer";
 import * as tdly from "@tenderly/hardhat-tenderly";
 import "hardhat-abi-exporter";
 
-dotenv.config();
-
 // Turning off the automatic Tenderly verification
 tdly.setup({ automaticVerifications: false });
+
+const ethMainnetUrl = vars.get("ETH_MAINNET_URL", "https://rpc.ankr.com/eth")
+const accounts = vars.has("PRIVATE_KEY") ? [vars.get("PRIVATE_KEY")] : [];
+const ledgerAccounts = vars.has("LEDGER_ACCOUNT")
+  ? [vars.get("LEDGER_ACCOUNT")]
+  : [];
 
 task("accounts", "Prints the list of accounts", async (_, hre) => {
   const accounts = await hre.ethers.getSigners();
@@ -88,7 +90,7 @@ const config: HardhatUserConfig = {
       chainId: 31337,
       hardfork: "shanghai",
       forking: {
-        url: process.env.ETH_MAINNET_URL || "",
+        url: vars.get("ETH_MAINNET_URL", ""),
         // The Hardhat network will by default fork from the latest mainnet block
         // To pin the block number, specify it below
         // You will need access to a node with archival data for this to work!
@@ -96,698 +98,425 @@ const config: HardhatUserConfig = {
         // If you want to do some forking, set `enabled` to true
         enabled: false,
       },
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      ledgerAccounts,
       // zksync: true, // Enables zkSync in the Hardhat local network
     },
     localhost: {
       url: "http://127.0.0.1:8545",
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      ledgerAccounts,
     },
     tenderly: {
-      url: `https://rpc.tenderly.co/fork/${process.env.TENDERLY_FORK_ID}`,
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      // Add your own Tenderly fork ID
+      url: `https://rpc.tenderly.co/fork/${vars.get("TENDERLY_FORK_ID", "")}`,
+      ledgerAccounts,
     },
     devnet: {
-      url: `https://rpc.vnet.tenderly.co/devnet/${process.env.TENDERLY_DEVNET_ID}`,
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      // Add your own Tenderly DevNet ID
+      url: `https://rpc.vnet.tenderly.co/devnet/${vars.get("TENDERLY_DEVNET_ID", "")}`,
+      accounts,
+      ledgerAccounts,
     },
     goerli: {
       chainId: 5,
-      url: process.env.ETH_GOERLI_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("ETH_GOERLI_TESTNET_URL", "https://rpc.ankr.com/eth_goerli"),
+      accounts,
+      ledgerAccounts,
     },
     sepolia: {
       chainId: 11155111,
-      url: process.env.ETH_SEPOLIA_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("ETH_SEPOLIA_TESTNET_URL", "https://rpc.sepolia.org"),
+      accounts,
+      ledgerAccounts,
     },
     holesky: {
       chainId: 17000,
-      url: process.env.ETH_HOLESKY_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("ETH_HOLESKY_TESTNET_URL", "https://holesky.rpc.thirdweb.com"),
+      accounts,
+      ledgerAccounts,
     },
     ethMain: {
       chainId: 1,
-      url: process.env.ETH_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: ethMainnetUrl,
+      accounts,
+      ledgerAccounts,
     },
     bscTestnet: {
       chainId: 97,
-      url: process.env.BSC_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("BSC_TESTNET_URL", "https://data-seed-prebsc-1-s1.binance.org:8545"),
+      accounts,
+      ledgerAccounts,
     },
     bscMain: {
       chainId: 56,
-      url: process.env.BSC_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("BSC_MAINNET_URL", "https://bsc-dataseed.binance.org"),
+      accounts,
+      ledgerAccounts,
     },
     optimismTestnet: {
       chainId: 420,
-      url: process.env.OPTIMISM_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("OPTIMISM_TESTNET_URL", "https://goerli.optimism.io"),
+      accounts,
+      ledgerAccounts,
     },
     optimismSepolia: {
       chainId: 11155420,
-      url: process.env.OPTIMISM_SEPOLIA_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("OPTIMISM_SEPOLIA_URL", "https://sepolia.optimism.io"),
+      accounts,
+      ledgerAccounts,
     },
     optimismMain: {
       chainId: 10,
-      url: process.env.OPTIMISM_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("OPTIMISM_MAINNET_URL", "https://mainnet.optimism.io"),
+      accounts,
+      ledgerAccounts,
     },
     arbitrumTestnet: {
       chainId: 421613,
-      url: process.env.ARBITRUM_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("ARBITRUM_TESTNET_URL", "https://goerli-rollup.arbitrum.io/rpc"),
+      accounts,
+      ledgerAccounts,
     },
     arbitrumSepolia: {
       chainId: 421614,
-      url: process.env.ARBITRUM_SEPOLIA_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("ARBITRUM_SEPOLIA_URL", "https://sepolia-rollup.arbitrum.io/rpc"),
+      accounts,
+      ledgerAccounts,
     },
     arbitrumMain: {
       chainId: 42161,
-      url: process.env.ARBITRUM_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("ARBITRUM_MAINNET_URL", "https://arb1.arbitrum.io/rpc"),
+      accounts,
+      ledgerAccounts,
     },
     arbitrumNova: {
       chainId: 42170,
-      url: process.env.ARBITRUM_NOVA_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("ARBITRUM_NOVA_URL", "https://nova.arbitrum.io/rpc"),
+      accounts,
+      ledgerAccounts,
     },
     mumbai: {
       chainId: 80001,
-      url: process.env.POLYGON_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("POLYGON_TESTNET_URL", "https://rpc-mumbai.maticvigil.com"),
+      accounts,
+      ledgerAccounts,
     },
     polygonZkEVMTestnet: {
       chainId: 1442,
-      url: process.env.POLYGON_ZKEVM_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("POLYGON_ZKEVM_TESTNET_URL", "https://rpc.public.zkevm-test.net"),
+      accounts,
+      ledgerAccounts,
     },
     polygon: {
       chainId: 137,
-      url: process.env.POLYGON_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("POLYGON_MAINNET_URL", "https://polygon-rpc.com"),
+      accounts,
+      ledgerAccounts,
     },
     polygonZkEVMMain: {
       chainId: 1101,
-      url: process.env.POLYGON_ZKEVM_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("POLYGON_ZKEVM_MAINNET_URL", "https://zkevm-rpc.com"),
+      accounts,
+      ledgerAccounts,
     },
     hecoTestnet: {
       chainId: 256,
-      url: process.env.HECO_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("HECO_TESTNET_URL", "https://http-testnet.hecochain.com"),
+      accounts,
+      ledgerAccounts,
     },
     hecoMain: {
       chainId: 128,
-      url: process.env.HECO_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("HECO_MAINNET_URL", "https://http-mainnet.hecochain.com"),
+      accounts,
+      ledgerAccounts,
     },
     fantomTestnet: {
       chainId: 4002,
-      url: process.env.FANTOM_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("FANTOM_TESTNET_URL", "https://rpc.testnet.fantom.network"),
+      accounts,
+      ledgerAccounts,
     },
     fantomMain: {
       chainId: 250,
-      url: process.env.FANTOM_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("FANTOM_MAINNET_URL", "https://rpc.ftm.tools"),
+      accounts,
+      ledgerAccounts,
     },
     fuji: {
       chainId: 43113,
-      url: process.env.AVALANCHE_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("AVALANCHE_TESTNET_URL", "https://api.avax-test.network/ext/bc/C/rpc"),
+      accounts,
+      ledgerAccounts,
     },
     avalanche: {
       chainId: 43114,
-      url: process.env.AVALANCHE_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("AVALANCHE_MAINNET_URL", "https://api.avax.network/ext/bc/C/rpc"),
+      accounts,
+      ledgerAccounts,
     },
     sokol: {
       chainId: 77,
-      url: process.env.SOKOL_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("SOKOL_TESTNET_URL", "https://sokol.poa.network"),
+      accounts,
+      ledgerAccounts,
     },
     chiado: {
       chainId: 10200,
-      url: process.env.GNOSIS_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("GNOSIS_TESTNET_URL", "https://rpc.chiadochain.net"),
+      accounts,
+      ledgerAccounts,
     },
     gnosis: {
       chainId: 100,
-      url: process.env.GNOSIS_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("GNOSIS_MAINNET_URL", "https://rpc.gnosischain.com"),
+      accounts,
+      ledgerAccounts,
     },
     moonbaseAlpha: {
       chainId: 1287,
-      url: process.env.MOONBEAM_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("MOONBEAM_TESTNET_URL", "https://rpc.api.moonbase.moonbeam.network"),
+      accounts,
+      ledgerAccounts,
     },
     moonriver: {
       chainId: 1285,
-      url: process.env.MOONRIVER_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("MOONRIVER_MAINNET_URL", "https://rpc.moonriver.moonbeam.network"),
+      accounts,
+      ledgerAccounts,
     },
     moonbeam: {
       chainId: 1284,
-      url: process.env.MOONBEAM_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("MOONBEAM_MAINNET_URL", "https://rpc.api.moonbeam.network"),
+      accounts,
+      ledgerAccounts,
     },
     alfajores: {
       chainId: 44787,
-      url: process.env.CELO_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("CELO_TESTNET_URL", "https://alfajores-forno.celo-testnet.org"),
+      accounts,
+      ledgerAccounts,
     },
     celo: {
       chainId: 42220,
-      url: process.env.CELO_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("CELO_MAINNET_URL", "https://forno.celo.org"),
+      accounts,
+      ledgerAccounts,
     },
     auroraTestnet: {
       chainId: 1313161555,
-      url: process.env.AURORA_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("AURORA_TESTNET_URL", "https://testnet.aurora.dev"),
+      accounts,
+      ledgerAccounts,
     },
     auroraMain: {
       chainId: 1313161554,
-      url: process.env.AURORA_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("AURORA_MAINNET_URL", "https://mainnet.aurora.dev"),
+      accounts,
+      ledgerAccounts,
     },
     harmonyTestnet: {
       chainId: 1666700000,
-      url: process.env.HARMONY_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("HARMONY_TESTNET_URL", "https://api.s0.b.hmny.io"),
+      accounts,
+      ledgerAccounts,
     },
     harmonyMain: {
       chainId: 1666600000,
-      url: process.env.HARMONY_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("HARMONY_MAINNET_URL", "https://api.harmony.one"),
+      accounts,
+      ledgerAccounts,
     },
     spark: {
       chainId: 123,
-      url: process.env.FUSE_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("FUSE_TESTNET_URL", "https://rpc.fusespark.io"),
+      accounts,
+      ledgerAccounts,
     },
     fuse: {
       chainId: 122,
-      url: process.env.FUSE_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("FUSE_MAINNET_URL", "https://rpc.fuse.io"),
+      accounts,
+      ledgerAccounts,
     },
     cronosTestnet: {
       chainId: 338,
-      url: process.env.CRONOS_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("CRONOS_TESTNET_URL", "https://evm-t3.cronos.org"),
+      accounts,
+      ledgerAccounts,
     },
     cronosMain: {
       chainId: 25,
-      url: process.env.CRONOS_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("CRONOS_MAINNET_URL", "https://evm.cronos.org"),
+      accounts,
+      ledgerAccounts,
     },
     evmosTestnet: {
       chainId: 9000,
-      url: process.env.EVMOS_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("EVMOS_TESTNET_URL", "https://eth.bd.evmos.dev:8545"),
+      accounts,
+      ledgerAccounts,
     },
     evmosMain: {
       chainId: 9001,
-      url: process.env.EVMOS_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("EVMOS_MAINNET_URL", "https://eth.bd.evmos.org:8545"),
+      accounts,
+      ledgerAccounts,
     },
     bobaTestnet: {
       chainId: 2888,
-      url: process.env.BOBA_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("BOBA_TESTNET_URL", "https://goerli.boba.network"),
+      accounts,
+      ledgerAccounts,
     },
     bobaMain: {
       chainId: 288,
-      url: process.env.BOBA_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("BOBA_MAINNET_URL", "https://mainnet.boba.network"),
+      accounts,
+      ledgerAccounts,
     },
     cantoTestnet: {
       chainId: 7701,
-      url: process.env.CANTO_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("CANTO_TESTNET_URL", "https://canto-testnet.plexnode.wtf"),
+      accounts,
+      ledgerAccounts,
     },
     cantoMain: {
       chainId: 7700,
-      url: process.env.CANTO_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("CANTO_MAINNET_URL", "https://canto.slingshot.finance"),
+      accounts,
+      ledgerAccounts,
     },
     baseTestnet: {
       chainId: 84531,
-      url: process.env.BASE_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("BASE_TESTNET_URL", "https://goerli.base.org"),
+      accounts,
+      ledgerAccounts,
     },
     baseSepolia: {
       chainId: 84532,
-      url: process.env.BASE_SEPOLIA_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("BASE_SEPOLIA_URL", "https://sepolia.base.org"),
+      accounts,
+      ledgerAccounts,
     },
     baseMain: {
       chainId: 8453,
-      url: process.env.BASE_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("BASE_MAINNET_URL", "https://developer-access-mainnet.base.org"),
+      accounts,
+      ledgerAccounts,
     },
     zkSyncTestnet: {
       chainId: 280,
-      url: process.env.ZKSYNC_TESTNET_URL || "",
-      ethNetwork: process.env.ETH_GOERLI_TESTNET_URL || "",
+      url: vars.get("ZKSYNC_TESTNET_URL", "https://testnet.era.zksync.dev"),
+      ethNetwork: vars.get("ETH_GOERLI_TESTNET_URL", "https://rpc.ankr.com/eth_goerli"),
       zksync: true,
       verifyURL:
         "https://zksync2-testnet-explorer.zksync.dev/contract_verification",
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      ledgerAccounts,
     },
     zkSyncMain: {
       chainId: 324,
-      url: process.env.ZKSYNC_MAINNET_URL || "",
-      ethNetwork: process.env.ETH_MAINNET_URL || "",
+      url: vars.get("ZKSYNC_MAINNET_URL", "https://mainnet.era.zksync.io"),
+      ethNetwork: ethMainnetUrl,
       zksync: true,
       verifyURL:
         "https://zksync2-mainnet-explorer.zksync.io/contract_verification",
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      ledgerAccounts,
     },
     mantleTestnet: {
       chainId: 5001,
-      url: process.env.MANTLE_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("MANTLE_TESTNET_URL", "https://rpc.testnet.mantle.xyz"),
+      accounts,
+      ledgerAccounts,
     },
     mantleMain: {
       chainId: 5000,
-      url: process.env.MANTLE_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("MANTLE_MAINNET_URL", "https://rpc.mantle.xyz"),
+      accounts,
+      ledgerAccounts,
     },
     filecoinTestnet: {
       chainId: 314159,
-      url: process.env.FILECOIN_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("FILECOIN_TESTNET_URL", "https://rpc.ankr.com/filecoin_testnet"),
+      accounts,
+      ledgerAccounts,
     },
     scrollTestnet: {
       chainId: 534351,
-      url: process.env.SCROLL_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("SCROLL_TESTNET_URL", "https://sepolia-rpc.scroll.io"),
+      accounts,
+      ledgerAccounts,
     },
     scrollMain: {
       chainId: 534352,
-      url: process.env.SCROLL_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("SCROLL_MAINNET_URL", "https://rpc.scroll.io"),
+      accounts,
+      ledgerAccounts,
     },
     lineaTestnet: {
       chainId: 59140,
-      url: process.env.LINEA_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("LINEA_TESTNET_URL", "https://rpc.goerli.linea.build"),
+      accounts,
+      ledgerAccounts,
     },
     lineaMain: {
       chainId: 59144,
-      url: process.env.LINEA_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("LINEA_MAINNET_URL", "https://linea-mainnet.infura.io/v3"),
+      accounts,
+      ledgerAccounts,
     },
     shimmerEVMTestnet: {
       chainId: 1071,
-      url: process.env.SHIMMEREVM_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("SHIMMEREVM_TESTNET_URL", "https://json-rpc.evm.testnet.shimmer.networ"),
+      accounts,
+      ledgerAccounts,
     },
     zoraTestnet: {
       chainId: 999,
-      url: process.env.ZORA_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("ZORA_TESTNET_URL", "https://testnet.rpc.zora.co"),
+      accounts,
+      ledgerAccounts,
     },
     zoraMain: {
       chainId: 7777777,
-      url: process.env.ZORA_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("ZORA_MAINNET_URL", "https://rpc.zora.energy"),
+      accounts,
+      ledgerAccounts,
     },
     luksoTestnet: {
       chainId: 4201,
-      url: process.env.LUKSO_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("LUKSO_TESTNET_URL", "https://rpc.testnet.lukso.network"),
+      accounts,
+      ledgerAccounts,
     },
     luksoMain: {
       chainId: 42,
-      url: process.env.LUKSO_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("LUKSO_MAINNET_URL", "https://rpc.mainnet.lukso.network"),
+      accounts,
+      ledgerAccounts,
     },
     mantaTestnet: {
       chainId: 3441005,
-      url: process.env.MANTA_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("MANTA_TESTNET_URL", "https://pacific-rpc.testnet.manta.network/http"),
+      accounts,
+      ledgerAccounts,
     },
     mantaMain: {
       chainId: 169,
-      url: process.env.MANTA_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("MANTA_MAINNET_URL", "https://pacific-rpc.manta.network/http"),
+      accounts,
+      ledgerAccounts,
     },
     shardeumTestnet: {
       chainId: 8081,
-      url: process.env.SHARDEUM_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("SHARDEUM_TESTNET_URL", "https://dapps.shardeum.org"),
+      accounts,
+      ledgerAccounts,
     },
     artheraTestnet: {
       chainId: 10243,
-      url: process.env.ARTHERA_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      ledgerAccounts:
-        process.env.LEDGER_ACCOUNT !== undefined
-          ? [process.env.LEDGER_ACCOUNT]
-          : [],
+      url: vars.get("ARTHERA_TESTNET_URL", "https://rpc-test.arthera.net"),
+      accounts,
+      ledgerAccounts,
     },
   },
   xdeploy: {
@@ -800,10 +529,10 @@ const config: HardhatUserConfig = {
 
     // The salt must be the same for each EVM chain for which you want to have a single contract address
     // Change the salt if you are doing a re-deployment with the same codebase
-    salt: process.env.SALT,
+    salt: vars.get("SALT", ""),
 
     // This is your wallet's private key
-    signer: process.env.PRIVATE_KEY,
+    signer: vars.get("PRIVATE_KEY", ""),
 
     // Use the network names specified here: https://github.com/pcaversaccio/xdeployer#configuration
     // Use `localhost` or `hardhat` for local testing
@@ -812,8 +541,8 @@ const config: HardhatUserConfig = {
     // Use the matching env URL with your chosen RPC in the `.env` file
     rpcUrls: [
       "hardhat",
-      process.env.ETH_SEPOLIA_TESTNET_URL,
-      process.env.BSC_TESTNET_URL,
+      vars.get("ETH_SEPOLIA_TESTNET_URL", "https://rpc.sepolia.org"),
+      vars.get("BSC_TESTNET_URL", "https://data-seed-prebsc-1-s1.binance.org:8545")
     ],
 
     // Maximum limit is 15 * 10 ** 6 or 15,000,000. If the deployments are failing, try increasing this number
@@ -842,94 +571,97 @@ const config: HardhatUserConfig = {
     pretty: true,
   },
   etherscan: {
+    //  Add your own API key by getting an account at etherscan (https://etherscan.io), snowtrace (https://snowtrace.io) etc. 
+    //  This is used for verification purposes when you want to `npx hardhat verify` your contract using Hardhat
+    //  The same API key works usually for both testnet and mainnet
     apiKey: {
       // For Ethereum testnets & mainnet
-      mainnet: process.env.ETHERSCAN_API_KEY || "",
-      goerli: process.env.ETHERSCAN_API_KEY || "",
-      sepolia: process.env.ETHERSCAN_API_KEY || "",
-      holesky: process.env.ETHERSCAN_API_KEY || "",
+      mainnet: vars.get("ETHERSCAN_API_KEY", ""),
+      goerli: vars.get("ETHERSCAN_API_KEY", ""),
+      sepolia: vars.get("ETHERSCAN_API_KEY", ""),
+      holesky: vars.get("ETHERSCAN_API_KEY", ""),
       // For BSC testnet & mainnet
-      bsc: process.env.BSC_API_KEY || "",
-      bscTestnet: process.env.BSC_API_KEY || "",
+      bsc: vars.get("BSC_API_KEY", ""),
+      bscTestnet: vars.get("BSC_API_KEY", ""),
       // For Heco testnet & mainnet
-      heco: process.env.HECO_API_KEY || "",
-      hecoTestnet: process.env.HECO_API_KEY || "",
+      heco: vars.get("HECO_API_KEY", ""),
+      hecoTestnet: vars.get("HECO_API_KEY", ""),
       // For Fantom testnet & mainnet
-      opera: process.env.FANTOM_API_KEY || "",
-      ftmTestnet: process.env.FANTOM_API_KEY || "",
+      opera: vars.get("FANTOM_API_KEY", ""),
+      ftmTestnet: vars.get("FANTOM_API_KEY", ""),
       // For Optimism testnets & mainnet
-      optimisticEthereum: process.env.OPTIMISM_API_KEY || "",
-      optimisticGoerli: process.env.OPTIMISM_API_KEY || "",
-      optimisticSepolia: process.env.OPTIMISM_API_KEY || "",
+      optimisticEthereum: vars.get("OPTIMISM_API_KEY", ""),
+      optimisticGoerli: vars.get("OPTIMISM_API_KEY", ""),
+      optimisticSepolia: vars.get("OPTIMISM_API_KEY", ""),
       // For Polygon testnets & mainnets
-      polygon: process.env.POLYGON_API_KEY || "",
-      polygonZkEVM: process.env.POLYGON_ZKEVM_API_KEY || "",
-      polygonMumbai: process.env.POLYGON_API_KEY || "",
-      polygonZkEVMTestnet: process.env.POLYGON_ZKEVM_API_KEY || "",
+      polygon: vars.get("POLYGON_API_KEY", ""),
+      polygonZkEVM: vars.get("POLYGON_ZKEVM_API_KEY", ""),
+      polygonMumbai: vars.get("POLYGON_API_KEY", ""),
+      polygonZkEVMTestnet: vars.get("POLYGON_ZKEVM_API_KEY", ""),
       // For Arbitrum testnets & mainnets
-      arbitrumOne: process.env.ARBITRUM_API_KEY || "",
-      arbitrumNova: process.env.ARBITRUM_API_KEY || "",
-      arbitrumGoerli: process.env.ARBITRUM_API_KEY || "",
-      arbitrumSepolia: process.env.ARBITRUM_API_KEY || "",
+      arbitrumOne: vars.get("ARBITRUM_API_KEY", ""),
+      arbitrumNova: vars.get("ARBITRUM_API_KEY", ""),
+      arbitrumGoerli: vars.get("ARBITRUM_API_KEY", ""),
+      arbitrumSepolia: vars.get("ARBITRUM_API_KEY", ""),
       // For Avalanche testnet & mainnet
-      avalanche: process.env.AVALANCHE_API_KEY || "",
-      avalancheFujiTestnet: process.env.AVALANCHE_API_KEY || "",
+      avalanche: vars.get("AVALANCHE_API_KEY", ""),
+      avalancheFujiTestnet: vars.get("AVALANCHE_API_KEY", ""),
       // For Moonbeam testnet & mainnets
-      moonbeam: process.env.MOONBEAM_API_KEY || "",
-      moonriver: process.env.MOONBEAM_API_KEY || "",
-      moonbaseAlpha: process.env.MOONBEAM_API_KEY || "",
+      moonbeam: vars.get("MOONBEAM_API_KEY", ""),
+      moonriver: vars.get("MOONBEAM_API_KEY", ""),
+      moonbaseAlpha: vars.get("MOONBEAM_API_KEY", ""),
       // For Harmony testnet & mainnet
-      harmony: process.env.HARMONY_API_KEY || "",
-      harmonyTest: process.env.HARMONY_API_KEY || "",
+      harmony: vars.get("HARMONY_API_KEY", ""),
+      harmonyTest: vars.get("HARMONY_API_KEY", ""),
       // For Aurora testnet & mainnet
-      aurora: process.env.AURORA_API_KEY || "",
-      auroraTestnet: process.env.AURORA_API_KEY || "",
+      aurora: vars.get("AURORA_API_KEY", ""),
+      auroraTestnet: vars.get("AURORA_API_KEY", ""),
       // For Cronos testnet & mainnet
-      cronos: process.env.CRONOS_API_KEY || "",
-      cronosTestnet: process.env.CRONOS_API_KEY || "",
+      cronos: vars.get("CRONOS_API_KEY", ""),
+      cronosTestnet: vars.get("CRONOS_API_KEY", ""),
       // For Gnosis/xDai testnets & mainnets
-      gnosis: process.env.GNOSIS_API_KEY || "",
-      xdai: process.env.GNOSIS_API_KEY || "",
-      sokol: process.env.GNOSIS_API_KEY || "",
-      chiado: process.env.GNOSIS_API_KEY || "",
+      gnosis: vars.get("GNOSIS_API_KEY", ""),
+      xdai: vars.get("GNOSIS_API_KEY", ""),
+      sokol: vars.get("GNOSIS_API_KEY", ""),
+      chiado: vars.get("GNOSIS_API_KEY", ""),
       // For Fuse testnet & mainnet
-      fuse: process.env.FUSE_API_KEY || "",
-      spark: process.env.FUSE_API_KEY || "",
+      fuse: vars.get("FUSE_API_KEY", ""),
+      spark: vars.get("FUSE_API_KEY", ""),
       // For Evmos testnet & mainnet
-      evmos: process.env.EVMOS_API_KEY || "",
-      evmosTestnet: process.env.EVMOS_API_KEY || "",
+      evmos: vars.get("EVMOS_API_KEY", ""),
+      evmosTestnet: vars.get("EVMOS_API_KEY", ""),
       // For Boba network testnet & mainnet
-      boba: process.env.BOBA_API_KEY || "",
-      bobaTestnet: process.env.BOBA_API_KEY || "",
+      boba: vars.get("BOBA_API_KEY", ""),
+      bobaTestnet: vars.get("BOBA_API_KEY", ""),
       // For Canto testnet & mainnet
-      canto: process.env.CANTO_API_KEY || "",
-      cantoTestnet: process.env.CANTO_API_KEY || "",
+      canto: vars.get("CANTO_API_KEY", ""),
+      cantoTestnet: vars.get("CANTO_API_KEY", ""),
       // For Base testnets & mainnet
-      base: process.env.BASE_API_KEY || "",
-      baseTestnet: process.env.BASE_API_KEY || "",
-      baseSepolia: process.env.BASE_API_KEY || "",
+      base: vars.get("BASE_API_KEY", ""),
+      baseTestnet: vars.get("BASE_API_KEY", ""),
+      baseSepolia: vars.get("BASE_API_KEY", ""),
       // For Mantle testnet & mainnet
-      mantle: process.env.MANTLE_API_KEY || "",
-      mantleTestnet: process.env.MANTLE_API_KEY || "",
+      mantle: vars.get("MANTLE_API_KEY", ""),
+      mantleTestnet: vars.get("MANTLE_API_KEY", ""),
       // For Scroll testnet & mainnet
-      scroll: process.env.SCROLL_API_KEY || "",
-      scrollTestnet: process.env.SCROLL_API_KEY || "",
+      scroll: vars.get("SCROLL_API_KEY", ""),
+      scrollTestnet: vars.get("SCROLL_API_KEY", ""),
       // For Linea testnet & mainnet
-      linea: process.env.LINEA_API_KEY || "",
-      lineaTestnet: process.env.LINEA_API_KEY || "",
+      linea: vars.get("LINEA_API_KEY", ""),
+      lineaTestnet: vars.get("LINEA_API_KEY", ""),
       // For ShimmerEVM testnet
-      shimmerEVMTestnet: process.env.SHIMMEREVM_API_KEY || "",
+      shimmerEVMTestnet: vars.get("SHIMMEREVM_API_KEY", ""),
       // For Zora testnet & mainnet
-      zora: process.env.ZORA_API_KEY || "",
-      zoraTestnet: process.env.ZORA_API_KEY || "",
+      zora: vars.get("ZORA_API_KEY", ""),
+      zoraTestnet: vars.get("ZORA_API_KEY", ""),
       // For Lukso testnet & mainnet
-      lukso: process.env.LUKSO_API_KEY || "",
-      luksoTestnet: process.env.LUKSO_API_KEY || "",
+      lukso: vars.get("LUKSO_API_KEY", ""),
+      luksoTestnet: vars.get("LUKSO_API_KEY", ""),
       // For Manta testnet & mainnet
-      manta: process.env.MANTA_API_KEY || "",
-      mantaTestnet: process.env.MANTA_API_KEY || "",
+      manta: vars.get("MANTA_API_KEY", ""),
+      mantaTestnet: vars.get("MANTA_API_KEY", ""),
       // For Arthera testnet
-      artheraTestnet: process.env.ARTHERA_API_KEY || "",
+      artheraTestnet: vars.get("ARTHERA_API_KEY", ""),
     },
     customChains: [
       {
