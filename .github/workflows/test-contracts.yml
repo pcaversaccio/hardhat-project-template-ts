@@ -47,13 +47,13 @@ jobs:
       - name: Install pnpm project with a clean slate
         run: pnpm install --prefer-offline --frozen-lockfile
 
-      - name: Hardhat tests
-        run: pnpm test:hh
-
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
+
+      - name: Hardhat tests
+        run: pnpm test:hh
 
       - name: Show the Foundry default config
         run: forge config
