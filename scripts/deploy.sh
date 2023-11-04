@@ -20,7 +20,7 @@ read -ra args
 
 if [ -z "$args" ]
 then
-  forge create -i ./contracts/${contract}.sol:${contract} --rpc-url $rpc --private-key $key
+  forge create -i ./contracts/src/${contract}.sol:${contract} --rpc-url $rpc --private-key $key
 else
-  forge create -i ./contracts/${contract}.sol:${contract} --rpc-url $rpc --private-key $key --constructor-args ${args}
+  forge create -i ./contracts/src/${contract}.sol:${contract} --rpc-url $rpc --private-key $key --constructor-args ${args}
 fi

@@ -8,4 +8,4 @@ read contract
 rm -rf flattened.sol
 
 # Flatten the contract
-forge flatten ./contracts/${contract}.sol > flattened.sol
+forge flatten ./contracts/src/${contract}.sol > flattened.sol

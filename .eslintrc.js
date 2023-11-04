@@ -3,7 +3,7 @@ module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    ecmaVersion: 11,
+    ecmaVersion: 12,
   },
   plugins: ["@typescript-eslint"],
   extends: [
