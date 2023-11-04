@@ -25,7 +25,7 @@ export default async function main(hre: HardhatRuntimeEnvironment) {
   const artifact = await deployer.loadArtifact("Greeter");
   const contract = await deployer.deploy(artifact, ["Hello, Hardhat!"]);
 
-  await contract.deployed();
+  await contract.waitForDeployment();
 
-  console.log("Greeter deployed to:", contract.address);
+  console.log("Greeter deployed to:", await contract.getAddress());
 }
