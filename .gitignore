@@ -75,7 +75,7 @@ flattened.sol
 deployments_tenderly
 
 # zkSync files
-cache-zk
+cache_hardhat-zk
 artifacts-zk
 
 # Miscellaneous files

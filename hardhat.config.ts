@@ -118,7 +118,7 @@ const config: HardhatUserConfig = {
         enabled: false,
       },
       ledgerAccounts,
-      // zksync: true, // Enables zkSync in the Hardhat local network
+      // zksync: true, // Enable zkSync in the Hardhat local network
     },
     localhost: {
       url: "http://127.0.0.1:8545",
@@ -472,6 +472,7 @@ const config: HardhatUserConfig = {
       zksync: true,
       verifyURL:
         "https://zksync2-testnet-explorer.zksync.dev/contract_verification",
+      accounts,
       ledgerAccounts,
     },
     zkSyncMain: {
@@ -481,6 +482,7 @@ const config: HardhatUserConfig = {
       zksync: true,
       verifyURL:
         "https://zksync2-mainnet-explorer.zksync.io/contract_verification",
+      accounts,
       ledgerAccounts,
     },
     mantleTestnet: {
