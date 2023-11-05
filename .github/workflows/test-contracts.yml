@@ -143,7 +143,7 @@ jobs:
       # See https://github.com/ScopeLift/foundry-template/blob/fd3875d2e99a65dec19431723d6516b4ed76746e/.github/workflows/ci.yml#L49-L78.
       - name: Remove unnecessary `test` directory
         if: github.event_name == 'pull_request'
-        run: lcov --remove lcov.info 'test/*' 'script/*' --output-file lcov.info --rc lcov_branch_coverage=1
+        run: lcov --remove lcov.info 'test/*' 'script/*' 'node_modules/*' --output-file lcov.info --rc lcov_branch_coverage=1
 
       - name: Post coverage report
         if: github.event_name == 'pull_request'
@@ -158,4 +158,5 @@ jobs:
         uses: zgosalvez/github-actions-report-lcov@v2
         with:
           coverage-files: ./lcov.info
+          # Please specify here the minimum coverage threshold below which any PR will fail.
           minimum-coverage: 100
