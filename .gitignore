@@ -22,6 +22,9 @@ node_modules
 .env.production.local
 .env.local
 
+# Hardhat configuration file
+vars.json
+
 # Log files
 npm-debug.log*
 yarn-debug.log*
@@ -45,6 +48,7 @@ yarn-error.log*
 
 # Hardhat files
 cache
+cache_hardhat
 artifacts
 .deps
 
@@ -54,6 +58,9 @@ typechain-types
 # solidity-coverage directory and output file
 coverage
 coverage.json
+
+# forge-coverage lcov.info file
+lcov.info
 
 # xdeployer output directory
 deployments
@@ -68,7 +75,7 @@ flattened.sol
 deployments_tenderly
 
 # zkSync files
-cache-zk
+cache_hardhat-zk
 artifacts-zk
 
 # Miscellaneous files

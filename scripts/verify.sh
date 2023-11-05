@@ -32,7 +32,7 @@ read -s etherscan
 
 if [ -z "$args" ]
 then
-  forge verify-contract --chain-id $id --compiler-version $version $deployed ./contracts/${contract}.sol:${contract} $etherscan
+  forge verify-contract --chain-id $id --compiler-version $version $deployed ./contracts/src/${contract}.sol:${contract} $etherscan
 else
-  forge verify-contract --constructor-args ${encoded:2} --chain-id $id --compiler-version $version $deployed ./contracts/${contract}.sol:${contract} $etherscan
+  forge verify-contract --constructor-args ${encoded:2} --chain-id $id --compiler-version $version $deployed ./contracts/src/${contract}.sol:${contract} $etherscan
 fi

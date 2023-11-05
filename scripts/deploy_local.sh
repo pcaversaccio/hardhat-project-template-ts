@@ -23,7 +23,7 @@ read -ra args
 
 if [ -z "$args" ]
 then
-  forge create -i ./contracts/${contract}.sol:${contract} --rpc-url "http://localhost:8545"
+  forge create -i ./contracts/src/${contract}.sol:${contract} --rpc-url "http://localhost:8545"
 else
-  forge create -i ./contracts/${contract}.sol:${contract} --rpc-url "http://localhost:8545" --constructor-args ${args}
+  forge create -i ./contracts/src/${contract}.sol:${contract} --rpc-url "http://localhost:8545" --constructor-args ${args}
 fi

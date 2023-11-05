@@ -19,43 +19,143 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
         with:
-          submodules: recursive
+          version: latest
+          run_install: false
 
-      - name: Get Yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
+      - name: Get pnpm cache directory path
+        id: pnpm-cache-dir-path
+        run: echo "dir=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
 
-      - name: Restore Yarn cache
+      - name: Restore pnpm cache
         uses: actions/cache@v3
-        id: yarn-cache
+        id: pnpm-cache
         with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          path: ${{ steps.pnpm-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-yarn-
+            ${{ runner.os }}-pnpm-store-
 
       - name: Use Node.js ${{ matrix.node_version }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node_version }}
 
-      - name: Install Yarn project with a clean slate
-        run: yarn install --prefer-offline --frozen-lockfile
-
-      - name: Hardhat tests
-        run: yarn test:hh
+      - name: Install pnpm project with a clean slate
+        run: pnpm install --prefer-offline --frozen-lockfile
 
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
 
+      - name: Hardhat tests
+        run: pnpm test:hh
+
+      - name: Show the Foundry default config
+        run: forge config
+        env:
+          FOUNDRY_PROFILE: default
+
       - name: Foundry tests
-        run: yarn test:forge
+        run: pnpm test:forge
+        env:
+          FOUNDRY_PROFILE: default
 
       - name: Slither static analyser
         uses: crytic/slither-action@v0.3.0
-        continue-on-error: true
+        id: slither
+        with:
+          fail-on: config
+          sarif: results.sarif
+
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: ${{ steps.slither.outputs.sarif }}
+
+  coverage:
+    runs-on: ${{ matrix.os }}
+    permissions:
+      pull-requests: write
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+        node_version:
+          - 18
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+          run_install: false
+
+      - name: Get pnpm cache directory path
+        id: pnpm-cache-dir-path
+        run: echo "dir=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
+
+      - name: Restore pnpm cache
+        uses: actions/cache@v3
+        id: pnpm-cache
+        with:
+          path: ${{ steps.pnpm-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Use Node.js ${{ matrix.node_version }}
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node_version }}
+
+      - name: Install pnpm project with a clean slate
+        run: pnpm install --prefer-offline --frozen-lockfile
+
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
+
+      - name: Show the Foundry default config
+        run: forge config
+        env:
+          FOUNDRY_PROFILE: default
+
+      - name: Run coverage
+        run: NO_COLOR=1 forge coverage --report summary --report lcov >> $GITHUB_STEP_SUMMARY
+        env:
+          FOUNDRY_PROFILE: default
+
+      - name: Setup LCOV
+        if: github.event_name == 'pull_request'
+        uses: hrishikesh-kadam/setup-lcov@v1
+
+      # See https://github.com/ScopeLift/foundry-template/blob/fd3875d2e99a65dec19431723d6516b4ed76746e/.github/workflows/ci.yml#L49-L78.
+      - name: Remove unnecessary `test` directory
+        if: github.event_name == 'pull_request'
+        run: lcov --remove lcov.info 'test/*' 'script/*' --output-file lcov.info --rc lcov_branch_coverage=1
+
+      - name: Post coverage report
+        if: github.event_name == 'pull_request'
+        uses: romeovs/lcov-reporter-action@v0.3.1
+        with:
+          delete-old-comments: true
+          lcov-file: ./lcov.info
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Verify minimum coverage
+        if: github.event_name == 'pull_request'
+        uses: zgosalvez/github-actions-report-lcov@v2
+        with:
+          coverage-files: ./lcov.info
+          minimum-coverage: 100

@@ -1,22 +1,22 @@
 # Fully-Fledged Hardhat Project Template Based on TypeScript
 
-[![Test smart contracts](https://github.com/pcaversaccio/hardhat-project-template-ts/actions/workflows/test-contracts.yml/badge.svg)](https://github.com/pcaversaccio/hardhat-project-template-ts/actions/workflows/test-contracts.yml)
+[![🕵️‍♂️ Test smart contracts](https://github.com/pcaversaccio/hardhat-project-template-ts/actions/workflows/test-contracts.yml/badge.svg)](https://github.com/pcaversaccio/hardhat-project-template-ts/actions/workflows/test-contracts.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/license/mit/)
 
 ## Installation
 
-It is recommended to install [Yarn](https://classic.yarnpkg.com) through the `npm` package manager, which comes bundled with [Node.js](https://nodejs.org/en) when you install it on your system. It is recommended to use a Node.js version `>= 18.0.0`.
+It is recommended to install [`pnpm`](https://pnpm.io) through the `npm` package manager, which comes bundled with [Node.js](https://nodejs.org/en) when you install it on your system. It is recommended to use a Node.js version `>= 18.0.0`.
 
-Once you have `npm` installed, you can run the following both to install and upgrade Yarn:
+Once you have `npm` installed, you can run the following both to install and upgrade `pnpm`:
 
 ```console
-npm install --global yarn
+npm install -g pnpm
 ```
 
-After having installed Yarn, simply run:
+After having installed `pnpm`, simply run:
 
 ```console
-yarn install
+pnpm install
 ```
 
 ## Running Deployments
@@ -24,30 +24,35 @@ yarn install
 **Example Goerli:**
 
 ```console
-yarn deploy:goerli
+pnpm deploy:goerli
 ```
 
 > The deployment script [`deploy.ts`](./scripts/deploy.ts) includes the `tenderly` Hardhat Runtime Environment (HRE) extension with the `verify` method. Please consider uncommenting and configuring the Tenderly `project`, `username`, `forkNetwork`, `privateVerification`, and `deploymentsDir` attributes in the [`hardhat.config.ts`](./hardhat.config.ts) file before deploying or remove this call. Also, for this plugin to function you need to create a `config.yaml` file at `$HOME/.tenderly/config.yaml` or `%HOMEPATH%\.tenderly\config.yaml` and add an `access_key` field to it. For further information, see [here](https://www.npmjs.com/package/@tenderly/hardhat-tenderly#installing-tenderly-cli).
 
-> For the deployment on the [zkSync Era](https://era.zksync.io/docs/) test network, you must add your to-be-deployed contract artifact to [`deploy-zksync.ts`](./deploy/deploy-zksync.ts), enable `zksync` in the [`hardhat.config.ts`](./hardhat.config.ts#L83) file, and then run `yarn compile`. Next, fund your deployer account on zkSync Era Testnet, configure your `.env` file accordingly, and simply run `yarn deploy:zksynctestnet`. Eventually, to verify the contract you can invoke: `npx hardhat verify --network zkSyncTestnet --constructor-args arguments.js <YOUR_CONTRACT_ADDRESS>`. The same approach applies if you want to deploy on the production network, except that you need to run `yarn deploy:zksyncmain` and use `--network zkSyncMain` for the contract verification.
+> For the deployment on the [zkSync Era](https://era.zksync.io/docs/) test network, you must add your to-be-deployed contract artifact to [`deploy-zksync.ts`](./deploy/deploy-zksync.ts), enable `zksync` in the [`hardhat.config.ts`](./hardhat.config.ts#L83) file, and then run `pnpm compile`. Next, fund your deployer account on zkSync Era Testnet, setup the zkSync-related configuration variables accordingly, and simply run `pnpm deploy:zksynctestnet`. Eventually, to verify the contract you can invoke: `npx hardhat verify --network zkSyncTestnet --constructor-args arguments.js <YOUR_CONTRACT_ADDRESS>`. The same approach applies if you want to deploy on the production network, except that you need to run `pnpm deploy:zksyncmain` and use `--network zkSyncMain` for the contract verification.
 
 ## Running `CREATE2` Deployments
 
 ```console
-yarn xdeploy
+pnpm xdeploy
 ```
 
 This template uses the [xdeploy](https://github.com/pcaversaccio/xdeployer) Hardhat plugin. Check out the documentation for more information on the specifics of the deployments.
 
-## `.env` File
+## Configuration Variables
 
-In the `.env` file, place the private key of your wallet in the `PRIVATE_KEY` variable. This allows secure access to your wallet to use with both testnet and mainnet funds during Hardhat deployments. For more information on how this works, please read the documentation of the `npm` package [`dotenv`](https://www.npmjs.com/package/dotenv).
+Run `npx hardhat vars set PRIVATE_KEY` to set the private key of your wallet. This allows secure access to your wallet to use with both testnet and mainnet funds during Hardhat deployments.
+
+You can also run `npx hardhat vars setup` to see which other [configuration variables](https://hardhat.org/hardhat-runner/docs/guides/configuration-variables) are available.
 
 ## Using a Ledger Hardware Wallet
 
-This template implements the [`hardhat-ledger`](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-ledger) plugin. In the `.env` file, place your Ledger account in the `LEDGER_ACCOUNT` variable.
+This template implements the [`hardhat-ledger`](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-ledger) plugin. Run `npx hardhat set LEDGER_ACCOUNT` and enter the address of the Ledger account you want to use.
 
 ## Using the Truffle Dashboard
+
+> **Note**<br>
+> Truffle has been [sunsetted](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat) by Consensys, but I still keep it in the template as I find it a very valuable tool.
 
 [Truffle](https://trufflesuite.com) developed the [Truffle Dashboard](https://trufflesuite.com/docs/truffle/how-to/use-the-truffle-dashboard/) to provide an easy way to use your existing MetaMask wallet for your deployments and for other transactions that you need to send from a command line context. Because the Truffle Dashboard connects directly to MetaMask it is also possible to use it in combination with hardware wallets like [Ledger](https://www.ledger.com) or [Trezor](https://trezor.io).
 
@@ -65,12 +70,12 @@ To start a Truffle Dashboard, you need to run the following command in a separat
 truffle dashboard
 ```
 
-By default, the command above starts a Truffle Dashboard at http://localhost:24012 and opens the Dashboard in a new tab in your default browser. The Dashboard then prompts you to connect your wallet and confirm that you're connected to the right network. **You should double check your connected network at this point, since switching to a different network during a deployment can have unintended consequences.**
+By default, the command above starts a Truffle Dashboard at `http://localhost:24012` and opens the Dashboard in a new tab in your default browser. The Dashboard then prompts you to connect your wallet and confirm that you're connected to the right network. **You should double check your connected network at this point, since switching to a different network during a deployment can have unintended consequences.**
 
 Eventually, in order to deploy with the Truffle Dashboard, you can simply run:
 
 ```console
-yarn deploy:dashboard
+pnpm deploy:dashboard
 ```
 
 ## Mainnet Forking
@@ -81,14 +86,14 @@ This template is currently configured via the [hardhat.config.ts](./hardhat.conf
 
 ```ts
 forking: {
-    url: process.env.ETH_MAINNET_URL || "",
-    // The Hardhat network will by default fork from the latest mainnet block
-    // To pin the block number, specify it below
-    // You will need access to a node with archival data for this to work!
-    // blockNumber: 14743877,
-    // If you want to do some forking, set `enabled` to true
-    enabled: false,
-}
+  url: vars.get("ETH_MAINNET_URL", ethMainnetUrl),
+  // The Hardhat network will by default fork from the latest mainnet block
+  // To pin the block number, specify it below
+  // You will need access to a node with archival data for this to work!
+  // blockNumber: 14743877,
+  // If you want to do some forking, set `enabled` to true
+  enabled: false,
+},
 ```
 
 ## Contract Verification
@@ -111,7 +116,7 @@ npx hardhat run scripts/interact.ts --network <network_name>
 
 ## Foundry
 
-This template repository also includes the [Foundry](https://github.com/foundry-rs/foundry) toolkit.
+This template repository also includes the [Foundry](https://github.com/foundry-rs/foundry) toolkit as well as the [`@nomicfoundation/hardhat-foundry`](https://hardhat.org/hardhat-runner/docs/advanced/hardhat-and-foundry) plugin.
 
 > If you need help getting started with Foundry, I recommend reading the [📖 Foundry Book](https://book.getfoundry.sh).
 
@@ -144,13 +149,13 @@ forge build
 To run only TypeScript tests:
 
 ```console
-yarn test:hh
+pnpm test:hh
 ```
 
 To run only Solidity tests:
 
 ```console
-yarn test:forge
+pnpm test:forge
 ```
 
 or

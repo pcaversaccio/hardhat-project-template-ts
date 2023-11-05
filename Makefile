@@ -1,7 +1,3 @@
-# include `.env` file and export its env vars
-# (-include to ignore error if it does not exist)
--include .env
-
 # dependencies
 update          :; forge update
 
@@ -13,7 +9,7 @@ build           :; forge build
 build-optimised :; forge build --optimize
 test-forge      :; forge test
 test-gasreport 	:; forge test --gas-report
-trace           :; forge test -vvv
+trace           :; forge test -vvvvv
 clean           :; forge clean
 snapshot        :; forge snapshot
 
