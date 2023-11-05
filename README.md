@@ -22,6 +22,7 @@ pnpm install
 ## Running Deployments
 
 > **Note**<br>
+
 > The deployment script [`deploy.ts`](./scripts/deploy.ts) attempts to automatically verify the contract on the target chain after deployment. If you have not configured an API key, the verification will fail.
 
 **Example Goerli:**
