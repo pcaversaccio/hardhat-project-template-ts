@@ -154,7 +154,6 @@
     "ts-node": "^10.9.1",
     "typechain": "^8.3.2",
     "typescript": "^5.2.2",
-    "undici": "^5.27.2",
     "xdeployer": "^2.1.12",
     "zksync2-js": "^0.2.2"
   }

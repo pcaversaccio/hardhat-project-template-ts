@@ -110,9 +110,6 @@ devDependencies:
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
-  undici:
-    specifier: ^5.27.2
-    version: 5.27.2
   xdeployer:
     specifier: ^2.1.12
     version: 2.1.12(@nomicfoundation/hardhat-ethers@3.0.4)(ethers@6.8.1)(hardhat@2.19.0)

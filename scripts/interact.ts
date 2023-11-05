@@ -3,7 +3,7 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const address = "0xDfD1Bab99dDcEFfE42EB35cc2F838159953c64c2"; // Specify here your contract address
+  const address = "0xdFf511FC04478a2fdEc2Efb93D92C4C6a55911EE"; // Specify here your contract address
   const contract = await ethers.getContractAt("Greeter", address); // Specify here your contract name
 
   ////////////////
@@ -18,7 +18,7 @@ async function main() {
 
   const tx = await contract.setGreeting(newGreeting); // Specify here the to-be-called function name
   console.log("The transaction hash is:", tx.hash);
-  const receipt = await tx.wait(); // wait until the transaction is confirmed
+  const receipt = await tx.wait(); // Wait until the transaction is confirmed
   console.log(
     "The transaction returned the following transaction receipt:\n",
     receipt,

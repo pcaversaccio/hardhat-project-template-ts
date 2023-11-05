@@ -20,13 +20,13 @@ describe("Greeter", function () {
 
     const setGreetingTx = await greeter.setGreeting("Hola, mundo!");
 
-    // wait until the transaction is mined
+    // Wait until the transaction is mined
     await setGreetingTx.wait();
 
     expect(await greeter.greet()).to.equal("Hola, mundo!");
   });
 
-  // showcase test on how to use the Hardhat network helpers library
+  // Showcase test on how to use the Hardhat network helpers library
   it("Should mine the given number of blocks", async function () {
     const blockNumberBefore = await time.latestBlock();
 

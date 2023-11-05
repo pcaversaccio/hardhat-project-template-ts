@@ -1,8 +1,13 @@
 import { HardhatUserConfig, task, vars } from "hardhat/config";
+
+// Workaround until Tenderly is updated to `ethers` version 6: https://github.com/Tenderly/hardhat-tenderly/issues/157
+import * as tdly from "@tenderly/hardhat-tenderly";
+
 import "@nomicfoundation/hardhat-ethers";
-import "@nomicfoundation/hardhat-chai-matchers";
 import "@nomicfoundation/hardhat-verify";
 import "@nomicfoundation/hardhat-ledger";
+import "@nomicfoundation/hardhat-foundry";
+import "@nomicfoundation/hardhat-chai-matchers";
 import "@typechain/hardhat";
 
 import "xdeployer";
@@ -10,12 +15,10 @@ import "@matterlabs/hardhat-zksync-solc";
 import "@matterlabs/hardhat-zksync-deploy";
 import "@matterlabs/hardhat-zksync-verify";
 import "@truffle/dashboard-hardhat-plugin";
-import "@nomicfoundation/hardhat-foundry";
 import "hardhat-gas-reporter";
 import "hardhat-abi-exporter";
 import "solidity-coverage";
 import "hardhat-contract-sizer";
-import * as tdly from "@tenderly/hardhat-tenderly";
 
 // Turning off the automatic Tenderly verification
 tdly.setup({ automaticVerifications: false });
@@ -29,7 +32,11 @@ const accounts = [
   ),
 ];
 const ledgerAccounts = [
-  vars.get("LEDGER_ACCOUNT", "0x0000000000000000000000000000000000000000"),
+  vars.get(
+    "LEDGER_ACCOUNT",
+    // `bytes20(uint160(uint256(keccak256("DEFAULT_VALUE"))))`
+    "0x8195fa8224c39103f578c9b84f951721df3fa71c",
+  ),
 ];
 
 task("accounts", "Prints the list of accounts", async (_, hre) => {

@@ -4,15 +4,15 @@ pragma solidity ^0.8.22;
 import {Greeter} from "../src/Greeter.sol";
 import {Test} from "forge-std/Test.sol";
 
-contract ContractTest is Test {
+contract GreeterTest is Test {
     Greeter public greeter;
 
     function setUp() public {
-        greeter = new Greeter("Hello, world!");
+        greeter = new Greeter("Hello, Hardhat!");
     }
 
     function testCreateGreeter() public {
-        assertEq(greeter.greet(), "Hello, world!");
+        assertEq(greeter.greet(), "Hello, Hardhat!");
         greeter.setGreeting("Hola, mundo!");
         assertEq(greeter.greet(), "Hola, mundo!");
     }
