@@ -59,6 +59,9 @@ typechain-types
 coverage
 coverage.json
 
+# forge-coverage lcov.info file
+lcov.info
+
 # xdeployer output directory
 deployments
 
