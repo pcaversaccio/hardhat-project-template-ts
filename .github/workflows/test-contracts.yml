@@ -74,6 +74,7 @@ jobs:
         uses: crytic/slither-action@v0.3.0
         id: slither
         with:
+          node-version: ${{ matrix.node_version }}
           fail-on: config
           sarif: results.sarif
 
