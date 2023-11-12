@@ -39,8 +39,8 @@ devDependencies:
     specifier: ^5.0.0
     version: 5.0.0
   "@tenderly/hardhat-tenderly":
-    specifier: ^1.7.7
-    version: 1.7.7(hardhat@2.19.0)(ts-node@10.9.1)(typescript@5.2.2)
+    specifier: ^1.8.0
+    version: 1.8.0(hardhat@2.19.0)(ts-node@10.9.1)(typescript@5.2.2)
   "@truffle/dashboard-hardhat-plugin":
     specifier: ^0.2.15
     version: 0.2.15(hardhat@2.19.0)
@@ -742,10 +742,10 @@ packages:
       "@ethersproject/strings": 5.7.0
     dev: true
 
-  /@fastify/busboy@2.0.0:
+  /@fastify/busboy@2.1.0:
     resolution:
       {
-        integrity: sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==,
+        integrity: sha512-+KpH+QxZU7O4675t3mnkQKcZZg56u+K/Ct2K+N2AZYNVK8kyeo/bI18tI8aPm3tvNNRyTWfj6s5tnGNlcbQRsA==,
       }
     engines: { node: ">=14" }
     dev: true
@@ -804,15 +804,6 @@ packages:
       "@jridgewell/sourcemap-codec": 1.4.15
     dev: true
 
-  /@ledgerhq/cryptoassets@11.0.1:
-    resolution:
-      {
-        integrity: sha512-VhSA1ydoTnNjoC5c+S/a+YURJV+UNvuLVkRrKpP87zaQ2a+odPkP3EVDrU+G1Dvt/LipA24ZgcpoxXTbO6fQ9Q==,
-      }
-    dependencies:
-      invariant: 2.2.4
-    dev: true
-
   /@ledgerhq/cryptoassets@9.13.0:
     resolution:
       {
@@ -822,40 +813,39 @@ packages:
       invariant: 2.2.4
     dev: true
 
-  /@ledgerhq/devices@8.0.7:
+  /@ledgerhq/devices@8.0.8:
     resolution:
       {
-        integrity: sha512-BbPyET52lXnVs7CxJWrGYqmtGdbGzj+XnfCqLsDnA7QYr1CZREysxmie+Rr6BKpNDBRVesAovXjtaVaZOn+upw==,
+        integrity: sha512-0j7E8DY2jeSSATc8IJk+tXDZ9u+Z7tXxB8I4TzXrfV/8A5exMh/K1IwX6Jt1zlw1wre4CT9MV4mzUs3M/TE7lg==,
       }
     dependencies:
-      "@ledgerhq/errors": 6.14.0
-      "@ledgerhq/logs": 6.10.1
-      rxjs: 6.6.7
+      "@ledgerhq/errors": 6.15.0
+      "@ledgerhq/logs": 6.11.0
+      rxjs: 7.8.1
       semver: 7.5.4
     dev: true
 
-  /@ledgerhq/domain-service@1.1.13(debug@4.3.4):
+  /@ledgerhq/domain-service@1.1.14(debug@4.3.4):
     resolution:
       {
-        integrity: sha512-8XQl4glEfNyX4BkNhuwe69mzn1VIasWFoKlgXIXf6gc8Rw1Qzcn0LE+/3DBxZ3pC3IWiBnm7MmXMrIaSLjnPNQ==,
+        integrity: sha512-Hi0OUSRrngpj0HhZoP9m/E1sDstiKxxaxxBuRAP/NlfLOJjAasxDRQA/Pyh4Gs4YHnhLZNWp4heXTJ8F1KMedA==,
       }
     dependencies:
-      "@ledgerhq/cryptoassets": 11.0.1
-      "@ledgerhq/errors": 6.14.0
-      "@ledgerhq/logs": 6.10.1
-      "@ledgerhq/types-live": 6.41.1
+      "@ledgerhq/errors": 6.15.0
+      "@ledgerhq/logs": 6.11.0
+      "@ledgerhq/types-live": 6.42.0
       axios: 1.6.1(debug@4.3.4)
       eip55: 2.1.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     transitivePeerDependencies:
       - debug
     dev: true
 
-  /@ledgerhq/errors@6.14.0:
+  /@ledgerhq/errors@6.15.0:
     resolution:
       {
-        integrity: sha512-ZWJw2Ti6Dq1Ott/+qYqJdDWeZm16qI3VNG5rFlb0TQ3UcAyLIQZbnnzzdcVVwVeZiEp66WIpINd/pBdqsHVyOA==,
+        integrity: sha512-6xaw5/mgoht62TnL3rXsaQYEFwpnXyNDk1AOSJksIjFHx9bHUnkyVmrnGQDj0JLzi+E7bHEgTrpCs8wpeDh9jA==,
       }
     dev: true
 
@@ -868,11 +858,11 @@ packages:
       "@ethersproject/abi": 5.7.0
       "@ethersproject/rlp": 5.7.0
       "@ledgerhq/cryptoassets": 9.13.0
-      "@ledgerhq/domain-service": 1.1.13(debug@4.3.4)
-      "@ledgerhq/errors": 6.14.0
-      "@ledgerhq/hw-transport": 6.28.8
-      "@ledgerhq/hw-transport-mocker": 6.27.19
-      "@ledgerhq/logs": 6.10.1
+      "@ledgerhq/domain-service": 1.1.14(debug@4.3.4)
+      "@ledgerhq/errors": 6.15.0
+      "@ledgerhq/hw-transport": 6.29.0
+      "@ledgerhq/hw-transport-mocker": 6.27.20
+      "@ledgerhq/logs": 6.11.0
       axios: 1.6.1(debug@4.3.4)
       bignumber.js: 9.1.2
       crypto-js: 4.2.0
@@ -880,71 +870,73 @@ packages:
       - debug
     dev: true
 
-  /@ledgerhq/hw-transport-mocker@6.27.19:
+  /@ledgerhq/hw-transport-mocker@6.27.20:
     resolution:
       {
-        integrity: sha512-sD/7Ht1flaHZcwIFOi2E1LTHYLdAOe206/JwlwRU78pT0oUan8FnXR5SD8PSmhwgmQjJXto+PFBlmVe5EIt9Lw==,
+        integrity: sha512-o5nGuMLs/akXUvgD1f2u1DqhiC7Ii8x3fCmdE5KExCMo3dVWYkeeV3LTUzx+bp+daJFeYNKOa9+Z7XpqIuEJtA==,
       }
     dependencies:
-      "@ledgerhq/hw-transport": 6.28.8
-      "@ledgerhq/logs": 6.10.1
+      "@ledgerhq/hw-transport": 6.29.0
+      "@ledgerhq/logs": 6.11.0
+      rxjs: 7.8.1
     dev: true
 
-  /@ledgerhq/hw-transport-node-hid-noevents@6.27.19:
+  /@ledgerhq/hw-transport-node-hid-noevents@6.28.0:
     resolution:
       {
-        integrity: sha512-zOIB1fBiQH9ZYFzoEpNY4n1lE7bGPgRT+k85fKuLM7cxxm5Sy+TgrdxImvBz0IQUS8EvrtZCm+dVWkb2sH/6OA==,
+        integrity: sha512-7hhgZQzYTFEazxu8Lu/LBk9ah2if4EIQyPuapUfbH+kgbJ6QkGcYQEVO6ZfIIIO4osLvncI1eOU5KpzSlXsJjA==,
       }
     dependencies:
-      "@ledgerhq/devices": 8.0.7
-      "@ledgerhq/errors": 6.14.0
-      "@ledgerhq/hw-transport": 6.28.8
-      "@ledgerhq/logs": 6.10.1
+      "@ledgerhq/devices": 8.0.8
+      "@ledgerhq/errors": 6.15.0
+      "@ledgerhq/hw-transport": 6.29.0
+      "@ledgerhq/logs": 6.11.0
       node-hid: 2.1.2
     dev: true
 
-  /@ledgerhq/hw-transport-node-hid@6.27.21:
+  /@ledgerhq/hw-transport-node-hid@6.27.22:
     resolution:
       {
-        integrity: sha512-8G3Owpa2ex+TkGQSMkKoAbMEGZ7a23g0wZUvVzalQphMqbayebMhuXxue8iPp7F9pulm7uyLxgMYptYyw5i4yQ==,
+        integrity: sha512-Nc6QVTmhsAN6U7YvLhZgryCz8+5p25063Kaoq8H5vDZPsixF1vDzY4ivdZnd8RpV/PM2wLXHwPrXaKmW66RdQw==,
       }
     dependencies:
-      "@ledgerhq/devices": 8.0.7
-      "@ledgerhq/errors": 6.14.0
-      "@ledgerhq/hw-transport": 6.28.8
-      "@ledgerhq/hw-transport-node-hid-noevents": 6.27.19
-      "@ledgerhq/logs": 6.10.1
+      "@ledgerhq/devices": 8.0.8
+      "@ledgerhq/errors": 6.15.0
+      "@ledgerhq/hw-transport": 6.29.0
+      "@ledgerhq/hw-transport-node-hid-noevents": 6.28.0
+      "@ledgerhq/logs": 6.11.0
       lodash: 4.17.21
       node-hid: 2.1.2
       usb: 2.9.0
     dev: true
 
-  /@ledgerhq/hw-transport@6.28.8:
+  /@ledgerhq/hw-transport@6.29.0:
     resolution:
       {
-        integrity: sha512-XxQVl4htd018u/M66r0iu5nlHi+J6QfdPsORzDF6N39jaz+tMqItb7tUlXM/isggcuS5lc7GJo7NOuJ8rvHZaQ==,
+        integrity: sha512-WQfzxt3EnnbOmzZVYiCgSmNsqafBOFQn40awvUPY2IZviJRs23/1ANPHAo76bzPV88+Qk0+1wZlcnIanGN6fFA==,
       }
     dependencies:
-      "@ledgerhq/devices": 8.0.7
-      "@ledgerhq/errors": 6.14.0
+      "@ledgerhq/devices": 8.0.8
+      "@ledgerhq/errors": 6.15.0
+      "@ledgerhq/logs": 6.11.0
       events: 3.3.0
     dev: true
 
-  /@ledgerhq/logs@6.10.1:
+  /@ledgerhq/logs@6.11.0:
     resolution:
       {
-        integrity: sha512-z+ILK8Q3y+nfUl43ctCPuR4Y2bIxk/ooCQFwZxhtci1EhAtMDzMAx2W25qx8G1PPL9UUOdnUax19+F0OjXoj4w==,
+        integrity: sha512-HHK9y4GGe4X7CXbRUCh7z8Mp+WggpJn1dmUjmuk1rNugESF6o8nAOnXA+BxwtRRNV3CgNJR3Wxdos4J9qV0Zsg==,
       }
     dev: true
 
-  /@ledgerhq/types-live@6.41.1:
+  /@ledgerhq/types-live@6.42.0:
     resolution:
       {
-        integrity: sha512-M9NcGlpyW7383HZ+Wcl+vVj07fKlBLQT29wrrPTW9raj2iq0fzyAaxSQPs0VKX6LghLQSmXG2EdcvQ9v5FakgA==,
+        integrity: sha512-YI1WD8CLEXibVQsp0wR7NqyLgJQlgYiXdqhj1vQZLUSR5/Mnq1TxbaTvFUveMy4V+4sj8e5rRJCyEyz1/sgzCw==,
       }
     dependencies:
       bignumber.js: 9.1.2
-      rxjs: 6.6.7
+      rxjs: 7.8.1
     dev: true
 
   /@matterlabs/hardhat-zksync-deploy@1.0.0(ethers@6.8.1)(hardhat@2.19.0)(zksync2-js@0.2.2):
@@ -1389,10 +1381,10 @@ packages:
     peerDependencies:
       hardhat: ^2.16.0
     dependencies:
-      "@ledgerhq/errors": 6.14.0
+      "@ledgerhq/errors": 6.15.0
       "@ledgerhq/hw-app-eth": 6.33.6(debug@4.3.4)
-      "@ledgerhq/hw-transport": 6.28.8
-      "@ledgerhq/hw-transport-node-hid": 6.27.21
+      "@ledgerhq/hw-transport": 6.29.0
+      "@ledgerhq/hw-transport-node-hid": 6.27.22
       "@nomicfoundation/ethereumjs-util": 9.0.1
       chalk: 2.4.2
       debug: 4.3.4(supports-color@8.1.1)
@@ -1882,10 +1874,10 @@ packages:
       defer-to-connect: 2.0.1
     dev: true
 
-  /@tenderly/hardhat-tenderly@1.7.7(hardhat@2.19.0)(ts-node@10.9.1)(typescript@5.2.2):
+  /@tenderly/hardhat-tenderly@1.8.0(hardhat@2.19.0)(ts-node@10.9.1)(typescript@5.2.2):
     resolution:
       {
-        integrity: sha512-p/jLzRPpoD7J0LGvUFEQjgniDzmP5AzfTgy41qqzyjhOsW0voe7wZI8lXjadl5MEr7rAXN1iH3VncT13qG6+Zw==,
+        integrity: sha512-HzyYsFZEXVALz+vDn1XesvaqrSDr3vYqlMd/A+r6pi6er1dFRlbUPW5mdalPQsbPOsBIO+PXjOlrM7mGgBdYEQ==,
       }
     peerDependencies:
       hardhat: ^2.10.2
@@ -1898,7 +1890,7 @@ packages:
       hardhat: 2.19.0(ts-node@10.9.1)(typescript@5.2.2)
       hardhat-deploy: 0.11.43
       js-yaml: 4.1.0
-      tenderly: 0.5.3(ts-node@10.9.1)(typescript@5.2.2)
+      tenderly: 0.6.0(ts-node@10.9.1)(typescript@5.2.2)
       tslog: 4.9.2
     transitivePeerDependencies:
       - bufferutil
@@ -5976,7 +5968,7 @@ packages:
       decompress-response: 6.0.0
       form-data-encoder: 1.7.1
       get-stream: 6.0.1
-      http2-wrapper: 2.2.0
+      http2-wrapper: 2.2.1
       lowercase-keys: 3.0.0
       p-cancelable: 3.0.0
       responselike: 2.0.1
@@ -5996,7 +5988,7 @@ packages:
       decompress-response: 6.0.0
       form-data-encoder: 2.1.4
       get-stream: 6.0.1
-      http2-wrapper: 2.2.0
+      http2-wrapper: 2.2.1
       lowercase-keys: 3.0.0
       p-cancelable: 3.0.0
       responselike: 3.0.0
@@ -6413,10 +6405,10 @@ packages:
       resolve-alpn: 1.2.1
     dev: true
 
-  /http2-wrapper@2.2.0:
+  /http2-wrapper@2.2.1:
     resolution:
       {
-        integrity: sha512-kZB0wxMo0sh1PehyjJUWRFEd99KC5TLjZ2cULC4f9iqJBAmKQQXEICjxl5iPJRwP40dpeHFqqhm7tYCvODpqpQ==,
+        integrity: sha512-V5nVw1PAOgfI3Lmeaj2Exmeg7fenjhRUgz1lPSezy1CuhPYbgQtbQj4jZfEAEMlaL+vupsvhjqCyjzob0yxsmQ==,
       }
     engines: { node: ">=10.19.0" }
     dependencies:
@@ -8664,29 +8656,27 @@ packages:
       strip-json-comments: 2.0.1
     dev: true
 
-  /react-dom@17.0.2(react@17.0.2):
+  /react-dom@18.2.0(react@18.2.0):
     resolution:
       {
-        integrity: sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==,
+        integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==,
       }
     peerDependencies:
-      react: 17.0.2
+      react: ^18.2.0
     dependencies:
       loose-envify: 1.4.0
-      object-assign: 4.1.1
-      react: 17.0.2
-      scheduler: 0.20.2
+      react: 18.2.0
+      scheduler: 0.23.0
     dev: true
 
-  /react@17.0.2:
+  /react@18.2.0:
     resolution:
       {
-        integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==,
+        integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==,
       }
     engines: { node: ">=0.10.0" }
     dependencies:
       loose-envify: 1.4.0
-      object-assign: 4.1.1
     dev: true
 
   /readable-stream@1.0.34:
@@ -9021,14 +9011,13 @@ packages:
       }
     dev: true
 
-  /rxjs@6.6.7:
+  /rxjs@7.8.1:
     resolution:
       {
-        integrity: sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==,
+        integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==,
       }
-    engines: { npm: ">=2.0.0" }
     dependencies:
-      tslib: 1.14.1
+      tslib: 2.6.2
     dev: true
 
   /safe-buffer@5.1.2:
@@ -9075,14 +9064,13 @@ packages:
       wordwrap: 1.0.0
     dev: true
 
-  /scheduler@0.20.2:
+  /scheduler@0.23.0:
     resolution:
       {
-        integrity: sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ==,
+        integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==,
       }
     dependencies:
       loose-envify: 1.4.0
-      object-assign: 4.1.1
     dev: true
 
   /scrypt-js@2.0.4:
@@ -9881,10 +9869,10 @@ packages:
       yallist: 3.1.1
     dev: true
 
-  /tenderly@0.5.3(ts-node@10.9.1)(typescript@5.2.2):
+  /tenderly@0.6.0(ts-node@10.9.1)(typescript@5.2.2):
     resolution:
       {
-        integrity: sha512-sR+sbZKZzt3b2+moXJsrkBvbava1/4mGulIfuZw8bwr2OpCH8N00dME1t89JC8RjVnQjy4VewVFHyWANdn5zYQ==,
+        integrity: sha512-uPnR5ujR1j0Aay4nuqymTY2nu3e0yDjl6dHBqkTTIYEDzyzaDLx2+PkVxjT5RWseAbWORsa6GYetletATf1zmQ==,
       }
     peerDependencies:
       ts-node: "*"
@@ -10107,6 +10095,13 @@ packages:
       }
     dev: true
 
+  /tslib@2.6.2:
+    resolution:
+      {
+        integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==,
+      }
+    dev: true
+
   /tslog@4.9.2:
     resolution:
       {
@@ -10326,7 +10321,7 @@ packages:
       }
     engines: { node: ">=14.0" }
     dependencies:
-      "@fastify/busboy": 2.0.0
+      "@fastify/busboy": 2.1.0
     dev: true
 
   /universalify@0.1.2:
