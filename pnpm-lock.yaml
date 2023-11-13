@@ -39,8 +39,8 @@ devDependencies:
     specifier: ^5.0.0
     version: 5.0.0
   "@tenderly/hardhat-tenderly":
-    specifier: ^1.8.0
-    version: 1.8.0(hardhat@2.19.0)(ts-node@10.9.1)(typescript@5.2.2)
+    specifier: ^2.0.1
+    version: 2.0.1(@types/node@20.9.0)(ethers@6.8.1)(hardhat@2.19.0)
   "@truffle/dashboard-hardhat-plugin":
     specifier: ^0.2.15
     version: 0.2.15(hardhat@2.19.0)
@@ -1630,19 +1630,6 @@ packages:
       - supports-color
     dev: true
 
-  /@nomiclabs/hardhat-ethers@2.2.3(ethers@5.7.2)(hardhat@2.19.0):
-    resolution:
-      {
-        integrity: sha512-YhzPdzb612X591FOe68q+qXVXGG2ANZRvDo0RRUtimev85rCrAlv/TLMEZw5c+kq9AbzocLTVX/h2jVIFPL9Xg==,
-      }
-    peerDependencies:
-      ethers: ^5.0.0
-      hardhat: ^2.0.0
-    dependencies:
-      ethers: 5.7.2
-      hardhat: 2.19.0(ts-node@10.9.1)(typescript@5.2.2)
-    dev: true
-
   /@openzeppelin/contracts@5.0.0:
     resolution:
       {
@@ -1874,30 +1861,33 @@ packages:
       defer-to-connect: 2.0.1
     dev: true
 
-  /@tenderly/hardhat-tenderly@1.8.0(hardhat@2.19.0)(ts-node@10.9.1)(typescript@5.2.2):
+  /@tenderly/hardhat-tenderly@2.0.1(@types/node@20.9.0)(ethers@6.8.1)(hardhat@2.19.0):
     resolution:
       {
-        integrity: sha512-HzyYsFZEXVALz+vDn1XesvaqrSDr3vYqlMd/A+r6pi6er1dFRlbUPW5mdalPQsbPOsBIO+PXjOlrM7mGgBdYEQ==,
+        integrity: sha512-MaVq7UuWvsyqstya5wVwDc5ml5xo1pAS9PRQQZWhg/f6ats3KFboi9BP18Yhypjh4bPw2NPZOBip9u1lV0oaGw==,
       }
     peerDependencies:
-      hardhat: ^2.10.2
+      ethers: ^6.8.1
+      hardhat: ^2.19.0
     dependencies:
       "@ethersproject/bignumber": 5.7.0
-      "@nomiclabs/hardhat-ethers": 2.2.3(ethers@5.7.2)(hardhat@2.19.0)
+      "@nomicfoundation/hardhat-ethers": 3.0.4(ethers@6.8.1)(hardhat@2.19.0)
       axios: 0.27.2
-      ethers: 5.7.2
+      ethers: 6.8.1
       fs-extra: 10.1.0
       hardhat: 2.19.0(ts-node@10.9.1)(typescript@5.2.2)
       hardhat-deploy: 0.11.43
-      js-yaml: 4.1.0
-      tenderly: 0.6.0(ts-node@10.9.1)(typescript@5.2.2)
+      tenderly: 0.7.0(ts-node@10.9.1)(typescript@5.2.2)
+      ts-node: 10.9.1(@types/node@20.9.0)(typescript@5.2.2)
       tslog: 4.9.2
+      typescript: 5.2.2
     transitivePeerDependencies:
+      - "@swc/core"
+      - "@swc/wasm"
+      - "@types/node"
       - bufferutil
       - debug
       - supports-color
-      - ts-node
-      - typescript
       - utf-8-validate
     dev: true
 
@@ -6429,14 +6419,6 @@ packages:
       - supports-color
     dev: true
 
-  /hyperlinker@1.0.0:
-    resolution:
-      {
-        integrity: sha512-Ty8UblRWFEcfSuIaajM34LdPXIhbs1ajEX/BBPv24J+enSVaEVY63xQ6lTO9VRYS5LAoghIG0IDJ+p+IPzKUQQ==,
-      }
-    engines: { node: ">=4" }
-    dev: true
-
   /iconv-lite@0.4.24:
     resolution:
       {
@@ -9869,10 +9851,10 @@ packages:
       yallist: 3.1.1
     dev: true
 
-  /tenderly@0.6.0(ts-node@10.9.1)(typescript@5.2.2):
+  /tenderly@0.7.0(ts-node@10.9.1)(typescript@5.2.2):
     resolution:
       {
-        integrity: sha512-uPnR5ujR1j0Aay4nuqymTY2nu3e0yDjl6dHBqkTTIYEDzyzaDLx2+PkVxjT5RWseAbWORsa6GYetletATf1zmQ==,
+        integrity: sha512-yA5KEYRRgT5lva1o8mhAU+zwpVc5f6+HJ+lVxPhdmK3LeTrm+ZEW7FYKM8WwM2HHgVugwKja+7wuS7gRhnZ/ug==,
       }
     peerDependencies:
       ts-node: "*"
@@ -9886,8 +9868,6 @@ packages:
       axios: 0.27.2
       cli-table3: 0.6.3
       commander: 9.5.0
-      express: 4.18.2
-      hyperlinker: 1.0.0
       js-yaml: 4.1.0
       open: 8.4.2
       prompts: 2.4.2
@@ -9896,7 +9876,6 @@ packages:
       typescript: 5.2.2
     transitivePeerDependencies:
       - debug
-      - supports-color
     dev: true
 
   /text-table@0.2.0:

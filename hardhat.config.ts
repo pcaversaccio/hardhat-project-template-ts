@@ -1,8 +1,5 @@
 import { HardhatUserConfig, task, vars } from "hardhat/config";
 
-// Workaround until Tenderly is updated to `ethers` version 6: https://github.com/Tenderly/hardhat-tenderly/issues/157
-import * as tdly from "@tenderly/hardhat-tenderly";
-
 import "@nomicfoundation/hardhat-ethers";
 import "@nomicfoundation/hardhat-verify";
 import "@nomicfoundation/hardhat-ledger";
@@ -19,6 +16,7 @@ import "hardhat-gas-reporter";
 import "hardhat-abi-exporter";
 import "solidity-coverage";
 import "hardhat-contract-sizer";
+import * as tdly from "@tenderly/hardhat-tenderly";
 
 // Turning off the automatic Tenderly verification
 tdly.setup({ automaticVerifications: false });
