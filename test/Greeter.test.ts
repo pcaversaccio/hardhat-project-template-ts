@@ -1,12 +1,12 @@
 import { expect, assert } from "chai";
-import { Contract } from "ethers";
 import { ethers } from "hardhat";
 import { SignerWithAddress } from "@nomicfoundation/hardhat-ethers/signers";
 import { mine, time } from "@nomicfoundation/hardhat-network-helpers";
+import { Greeter } from "../typechain-types";
 
 describe("Greeter", function () {
   let deployerAccount: SignerWithAddress;
-  let greeter: Contract;
+  let greeter: Greeter;
 
   beforeEach(async function () {
     greeter = await ethers.deployContract("Greeter", ["Hello, Hardhat!"], {
