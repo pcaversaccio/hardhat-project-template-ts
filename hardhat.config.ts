@@ -11,6 +11,7 @@ import "xdeployer";
 import "@matterlabs/hardhat-zksync-solc";
 import "@matterlabs/hardhat-zksync-deploy";
 import "@matterlabs/hardhat-zksync-verify";
+import "@matterlabs/hardhat-zksync-zksync2js";
 import "@truffle/dashboard-hardhat-plugin";
 import "hardhat-gas-reporter";
 import "hardhat-abi-exporter";
@@ -652,6 +653,10 @@ const config: HardhatUserConfig = {
     only: [],
     spacing: 2,
     pretty: true,
+  },
+  sourcify: {
+    // Enable Sourcify verification by default
+    enabled: true,
   },
   etherscan: {
     // Add your own API key by getting an account at etherscan (https://etherscan.io), snowtrace (https://snowtrace.io) etc.
