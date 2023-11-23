@@ -13,11 +13,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pcaversaccio/hardhat-project-template-ts.git"
+    "url": "git+https://github.com/blokk-studio/hardhat-project-template-ts.git"
   },
-  "homepage": "https://github.com/pcaversaccio/hardhat-project-template-ts#readme",
+  "homepage": "https://github.com/blokk-studio/hardhat-project-template-ts#readme",
   "bugs": {
-    "url": "https://github.com/pcaversaccio/hardhat-project-template-ts/issues"
+    "url": "https://github.com/blokk-studio/hardhat-project-template-ts/issues"
   },
   "author": "Pascal Marco Caversaccio <pascal.caversaccio@hotmail.ch>",
   "license": "MIT",

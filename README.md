@@ -1,6 +1,6 @@
 # Fully-Fledged Hardhat Project Template Based on TypeScript
 
-[![🕵️‍♂️ Test smart contracts](https://github.com/pcaversaccio/hardhat-project-template-ts/actions/workflows/test-contracts.yml/badge.svg)](https://github.com/pcaversaccio/hardhat-project-template-ts/actions/workflows/test-contracts.yml)
+[![🕵️‍♂️ Test smart contracts](https://github.com/blokk-studio/hardhat-project-template-ts/actions/workflows/test-contracts.yml/badge.svg)](https://github.com/blokk-studio/hardhat-project-template-ts/actions/workflows/test-contracts.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/license/mit/)
 
 ## Installation
@@ -22,7 +22,7 @@ pnpm install
 ## Running Deployments
 
 > **Note**<br>
-> The deployment script [`deploy.ts`](https://github.com/pcaversaccio/hardhat-project-template-ts/blob/main/scripts/deploy.ts) attempts to automatically verify the contract on the target chain after deployment. If you have not configured an API key, the verification will fail.
+> The deployment script [`deploy.ts`](https://github.com/blokk-studio/hardhat-project-template-ts/blob/main/scripts/deploy.ts) attempts to automatically verify the contract on the target chain after deployment. If you have not configured an API key, the verification will fail.
 
 **Example Goerli:**
 
@@ -180,3 +180,7 @@ Inside the [`scripts/`](./scripts) folder are a few preconfigured scripts that c
 ```console
 make scripts
 ```
+
+## Acknowledgement
+
+This template is a public fork of [pcaversaccio](https://github.com/pcaversaccio)'s [template](https://github.com/pcaversaccio/hardhat-project-template-ts), licensed under the [MIT License](https://github.com/pcaversaccio/hardhat-project-template-ts/blob/main/LICENSE).
