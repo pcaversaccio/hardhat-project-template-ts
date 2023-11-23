@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^1.0.0
     version: 1.0.0(ethers@6.8.1)(hardhat@2.19.1)(zksync2-js@0.2.2)
   "@matterlabs/hardhat-zksync-solc":
-    specifier: ^1.0.1
-    version: 1.0.1(hardhat@2.19.1)
+    specifier: ^1.0.2
+    version: 1.0.2(hardhat@2.19.1)
   "@matterlabs/hardhat-zksync-verify":
     specifier: ^1.1.0
     version: 1.1.0(@nomicfoundation/hardhat-verify@2.0.1)(hardhat@2.19.1)
@@ -114,8 +114,8 @@ devDependencies:
     specifier: ^5.3.2
     version: 5.3.2
   xdeployer:
-    specifier: ^2.1.13
-    version: 2.1.13(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.8.1)(hardhat@2.19.1)
+    specifier: ^2.2.0
+    version: 2.2.0(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.8.1)(hardhat@2.19.1)
   zksync2-js:
     specifier: ^0.2.2
     version: 0.2.2(ethers@6.8.1)
@@ -983,17 +983,17 @@ packages:
       - supports-color
     dev: true
 
-  /@matterlabs/hardhat-zksync-solc@1.0.1(hardhat@2.19.1):
+  /@matterlabs/hardhat-zksync-solc@1.0.2(hardhat@2.19.1):
     resolution:
       {
-        integrity: sha512-WMqg42+f/1RVFVYHwV+Y9f5cO5lIrH7pDEXtA4WtHKHpvid3Wwo/ipYwS1DbF9vhDS7PaqgknuuyouDnilyUvQ==,
+        integrity: sha512-y21JuRfcJcdTdC+1IovfanysaOxyJBROc8QT7tqLWgtu2OLOCXgpd67ZKVVJkO0L9Vu2B0xDUv83KOgZvn6ZWg==,
       }
     peerDependencies:
       hardhat: ^2.18.1
     dependencies:
       "@nomiclabs/hardhat-docker": 2.0.2
       chalk: 4.1.2
-      dockerode: 3.3.5
+      dockerode: 4.0.0
       fs-extra: 11.1.1
       hardhat: 2.19.1(ts-node@10.9.1)(typescript@5.3.2)
       proper-lockfile: 4.1.2
@@ -1011,7 +1011,7 @@ packages:
     peerDependencies:
       "@nomicfoundation/hardhat-verify": ^2.0.0
     dependencies:
-      "@matterlabs/hardhat-zksync-solc": 1.0.1(hardhat@2.19.1)
+      "@matterlabs/hardhat-zksync-solc": 1.0.2(hardhat@2.19.1)
       "@nomicfoundation/hardhat-verify": 2.0.1(hardhat@2.19.1)
       axios: 1.6.2(debug@4.3.4)
       chalk: 4.1.2
@@ -4494,6 +4494,21 @@ packages:
       - supports-color
     dev: true
 
+  /docker-modem@5.0.1:
+    resolution:
+      {
+        integrity: sha512-vqrE/nrweCyzmCpVpdFRC41qS+tfTF+IoUKlTZr52O82urbUqdfyJBGWMvT01pYUprWepLr8IkyVTEWJKRTQSg==,
+      }
+    engines: { node: ">= 8.0" }
+    dependencies:
+      debug: 4.3.4(supports-color@8.1.1)
+      readable-stream: 3.6.2
+      split-ca: 1.0.1
+      ssh2: 1.14.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /dockerode@2.5.8:
     resolution:
       {
@@ -4517,6 +4532,20 @@ packages:
     dependencies:
       "@balena/dockerignore": 1.0.2
       docker-modem: 3.0.8
+      tar-fs: 2.0.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /dockerode@4.0.0:
+    resolution:
+      {
+        integrity: sha512-3LF7/3MPz5+9RsUo91rD0MCcx0yxjC9bnbtgtVjOLKyKxlZSJ7/Kk3OPAgARlwlWHqXwAGYhmkAHYx7IwD0tJQ==,
+      }
+    engines: { node: ">= 8.0" }
+    dependencies:
+      "@balena/dockerignore": 1.0.2
+      docker-modem: 5.0.1
       tar-fs: 2.0.1
     transitivePeerDependencies:
       - supports-color
@@ -11043,16 +11072,16 @@ packages:
         optional: true
     dev: true
 
-  /xdeployer@2.1.13(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.8.1)(hardhat@2.19.1):
+  /xdeployer@2.2.0(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.8.1)(hardhat@2.19.1):
     resolution:
       {
-        integrity: sha512-QxVsQ+zz+cnhzCIs7/e5F06nKjOD2Lb47nW52Jw3IzFQVeYv6NfvokhZiez+y8jkzwvHDwVru+fCVlml0GQGkw==,
+        integrity: sha512-ujy8+cYFlAb7owK9mq29pUFWOywGdzNXJJmKwiYbMajvPWKTrUEGk+Zkv/sNWE3ACrfVxU2Sus9LoA6VxKnWFg==,
       }
     engines: { node: ">=14.0.0" }
     peerDependencies:
-      "@nomicfoundation/hardhat-ethers": ^3.0.4
+      "@nomicfoundation/hardhat-ethers": ^3.0.5
       ethers: ^6.8.1
-      hardhat: ^2.19.0
+      hardhat: ^2.19.1
     dependencies:
       "@nomicfoundation/hardhat-ethers": 3.0.5(ethers@6.8.1)(hardhat@2.19.1)
       ethers: 6.8.1
