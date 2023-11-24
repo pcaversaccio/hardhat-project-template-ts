@@ -21,7 +21,7 @@ pnpm install
 
 ## Running Deployments
 
-> **Note**<br>
+> [!NOTE]
 > The deployment script [`deploy.ts`](https://github.com/pcaversaccio/hardhat-project-template-ts/blob/main/scripts/deploy.ts) attempts to automatically verify the contract on the target chain after deployment. If you have not configured an API key, the verification will fail.
 
 **Example Goerli:**
@@ -54,7 +54,7 @@ This template implements the [`hardhat-ledger`](https://hardhat.org/hardhat-runn
 
 ## Using the Truffle Dashboard
 
-> **Note**<br>
+> [!NOTE]
 > Truffle has been [sunsetted](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat) by Consensys, but I still keep it in the template as I find it a very valuable tool.
 
 [Truffle](https://trufflesuite.com) developed the [Truffle Dashboard](https://trufflesuite.com/docs/truffle/how-to/use-the-truffle-dashboard/) to provide an easy way to use your existing MetaMask wallet for your deployments and for other transactions that you need to send from a command line context. Because the Truffle Dashboard connects directly to MetaMask it is also possible to use it in combination with hardware wallets like [Ledger](https://www.ledger.com) or [Trezor](https://trezor.io).
