@@ -2,7 +2,10 @@
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { Wallet } from "zksync2-js";
 import { Deployer } from "@matterlabs/hardhat-zksync-deploy";
-import { delay } from "../scripts/deploy";
+
+function delay(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
 export default async function main(hre: HardhatRuntimeEnvironment) {
   // Get the private key from the configured network
