@@ -22,7 +22,7 @@ pnpm install
 ## Running Deployments
 
 > [!NOTE]
-> The deployment script [`deploy.ts`](https://github.com/pcaversaccio/hardhat-project-template-ts/blob/main/scripts/deploy.ts) attempts to automatically verify the contract on the target chain after deployment. If you have not configured an API key, the verification will fail.
+> The deployment script [`deploy.ts`](./scripts/deploy.ts) attempts to automatically verify the contract on the target chain after deployment. If you have not configured an API key, the verification will fail.
 
 **Example Goerli:**
 
