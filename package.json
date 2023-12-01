@@ -156,6 +156,6 @@
     "typechain": "^8.3.2",
     "typescript": "^5.3.2",
     "xdeployer": "^2.2.0",
-    "zksync2-js": "^0.2.2"
+    "zksync2-js": "^0.3.0"
   }
 }
