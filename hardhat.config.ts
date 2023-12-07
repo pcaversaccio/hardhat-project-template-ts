@@ -83,7 +83,7 @@ const config: HardhatUserConfig = {
     },
   },
   zksolc: {
-    version: "1.3.17",
+    version: "1.3.18",
     compilerSource: "binary",
     settings: {
       isSystem: false,
@@ -462,15 +462,15 @@ const config: HardhatUserConfig = {
       ledgerAccounts,
     },
     zkSyncTestnet: {
-      chainId: 280,
-      url: vars.get("ZKSYNC_TESTNET_URL", "https://testnet.era.zksync.dev"),
+      chainId: 300,
+      url: vars.get("ZKSYNC_TESTNET_URL", "https://sepolia.era.zksync.dev"),
       ethNetwork: vars.get(
-        "ETH_GOERLI_TESTNET_URL",
-        "https://rpc.ankr.com/eth_goerli",
+        "ETH_SEPOLIA_TESTNET_URL",
+        "https://rpc.sepolia.org",
       ),
       zksync: true,
       verifyURL:
-        "https://zksync2-testnet-explorer.zksync.dev/contract_verification",
+        "https://explorer.sepolia.era.zksync.dev/contract_verification",
       accounts,
       ledgerAccounts,
     },
