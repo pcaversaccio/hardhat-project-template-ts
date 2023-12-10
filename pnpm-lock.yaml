@@ -6,17 +6,17 @@ settings:
 
 devDependencies:
   "@matterlabs/hardhat-zksync-deploy":
-    specifier: ^1.0.0
-    version: 1.0.0(ethers@6.9.0)(hardhat@2.19.2)(zksync2-js@0.2.2)
+    specifier: ^1.1.0
+    version: 1.1.0(ethers@6.9.0)(hardhat@2.19.2)(zksync-ethers@6.0.0)
+  "@matterlabs/hardhat-zksync-ethers":
+    specifier: 0.0.1-beta.1
+    version: 0.0.1-beta.1(ethers@6.9.0)(zksync-ethers@6.0.0)
   "@matterlabs/hardhat-zksync-solc":
     specifier: ^1.0.3
     version: 1.0.3(hardhat@2.19.2)
   "@matterlabs/hardhat-zksync-verify":
-    specifier: ^1.1.1
-    version: 1.1.1(@nomicfoundation/hardhat-verify@2.0.2)(ethers@6.9.0)(hardhat@2.19.2)
-  "@matterlabs/hardhat-zksync-zksync2js":
-    specifier: 0.0.1-beta.2
-    version: 0.0.1-beta.2(ethers@6.9.0)(zksync2-js@0.2.2)
+    specifier: ^1.2.0
+    version: 1.2.0(@nomicfoundation/hardhat-verify@2.0.2)(ethers@6.9.0)(hardhat@2.19.2)
   "@nomicfoundation/hardhat-chai-matchers":
     specifier: ^2.0.2
     version: 2.0.2(@nomicfoundation/hardhat-ethers@3.0.5)(chai@4.3.10)(ethers@6.9.0)(hardhat@2.19.2)
@@ -93,11 +93,11 @@ devDependencies:
     specifier: ^1.0.9
     version: 1.0.9(hardhat@2.19.2)
   prettier:
-    specifier: ^3.1.0
-    version: 3.1.0
+    specifier: ^3.1.1
+    version: 3.1.1
   prettier-plugin-solidity:
     specifier: ^1.2.0
-    version: 1.2.0(prettier@3.1.0)
+    version: 1.2.0(prettier@3.1.1)
   solhint:
     specifier: ^4.0.0
     version: 4.0.0(typescript@5.3.3)
@@ -116,9 +116,9 @@ devDependencies:
   xdeployer:
     specifier: ^2.2.1
     version: 2.2.1(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.9.0)(hardhat@2.19.2)
-  zksync2-js:
-    specifier: ^0.2.2
-    version: 0.2.2(ethers@6.9.0)
+  zksync-ethers:
+    specifier: ^6.0.0
+    version: 6.0.0(ethers@6.9.0)
 
 packages:
   /@aashutoshrathi/word-wrap@1.2.6:
@@ -942,45 +942,39 @@ packages:
       rxjs: 7.8.1
     dev: true
 
-  /@matterlabs/hardhat-zksync-deploy@1.0.0(ethers@6.9.0)(hardhat@2.19.2)(zksync2-js@0.2.2):
+  /@matterlabs/hardhat-zksync-deploy@1.1.0(ethers@6.9.0)(hardhat@2.19.2)(zksync-ethers@6.0.0):
     resolution:
       {
-        integrity: sha512-ozZLoMT4m//Y/mv7gkE4V4pNNGEwZ7TdqFgVaGhY8x4DRz/PK2vQn6/OXnh3Gz67ZfwHG9JWaSQ0TYWapjKxxg==,
+        integrity: sha512-pmIjmSXpoue24FsI0xhMR1H4b0nStayVOQA209tw9x9c6X5Q/1Dj+o00U2To70glVfPQ1B1hP9ay30x8pxzJ7A==,
       }
     peerDependencies:
       ethers: ^6.7.1
       hardhat: ^2.18.1
-      zksync2-js: ^0.2.2
+      zksync-ethers: ^6.0.0
     dependencies:
-      "@matterlabs/hardhat-zksync-solc": 1.0.0(hardhat@2.19.2)
+      "@matterlabs/hardhat-zksync-solc": 1.0.3(hardhat@2.19.2)
       chalk: 4.1.2
       ethers: 6.9.0
       hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
-      ts-morph: 19.0.0
-      zksync2-js: 0.2.2(ethers@6.9.0)
+      ts-morph: 20.0.0
+      zksync-ethers: 6.0.0(ethers@6.9.0)
     transitivePeerDependencies:
       - encoding
       - supports-color
     dev: true
 
-  /@matterlabs/hardhat-zksync-solc@1.0.0(hardhat@2.19.2):
+  /@matterlabs/hardhat-zksync-ethers@0.0.1-beta.1(ethers@6.9.0)(zksync-ethers@6.0.0):
     resolution:
       {
-        integrity: sha512-N6uUcmbAwZtu60WooUGJ1ssUdFFCd8MU1PdOSXcCJQ3vzjej2p3Ra8t3DrbJSWf3LRJoM18mZkZD2AktlF/ONw==,
+        integrity: sha512-kFvvUrrmHbGKIFp97kUAC2wGeEd72SSJ7ZYAibBbHCH2Srxc4xSQ20DIYwnnau7sqFp6IrnNhr7oIE2uvrwCnQ==,
       }
     peerDependencies:
-      hardhat: ^2.18.1
+      ethers: ^6.7.1
+      zksync-ethers: ^6.0.0
     dependencies:
-      "@nomiclabs/hardhat-docker": 2.0.2
-      chalk: 4.1.2
-      dockerode: 3.3.5
-      fs-extra: 11.2.0
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
-      proper-lockfile: 4.1.2
-      semver: 7.5.4
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
+      chalk: 5.3.0
+      ethers: 6.9.0
+      zksync-ethers: 6.0.0(ethers@6.9.0)
     dev: true
 
   /@matterlabs/hardhat-zksync-solc@1.0.3(hardhat@2.19.2):
@@ -1003,10 +997,10 @@ packages:
       - supports-color
     dev: true
 
-  /@matterlabs/hardhat-zksync-verify@1.1.1(@nomicfoundation/hardhat-verify@2.0.2)(ethers@6.9.0)(hardhat@2.19.2):
+  /@matterlabs/hardhat-zksync-verify@1.2.0(@nomicfoundation/hardhat-verify@2.0.2)(ethers@6.9.0)(hardhat@2.19.2):
     resolution:
       {
-        integrity: sha512-7xVBMPgoKl3cKfBgvtMATMUgr40Rt7z6kX0ksQlXRKetpj3yKM2aejqd0AyIEK7kgsWgTY6BsxxpnKZpew5Hmw==,
+        integrity: sha512-KVOKTeAeyu9zYZD+GdxSgHbmlwlKrNW7STycNGGkAAa4FaOioSaHJ6B214hVcRsWlH76sI7hFNHczMrozcoJPA==,
       }
     peerDependencies:
       "@nomicfoundation/hardhat-verify": ^2.0.0
@@ -1015,27 +1009,13 @@ packages:
       "@nomicfoundation/hardhat-verify": 2.0.2(hardhat@2.19.2)
       axios: 1.6.2(debug@4.3.4)
       chalk: 4.1.2
-      zksync2-js: 0.4.0(ethers@6.9.0)
+      zksync-ethers: 6.0.0(ethers@6.9.0)
     transitivePeerDependencies:
       - debug
       - encoding
       - ethers
       - hardhat
       - supports-color
-    dev: true
-
-  /@matterlabs/hardhat-zksync-zksync2js@0.0.1-beta.2(ethers@6.9.0)(zksync2-js@0.2.2):
-    resolution:
-      {
-        integrity: sha512-Q0VNkfwYpWd+OxoTOEE4rintVJwU16TRZinF7aPWR4W47tLbiPW3k/snPDqZiVwRp/zqKp9PXMpy4o9LjlP+4Q==,
-      }
-    peerDependencies:
-      ethers: ^6.7.1
-      zksync2-js: ^0.2.2
-    dependencies:
-      chalk: 5.3.0
-      ethers: 6.9.0
-      zksync2-js: 0.2.2(ethers@6.9.0)
     dev: true
 
   /@metamask/eth-sig-util@4.0.1:
@@ -2168,10 +2148,10 @@ packages:
       strip-ansi: 6.0.1
     dev: true
 
-  /@ts-morph/common@0.20.0:
+  /@ts-morph/common@0.21.0:
     resolution:
       {
-        integrity: sha512-7uKjByfbPpwuzkstL3L5MQyuXPSKdoNG93Fmi2JoDcTf3pEP731JdRFAduRVkOs8oqxPsXKA+ScrWkdQ8t/I+Q==,
+        integrity: sha512-ES110Mmne5Vi4ypUKrtVQfXFDtCsDXiUiGxF6ILVlE90dDD4fdpC1LSjydl/ml7xJWKSDZwUYD2zkOePMSrPBA==,
       }
     dependencies:
       fast-glob: 3.3.2
@@ -2688,10 +2668,10 @@ packages:
       acorn: 8.11.2
     dev: true
 
-  /acorn-walk@8.3.0:
+  /acorn-walk@8.3.1:
     resolution:
       {
-        integrity: sha512-FS7hV565M5l1R08MXqo8odwMTB02C2UqzB17RVgu9EyuYFBqJZ3/ZY97sQD5FewVu1UyDFc1yztUDrAwT0EypA==,
+        integrity: sha512-TgUZgYvqZprrl7YldZNoa9OciCAyZR+Ejm9eXzKCmjsF5IKp/wgQ7Z/ZpjpGTIUPwrHQIcYeI8qDh4PsEwxMbw==,
       }
     engines: { node: ">=0.4.0" }
     dev: true
@@ -4481,21 +4461,6 @@ packages:
       - supports-color
     dev: true
 
-  /docker-modem@3.0.8:
-    resolution:
-      {
-        integrity: sha512-f0ReSURdM3pcKPNS30mxOHSbaFLcknGmQjwSfmbcdOw1XWKXVhukM3NJHhr7NpY9BIyyWQb0EBo3KQvvuU5egQ==,
-      }
-    engines: { node: ">= 8.0" }
-    dependencies:
-      debug: 4.3.4(supports-color@8.1.1)
-      readable-stream: 3.6.2
-      split-ca: 1.0.1
-      ssh2: 1.14.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /docker-modem@5.0.1:
     resolution:
       {
@@ -4521,20 +4486,6 @@ packages:
       concat-stream: 1.6.2
       docker-modem: 1.0.9
       tar-fs: 1.16.3
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /dockerode@3.3.5:
-    resolution:
-      {
-        integrity: sha512-/0YNa3ZDNeLr/tSckmD69+Gq+qVNhvKfAHNeZJBnp7EOP6RGKV8ORrJHkUn20So5wU+xxT7+1n5u8PjHbfjbSA==,
-      }
-    engines: { node: ">= 8.0" }
-    dependencies:
-      "@balena/dockerignore": 1.0.2
-      docker-modem: 3.0.8
-      tar-fs: 2.0.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -8436,7 +8387,7 @@ packages:
     engines: { node: ">= 0.8.0" }
     dev: true
 
-  /prettier-plugin-solidity@1.2.0(prettier@3.1.0):
+  /prettier-plugin-solidity@1.2.0(prettier@3.1.1):
     resolution:
       {
         integrity: sha512-fgxcUZpVAP+LlRfy5JI5oaAkXGkmsje2VJ5krv/YMm+rcTZbIUwFguSw5f+WFuttMjpDm6wB4UL7WVkArEfiVA==,
@@ -8446,7 +8397,7 @@ packages:
       prettier: ">=2.3.0"
     dependencies:
       "@solidity-parser/parser": 0.16.2
-      prettier: 3.1.0
+      prettier: 3.1.1
       semver: 7.5.4
       solidity-comments-extractor: 0.0.7
     dev: true
@@ -8460,10 +8411,10 @@ packages:
     hasBin: true
     dev: true
 
-  /prettier@3.1.0:
+  /prettier@3.1.1:
     resolution:
       {
-        integrity: sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==,
+        integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==,
       }
     engines: { node: ">=14" }
     hasBin: true
@@ -10072,13 +10023,13 @@ packages:
       typescript: 5.3.3
     dev: true
 
-  /ts-morph@19.0.0:
+  /ts-morph@20.0.0:
     resolution:
       {
-        integrity: sha512-D6qcpiJdn46tUqV45vr5UGM2dnIEuTGNxVhg0sk5NX11orcouwj6i1bMqZIz2mZTZB1Hcgy7C3oEVhAT+f6mbQ==,
+        integrity: sha512-JVmEJy2Wow5n/84I3igthL9sudQ8qzjh/6i4tmYCm6IqYyKFlNbJZi7oBdjyqcWSWYRu3CtL0xbT6fS03ESZIg==,
       }
     dependencies:
-      "@ts-morph/common": 0.20.0
+      "@ts-morph/common": 0.21.0
       code-block-writer: 12.0.0
     dev: true
 
@@ -10106,7 +10057,7 @@ packages:
       "@tsconfig/node16": 1.0.4
       "@types/node": 20.10.4
       acorn: 8.11.2
-      acorn-walk: 8.3.0
+      acorn-walk: 8.3.1
       arg: 4.1.3
       create-require: 1.1.1
       diff: 4.0.2
@@ -11225,35 +11176,25 @@ packages:
     engines: { node: ">=10" }
     dev: true
 
+  /zksync-ethers@6.0.0(ethers@6.9.0):
+    resolution:
+      {
+        integrity: sha512-eQv8V3eK6dDHobI27mHydT1liqlKAoVJzdhxYfP4weE7emPMCcHfJBVVxN5HyitEkuwZC7ir7fa1Q7PK6ox+Cw==,
+      }
+    peerDependencies:
+      ethers: ^6.7.1
+    dependencies:
+      ethers: 6.9.0
+    dev: true
+
   /zksync-web3@0.14.4(ethers@5.7.2):
     resolution:
       {
         integrity: sha512-kYehMD/S6Uhe1g434UnaMN+sBr9nQm23Ywn0EUP5BfQCsbjcr3ORuS68PosZw8xUTu3pac7G6YMSnNHk+fwzvg==,
       }
+    deprecated: This package has been deprecated in favor of zksync-ethers@5.0.0
     peerDependencies:
       ethers: ^5.7.0
     dependencies:
       ethers: 5.7.2
-    dev: true
-
-  /zksync2-js@0.2.2(ethers@6.9.0):
-    resolution:
-      {
-        integrity: sha512-4DUZZI2Hk8tOBCUbdwwZvI+BEszCwN6C06bN1zm3N1/+wqIMVu0q64PtWzoTX0VZmC11UOz3yrXTeNUNjj9xww==,
-      }
-    peerDependencies:
-      ethers: ^6.7.1
-    dependencies:
-      ethers: 6.9.0
-    dev: true
-
-  /zksync2-js@0.4.0(ethers@6.9.0):
-    resolution:
-      {
-        integrity: sha512-0Z+Yhqz6ZEkw3HHrbNZZT07zb631ALWqbe2exS7DFAqrSxACXx48/sqeYzpTXLJuNiqBXQYrVnHXzIeeqHKSxA==,
-      }
-    peerDependencies:
-      ethers: ^6.7.1
-    dependencies:
-      ethers: 6.9.0
     dev: true
