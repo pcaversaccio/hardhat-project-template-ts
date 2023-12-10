@@ -11,7 +11,7 @@ import "xdeployer";
 import "@matterlabs/hardhat-zksync-solc";
 import "@matterlabs/hardhat-zksync-deploy";
 import "@matterlabs/hardhat-zksync-verify";
-import "@matterlabs/hardhat-zksync-zksync2js";
+import "@matterlabs/hardhat-zksync-ethers";
 import "@truffle/dashboard-hardhat-plugin";
 import "hardhat-gas-reporter";
 import "hardhat-abi-exporter";
@@ -452,10 +452,7 @@ const config: HardhatUserConfig = {
     zkSyncTestnet: {
       chainId: 300,
       url: vars.get("ZKSYNC_TESTNET_URL", "https://sepolia.era.zksync.dev"),
-      ethNetwork: vars.get(
-        "ETH_SEPOLIA_TESTNET_URL",
-        "https://rpc.sepolia.org",
-      ),
+      ethNetwork: "sepolia",
       zksync: true,
       verifyURL:
         "https://explorer.sepolia.era.zksync.dev/contract_verification",
@@ -465,7 +462,7 @@ const config: HardhatUserConfig = {
     zkSyncMain: {
       chainId: 324,
       url: vars.get("ZKSYNC_MAINNET_URL", "https://mainnet.era.zksync.io"),
-      ethNetwork: ethMainnetUrl,
+      ethNetwork: "mainnet",
       zksync: true,
       verifyURL:
         "https://zksync2-mainnet-explorer.zksync.io/contract_verification",

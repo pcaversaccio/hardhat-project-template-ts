@@ -117,10 +117,10 @@
     "lint:fix": "pnpm prettier:fix && pnpm solhint:fix && npx eslint **/*.{js,ts} --fix"
   },
   "devDependencies": {
-    "@matterlabs/hardhat-zksync-deploy": "^1.0.0",
+    "@matterlabs/hardhat-zksync-deploy": "^1.1.0",
+    "@matterlabs/hardhat-zksync-ethers": "0.0.1-beta.1",
     "@matterlabs/hardhat-zksync-solc": "^1.0.3",
-    "@matterlabs/hardhat-zksync-verify": "^1.1.1",
-    "@matterlabs/hardhat-zksync-zksync2js": "0.0.1-beta.2",
+    "@matterlabs/hardhat-zksync-verify": "^1.2.0",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
     "@nomicfoundation/hardhat-ethers": "^3.0.5",
     "@nomicfoundation/hardhat-foundry": "^1.1.1",
@@ -146,7 +146,7 @@
     "hardhat-abi-exporter": "^2.10.1",
     "hardhat-contract-sizer": "^2.10.0",
     "hardhat-gas-reporter": "^1.0.9",
-    "prettier": "^3.1.0",
+    "prettier": "^3.1.1",
     "prettier-plugin-solidity": "^1.2.0",
     "solhint": "^4.0.0",
     "solidity-coverage": "^0.8.5",
@@ -154,6 +154,6 @@
     "typechain": "^8.3.2",
     "typescript": "^5.3.3",
     "xdeployer": "^2.2.1",
-    "zksync2-js": "^0.2.2"
+    "zksync-ethers": "^6.0.0"
   }
 }
