@@ -1,7 +1,8 @@
 node_modules
 lib
 cache
-cache-zk
+cache_hardhat
+cache_hardhat-zk
 artifacts
 artifacts-zk
 typechain-types

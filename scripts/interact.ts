@@ -1,10 +1,10 @@
 // An example script that shows how to interact programmatically with a deployed contract
 // You must customise it according to your contract's specifications
-import { ethers } from "hardhat";
+import hre from "hardhat";
 
 async function main() {
   const address = "0xdFf511FC04478a2fdEc2Efb93D92C4C6a55911EE"; // Specify here your contract address
-  const contract = await ethers.getContractAt("Greeter", address); // Specify here your contract name
+  const contract = await hre.ethers.getContractAt("Greeter", address); // Specify here your contract name
 
   ////////////////
   //  PAYLOAD  //
