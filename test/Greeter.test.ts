@@ -9,9 +9,11 @@ describe("Greeter", function () {
   let greeter: Greeter;
 
   beforeEach(async function () {
-    greeter = await hre.ethers.deployContract("Greeter", ["Hello, Hardhat!"], {
-      from: deployerAccount,
-    });
+    greeter = await hre.ethers.deployContract(
+      "Greeter",
+      ["Hello, Hardhat!"],
+      deployerAccount,
+    );
     await greeter.waitForDeployment();
   });
 
