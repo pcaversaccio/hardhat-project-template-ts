@@ -1,4 +1,4 @@
-import hre, { ethers } from "hardhat";
+import hre from "hardhat";
 
 function delay(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -6,7 +6,7 @@ function delay(ms: number) {
 
 async function main() {
   const constructorArgs = ["Hello, Hardhat!"];
-  const contract = await ethers.deployContract("Greeter", constructorArgs);
+  const contract = await hre.ethers.deployContract("Greeter", constructorArgs);
 
   await contract.waitForDeployment();
   const contractAddress = await contract.getAddress();
