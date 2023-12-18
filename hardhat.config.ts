@@ -200,15 +200,6 @@ const config: HardhatUserConfig = {
       accounts,
       ledgerAccounts,
     },
-    arbitrumTestnet: {
-      chainId: 421613,
-      url: vars.get(
-        "ARBITRUM_TESTNET_URL",
-        "https://goerli-rollup.arbitrum.io/rpc",
-      ),
-      accounts,
-      ledgerAccounts,
-    },
     arbitrumSepolia: {
       chainId: 421614,
       url: vars.get(
@@ -670,10 +661,9 @@ const config: HardhatUserConfig = {
       polygonZkEVM: vars.get("POLYGON_ZKEVM_API_KEY", ""),
       polygonMumbai: vars.get("POLYGON_API_KEY", ""),
       polygonZkEVMTestnet: vars.get("POLYGON_ZKEVM_API_KEY", ""),
-      // For Arbitrum testnets & mainnets
+      // For Arbitrum testnet & mainnets
       arbitrumOne: vars.get("ARBITRUM_API_KEY", ""),
       arbitrumNova: vars.get("ARBITRUM_API_KEY", ""),
-      arbitrumGoerli: vars.get("ARBITRUM_API_KEY", ""),
       arbitrumSepolia: vars.get("ARBITRUM_API_KEY", ""),
       // For Avalanche testnet & mainnet
       avalanche: vars.get("AVALANCHE_API_KEY", ""),
