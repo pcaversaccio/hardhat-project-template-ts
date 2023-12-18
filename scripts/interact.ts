@@ -2,8 +2,12 @@
 // You must customise it according to your contract's specifications
 import hre from "hardhat";
 
+// Colour codes for terminal prints
+const RESET = "\x1b[0m";
+const GREEN = "\x1b[32m";
+
 async function main() {
-  const address = "0xdFf511FC04478a2fdEc2Efb93D92C4C6a55911EE"; // Specify here your contract address
+  const address = "0xB8d2BDd1C99A33b831553DA64F6215983bf0475a"; // Specify here your contract address
   const contract = await hre.ethers.getContractAt("Greeter", address); // Specify here your contract name
 
   ////////////////
@@ -17,7 +21,8 @@ async function main() {
   //////////////
 
   const tx = await contract.setGreeting(newGreeting); // Specify here the to-be-called function name
-  console.log("The transaction hash is:", tx.hash);
+  console.log("The transaction hash is: " + `${GREEN}${tx.hash}${RESET}\n`);
+  console.log("Waiting until the transaction is confirmed...\n");
   const receipt = await tx.wait(); // Wait until the transaction is confirmed
   console.log(
     "The transaction returned the following transaction receipt:\n",
