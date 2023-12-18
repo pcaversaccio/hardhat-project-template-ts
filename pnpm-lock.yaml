@@ -114,8 +114,8 @@ devDependencies:
     specifier: ^5.3.3
     version: 5.3.3
   xdeployer:
-    specifier: ^2.2.1
-    version: 2.2.1(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.9.0)(hardhat@2.19.2)
+    specifier: ^2.2.2
+    version: 2.2.2(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.9.0)(hardhat@2.19.2)
   zksync-ethers:
     specifier: ^6.0.0
     version: 6.0.0(ethers@6.9.0)
@@ -1107,7 +1107,7 @@ packages:
     engines: { node: ">= 8" }
     dependencies:
       "@nodelib/fs.scandir": 2.1.5
-      fastq: 1.15.0
+      fastq: 1.16.0
     dev: true
 
   /@nomicfoundation/ethereumjs-block@5.0.2:
@@ -5294,10 +5294,10 @@ packages:
       }
     dev: true
 
-  /fastq@1.15.0:
+  /fastq@1.16.0:
     resolution:
       {
-        integrity: sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==,
+        integrity: sha512-ifCoaXsDrsdkWTtiNJX5uzHDsrck5TzfKKDcuFFTIrrc/BS076qgEIfoIy1VeZqViznfKiysPYTh/QeHtnIsYA==,
       }
     dependencies:
       reusify: 1.0.4
@@ -11025,10 +11025,10 @@ packages:
         optional: true
     dev: true
 
-  /xdeployer@2.2.1(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.9.0)(hardhat@2.19.2):
+  /xdeployer@2.2.2(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.9.0)(hardhat@2.19.2):
     resolution:
       {
-        integrity: sha512-ZMqLklGeRrBwUMwz571W+uUw/XC092QnnjQ+w3FEFaxHU5AI35exyi0BJq9kQ2k3GgfKBTJwwcgaP/L7TzulYg==,
+        integrity: sha512-CmkADnwn9M7J33Rrb1sbaI5mBaXrRr2kLEw5W6QMeTJkXw57ae7/IIBYHDbuFLu7L60J3ZF21KdpHjmSMkUsVQ==,
       }
     engines: { node: ">=14.0.0" }
     peerDependencies:
