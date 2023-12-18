@@ -3,6 +3,10 @@ import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { Wallet } from "zksync-ethers";
 import { Deployer } from "@matterlabs/hardhat-zksync-deploy";
 
+// Colour codes for terminal prints
+const RESET = "\x1b[0m";
+const GREEN = "\x1b[32m";
+
 function delay(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -33,8 +37,11 @@ export default async function main(hre: HardhatRuntimeEnvironment) {
   await contract.waitForDeployment();
   const contractAddress = await contract.getAddress();
 
-  console.log("Greeter deployed to:", contractAddress);
+  console.log("Greeter deployed to: " + `${GREEN}${contractAddress}${RESET}\n`);
 
+  console.log(
+    "Waiting 30 seconds before beginning the contract verification to allow the block explorer to index the contract...\n",
+  );
   await delay(30000); // Wait for 30 seconds before verifying the contract
 
   await hre.run("verify:verify", {
