@@ -7,52 +7,52 @@ settings:
 devDependencies:
   "@matterlabs/hardhat-zksync-deploy":
     specifier: ^1.1.1
-    version: 1.1.1(ethers@6.9.0)(hardhat@2.19.2)(zksync-ethers@6.0.0)
+    version: 1.1.1(ethers@6.9.0)(hardhat@2.19.3)(zksync-ethers@6.0.0)
   "@matterlabs/hardhat-zksync-ethers":
     specifier: 0.0.1-beta.1
     version: 0.0.1-beta.1(ethers@6.9.0)(zksync-ethers@6.0.0)
   "@matterlabs/hardhat-zksync-solc":
     specifier: ^1.0.5
-    version: 1.0.5(hardhat@2.19.2)
+    version: 1.0.5(hardhat@2.19.3)
   "@matterlabs/hardhat-zksync-verify":
     specifier: ^1.2.1
-    version: 1.2.1(@nomicfoundation/hardhat-verify@2.0.2)(ethers@6.9.0)(hardhat@2.19.2)
+    version: 1.2.1(@nomicfoundation/hardhat-verify@2.0.3)(ethers@6.9.0)(hardhat@2.19.3)
   "@nomicfoundation/hardhat-chai-matchers":
     specifier: ^2.0.2
-    version: 2.0.2(@nomicfoundation/hardhat-ethers@3.0.5)(chai@4.3.10)(ethers@6.9.0)(hardhat@2.19.2)
+    version: 2.0.2(@nomicfoundation/hardhat-ethers@3.0.5)(chai@4.3.10)(ethers@6.9.0)(hardhat@2.19.3)
   "@nomicfoundation/hardhat-ethers":
     specifier: ^3.0.5
-    version: 3.0.5(ethers@6.9.0)(hardhat@2.19.2)
+    version: 3.0.5(ethers@6.9.0)(hardhat@2.19.3)
   "@nomicfoundation/hardhat-foundry":
     specifier: ^1.1.1
-    version: 1.1.1(hardhat@2.19.2)
+    version: 1.1.1(hardhat@2.19.3)
   "@nomicfoundation/hardhat-ledger":
     specifier: ^1.0.1
-    version: 1.0.1(hardhat@2.19.2)
+    version: 1.0.1(hardhat@2.19.3)
   "@nomicfoundation/hardhat-network-helpers":
     specifier: ^1.0.10
-    version: 1.0.10(hardhat@2.19.2)
+    version: 1.0.10(hardhat@2.19.3)
   "@nomicfoundation/hardhat-toolbox":
     specifier: ^4.0.0
-    version: 4.0.0(@nomicfoundation/hardhat-chai-matchers@2.0.2)(@nomicfoundation/hardhat-ethers@3.0.5)(@nomicfoundation/hardhat-network-helpers@1.0.10)(@nomicfoundation/hardhat-verify@2.0.2)(@typechain/ethers-v6@0.5.1)(@typechain/hardhat@9.1.0)(@types/chai@4.3.11)(@types/mocha@10.0.6)(@types/node@20.10.5)(chai@4.3.10)(ethers@6.9.0)(hardhat-gas-reporter@1.0.9)(hardhat@2.19.2)(solidity-coverage@0.8.5)(ts-node@10.9.2)(typechain@8.3.2)(typescript@5.3.3)
+    version: 4.0.0(@nomicfoundation/hardhat-chai-matchers@2.0.2)(@nomicfoundation/hardhat-ethers@3.0.5)(@nomicfoundation/hardhat-network-helpers@1.0.10)(@nomicfoundation/hardhat-verify@2.0.3)(@typechain/ethers-v6@0.5.1)(@typechain/hardhat@9.1.0)(@types/chai@4.3.11)(@types/mocha@10.0.6)(@types/node@20.10.5)(chai@4.3.10)(ethers@6.9.0)(hardhat-gas-reporter@1.0.9)(hardhat@2.19.3)(solidity-coverage@0.8.5)(ts-node@10.9.2)(typechain@8.3.2)(typescript@5.3.3)
   "@nomicfoundation/hardhat-verify":
-    specifier: ^2.0.2
-    version: 2.0.2(hardhat@2.19.2)
+    specifier: ^2.0.3
+    version: 2.0.3(hardhat@2.19.3)
   "@openzeppelin/contracts":
     specifier: ^5.0.1
     version: 5.0.1
   "@tenderly/hardhat-tenderly":
     specifier: ^2.0.1
-    version: 2.0.1(@types/node@20.10.5)(ethers@6.9.0)(hardhat@2.19.2)
+    version: 2.0.1(@types/node@20.10.5)(ethers@6.9.0)(hardhat@2.19.3)
   "@truffle/dashboard-hardhat-plugin":
     specifier: ^0.2.15
-    version: 0.2.15(hardhat@2.19.2)
+    version: 0.2.15(hardhat@2.19.3)
   "@typechain/ethers-v6":
     specifier: ^0.5.1
     version: 0.5.1(ethers@6.9.0)(typechain@8.3.2)(typescript@5.3.3)
   "@typechain/hardhat":
     specifier: ^9.1.0
-    version: 9.1.0(@typechain/ethers-v6@0.5.1)(ethers@6.9.0)(hardhat@2.19.2)(typechain@8.3.2)
+    version: 9.1.0(@typechain/ethers-v6@0.5.1)(ethers@6.9.0)(hardhat@2.19.3)(typechain@8.3.2)
   "@types/chai":
     specifier: ^4.3.11
     version: 4.3.11
@@ -63,11 +63,11 @@ devDependencies:
     specifier: ^20.10.5
     version: 20.10.5
   "@typescript-eslint/eslint-plugin":
-    specifier: ^6.14.0
-    version: 6.14.0(@typescript-eslint/parser@6.14.0)(eslint@8.56.0)(typescript@5.3.3)
+    specifier: ^6.15.0
+    version: 6.15.0(@typescript-eslint/parser@6.15.0)(eslint@8.56.0)(typescript@5.3.3)
   "@typescript-eslint/parser":
-    specifier: ^6.14.0
-    version: 6.14.0(eslint@8.56.0)(typescript@5.3.3)
+    specifier: ^6.15.0
+    version: 6.15.0(eslint@8.56.0)(typescript@5.3.3)
   chai:
     specifier: ^4.3.10
     version: 4.3.10
@@ -81,17 +81,17 @@ devDependencies:
     specifier: ^6.9.0
     version: 6.9.0
   hardhat:
-    specifier: ^2.19.2
-    version: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+    specifier: ^2.19.3
+    version: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
   hardhat-abi-exporter:
     specifier: ^2.10.1
-    version: 2.10.1(hardhat@2.19.2)
+    version: 2.10.1(hardhat@2.19.3)
   hardhat-contract-sizer:
     specifier: ^2.10.0
-    version: 2.10.0(hardhat@2.19.2)
+    version: 2.10.0(hardhat@2.19.3)
   hardhat-gas-reporter:
     specifier: ^1.0.9
-    version: 1.0.9(hardhat@2.19.2)
+    version: 1.0.9(hardhat@2.19.3)
   prettier:
     specifier: ^3.1.1
     version: 3.1.1
@@ -103,7 +103,7 @@ devDependencies:
     version: 4.0.0(typescript@5.3.3)
   solidity-coverage:
     specifier: ^0.8.5
-    version: 0.8.5(hardhat@2.19.2)
+    version: 0.8.5(hardhat@2.19.3)
   ts-node:
     specifier: ^10.9.2
     version: 10.9.2(@types/node@20.10.5)(typescript@5.3.3)
@@ -115,7 +115,7 @@ devDependencies:
     version: 5.3.3
   xdeployer:
     specifier: ^2.2.2
-    version: 2.2.2(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.9.0)(hardhat@2.19.2)
+    version: 2.2.2(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.9.0)(hardhat@2.19.3)
   zksync-ethers:
     specifier: ^6.0.0
     version: 6.0.0(ethers@6.9.0)
@@ -942,7 +942,7 @@ packages:
       rxjs: 7.8.1
     dev: true
 
-  /@matterlabs/hardhat-zksync-deploy@1.1.1(ethers@6.9.0)(hardhat@2.19.2)(zksync-ethers@6.0.0):
+  /@matterlabs/hardhat-zksync-deploy@1.1.1(ethers@6.9.0)(hardhat@2.19.3)(zksync-ethers@6.0.0):
     resolution:
       {
         integrity: sha512-THPXZ08ejcvr0NzqnmNARxk0VaLnQaxA6qzfh9re2pVWe1Ch6YH7kDpHYvVNafp2HINtOE9bVzzd7OOp73/wvw==,
@@ -952,10 +952,10 @@ packages:
       hardhat: ^2.18.1
       zksync-ethers: ^6.0.0
     dependencies:
-      "@matterlabs/hardhat-zksync-solc": 1.0.5(hardhat@2.19.2)
+      "@matterlabs/hardhat-zksync-solc": 1.0.5(hardhat@2.19.3)
       chalk: 4.1.2
       ethers: 6.9.0
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
       ts-morph: 20.0.0
       zksync-ethers: 6.0.0(ethers@6.9.0)
     transitivePeerDependencies:
@@ -977,7 +977,7 @@ packages:
       zksync-ethers: 6.0.0(ethers@6.9.0)
     dev: true
 
-  /@matterlabs/hardhat-zksync-solc@1.0.5(hardhat@2.19.2):
+  /@matterlabs/hardhat-zksync-solc@1.0.5(hardhat@2.19.3):
     resolution:
       {
         integrity: sha512-IBWvbGJSISNtWIz/4VBfV1NweVYK7xHmy787o6fDjntxP5P4XEklTJU3/pNBQdL5fZbIrQqMmXFMOwUXnuEY6Q==,
@@ -989,7 +989,7 @@ packages:
       chalk: 4.1.2
       dockerode: 4.0.0
       fs-extra: 11.2.0
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
       proper-lockfile: 4.1.2
       semver: 7.5.4
     transitivePeerDependencies:
@@ -997,7 +997,7 @@ packages:
       - supports-color
     dev: true
 
-  /@matterlabs/hardhat-zksync-verify@1.2.1(@nomicfoundation/hardhat-verify@2.0.2)(ethers@6.9.0)(hardhat@2.19.2):
+  /@matterlabs/hardhat-zksync-verify@1.2.1(@nomicfoundation/hardhat-verify@2.0.3)(ethers@6.9.0)(hardhat@2.19.3):
     resolution:
       {
         integrity: sha512-kysWVNi07dgqTbesuQUnIUXNJBKWpMfTOAFErV9C69KUNIZg776em5hosdINIConAbwnnLrVa1/4g//Zpltk5g==,
@@ -1005,8 +1005,8 @@ packages:
     peerDependencies:
       "@nomicfoundation/hardhat-verify": ^2.0.0
     dependencies:
-      "@matterlabs/hardhat-zksync-solc": 1.0.5(hardhat@2.19.2)
-      "@nomicfoundation/hardhat-verify": 2.0.2(hardhat@2.19.2)
+      "@matterlabs/hardhat-zksync-solc": 1.0.5(hardhat@2.19.3)
+      "@nomicfoundation/hardhat-verify": 2.0.3(hardhat@2.19.3)
       axios: 1.6.2(debug@4.3.4)
       chalk: 4.1.2
       zksync-ethers: 6.0.0(ethers@6.9.0)
@@ -1322,7 +1322,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@nomicfoundation/hardhat-chai-matchers@2.0.2(@nomicfoundation/hardhat-ethers@3.0.5)(chai@4.3.10)(ethers@6.9.0)(hardhat@2.19.2):
+  /@nomicfoundation/hardhat-chai-matchers@2.0.2(@nomicfoundation/hardhat-ethers@3.0.5)(chai@4.3.10)(ethers@6.9.0)(hardhat@2.19.3):
     resolution:
       {
         integrity: sha512-9Wu9mRtkj0U9ohgXYFbB/RQDa+PcEdyBm2suyEtsJf3PqzZEEjLUZgWnMjlFhATMk/fp3BjmnYVPrwl+gr8oEw==,
@@ -1333,17 +1333,17 @@ packages:
       ethers: ^6.1.0
       hardhat: ^2.9.4
     dependencies:
-      "@nomicfoundation/hardhat-ethers": 3.0.5(ethers@6.9.0)(hardhat@2.19.2)
+      "@nomicfoundation/hardhat-ethers": 3.0.5(ethers@6.9.0)(hardhat@2.19.3)
       "@types/chai-as-promised": 7.1.8
       chai: 4.3.10
       chai-as-promised: 7.1.1(chai@4.3.10)
       deep-eql: 4.1.3
       ethers: 6.9.0
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
       ordinal: 1.0.3
     dev: true
 
-  /@nomicfoundation/hardhat-ethers@3.0.5(ethers@6.9.0)(hardhat@2.19.2):
+  /@nomicfoundation/hardhat-ethers@3.0.5(ethers@6.9.0)(hardhat@2.19.3):
     resolution:
       {
         integrity: sha512-RNFe8OtbZK6Ila9kIlHp0+S80/0Bu/3p41HUpaRIoHLm6X3WekTd83vob3rE54Duufu1edCiBDxspBzi2rxHHw==,
@@ -1354,13 +1354,13 @@ packages:
     dependencies:
       debug: 4.3.4(supports-color@8.1.1)
       ethers: 6.9.0
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
       lodash.isequal: 4.5.0
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@nomicfoundation/hardhat-foundry@1.1.1(hardhat@2.19.2):
+  /@nomicfoundation/hardhat-foundry@1.1.1(hardhat@2.19.3):
     resolution:
       {
         integrity: sha512-cXGCBHAiXas9Pg9MhMOpBVQCkWRYoRFG7GJJAph+sdQsfd22iRs5U5Vs9XmpGEQd1yEvYISQZMeE68Nxj65iUQ==,
@@ -1369,10 +1369,10 @@ packages:
       hardhat: ^2.17.2
     dependencies:
       chalk: 2.4.2
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
     dev: true
 
-  /@nomicfoundation/hardhat-ledger@1.0.1(hardhat@2.19.2):
+  /@nomicfoundation/hardhat-ledger@1.0.1(hardhat@2.19.3):
     resolution:
       {
         integrity: sha512-ui2YoWNPVDmIeCsxaf8U4dhax8w+Tl6EG8/k9CB7zN/Ke3efLkbcaaSG+x0gI33YUpEwJykLNZqOWatbLv5Pyg==,
@@ -1390,7 +1390,7 @@ packages:
       env-paths: 2.2.1
       ethers: 6.9.0
       fs-extra: 7.0.1
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
       io-ts: 1.10.4
       ora: 5.4.1
     transitivePeerDependencies:
@@ -1399,7 +1399,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@nomicfoundation/hardhat-network-helpers@1.0.10(hardhat@2.19.2):
+  /@nomicfoundation/hardhat-network-helpers@1.0.10(hardhat@2.19.3):
     resolution:
       {
         integrity: sha512-R35/BMBlx7tWN5V6d/8/19QCwEmIdbnA4ZrsuXgvs8i2qFx5i7h6mH5pBS4Pwi4WigLH+upl6faYusrNPuzMrQ==,
@@ -1408,10 +1408,10 @@ packages:
       hardhat: ^2.9.5
     dependencies:
       ethereumjs-util: 7.1.5
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
     dev: true
 
-  /@nomicfoundation/hardhat-toolbox@4.0.0(@nomicfoundation/hardhat-chai-matchers@2.0.2)(@nomicfoundation/hardhat-ethers@3.0.5)(@nomicfoundation/hardhat-network-helpers@1.0.10)(@nomicfoundation/hardhat-verify@2.0.2)(@typechain/ethers-v6@0.5.1)(@typechain/hardhat@9.1.0)(@types/chai@4.3.11)(@types/mocha@10.0.6)(@types/node@20.10.5)(chai@4.3.10)(ethers@6.9.0)(hardhat-gas-reporter@1.0.9)(hardhat@2.19.2)(solidity-coverage@0.8.5)(ts-node@10.9.2)(typechain@8.3.2)(typescript@5.3.3):
+  /@nomicfoundation/hardhat-toolbox@4.0.0(@nomicfoundation/hardhat-chai-matchers@2.0.2)(@nomicfoundation/hardhat-ethers@3.0.5)(@nomicfoundation/hardhat-network-helpers@1.0.10)(@nomicfoundation/hardhat-verify@2.0.3)(@typechain/ethers-v6@0.5.1)(@typechain/hardhat@9.1.0)(@types/chai@4.3.11)(@types/mocha@10.0.6)(@types/node@20.10.5)(chai@4.3.10)(ethers@6.9.0)(hardhat-gas-reporter@1.0.9)(hardhat@2.19.3)(solidity-coverage@0.8.5)(ts-node@10.9.2)(typechain@8.3.2)(typescript@5.3.3):
     resolution:
       {
         integrity: sha512-jhcWHp0aHaL0aDYj8IJl80v4SZXWMS1A2XxXa1CA6pBiFfJKuZinCkO6wb+POAt0LIfXB3gA3AgdcOccrcwBwA==,
@@ -1435,29 +1435,29 @@ packages:
       typechain: ^8.3.0
       typescript: ">=4.5.0"
     dependencies:
-      "@nomicfoundation/hardhat-chai-matchers": 2.0.2(@nomicfoundation/hardhat-ethers@3.0.5)(chai@4.3.10)(ethers@6.9.0)(hardhat@2.19.2)
-      "@nomicfoundation/hardhat-ethers": 3.0.5(ethers@6.9.0)(hardhat@2.19.2)
-      "@nomicfoundation/hardhat-network-helpers": 1.0.10(hardhat@2.19.2)
-      "@nomicfoundation/hardhat-verify": 2.0.2(hardhat@2.19.2)
+      "@nomicfoundation/hardhat-chai-matchers": 2.0.2(@nomicfoundation/hardhat-ethers@3.0.5)(chai@4.3.10)(ethers@6.9.0)(hardhat@2.19.3)
+      "@nomicfoundation/hardhat-ethers": 3.0.5(ethers@6.9.0)(hardhat@2.19.3)
+      "@nomicfoundation/hardhat-network-helpers": 1.0.10(hardhat@2.19.3)
+      "@nomicfoundation/hardhat-verify": 2.0.3(hardhat@2.19.3)
       "@typechain/ethers-v6": 0.5.1(ethers@6.9.0)(typechain@8.3.2)(typescript@5.3.3)
-      "@typechain/hardhat": 9.1.0(@typechain/ethers-v6@0.5.1)(ethers@6.9.0)(hardhat@2.19.2)(typechain@8.3.2)
+      "@typechain/hardhat": 9.1.0(@typechain/ethers-v6@0.5.1)(ethers@6.9.0)(hardhat@2.19.3)(typechain@8.3.2)
       "@types/chai": 4.3.11
       "@types/mocha": 10.0.6
       "@types/node": 20.10.5
       chai: 4.3.10
       ethers: 6.9.0
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
-      hardhat-gas-reporter: 1.0.9(hardhat@2.19.2)
-      solidity-coverage: 0.8.5(hardhat@2.19.2)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat-gas-reporter: 1.0.9(hardhat@2.19.3)
+      solidity-coverage: 0.8.5(hardhat@2.19.3)
       ts-node: 10.9.2(@types/node@20.10.5)(typescript@5.3.3)
       typechain: 8.3.2(typescript@5.3.3)
       typescript: 5.3.3
     dev: true
 
-  /@nomicfoundation/hardhat-verify@2.0.2(hardhat@2.19.2):
+  /@nomicfoundation/hardhat-verify@2.0.3(hardhat@2.19.3):
     resolution:
       {
-        integrity: sha512-SXmLPHrfh801m0Dj/8v4stAM6OI0tFktDlWe1pn3k43bCCjn5TGqcVy7hCtauG8/AlQWNZhR+01qTovSSVTvXQ==,
+        integrity: sha512-ESbRu9by53wu6VvgwtMtm108RSmuNsVqXtzg061D+/4R7jaWh/Wl/8ve+p6SdDX7vA1Z3L02hDO1Q3BY4luLXQ==,
       }
     peerDependencies:
       hardhat: ^2.0.4
@@ -1467,7 +1467,7 @@ packages:
       cbor: 8.1.0
       chalk: 2.4.2
       debug: 4.3.4(supports-color@8.1.1)
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
       lodash.clonedeep: 4.5.0
       semver: 6.3.1
       table: 6.8.1
@@ -1860,7 +1860,7 @@ packages:
       defer-to-connect: 2.0.1
     dev: true
 
-  /@tenderly/hardhat-tenderly@2.0.1(@types/node@20.10.5)(ethers@6.9.0)(hardhat@2.19.2):
+  /@tenderly/hardhat-tenderly@2.0.1(@types/node@20.10.5)(ethers@6.9.0)(hardhat@2.19.3):
     resolution:
       {
         integrity: sha512-MaVq7UuWvsyqstya5wVwDc5ml5xo1pAS9PRQQZWhg/f6ats3KFboi9BP18Yhypjh4bPw2NPZOBip9u1lV0oaGw==,
@@ -1870,11 +1870,11 @@ packages:
       hardhat: ^2.19.0
     dependencies:
       "@ethersproject/bignumber": 5.7.0
-      "@nomicfoundation/hardhat-ethers": 3.0.5(ethers@6.9.0)(hardhat@2.19.2)
+      "@nomicfoundation/hardhat-ethers": 3.0.5(ethers@6.9.0)(hardhat@2.19.3)
       axios: 0.27.2
       ethers: 6.9.0
       fs-extra: 10.1.0
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
       hardhat-deploy: 0.11.45
       tenderly: 0.7.0(ts-node@10.9.2)(typescript@5.3.3)
       ts-node: 10.9.2(@types/node@20.10.5)(typescript@5.3.3)
@@ -1966,7 +1966,7 @@ packages:
       - supports-color
     dev: true
 
-  /@truffle/dashboard-hardhat-plugin@0.2.15(hardhat@2.19.2):
+  /@truffle/dashboard-hardhat-plugin@0.2.15(hardhat@2.19.3):
     resolution:
       {
         integrity: sha512-xYmth6dT/L2EIRjgO6jchXFRcaPO7ZTbZzoX6QibEKm21GzZTNPPmPOXgcZF7LW9gDa+9qzJqfvs1RLiiHgQGg==,
@@ -1978,7 +1978,7 @@ packages:
       "@truffle/config": 1.3.61
       "@truffle/dashboard-message-bus-client": 0.1.12
       "@truffle/from-hardhat": 0.2.20
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -2205,7 +2205,7 @@ packages:
       typescript: 5.3.3
     dev: true
 
-  /@typechain/hardhat@9.1.0(@typechain/ethers-v6@0.5.1)(ethers@6.9.0)(hardhat@2.19.2)(typechain@8.3.2):
+  /@typechain/hardhat@9.1.0(@typechain/ethers-v6@0.5.1)(ethers@6.9.0)(hardhat@2.19.3)(typechain@8.3.2):
     resolution:
       {
         integrity: sha512-mtaUlzLlkqTlfPwB3FORdejqBskSnh+Jl8AIJGjXNAQfRQ4ofHADPl1+oU7Z3pAJzmZbUXII8MhOLQltcHgKnA==,
@@ -2219,7 +2219,7 @@ packages:
       "@typechain/ethers-v6": 0.5.1(ethers@6.9.0)(typechain@8.3.2)(typescript@5.3.3)
       ethers: 6.9.0
       fs-extra: 9.1.0
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
       typechain: 8.3.2(typescript@5.3.3)
     dev: true
 
@@ -2443,10 +2443,10 @@ packages:
       }
     dev: true
 
-  /@typescript-eslint/eslint-plugin@6.14.0(@typescript-eslint/parser@6.14.0)(eslint@8.56.0)(typescript@5.3.3):
+  /@typescript-eslint/eslint-plugin@6.15.0(@typescript-eslint/parser@6.15.0)(eslint@8.56.0)(typescript@5.3.3):
     resolution:
       {
-        integrity: sha512-1ZJBykBCXaSHG94vMMKmiHoL0MhNHKSVlcHVYZNw+BKxufhqQVTOawNpwwI1P5nIFZ/4jLVop0mcY6mJJDFNaw==,
+        integrity: sha512-j5qoikQqPccq9QoBAupOP+CBu8BaJ8BLjaXSioDISeTZkVO3ig7oSIKh3H+rEpee7xCXtWwSB4KIL5l6hWZzpg==,
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
     peerDependencies:
@@ -2458,11 +2458,11 @@ packages:
         optional: true
     dependencies:
       "@eslint-community/regexpp": 4.10.0
-      "@typescript-eslint/parser": 6.14.0(eslint@8.56.0)(typescript@5.3.3)
-      "@typescript-eslint/scope-manager": 6.14.0
-      "@typescript-eslint/type-utils": 6.14.0(eslint@8.56.0)(typescript@5.3.3)
-      "@typescript-eslint/utils": 6.14.0(eslint@8.56.0)(typescript@5.3.3)
-      "@typescript-eslint/visitor-keys": 6.14.0
+      "@typescript-eslint/parser": 6.15.0(eslint@8.56.0)(typescript@5.3.3)
+      "@typescript-eslint/scope-manager": 6.15.0
+      "@typescript-eslint/type-utils": 6.15.0(eslint@8.56.0)(typescript@5.3.3)
+      "@typescript-eslint/utils": 6.15.0(eslint@8.56.0)(typescript@5.3.3)
+      "@typescript-eslint/visitor-keys": 6.15.0
       debug: 4.3.4(supports-color@8.1.1)
       eslint: 8.56.0
       graphemer: 1.4.0
@@ -2475,10 +2475,10 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/parser@6.14.0(eslint@8.56.0)(typescript@5.3.3):
+  /@typescript-eslint/parser@6.15.0(eslint@8.56.0)(typescript@5.3.3):
     resolution:
       {
-        integrity: sha512-QjToC14CKacd4Pa7JK4GeB/vHmWFJckec49FR4hmIRf97+KXole0T97xxu9IFiPxVQ1DBWrQ5wreLwAGwWAVQA==,
+        integrity: sha512-MkgKNnsjC6QwcMdlNAel24jjkEO/0hQaMDLqP4S9zq5HBAUJNQB6y+3DwLjX7b3l2b37eNAxMPLwb3/kh8VKdA==,
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
     peerDependencies:
@@ -2488,10 +2488,10 @@ packages:
       typescript:
         optional: true
     dependencies:
-      "@typescript-eslint/scope-manager": 6.14.0
-      "@typescript-eslint/types": 6.14.0
-      "@typescript-eslint/typescript-estree": 6.14.0(typescript@5.3.3)
-      "@typescript-eslint/visitor-keys": 6.14.0
+      "@typescript-eslint/scope-manager": 6.15.0
+      "@typescript-eslint/types": 6.15.0
+      "@typescript-eslint/typescript-estree": 6.15.0(typescript@5.3.3)
+      "@typescript-eslint/visitor-keys": 6.15.0
       debug: 4.3.4(supports-color@8.1.1)
       eslint: 8.56.0
       typescript: 5.3.3
@@ -2499,21 +2499,21 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/scope-manager@6.14.0:
+  /@typescript-eslint/scope-manager@6.15.0:
     resolution:
       {
-        integrity: sha512-VT7CFWHbZipPncAZtuALr9y3EuzY1b1t1AEkIq2bTXUPKw+pHoXflGNG5L+Gv6nKul1cz1VH8fz16IThIU0tdg==,
+        integrity: sha512-+BdvxYBltqrmgCNu4Li+fGDIkW9n//NrruzG9X1vBzaNK+ExVXPoGB71kneaVw/Jp+4rH/vaMAGC6JfMbHstVg==,
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
     dependencies:
-      "@typescript-eslint/types": 6.14.0
-      "@typescript-eslint/visitor-keys": 6.14.0
+      "@typescript-eslint/types": 6.15.0
+      "@typescript-eslint/visitor-keys": 6.15.0
     dev: true
 
-  /@typescript-eslint/type-utils@6.14.0(eslint@8.56.0)(typescript@5.3.3):
+  /@typescript-eslint/type-utils@6.15.0(eslint@8.56.0)(typescript@5.3.3):
     resolution:
       {
-        integrity: sha512-x6OC9Q7HfYKqjnuNu5a7kffIYs3No30isapRBJl1iCHLitD8O0lFbRcVGiOcuyN837fqXzPZ1NS10maQzZMKqw==,
+        integrity: sha512-CnmHKTfX6450Bo49hPg2OkIm/D/TVYV7jO1MCfPYGwf6x3GO0VU8YMO5AYMn+u3X05lRRxA4fWCz87GFQV6yVQ==,
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
     peerDependencies:
@@ -2523,8 +2523,8 @@ packages:
       typescript:
         optional: true
     dependencies:
-      "@typescript-eslint/typescript-estree": 6.14.0(typescript@5.3.3)
-      "@typescript-eslint/utils": 6.14.0(eslint@8.56.0)(typescript@5.3.3)
+      "@typescript-eslint/typescript-estree": 6.15.0(typescript@5.3.3)
+      "@typescript-eslint/utils": 6.15.0(eslint@8.56.0)(typescript@5.3.3)
       debug: 4.3.4(supports-color@8.1.1)
       eslint: 8.56.0
       ts-api-utils: 1.0.3(typescript@5.3.3)
@@ -2533,18 +2533,18 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/types@6.14.0:
+  /@typescript-eslint/types@6.15.0:
     resolution:
       {
-        integrity: sha512-uty9H2K4Xs8E47z3SnXEPRNDfsis8JO27amp2GNCnzGETEW3yTqEIVg5+AI7U276oGF/tw6ZA+UesxeQ104ceA==,
+        integrity: sha512-yXjbt//E4T/ee8Ia1b5mGlbNj9fB9lJP4jqLbZualwpP2BCQ5is6BcWwxpIsY4XKAhmdv3hrW92GdtJbatC6dQ==,
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
     dev: true
 
-  /@typescript-eslint/typescript-estree@6.14.0(typescript@5.3.3):
+  /@typescript-eslint/typescript-estree@6.15.0(typescript@5.3.3):
     resolution:
       {
-        integrity: sha512-yPkaLwK0yH2mZKFE/bXkPAkkFgOv15GJAUzgUVonAbv0Hr4PK/N2yaA/4XQbTZQdygiDkpt5DkxPELqHguNvyw==,
+        integrity: sha512-7mVZJN7Hd15OmGuWrp2T9UvqR2Ecg+1j/Bp1jXUEY2GZKV6FXlOIoqVDmLpBiEiq3katvj/2n2mR0SDwtloCew==,
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
     peerDependencies:
@@ -2553,8 +2553,8 @@ packages:
       typescript:
         optional: true
     dependencies:
-      "@typescript-eslint/types": 6.14.0
-      "@typescript-eslint/visitor-keys": 6.14.0
+      "@typescript-eslint/types": 6.15.0
+      "@typescript-eslint/visitor-keys": 6.15.0
       debug: 4.3.4(supports-color@8.1.1)
       globby: 11.1.0
       is-glob: 4.0.3
@@ -2565,10 +2565,10 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/utils@6.14.0(eslint@8.56.0)(typescript@5.3.3):
+  /@typescript-eslint/utils@6.15.0(eslint@8.56.0)(typescript@5.3.3):
     resolution:
       {
-        integrity: sha512-XwRTnbvRr7Ey9a1NT6jqdKX8y/atWG+8fAIu3z73HSP8h06i3r/ClMhmaF/RGWGW1tHJEwij1uEg2GbEmPYvYg==,
+        integrity: sha512-eF82p0Wrrlt8fQSRL0bGXzK5nWPRV2dYQZdajcfzOD9+cQz9O7ugifrJxclB+xVOvWvagXfqS4Es7vpLP4augw==,
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
     peerDependencies:
@@ -2577,9 +2577,9 @@ packages:
       "@eslint-community/eslint-utils": 4.4.0(eslint@8.56.0)
       "@types/json-schema": 7.0.15
       "@types/semver": 7.5.6
-      "@typescript-eslint/scope-manager": 6.14.0
-      "@typescript-eslint/types": 6.14.0
-      "@typescript-eslint/typescript-estree": 6.14.0(typescript@5.3.3)
+      "@typescript-eslint/scope-manager": 6.15.0
+      "@typescript-eslint/types": 6.15.0
+      "@typescript-eslint/typescript-estree": 6.15.0(typescript@5.3.3)
       eslint: 8.56.0
       semver: 7.5.4
     transitivePeerDependencies:
@@ -2587,14 +2587,14 @@ packages:
       - typescript
     dev: true
 
-  /@typescript-eslint/visitor-keys@6.14.0:
+  /@typescript-eslint/visitor-keys@6.15.0:
     resolution:
       {
-        integrity: sha512-fB5cw6GRhJUz03MrROVuj5Zm/Q+XWlVdIsFj+Zb1Hvqouc8t+XP2H5y53QYU/MGtd2dPg6/vJJlhoX3xc2ehfw==,
+        integrity: sha512-1zvtdC1a9h5Tb5jU9x3ADNXO9yjP8rXlaoChu0DQX40vf5ACVpYIVIZhIMZ6d5sDXH7vq4dsZBT1fEGj8D2n2w==,
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
     dependencies:
-      "@typescript-eslint/types": 6.14.0
+      "@typescript-eslint/types": 6.15.0
       eslint-visitor-keys: 3.4.3
     dev: true
 
@@ -4471,7 +4471,7 @@ packages:
       debug: 4.3.4(supports-color@8.1.1)
       readable-stream: 3.6.2
       split-ca: 1.0.1
-      ssh2: 1.14.0
+      ssh2: 1.15.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -6048,7 +6048,7 @@ packages:
       har-schema: 2.0.0
     dev: true
 
-  /hardhat-abi-exporter@2.10.1(hardhat@2.19.2):
+  /hardhat-abi-exporter@2.10.1(hardhat@2.19.3):
     resolution:
       {
         integrity: sha512-X8GRxUTtebMAd2k4fcPyVnCdPa6dYK4lBsrwzKP5yiSq4i+WadWPIumaLfce53TUf/o2TnLpLOduyO1ylE2NHQ==,
@@ -6059,10 +6059,10 @@ packages:
     dependencies:
       "@ethersproject/abi": 5.7.0
       delete-empty: 3.0.0
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
     dev: true
 
-  /hardhat-contract-sizer@2.10.0(hardhat@2.19.2):
+  /hardhat-contract-sizer@2.10.0(hardhat@2.19.3):
     resolution:
       {
         integrity: sha512-QiinUgBD5MqJZJh1hl1jc9dNnpJg7eE/w4/4GEnrcmZJJTDbVFNe3+/3Ep24XqISSkYxRz36czcPHKHd/a0dwA==,
@@ -6072,7 +6072,7 @@ packages:
     dependencies:
       chalk: 4.1.2
       cli-table3: 0.6.3
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
       strip-ansi: 6.0.1
     dev: true
 
@@ -6112,7 +6112,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /hardhat-gas-reporter@1.0.9(hardhat@2.19.2):
+  /hardhat-gas-reporter@1.0.9(hardhat@2.19.3):
     resolution:
       {
         integrity: sha512-INN26G3EW43adGKBNzYWOlI3+rlLnasXTwW79YNnUhXPDa+yHESgt639dJEs37gCjhkbNKcRRJnomXEuMFBXJg==,
@@ -6122,7 +6122,7 @@ packages:
     dependencies:
       array-uniq: 1.0.3
       eth-gas-reporter: 0.2.27
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
       sha1: 1.1.1
     transitivePeerDependencies:
       - "@codechecks/client"
@@ -6131,10 +6131,10 @@ packages:
       - utf-8-validate
     dev: true
 
-  /hardhat@2.19.2(ts-node@10.9.2)(typescript@5.3.3):
+  /hardhat@2.19.3(ts-node@10.9.2)(typescript@5.3.3):
     resolution:
       {
-        integrity: sha512-CRU3+0Cc8Qh9UpxKd8cLADDPes7ZDtKj4dTK+ERtLBomEzhRPLWklJn4VKOwjre9/k8GNd/e9DYxpfuzcxbXPQ==,
+        integrity: sha512-zUvfILiu1O7W1a+t5E1nCJ6z1danRLNizQkSEQCCgDYcRx13AGXtH1MVZajKmdLmXIjKAPReTp/8JQQ4ZHaX3g==,
       }
     hasBin: true
     peerDependencies:
@@ -9418,7 +9418,7 @@ packages:
       }
     dev: true
 
-  /solidity-coverage@0.8.5(hardhat@2.19.2):
+  /solidity-coverage@0.8.5(hardhat@2.19.3):
     resolution:
       {
         integrity: sha512-6C6N6OV2O8FQA0FWA95FdzVH+L16HU94iFgg5wAFZ29UpLFkgNI/DRR2HotG1bC0F4gAc/OMs2BJI44Q/DYlKQ==,
@@ -9437,7 +9437,7 @@ packages:
       ghost-testrpc: 0.0.2
       global-modules: 2.0.0
       globby: 10.0.2
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
       jsonschema: 1.4.1
       lodash: 4.17.21
       mocha: 10.2.0
@@ -9496,10 +9496,10 @@ packages:
       }
     dev: true
 
-  /ssh2@1.14.0:
+  /ssh2@1.15.0:
     resolution:
       {
-        integrity: sha512-AqzD1UCqit8tbOKoj6ztDDi1ffJZ2rV2SwlgrVVrHPkV5vWqGJOVp5pmtj18PunkPJAuKQsnInyKV+/Nb2bUnA==,
+        integrity: sha512-C0PHgX4h6lBxYx7hcXwu3QWdh4tg6tZZsTfXcdvc5caW/EMxaB4H9dWsl7qk+F7LAW762hp8VbXOX7x4xUYvEw==,
       }
     engines: { node: ">=10.16.0" }
     requiresBuild: true
@@ -11025,7 +11025,7 @@ packages:
         optional: true
     dev: true
 
-  /xdeployer@2.2.2(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.9.0)(hardhat@2.19.2):
+  /xdeployer@2.2.2(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.9.0)(hardhat@2.19.3):
     resolution:
       {
         integrity: sha512-CmkADnwn9M7J33Rrb1sbaI5mBaXrRr2kLEw5W6QMeTJkXw57ae7/IIBYHDbuFLu7L60J3ZF21KdpHjmSMkUsVQ==,
@@ -11036,9 +11036,9 @@ packages:
       ethers: ^6.9.0
       hardhat: ^2.19.2
     dependencies:
-      "@nomicfoundation/hardhat-ethers": 3.0.5(ethers@6.9.0)(hardhat@2.19.2)
+      "@nomicfoundation/hardhat-ethers": 3.0.5(ethers@6.9.0)(hardhat@2.19.3)
       ethers: 6.9.0
-      hardhat: 2.19.2(ts-node@10.9.2)(typescript@5.3.3)
+      hardhat: 2.19.3(ts-node@10.9.2)(typescript@5.3.3)
     dev: true
 
   /xhr-request-promise@0.1.3:
