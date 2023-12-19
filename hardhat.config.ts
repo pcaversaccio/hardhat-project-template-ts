@@ -633,6 +633,8 @@ const config: HardhatUserConfig = {
   sourcify: {
     // Enable Sourcify verification by default
     enabled: true,
+    apiUrl: "https://sourcify.dev/server",
+    browserUrl: "https://repo.sourcify.dev",
   },
   etherscan: {
     // Add your own API key by getting an account at etherscan (https://etherscan.io), snowtrace (https://snowtrace.io) etc.
