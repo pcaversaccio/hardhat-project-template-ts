@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.23;
 
-import {Create2Deployer} from "xdeployer/src/contracts/Create2Deployer.sol";
+import {CreateX} from "xdeployer/src/contracts/CreateX.sol";
 
-contract Create2DeployerLocal is Create2Deployer {}
+contract Create2DeployerLocal is CreateX {}
