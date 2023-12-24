@@ -1,4 +1,4 @@
 // An example of the network setup for the `xdeployer` plugin (https://github.com/pcaversaccio/xdeployer)
 
-networks: ["sepolia", "optimismTestnet", "arbitrumSepolia"],
-rpcUrls: [vars.get("ETH_SEPOLIA_TESTNET_URL", "https://rpc.sepolia.org"), vars.get("OPTIMISM_TESTNET_URL", "https://goerli.optimism.io"), vars.get("ARBITRUM_SEPOLIA_URL", "https://sepolia-rollup.arbitrum.io/rpc")],
+networks: ["sepolia", "optimismSepolia", "arbitrumSepolia"],
+rpcUrls: [vars.get("ETH_SEPOLIA_TESTNET_URL", "https://rpc.sepolia.org"), vars.get("OPTIMISM_SEPOLIA_URL", "https://sepolia.optimism.io"), vars.get("ARBITRUM_SEPOLIA_URL", "https://sepolia-rollup.arbitrum.io/rpc")],
