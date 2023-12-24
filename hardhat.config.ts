@@ -602,13 +602,13 @@ const config: HardhatUserConfig = {
 
     // Use the network names specified here: https://github.com/pcaversaccio/xdeployer#configuration
     // Use `localhost` or `hardhat` for local testing
-    networks: ["hardhat", "sepolia", "optimismTestnet"],
+    networks: ["hardhat", "sepolia", "optimismSepolia"],
 
     // Use the matching env URL with your chosen RPC in the `.env` file
     rpcUrls: [
       "hardhat",
       vars.get("ETH_SEPOLIA_TESTNET_URL", "https://rpc.sepolia.org"),
-      vars.get("OPTIMISM_TESTNET_URL", "https://goerli.optimism.io"),
+      vars.get("OPTIMISM_SEPOLIA_URL", "https://sepolia.optimism.io"),
     ],
 
     // Maximum limit is 15 * 10 ** 6 or 15,000,000. If the deployments are failing, try increasing this number
@@ -767,16 +767,16 @@ const config: HardhatUserConfig = {
         network: "celo",
         chainId: 42220,
         urls: {
-          apiURL: "https://explorer.celo.org/mainnet/api",
-          browserURL: "https://explorer.celo.org/mainnet",
+          apiURL: "https://api.celoscan.io/api",
+          browserURL: "https://celoscan.io",
         },
       },
       {
         network: "alfajores",
         chainId: 44787,
         urls: {
-          apiURL: "https://explorer.celo.org/alfajores/api",
-          browserURL: "https://explorer.celo.org/alfajores",
+          apiURL: "https://api-alfajores.celoscan.io/api",
+          browserURL: "https://alfajores.celoscan.io",
         },
       },
       {
