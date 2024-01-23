@@ -30,7 +30,7 @@
     "snapshot": "forge snapshot --out forge-artifacts",
     "coverage:hh": "npx hardhat coverage",
     "coverage:forge": "forge coverage --report summary",
-    "coverage:forge:report": "forge coverage --report lcov && lcov --remove lcov.info 'test/*' --output-file lcov.info --rc lcov_branch_coverage=1 && genhtml lcov.info --branch-coverage --output-dir coverage",
+    "coverage:forge:report": "forge coverage --report lcov && lcov --remove lcov.info \"test/*\" --output-file lcov.info --rc lcov_branch_coverage=1 && genhtml lcov.info --branch-coverage --output-dir coverage",
     "test:hh": "npx hardhat test",
     "test:forge": "forge test -vvv --root . -C contracts/src --match-path \"contracts/test/*\" --out forge-artifacts",
     "compile": "npx hardhat compile && forge build --root . -C contracts/src --optimize --out forge-artifacts",
@@ -109,12 +109,12 @@
     "deploy:shardeumtestnet": "npx hardhat run --network shardeumTestnet scripts/deploy.ts",
     "deploy:artheratestnet": "npx hardhat run --network artheraTestnet scripts/deploy.ts",
     "deploy:frametestnet": "npx hardhat run --network frameTestnet scripts/deploy.ts",
-    "prettier:check": "npx prettier -c **/*.{js,ts,md,sol,json,yml,yaml}",
-    "prettier:fix": "npx prettier -w **/*.{js,ts,md,sol,json,yml,yaml}",
-    "solhint:check": "npx solhint 'contracts/**/*.sol'",
-    "solhint:fix": "npx solhint 'contracts/**/*.sol' --fix",
-    "lint:check": "pnpm prettier:check && pnpm solhint:check && npx eslint **/*.{js,ts}",
-    "lint:fix": "pnpm prettier:fix && pnpm solhint:fix && npx eslint **/*.{js,ts} --fix"
+    "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
+    "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
+    "solhint:check": "npx solhint \"contracts/**/*.sol\"",
+    "solhint:fix": "npx solhint \"contracts/**/*.sol\" --fix",
+    "lint:check": "pnpm prettier:check && pnpm solhint:check && npx eslint \"**/*.{js,ts}\"",
+    "lint:fix": "pnpm prettier:fix && pnpm solhint:fix && npx eslint \"**/*.{js,ts}\" --fix"
   },
   "devDependencies": {
     "@matterlabs/hardhat-zksync-deploy": "^1.1.2",
