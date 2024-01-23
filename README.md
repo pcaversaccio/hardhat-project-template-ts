@@ -13,6 +13,8 @@ Once you have `npm` installed, you can run the following both to install and upg
 npm install -g pnpm
 ```
 
+TEST
+
 After having installed `pnpm`, simply run:
 
 ```console
