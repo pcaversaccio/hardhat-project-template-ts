@@ -1,8 +1,8 @@
 # dependencies
 update          :; forge update
 
-# install proper solc version
-solc            :; nix-env -f https://github.com/dapphub/dapptools/archive/master.tar.gz -iA solc-static-versions.solc_0_8_23
+# install latest stable solc version
+solc            :; sudo add-apt-repository ppa:ethereum/ethereum && sudo apt-get update && sudo apt-get install solc
 
 # build & test
 build           :; forge build
