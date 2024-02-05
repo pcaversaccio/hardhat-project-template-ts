@@ -129,7 +129,7 @@
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
     "@nomicfoundation/hardhat-verify": "^2.0.4",
     "@openzeppelin/contracts": "^5.0.1",
-    "@tenderly/hardhat-tenderly": "^2.1.1",
+    "@tenderly/hardhat-tenderly": "^2.2.0",
     "@truffle/dashboard-hardhat-plugin": "^0.2.15",
     "@typechain/ethers-v6": "^0.5.1",
     "@typechain/hardhat": "^9.1.0",
