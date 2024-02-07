@@ -85,7 +85,7 @@ pnpm deploy:dashboard
 
 You can start an instance of the Hardhat network that forks the mainnet. This means that it will simulate having the same state as the mainnet, but it will work as a local development network. That way you can interact with deployed protocols and test complex interactions locally. To use this feature, you need to connect to an archive node.
 
-This template is currently configured via the [hardhat.config.ts](./hardhat.config.ts) as follows:
+This template is currently configured via the [`hardhat.config.ts`](./hardhat.config.ts) as follows:
 
 ```ts
 forking: {
