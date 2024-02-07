@@ -12,7 +12,9 @@ import "@matterlabs/hardhat-zksync-solc";
 import "@matterlabs/hardhat-zksync-deploy";
 import "@matterlabs/hardhat-zksync-verify";
 import "@matterlabs/hardhat-zksync-ethers";
-import "@truffle/dashboard-hardhat-plugin";
+// Uncomment if you want to use the Truffle Dashboard module
+// You must also uncomment the subsequent `truffle` configuration in this file accordingly
+// import "@truffle/dashboard-hardhat-plugin";
 import "hardhat-gas-reporter";
 import "hardhat-abi-exporter";
 import "solidity-coverage";
@@ -95,14 +97,15 @@ const config: HardhatUserConfig = {
       },
     },
   },
-  truffle: {
-    dashboardNetworkName: "truffleDashboard", // Truffle's default value is "truffleDashboard"
-    dashboardNetworkConfig: {
-      // Truffle's default value is 0 (i.e. no timeout), while Hardhat's default
-      // value is 40000 (40 seconds)
-      timeout: 0,
-    },
-  },
+  // Uncomment if you want to use the Truffle Dashboard module
+  // truffle: {
+  //   dashboardNetworkName: "truffleDashboard", // Truffle's default value is "truffleDashboard"
+  //   dashboardNetworkConfig: {
+  //     // Truffle's default value is 0 (i.e. no timeout), while Hardhat's default
+  //     // value is 40000 (40 seconds)
+  //     timeout: 0,
+  //   },
+  // },
   networks: {
     hardhat: {
       initialBaseFeePerGas: 0,
