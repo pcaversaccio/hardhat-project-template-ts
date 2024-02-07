@@ -40,7 +40,7 @@ pnpm deploy:goerli
 pnpm xdeploy
 ```
 
-This template uses the [xdeploy](https://github.com/pcaversaccio/xdeployer) Hardhat plugin. Check out the documentation for more information on the specifics of the deployments.
+This template uses the [`xdeployer`](https://github.com/pcaversaccio/xdeployer) Hardhat plugin. Check out the documentation for more information on the specifics of the deployments.
 
 ## Configuration Variables
 
