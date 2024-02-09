@@ -135,13 +135,13 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.11",
     "@types/mocha": "^10.0.6",
-    "@types/node": "^20.11.16",
+    "@types/node": "^20.11.17",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "chai": "^4.4.1",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
-    "ethers": "^6.10.0",
+    "ethers": "^6.11.0",
     "hardhat": "^2.19.5",
     "hardhat-abi-exporter": "^2.10.1",
     "hardhat-contract-sizer": "^2.10.0",
@@ -154,6 +154,6 @@
     "typechain": "^8.3.2",
     "typescript": "^5.3.3",
     "xdeployer": "^3.0.1",
-    "zksync-ethers": "^6.2.0"
+    "zksync-ethers": "^6.3.0"
   }
 }
