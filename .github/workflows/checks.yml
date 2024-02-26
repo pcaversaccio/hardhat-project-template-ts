@@ -1,4 +1,4 @@
-name: 👮‍♂️ Sanity checks
+name: 🔍️ CodeQL
 
 on: [push, pull_request, workflow_dispatch]
 
@@ -7,87 +7,35 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  prettify-n-lint:
+  analyse:
     runs-on: ${{ matrix.os }}
+    permissions:
+      # The permissions set for `actions` and `contents` are only
+      # required for workflows in private repositories.
+      actions: read
+      contents: read
+      security-events: write
     strategy:
       matrix:
         os:
           - ubuntu-latest
-        node_version:
-          - 20
+        language:
+          - javascript-typescript
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3
+      - name: Initialise CodeQL
+        uses: github/codeql-action/init@v3
         with:
-          version: latest
-          run_install: false
+          languages: ${{ matrix.language }}
+          queries: +security-and-quality
 
-      - name: Get pnpm cache directory path
-        id: pnpm-cache-dir-path
-        run: echo "dir=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v3
 
-      - name: Restore pnpm cache
-        uses: actions/cache@v4
-        id: pnpm-cache
+      - name: Perform CodeQL analysis
+        uses: github/codeql-action/analyze@v3
         with:
-          path: ${{ steps.pnpm-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-
-      - name: Use Node.js ${{ matrix.node_version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node_version }}
-
-      - name: Install pnpm project with a clean slate
-        run: pnpm install --prefer-offline --frozen-lockfile
-
-      - name: Prettier and lint
-        run: pnpm lint:check
-
-  codespell:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os:
-          - ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Run codespell
-        uses: codespell-project/actions-codespell@v2.0
-        with:
-          check_filenames: true
-          skip: ./.git,pnpm-lock.yaml
-
-  validate-links:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os:
-          - ubuntu-latest
-        ruby_version:
-          - 3.3
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: ${{ matrix.ruby_version }}
-          bundler-cache: true
-
-      - name: Install awesome_bot
-        run: gem install awesome_bot
-
-      - name: Validate URLs
-        run: awesome_bot ./*.md contracts/src/*.sol contracts/test/*.sol --request-delay 0.4 --white-list http://localhost:24012,https://etherscan.io,https://snowtrace.io
+          category: "/language:${{matrix.language}}"
