@@ -6,6 +6,8 @@ jobs:
   analyse:
     runs-on: ${{ matrix.os }}
     permissions:
+      # The permissions set for `actions` and `contents` are only
+      # required for workflows in private repositories.
       actions: read
       contents: read
       security-events: write
