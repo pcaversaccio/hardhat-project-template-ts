@@ -590,6 +590,12 @@ const config: HardhatUserConfig = {
       accounts,
       ledgerAccounts,
     },
+    blastMain: {
+      chainId: 81457,
+      url: vars.get("BLAST_MAINNET_URL", "https://rpc.blast.io"),
+      accounts,
+      ledgerAccounts,
+    },
     kromaTestnet: {
       chainId: 2358,
       url: vars.get("KROMA_TESTNET_URL", "https://api.sepolia.kroma.network"),
@@ -759,7 +765,8 @@ const config: HardhatUserConfig = {
       mantaTestnet: vars.get("MANTA_API_KEY", ""),
       // For Arthera testnet
       artheraTestnet: vars.get("ARTHERA_API_KEY", ""),
-      // For Blast testnet
+      // For Blast testnet & mainnet
+      blast: vars.get("BLAST_API_KEY", ""),
       blastTestnet: vars.get("BLAST_API_KEY", ""),
       // For Kroma testnet & mainnet
       kroma: vars.get("KROMA_API_KEY", ""),
@@ -1073,12 +1080,19 @@ const config: HardhatUserConfig = {
         },
       },
       {
+        network: "blast",
+        chainId: 81457,
+        urls: {
+          apiURL: "https://api.blastscan.io/api",
+          browserURL: "https://blastscan.io",
+        },
+      },
+      {
         network: "blastTestnet",
         chainId: 168587773,
         urls: {
-          apiURL:
-            "https://api.routescan.io/v2/network/testnet/evm/168587773/etherscan",
-          browserURL: "https://testnet.blastscan.io",
+          apiURL: "https://api-sepolia.blastscan.io/api",
+          browserURL: "https://sepolia.blastscan.io",
         },
       },
       {
