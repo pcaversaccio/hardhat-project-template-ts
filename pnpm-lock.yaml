@@ -120,8 +120,8 @@ devDependencies:
     specifier: ^7.2.0
     version: 7.2.0(eslint@8.57.0)(typescript@5.4.2)
   xdeployer:
-    specifier: ^3.0.3
-    version: 3.0.3(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.11.1)(hardhat@2.22.1)
+    specifier: ^3.0.4
+    version: 3.0.4(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.11.1)(hardhat@2.22.1)
   zksync-ethers:
     specifier: ^6.5.0
     version: 6.5.0(ethers@6.11.1)
@@ -11997,10 +11997,10 @@ packages:
         optional: true
     dev: true
 
-  /xdeployer@3.0.3(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.11.1)(hardhat@2.22.1):
+  /xdeployer@3.0.4(@nomicfoundation/hardhat-ethers@3.0.5)(ethers@6.11.1)(hardhat@2.22.1):
     resolution:
       {
-        integrity: sha512-ZDu+sJUmnvGJkMj53EJNG1pEQGtil1yzFWdFfPG8a9E1H9lNzLT1L9lZAI0HxZRnhKouiMU/x7Up2xWAfWLXEQ==,
+        integrity: sha512-9dTh2Vq7Bkvcpi7lTe+3TVvt7+WRr5T7pE2Zt+TajZZZMU73r/wZcpQ+aOICPx9Lby3c6vSKM9TasOHy5OEO9g==,
       }
     engines: { node: ">=14.0.0" }
     peerDependencies:
