@@ -138,9 +138,9 @@
     "@nomicfoundation/hardhat-foundry": "^1.1.1",
     "@nomicfoundation/hardhat-ignition": "^0.15.1",
     "@nomicfoundation/hardhat-ignition-ethers": "^0.15.1",
-    "@nomicfoundation/hardhat-ledger": "^1.0.2",
+    "@nomicfoundation/hardhat-ledger": "^1.0.3",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.10",
-    "@nomicfoundation/hardhat-verify": "^2.0.5",
+    "@nomicfoundation/hardhat-verify": "^2.0.6",
     "@nomicfoundation/ignition-core": "^0.15.1",
     "@openzeppelin/contracts": "^5.0.2",
     "@tenderly/hardhat-tenderly": "^2.2.2",
@@ -153,8 +153,8 @@
     "chai": "^4.4.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
-    "ethers": "^6.11.1",
-    "hardhat": "^2.22.2",
+    "ethers": "^6.12.0",
+    "hardhat": "^2.22.3",
     "hardhat-abi-exporter": "^2.10.1",
     "hardhat-contract-sizer": "^2.10.0",
     "hardhat-gas-reporter": "^2.1.1",
@@ -166,7 +166,7 @@
     "typechain": "^8.3.2",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.7.0",
-    "xdeployer": "^3.0.5",
+    "xdeployer": "^3.0.6",
     "zksync-ethers": "^6.7.0"
   }
 }
