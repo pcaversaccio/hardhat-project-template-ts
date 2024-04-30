@@ -122,6 +122,8 @@
     "deploy:kavamain": "npx hardhat run --network kavaMain scripts/deploy.ts",
     "deploy:metistestnet": "npx hardhat run --network metisTestnet scripts/deploy.ts",
     "deploy:metismain": "npx hardhat run --network metisMain scripts/deploy.ts",
+    "deploy:modetestnet": "npx hardhat run --network modeTestnet scripts/deploy.ts",
+    "deploy:modemain": "npx hardhat run --network modeMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "npx solhint \"contracts/**/*.sol\"",
@@ -167,8 +169,8 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.4.5",
-    "typescript-eslint": "^7.7.1",
-    "xdeployer": "^3.0.7",
+    "typescript-eslint": "^7.8.0",
+    "xdeployer": "^3.0.8",
     "zksync-ethers": "^6.7.0"
   }
 }

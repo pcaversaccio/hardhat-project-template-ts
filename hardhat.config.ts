@@ -86,7 +86,7 @@ const config: HardhatUserConfig = {
     },
   },
   zksolc: {
-    version: "1.4.0",
+    version: "1.4.1",
     compilerSource: "binary",
     settings: {
       isSystem: false,
@@ -678,6 +678,18 @@ const config: HardhatUserConfig = {
       accounts,
       ledgerAccounts,
     },
+    modeTestnet: {
+      chainId: 919,
+      url: vars.get("MODE_TESTNET_URL", "https://sepolia.mode.network"),
+      accounts,
+      ledgerAccounts,
+    },
+    modeMain: {
+      chainId: 34443,
+      url: vars.get("MODE_MAINNET_URL", "https://mainnet.mode.network"),
+      accounts,
+      ledgerAccounts,
+    },
   },
   xdeploy: {
     // Change this name to the name of your main contract
@@ -855,6 +867,9 @@ const config: HardhatUserConfig = {
       // For Metis testnet & mainnet
       metis: vars.get("METIS_API_KEY", ""),
       metisTestnet: vars.get("METIS_API_KEY", ""),
+      // For Mode testnet & mainnet
+      mode: vars.get("MODE_API_KEY", ""),
+      modeTestnet: vars.get("MODE_API_KEY", ""),
     },
     customChains: [
       {
@@ -1273,6 +1288,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://sepolia-explorer.metisdevops.link/api",
           browserURL: "https://sepolia-explorer.metisdevops.link",
+        },
+      },
+      {
+        network: "mode",
+        chainId: 34443,
+        urls: {
+          apiURL: "https://explorer.mode.network/api",
+          browserURL: "https://explorer.mode.network",
+        },
+      },
+      {
+        network: "modeTestnet",
+        chainId: 919,
+        urls: {
+          apiURL: "https://sepolia.explorer.mode.network/api",
+          browserURL: "https://sepolia.explorer.mode.network",
         },
       },
     ],
