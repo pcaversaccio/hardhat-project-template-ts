@@ -65,8 +65,8 @@ importers:
         specifier: ^9.1.0
         version: 9.1.0(@typechain/ethers-v6@0.5.1(ethers@6.12.1(bufferutil@4.0.8)(utf-8-validate@5.0.10))(typechain@8.3.2(typescript@5.4.5))(typescript@5.4.5))(ethers@6.12.1(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.3(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.12.8)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10))(typechain@8.3.2(typescript@5.4.5))
       "@types/chai":
-        specifier: ^4.3.15
-        version: 4.3.15
+        specifier: ^4.3.16
+        version: 4.3.16
       "@types/mocha":
         specifier: ^10.0.6
         version: 10.0.6
@@ -1467,10 +1467,10 @@ packages:
         integrity: sha512-ThlRVIJhr69FLlh6IctTXFkmhtP3NpMZ2QGq69StYLyKZFp/HOp1VdKZj7RvfNWYYcJ1xlbLGLLWj1UvP5u/Gw==,
       }
 
-  "@types/chai@4.3.15":
+  "@types/chai@4.3.16":
     resolution:
       {
-        integrity: sha512-PYVSvyeZqy9++MoSegq88PxoPndWDDLGbJmE/OZnzUk3D4cCRTmA4N6EX3g0GgLVA+vtys7bj4luhkVCglGTkQ==,
+        integrity: sha512-PatH4iOdyh3MyWtmHVFXLWCCIhUbopaltqddG9BzB+gMIzee2MJrvd+jouii9Z3wzQJruGWAm7WOMjgfG8hQlQ==,
       }
 
   "@types/glob@7.2.0":
@@ -8992,9 +8992,9 @@ snapshots:
 
   "@types/chai-as-promised@7.1.8":
     dependencies:
-      "@types/chai": 4.3.15
+      "@types/chai": 4.3.16
 
-  "@types/chai@4.3.15": {}
+  "@types/chai@4.3.16": {}
 
   "@types/glob@7.2.0":
     dependencies:
