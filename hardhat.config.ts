@@ -708,6 +708,16 @@ const config: HardhatUserConfig = {
       accounts,
       ledgerAccounts,
     },
+    bobTestnet: {
+      chainId: 111,
+      url: vars.get("BOB_TESTNET_URL", "https://testnet.rpc.gobob.xyz"),
+      accounts,
+    },
+    bobMain: {
+      chainId: 60808,
+      url: vars.get("BOB_MAINNET_URL", "https://rpc.gobob.xyz"),
+      accounts,
+    },
   },
   xdeploy: {
     // Change this name to the name of your main contract
@@ -891,6 +901,9 @@ const config: HardhatUserConfig = {
       // For X Layer testnet & mainnet
       xlayer: vars.get("OKLINK_API_KEY", ""),
       xlayerTestnet: vars.get("OKLINK_API_KEY", ""),
+      // For BOB testnet & mainnet
+      bob: vars.get("BOB_API_KEY", ""),
+      bobTestnet: vars.get("BOB_API_KEY", ""),
     },
     customChains: [
       {
@@ -1343,6 +1356,22 @@ const config: HardhatUserConfig = {
           apiURL:
             "https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/XLAYER_TESTNET",
           browserURL: "https://www.oklink.com/xlayer-test",
+        },
+      },
+      {
+        network: "bob",
+        chainId: 60808,
+        urls: {
+          apiURL: "https://explorer.gobob.xyz/api",
+          browserURL: "https://explorer.gobob.xyz",
+        },
+      },
+      {
+        network: "bobTestnet",
+        chainId: 111,
+        urls: {
+          apiURL: "https://testnet-explorer.gobob.xyz/api",
+          browserURL: "https://testnet-explorer.gobob.xyz",
         },
       },
     ],
