@@ -81,6 +81,7 @@ deployments_tenderly
 cache-zk
 cache_hardhat-zk
 artifacts-zk
+deployments-zk
 
 # Miscellaneous files
 bin

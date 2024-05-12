@@ -36,6 +36,7 @@ module.exports = tseslint.config(
       "typechain-types/**",
       "coverage/**",
       "deployments/**",
+      "deployments-zk/**",
       "deployments_tenderly/**",
       "forge-artifacts/**",
       "bin/**",
