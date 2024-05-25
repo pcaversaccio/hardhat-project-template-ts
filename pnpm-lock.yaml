@@ -95,8 +95,8 @@ importers:
         specifier: ^2.10.0
         version: 2.10.0(hardhat@2.22.4(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.12.12)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10))
       hardhat-gas-reporter:
-        specifier: ^2.1.1
-        version: 2.1.1(bufferutil@4.0.8)(hardhat@2.22.4(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.12.12)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10))(typescript@5.4.5)(utf-8-validate@5.0.10)
+        specifier: ^2.2.0
+        version: 2.2.0(bufferutil@4.0.8)(hardhat@2.22.4(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.12.12)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10))(typescript@5.4.5)(utf-8-validate@5.0.10)
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
@@ -166,31 +166,31 @@ packages:
         integrity: sha512-UvFa/vR+e19XookZF8RzFZBrw2EUkQWxiBW0yYQAhvk3C+QVGl0H3ouca8LDBlBfQKXwmW3huo/59H8rwb1wJw==,
       }
 
-  "@babel/code-frame@7.24.2":
+  "@babel/code-frame@7.24.6":
     resolution:
       {
-        integrity: sha512-y5+tLQyV8pg3fsiln67BVLD1P13Eg4lh5RW9mF0zUuvLrv9uIQ4MCL+CRT+FTsBlBjcIan6PGsLcBN0m3ClUyQ==,
+        integrity: sha512-ZJhac6FkEd1yhG2AHOmfcXG4ceoLltoCVJjN5XsWN9BifBQr+cHJbWi0h68HZuSORq+3WtJ2z0hwF2NG1b5kcA==,
       }
     engines: { node: ">=6.9.0" }
 
-  "@babel/helper-validator-identifier@7.24.5":
+  "@babel/helper-validator-identifier@7.24.6":
     resolution:
       {
-        integrity: sha512-3q93SSKX2TWCG30M2G2kwaKeTYgEUp5Snjuj8qm729SObL6nbtUldAi37qbxkD5gg3xnBio+f9nqpSepGZMvxA==,
+        integrity: sha512-4yA7s865JHaqUdRbnaxarZREuPTHrjpDT+pXoAZ1yhyo6uFnIEpS8VMu16siFOHDpZNKYv5BObhsB//ycbICyw==,
       }
     engines: { node: ">=6.9.0" }
 
-  "@babel/highlight@7.24.5":
+  "@babel/highlight@7.24.6":
     resolution:
       {
-        integrity: sha512-8lLmua6AVh/8SLJRRVD6V8p73Hir9w5mJrhE+IPpILG31KKlI9iz5zmBYKcWPS59qSfgP9RaSBQSHHE81WKuEw==,
+        integrity: sha512-2YnuOp4HAk2BsBrJJvYCbItHx0zWscI1C3zgWkz+wDyD9I7GIVrfnLyrR4Y1VR+7p+chAEcrgRQYZAGIKMV7vQ==,
       }
     engines: { node: ">=6.9.0" }
 
-  "@babel/runtime@7.24.5":
+  "@babel/runtime@7.24.6":
     resolution:
       {
-        integrity: sha512-Nms86NXrsaeU9vbBJKni6gXiEXZ4CVpYVzEjDH9Sb8vmZ3UljyA1GSOJl/6LGPO8EHLuSF9H+IxNXHPX8QHJ4g==,
+        integrity: sha512-Ja18XcETdEl5mzzACGd+DKgaGJzPTCow7EglgwTmHdwokzDFYh/MHua6lU6DV/hjF2IaOJ4oX2nqnjG7RElKOw==,
       }
     engines: { node: ">=6.9.0" }
 
@@ -985,40 +985,34 @@ packages:
         integrity: sha512-ytPc6eLGcHHnapAZ9S+5qsdomhjo6QBHTDRRBFfTxXIpsicMhVPouPgmUPebZZZGX7vt9USA+Z+0M0dSVtSUEA==,
       }
 
-  "@openzeppelin/defender-admin-client@1.54.4":
+  "@openzeppelin/defender-admin-client@1.54.6":
     resolution:
       {
-        integrity: sha512-WbHevtyrTTYIoCNO0jjdIZdQ1lAXZBIXXM4dhk/vqn3B7PnY+dvwjaR9YYEpZ/kjEQCcDUSm++njBJ/h7tTnhw==,
+        integrity: sha512-P4lxJDySrekWNuPa7FeyW/UmuxnuIXIAGYr5gZnmnMHRsYNaw+XfgkiCDfoGtjEyJbXYxXttYF6iAZhWQPdf1g==,
       }
 
-  "@openzeppelin/defender-base-client@1.54.3":
+  "@openzeppelin/defender-base-client@1.54.6":
     resolution:
       {
-        integrity: sha512-0I45oXopLsKUfxafWbPmicxnANZEGSs3XWDTR3ZqS89GlDwh9YHB7Ke04lkEvdqOuxUEdoy6xvGgElglBWybJw==,
+        integrity: sha512-PTef+rMxkM5VQ7sLwLKSjp2DBakYQd661ZJiSRywx+q/nIpm3B/HYGcz5wPZCA5O/QcEP6TatXXDoeMwimbcnw==,
       }
 
-  "@openzeppelin/defender-base-client@1.54.4":
+  "@openzeppelin/defender-sdk-base-client@1.13.2":
     resolution:
       {
-        integrity: sha512-LEDiHFI8BavbjVjR/H8IJSyw0Dlr2NTiutTwMIJk6QKtQ1ZlTuUktl+tBzl3Fe3SpLiaBZvqYx4/3tN0byeE4Q==,
+        integrity: sha512-1Ekup5GbLCoSDpv+nMu9uIbCUnk/8ATUWVVNluDD80q+JW7Tc1IfYMBlsYmKWpVYM5HTvpckb/J6kmv+w8462w==,
       }
 
-  "@openzeppelin/defender-sdk-base-client@1.13.1":
+  "@openzeppelin/defender-sdk-deploy-client@1.13.2":
     resolution:
       {
-        integrity: sha512-FI7YdfgDf0px+cXbXyDkS0mpqzyySHeLkKj90ymzAy1/sGYKHNC03vyzMnMfIRuxa4bF15wdL4MCpA60PSWGpQ==,
+        integrity: sha512-psf7vm2/Ni/ocOuoUbODU8G9sLdjc+BA4geMGtdB7TMnbbjHG4QRr6tjYQTPmltoY6lNSMAOgK7ATiRXvq30TA==,
       }
 
-  "@openzeppelin/defender-sdk-deploy-client@1.13.1":
+  "@openzeppelin/defender-sdk-network-client@1.13.2":
     resolution:
       {
-        integrity: sha512-zQEoURBRMknrOXLDNzK3gXiHfQbDImLKtEVPBOybya/MYqququBdNkRmPpSkJ45LHVbuxWyqRkkGFQp8+l/UQg==,
-      }
-
-  "@openzeppelin/defender-sdk-network-client@1.13.1":
-    resolution:
-      {
-        integrity: sha512-QR9dTZ6MuJ5o+GwAKH4Hxy+xuElI0iCwpVqN/ntHG0Ar7neHoq/f7jPtk04/DgEmrwTUMLzTKpZWmUO1fxiEMA==,
+        integrity: sha512-Ga73fZODMQ5wSf86ljZCMMrno/8FYvcvz1Lij6y1maYiR9HTJMCjhIXAYGlggKJOS3Aed8STUlYlNWrLw66tkA==,
       }
 
   "@openzeppelin/hardhat-upgrades@3.1.0":
@@ -3863,10 +3857,10 @@ packages:
       }
     engines: { node: ">=10.13.0" }
 
-  glob@10.3.16:
+  glob@10.4.1:
     resolution:
       {
-        integrity: sha512-JDKXl1DiuuHJ6fVS2FXjownaavciiHNUU4mOvV/B793RLh05vZL1rcPnCSaOgv1hDT6RDlY7AB7ZUvFYAtPgAw==,
+        integrity: sha512-2jelhlq3E4ho74ZyVLN03oKdAZVUa6UDZzFLVH1H7dnoax+y9qyaq8zBkfDIggjniU19z0wU18y16jMB2eyVIw==,
       }
     engines: { node: ">=16 || 14 >=14.18" }
     hasBin: true
@@ -4041,10 +4035,10 @@ packages:
         integrity: sha512-aC8UNaq3JcORnEUIwV945iJuvBwi65tjHVDU3v6mOcqik7WAzHVCJ7cwmkkipsHrWysrB5YvGF1q9S1vIph83w==,
       }
 
-  hardhat-gas-reporter@2.1.1:
+  hardhat-gas-reporter@2.2.0:
     resolution:
       {
-        integrity: sha512-h3PAU7iDiPNqPA4i7GcKgnIZsN3UIdALM4gdJNoTtfmF9PGVne5nFZRNX1N7Y2Mx+znbBqeV1mS7o/i6T7NkTg==,
+        integrity: sha512-eAlLWnyDpQ+wJXgSCZsM0yt+rQm3ryJia1I1Hoi94LzlIfuSPcsMQM12VO6UHmAFLvXvoKxXPJ3ZYk0Kz+7CDQ==,
       }
     peerDependencies:
       hardhat: ^2.16.0
@@ -4282,6 +4276,7 @@ packages:
       {
         integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==,
       }
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution:
@@ -5117,10 +5112,10 @@ packages:
         integrity: sha512-wxfUjg9WebH+CUDX/CdbRlh5SmfZiy/hpkxaRI16Y9W56Pa75sWgd/rvFilSgrauD9NyFymP/+JFV3KwzIsJeg==,
       }
 
-  minipass@7.1.1:
+  minipass@7.1.2:
     resolution:
       {
-        integrity: sha512-UZ7eQ+h8ywIRAW1hIEl2AqdwzJucU/Kp59+8kkZeSvafXhZjul247BvIJjEVFVeON6d7lM46XX1HXCduKAS8VA==,
+        integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==,
       }
     engines: { node: ">=16 || 14 >=14.17" }
 
@@ -7730,21 +7725,21 @@ snapshots:
     dependencies:
       tslib: 2.6.2
 
-  "@babel/code-frame@7.24.2":
+  "@babel/code-frame@7.24.6":
     dependencies:
-      "@babel/highlight": 7.24.5
+      "@babel/highlight": 7.24.6
       picocolors: 1.0.1
 
-  "@babel/helper-validator-identifier@7.24.5": {}
+  "@babel/helper-validator-identifier@7.24.6": {}
 
-  "@babel/highlight@7.24.5":
+  "@babel/highlight@7.24.6":
     dependencies:
-      "@babel/helper-validator-identifier": 7.24.5
+      "@babel/helper-validator-identifier": 7.24.6
       chalk: 2.4.2
       js-tokens: 4.0.0
       picocolors: 1.0.1
 
-  "@babel/runtime@7.24.5":
+  "@babel/runtime@7.24.6":
     dependencies:
       regenerator-runtime: 0.14.1
 
@@ -8182,7 +8177,7 @@ snapshots:
       chalk: 4.1.2
       ethers: 6.12.1(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       fs-extra: 11.2.0
-      glob: 10.3.16
+      glob: 10.4.1
       hardhat: 2.22.4(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.12.12)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10)
       lodash: 4.17.21
       sinon: 17.0.1
@@ -8498,9 +8493,9 @@ snapshots:
 
   "@openzeppelin/contracts@5.0.2": {}
 
-  "@openzeppelin/defender-admin-client@1.54.4(bufferutil@4.0.8)(debug@4.3.4)(utf-8-validate@5.0.10)":
+  "@openzeppelin/defender-admin-client@1.54.6(bufferutil@4.0.8)(debug@4.3.4)(utf-8-validate@5.0.10)":
     dependencies:
-      "@openzeppelin/defender-base-client": 1.54.4(debug@4.3.4)
+      "@openzeppelin/defender-base-client": 1.54.6(debug@4.3.4)
       axios: 1.7.2(debug@4.3.4)
       ethers: 5.7.2(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       lodash: 4.17.21
@@ -8511,7 +8506,7 @@ snapshots:
       - encoding
       - utf-8-validate
 
-  "@openzeppelin/defender-base-client@1.54.3(debug@4.3.4)":
+  "@openzeppelin/defender-base-client@1.54.6(debug@4.3.4)":
     dependencies:
       amazon-cognito-identity-js: 6.3.12
       async-retry: 1.3.3
@@ -8522,36 +8517,25 @@ snapshots:
       - debug
       - encoding
 
-  "@openzeppelin/defender-base-client@1.54.4(debug@4.3.4)":
-    dependencies:
-      amazon-cognito-identity-js: 6.3.12
-      async-retry: 1.3.3
-      axios: 1.7.2(debug@4.3.4)
-      lodash: 4.17.21
-      node-fetch: 2.7.0
-    transitivePeerDependencies:
-      - debug
-      - encoding
-
-  "@openzeppelin/defender-sdk-base-client@1.13.1":
+  "@openzeppelin/defender-sdk-base-client@1.13.2":
     dependencies:
       amazon-cognito-identity-js: 6.3.12
       async-retry: 1.3.3
     transitivePeerDependencies:
       - encoding
 
-  "@openzeppelin/defender-sdk-deploy-client@1.13.1(debug@4.3.4)":
+  "@openzeppelin/defender-sdk-deploy-client@1.13.2(debug@4.3.4)":
     dependencies:
-      "@openzeppelin/defender-sdk-base-client": 1.13.1
+      "@openzeppelin/defender-sdk-base-client": 1.13.2
       axios: 1.7.2(debug@4.3.4)
       lodash: 4.17.21
     transitivePeerDependencies:
       - debug
       - encoding
 
-  "@openzeppelin/defender-sdk-network-client@1.13.1(debug@4.3.4)":
+  "@openzeppelin/defender-sdk-network-client@1.13.2(debug@4.3.4)":
     dependencies:
-      "@openzeppelin/defender-sdk-base-client": 1.13.1
+      "@openzeppelin/defender-sdk-base-client": 1.13.2
       axios: 1.7.2(debug@4.3.4)
       lodash: 4.17.21
     transitivePeerDependencies:
@@ -8561,11 +8545,11 @@ snapshots:
   "@openzeppelin/hardhat-upgrades@3.1.0(@nomicfoundation/hardhat-ethers@3.0.6(ethers@6.12.1(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.4(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.12.12)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10)))(@nomicfoundation/hardhat-verify@2.0.7(hardhat@2.22.4(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.12.12)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10)))(bufferutil@4.0.8)(ethers@6.12.1(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.4(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.12.12)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)":
     dependencies:
       "@nomicfoundation/hardhat-ethers": 3.0.6(ethers@6.12.1(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.4(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.12.12)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10))
-      "@openzeppelin/defender-admin-client": 1.54.4(bufferutil@4.0.8)(debug@4.3.4)(utf-8-validate@5.0.10)
-      "@openzeppelin/defender-base-client": 1.54.3(debug@4.3.4)
-      "@openzeppelin/defender-sdk-base-client": 1.13.1
-      "@openzeppelin/defender-sdk-deploy-client": 1.13.1(debug@4.3.4)
-      "@openzeppelin/defender-sdk-network-client": 1.13.1(debug@4.3.4)
+      "@openzeppelin/defender-admin-client": 1.54.6(bufferutil@4.0.8)(debug@4.3.4)(utf-8-validate@5.0.10)
+      "@openzeppelin/defender-base-client": 1.54.6(debug@4.3.4)
+      "@openzeppelin/defender-sdk-base-client": 1.13.2
+      "@openzeppelin/defender-sdk-deploy-client": 1.13.2(debug@4.3.4)
+      "@openzeppelin/defender-sdk-network-client": 1.13.2(debug@4.3.4)
       "@openzeppelin/upgrades-core": 1.33.1
       chalk: 4.1.2
       debug: 4.3.4(supports-color@8.1.1)
@@ -9277,7 +9261,7 @@ snapshots:
 
   axios-retry@3.9.1:
     dependencies:
-      "@babel/runtime": 7.24.5
+      "@babel/runtime": 7.24.6
       is-retry-allowed: 2.2.0
 
   axios@0.21.4(debug@4.3.4):
@@ -10615,12 +10599,12 @@ snapshots:
     dependencies:
       is-glob: 4.0.3
 
-  glob@10.3.16:
+  glob@10.4.1:
     dependencies:
       foreground-child: 3.1.1
       jackspeak: 3.1.2
       minimatch: 9.0.4
-      minipass: 7.1.1
+      minipass: 7.1.2
       path-scurry: 1.11.1
 
   glob@5.0.15:
@@ -10824,7 +10808,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  hardhat-gas-reporter@2.1.1(bufferutil@4.0.8)(hardhat@2.22.4(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.12.12)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10))(typescript@5.4.5)(utf-8-validate@5.0.10):
+  hardhat-gas-reporter@2.2.0(bufferutil@4.0.8)(hardhat@2.22.4(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.12.12)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10))(typescript@5.4.5)(utf-8-validate@5.0.10):
     dependencies:
       "@ethersproject/abi": 5.7.0
       "@ethersproject/bytes": 5.7.0
@@ -10835,7 +10819,7 @@ snapshots:
       chalk: 4.1.2
       cli-table3: 0.6.5
       ethereum-cryptography: 2.1.3
-      glob: 10.3.16
+      glob: 10.4.1
       hardhat: 2.22.4(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.12.12)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10)
       jsonschema: 1.4.1
       lodash: 4.17.21
@@ -11177,7 +11161,7 @@ snapshots:
 
   iter-tools@7.5.3:
     dependencies:
-      "@babel/runtime": 7.24.5
+      "@babel/runtime": 7.24.6
 
   jackspeak@3.1.2:
     dependencies:
@@ -11410,7 +11394,7 @@ snapshots:
       safe-buffer: 5.2.1
       yallist: 3.1.1
 
-  minipass@7.1.1: {}
+  minipass@7.1.2: {}
 
   minizlib@1.3.3:
     dependencies:
@@ -11698,7 +11682,7 @@ snapshots:
 
   parse-json@5.2.0:
     dependencies:
-      "@babel/code-frame": 7.24.2
+      "@babel/code-frame": 7.24.6
       error-ex: 1.3.2
       json-parse-even-better-errors: 2.3.1
       lines-and-columns: 1.2.4
@@ -11720,7 +11704,7 @@ snapshots:
   path-scurry@1.11.1:
     dependencies:
       lru-cache: 10.2.2
-      minipass: 7.1.1
+      minipass: 7.1.2
 
   path-starts-with@2.0.1: {}
 
