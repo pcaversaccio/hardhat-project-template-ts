@@ -1,46 +1,26 @@
-## defaults for all profiles
+# Defaults for all profiles.
 [profile.default]
-src = "contracts/src"                                         # the source directory
-test = "contracts/test"                                       # the test directory
-out = "forge-artifacts"                                       # the output directory (for artifacts)
-libs = ["contracts/lib"]                                      # a list of library directories
-remappings = []                                               # a list of remappings
-libraries = []                                                # a list of deployed libraries to link against
-cache = true                                                  # whether to cache builds or not
-cache_path = "cache"                                          # where the cache is stored if enabled
-force = false                                                 # whether to ignore the cache (clean build)
-evm_version = "paris"                                         # the evm version (by hardfork name)
-gas_reports = ["*"]                                           # list of contracts to report gas of
-solc_version = "0.8.26"                                       # override for the solc version (setting this ignores `auto_detect_solc`)
-auto_detect_solc = true                                       # enable auto-detection of the appropriate solc version to use
-offline = false                                               # offline mode, if enabled, network access (downloading solc) is disallowed
-optimizer = true                                              # enable or disable the solc optimizer
-optimizer_runs = 999_999                                      # the number of optimizer runs
-via_ir = false                                                # whether to enable EVM bytecode generation through an intermediate representation (ir) or not
-verbosity = 3                                                 # the verbosity of tests
-ignored_error_codes = []                                      # a list of ignored solc error codes
-fuzz = { runs = 256 }                                         # the number of fuzz runs for tests
-invariant = { runs = 256 }                                    # the number of runs that must execute for each invariant test group
-ffi = false                                                   # whether to enable foreign function interface (ffi) cheatcodes or not
-sender = "0x00a329c0648769a73afac7f9381e08fb43dbea72"         # the address of `msg.sender` in tests
-tx_origin = "0x00a329c0648769a73afac7f9381e08fb43dbea72"      # the address of `tx.origin` in tests
-initial_balance = "0xffffffffffffffffffffffff"                # the initial balance of the test contract
-block_number = 0                                              # the block number we are at in tests
-chain_id = 31337                                              # the chain id we are on in tests
-gas_limit = 9223372036854775807                               # the gas limit in tests
-gas_price = 0                                                 # the gas price (in wei) in tests
-block_base_fee_per_gas = 0                                    # the base fee (in wei) in tests
-block_coinbase = "0x0000000000000000000000000000000000000000" # the address of `block.coinbase` in tests
-block_timestamp = 0                                           # the value of `block.timestamp` in tests
-block_difficulty = 0                                          # the value of `block.difficulty` in tests
-fs_permissions = [{ access = "read-write", path = "./" }]     # set read-write access to project root
+src = "contracts/src"                                     # Set the source directory.
+test = "contracts/test"                                   # Set the test directory.
+out = "forge-artifacts"                                   # Set the output directory for the artifacts.
+libs = ["contracts/lib"]                                  # Configure an array of library directories.
+cache = true                                              # Enable caching.
+cache_path = "cache"                                      # Set the path to the cache.
+force = false                                             # Do not ignore the cache.
+solc_version = "0.8.26"                                   # Set the Solidity compiler version.
+evm_version = "paris"                                     # Set the EVM target version.
+optimizer = true                                          # Enable the Solidity compiler optimiser.
+optimizer_runs = 999_999                                  # Configure the number of optimiser runs.
+via_ir = false                                            # Prevent the compilation pipeline from running through the Yul intermediate representation.
+verbosity = 3                                             # Set the verbosity level for the tests.
+ffi = false                                               # Enable the foreign function interface (ffi) cheatcode.
+fs_permissions = [{ access = "read-write", path = "./" }] # Configure read-write access to the project root.
+fuzz = { runs = 256, max_test_rejects = 65_536 }          # Configure the number of fuzz runs and maximum number of combined inputs that may be rejected for the tests.
+invariant = { runs = 256, depth = 15 }                    # Configure the number of runs and calls (executed in one run) for each invariant test group.
 
-## optimizer details for the default profile
-[profile.default.optimizer_details]
-constantOptimizer = true                                      # whether to enable the optimizer for literal numbers and strings or not
-yul = true                                                    # whether to enable the new Yul optimizer or not
-
-# sets the `yulDetails` of the `optimizer_details` for the `default` profile
-[profile.default.optimizer_details.yulDetails]
-stackAllocation = true                                        # whether to enable the improvement of allocation of stack slots for variables or not
-optimizerSteps = "dhfoDgvulfnTUtnIf"                          # the optimization steps to be applied
+# Default overrides for the CI runs.
+[profile.ci]
+force = true                                              # Perform always a clean build.
+verbosity = 4                                             # Increase the verbosity level for the tests.
+fuzz = { runs = 10_000, max_test_rejects = 150_000 }      # Increase the number of fuzz runs and maximum number of combined inputs that may be rejected for the tests.
+invariant = { runs = 375, depth = 500 }                   # Increase the number of runs (while preserving the default depth) for each invariant test group.

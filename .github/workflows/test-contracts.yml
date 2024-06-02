@@ -60,15 +60,15 @@ jobs:
       - name: Hardhat tests
         run: pnpm test:hh
 
-      - name: Show the Foundry default config
+      - name: Show the Foundry CI config
         run: forge config
         env:
-          FOUNDRY_PROFILE: default
+          FOUNDRY_PROFILE: ci
 
       - name: Foundry tests
         run: pnpm test:forge
         env:
-          FOUNDRY_PROFILE: default
+          FOUNDRY_PROFILE: ci
 
       - name: Slither static analyser
         uses: crytic/slither-action@v0.4.0
