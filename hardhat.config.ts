@@ -720,11 +720,52 @@ const config: HardhatUserConfig = {
       chainId: 111,
       url: vars.get("BOB_TESTNET_URL", "https://testnet.rpc.gobob.xyz"),
       accounts,
+      ledgerAccounts,
     },
     bobMain: {
       chainId: 60808,
       url: vars.get("BOB_MAINNET_URL", "https://rpc.gobob.xyz"),
       accounts,
+      ledgerAccounts,
+    },
+    coreTestnet: {
+      chainId: 1115,
+      url: vars.get("CORE_TESTNET_URL", "https://rpc.test.btcs.network"),
+      accounts,
+      ledgerAccounts,
+    },
+    coreMain: {
+      chainId: 1116,
+      url: vars.get("CORE_MAINNET_URL", "https://rpc.coredao.org"),
+      accounts,
+      ledgerAccounts,
+    },
+    telosTestnet: {
+      chainId: 41,
+      url: vars.get("TELOS_TESTNET_URL", "https://testnet.telos.net/evm"),
+      accounts,
+      ledgerAccounts,
+    },
+    telosMain: {
+      chainId: 40,
+      url: vars.get("TELOS_MAINNET_URL", "https://mainnet.telos.net/evm"),
+      accounts,
+      ledgerAccounts,
+    },
+    rootstockTestnet: {
+      chainId: 31,
+      url: vars.get(
+        "ROOTSTOCK_TESTNET_URL",
+        "https://public-node.testnet.rsk.co",
+      ),
+      accounts,
+      ledgerAccounts,
+    },
+    rootstockMain: {
+      chainId: 30,
+      url: vars.get("ROOTSTOCK_MAINNET_URL", "https://public-node.rsk.co"),
+      accounts,
+      ledgerAccounts,
     },
   },
   xdeploy: {
@@ -913,6 +954,15 @@ const config: HardhatUserConfig = {
       // For BOB testnet & mainnet
       bob: vars.get("BOB_API_KEY", ""),
       bobTestnet: vars.get("BOB_API_KEY", ""),
+      // For Core testnet & mainnet
+      core: vars.get("CORE_MAINNET_API_KEY", ""),
+      coreTestnet: vars.get("CORE_TESTNET_API_KEY", ""),
+      // For Telos testnet & mainnet
+      telos: vars.get("TELOS_API_KEY", ""),
+      telosTestnet: vars.get("TELOS_API_KEY", ""),
+      // For Rootstock testnet & mainnet
+      rootstock: vars.get("ROOTSTOCK_API_KEY", ""),
+      rootstockTestnet: vars.get("ROOTSTOCK_API_KEY", ""),
     },
     customChains: [
       {
@@ -999,8 +1049,8 @@ const config: HardhatUserConfig = {
         network: "evmosTestnet",
         chainId: 9000,
         urls: {
-          apiURL: "https://testnet.escan.live/api",
-          browserURL: "https://testnet.escan.live",
+          apiURL: "https://api.verify.mintscan.io/evm/api/0x2328",
+          browserURL: "https://www.mintscan.io/evmos-testnet",
         },
       },
       {
@@ -1389,6 +1439,54 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://testnet-explorer.gobob.xyz/api",
           browserURL: "https://testnet-explorer.gobob.xyz",
+        },
+      },
+      {
+        network: "core",
+        chainId: 1116,
+        urls: {
+          apiURL: "https://openapi.coredao.org/api",
+          browserURL: "https://scan.coredao.org",
+        },
+      },
+      {
+        network: "coreTestnet",
+        chainId: 1115,
+        urls: {
+          apiURL: "https://api.test.btcs.network/api",
+          browserURL: "https://scan.test.btcs.network",
+        },
+      },
+      {
+        network: "telos",
+        chainId: 40,
+        urls: {
+          apiURL: "https://api.teloscan.io/api",
+          browserURL: "https://www.teloscan.io",
+        },
+      },
+      {
+        network: "telosTestnet",
+        chainId: 41,
+        urls: {
+          apiURL: "https://api.testnet.teloscan.io/api",
+          browserURL: "https://testnet.teloscan.io",
+        },
+      },
+      {
+        network: "rootstock",
+        chainId: 30,
+        urls: {
+          apiURL: "https://rootstock.blockscout.com/api",
+          browserURL: "https://rootstock.blockscout.com",
+        },
+      },
+      {
+        network: "rootstockTestnet",
+        chainId: 31,
+        urls: {
+          apiURL: "https://rootstock-testnet.blockscout.com/api",
+          browserURL: "https://rootstock-testnet.blockscout.com",
         },
       },
     ],
