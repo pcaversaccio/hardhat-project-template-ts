@@ -8,8 +8,8 @@ importers:
   .:
     devDependencies:
       "@eslint/js":
-        specifier: ^9.4.0
-        version: 9.4.0
+        specifier: ^9.5.0
+        version: 9.5.0
       "@matterlabs/hardhat-zksync-deploy":
         specifier: ^1.4.0
         version: 1.4.0(ethers@6.13.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.2)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10))(zksync-ethers@6.8.0(ethers@6.13.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))
@@ -153,10 +153,10 @@ packages:
         integrity: sha512-H8PjG5WJ4wz0UXAFXeJjWCW1vkvIJ3qUUD+rGRwJ2/hj+xT58Qle2MTql/2MGzkU+1JLAFuR6aJpLAjHwhmwwg==,
       }
 
-  "@aws-sdk/types@3.577.0":
+  "@aws-sdk/types@3.598.0":
     resolution:
       {
-        integrity: sha512-FT2JZES3wBKN/alfmhlo+3ZOq/XJ0C7QOZcDNrpKjB0kqYoKjhVKZ/Hx6ArR0czkKfHzBBEs6y40ebIHx2nSmA==,
+        integrity: sha512-742uRl6z7u0LFmZwDrFP6r1wlZcgVPw+/TilluDJmCAR8BgRw3IR+743kUXKBGd8QZDRW2n6v/PYsi/AWCDDMQ==,
       }
     engines: { node: ">=16.0.0" }
 
@@ -244,10 +244,10 @@ packages:
       }
     engines: { node: ^12.22.0 || ^14.17.0 || >=16.0.0 }
 
-  "@eslint/js@9.4.0":
+  "@eslint/js@9.5.0":
     resolution:
       {
-        integrity: sha512-fdI7VJjP3Rvc70lC4xkFXHB0fiPeojiL1PxVG6t1ZvXQrarj893PweuBTujxDUFk0Fxj4R7PIIAZ/aiiyZPZcg==,
+        integrity: sha512-A7+AOT2ICkodvtsWnxZP4Xxk3NbZ3VMHd8oihydLRGrJgqqdEz1qSeEgXYyT/Cu8h1TWWsQRejIx48mtjZ5y1w==,
       }
     engines: { node: ^18.18.0 || ^20.9.0 || >=21.1.0 }
 
@@ -984,10 +984,10 @@ packages:
       "@nomicfoundation/hardhat-verify":
         optional: true
 
-  "@openzeppelin/upgrades-core@1.33.1":
+  "@openzeppelin/upgrades-core@1.34.0":
     resolution:
       {
-        integrity: sha512-YRxIRhTY1b+j7+NUUu8Uuem5ugxKexEMVd8dBRWNgWeoN1gS1OCrhgUg0ytL+54vzQ+SGWZDfNnzjVuI1Cj1Zw==,
+        integrity: sha512-LhyLwaunV8Z3U/rmseJRiI5EEGRj6POHDNGW+VVopdcPocvggAmkIhEUSfPvjNM6H7vL4rHB/O/B4zWYGc4Fig==,
       }
     hasBin: true
 
@@ -1019,10 +1019,10 @@ packages:
       }
     engines: { node: ">=12" }
 
-  "@scure/base@1.1.6":
+  "@scure/base@1.1.7":
     resolution:
       {
-        integrity: sha512-ok9AWwhcgYuGG3Zfhyqg+zwl+Wn5uE+dwC0NV/2qQkx4dABbb/bx96vWu8NSj+BNjjSjno+JRYRjle1jV08k3g==,
+        integrity: sha512-PPNYBslrLNNUQ/Yad37MHYsNQtK67EhWb6WtSvNLLPo7SdVZgkUjD6Dg+5On7zNwmskf8OX7I7Nx5oN+MIWE0g==,
       }
 
   "@scure/bip32@1.1.5":
@@ -1154,10 +1154,10 @@ packages:
         integrity: sha512-sXXKG+uL9IrKqViTtao2Ws6dy0znu9sOaP1di/jKGW1M6VssO8vlpXCQcpZ+jisQ1tTFAC5Jo/EOzFbggBagFQ==,
       }
 
-  "@smithy/types@3.0.0":
+  "@smithy/types@3.1.0":
     resolution:
       {
-        integrity: sha512-VvWuQk2RKFuOr98gFhjca7fkBS+xLLURT8bUjk5XQoV0ZLm7WPwWPPY3/AwzTLuUBDeoKDCthfe1AsTUWaSEhw==,
+        integrity: sha512-qi4SeCVOUPjhSSZrxxB/mB8DrmuSFUcJnD9KXjuP+7C3LV/KFV4kpuUSH3OHDZgQB9TEH/1sO/Fq/5HyaK9MPw==,
       }
     engines: { node: ">=16.0.0" }
 
@@ -1639,17 +1639,17 @@ packages:
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
 
-  acorn-walk@8.3.2:
+  acorn-walk@8.3.3:
     resolution:
       {
-        integrity: sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==,
+        integrity: sha512-MxXdReSRhGO7VlFe1bRG/oI7/mdLV9B9JJT0N8vZOhF7gFRR5l3M8W9G8JxmKV+JC5mGqJ0QvqfSOLsCPa4nUw==,
       }
     engines: { node: ">=0.4.0" }
 
-  acorn@8.11.3:
+  acorn@8.12.0:
     resolution:
       {
-        integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==,
+        integrity: sha512-RTvkC4w+KNXrM39/lWCUaG0IbRkWdCv7W/IOW9oU6SawyxulvkQy5HQPVTKxEjczcUvapcrw3cFx/60VN/NRNw==,
       }
     engines: { node: ">=0.4.0" }
     hasBin: true
@@ -3591,10 +3591,10 @@ packages:
         integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==,
       }
 
-  foreground-child@3.1.1:
+  foreground-child@3.2.1:
     resolution:
       {
-        integrity: sha512-TMKDUnIte6bfb5nWv7V/caI169OHgvwjb7V4WkeUvbQQdjr5rWKqHFiKWb/fcOwB+CzBT+qbWjvj+DVwRskpIg==,
+        integrity: sha512-PXUUyLqrR2XCWICfv6ukppP96sdFwWbNEnfEMt7jNsISjMsvaLNinAHNDYyvkyU+SZG2BTSbT5NjG+vZslfGTA==,
       }
     engines: { node: ">=14" }
 
@@ -5211,10 +5211,10 @@ packages:
         integrity: sha512-WseEgiRkI6aMFBbj8Cg9yBj/y+OdipwVC7zUo3W2W1JAJITwouUOtpqsmGSg67EQmwwSyod7hsVsWY5LsrfQVg==,
       }
 
-  nan@2.19.0:
+  nan@2.20.0:
     resolution:
       {
-        integrity: sha512-nO1xXxfh/RWNxfd/XPfbIfFk5vgLsAxUR9y5O0cHMJu/AW9U95JLXqthYHjEp+8gQ5p96K9jUp8nbVOxCdRbtw==,
+        integrity: sha512-bk3gXBZDGILuuo/6sKtr0DQmSThYHLtNCdSdXk9YkxD/jK6X2vmCyyXBBxyqZ4XcnzTyYEAThfX3DCEnLf6igw==,
       }
 
   nano-json-stream-parser@0.1.2:
@@ -5268,10 +5268,10 @@ packages:
         integrity: sha512-qOnoujW4SV6e40dYxJOb3uvuoPHtmLzIk4TFo+j0jPJoC+5Z9xja5qH5JZobEPsa8+YYphMrOSwnrshEhG2qww==,
       }
 
-  node-abi@3.64.0:
+  node-abi@3.65.0:
     resolution:
       {
-        integrity: sha512-lxowHVCx3o1zfKJthjWh6WI8Eyi4gdTaK9bUc3oTjYv9j8sp5gSiufkOvoYZ1LgmZKngWUkS5a8G1RSuLWtPgg==,
+        integrity: sha512-ThjYBfoDNr08AWx6hGaRbfPwxKV9kVzAzOzlLKbk2CuqXE2xnCh+cbAGnwM3t8Lq4v9rUB7VfondlkBckcJrVA==,
       }
     engines: { node: ">=10" }
 
@@ -7071,10 +7071,10 @@ packages:
       }
     engines: { node: ">=14.0" }
 
-  undici@6.18.2:
+  undici@6.19.0:
     resolution:
       {
-        integrity: sha512-o/MQLTwRm9IVhOqhZ0NQ9oXax1ygPjw6Vs+Vq/4QRjbOAC3B1GCHy7TYxxbExKlb7bzDRzt9vBWU6BDz0RFfYg==,
+        integrity: sha512-9gGwbSLgYMjp4r6M5P9bhqhx1E+RyUIHqZE0r7BmrRoqroJUG6xlVu5TXH9DnwmCPLkcaVNrcYtxUE9d3InnyQ==,
       }
     engines: { node: ">=18.17" }
 
@@ -7680,18 +7680,18 @@ snapshots:
   "@aws-crypto/sha256-js@1.2.2":
     dependencies:
       "@aws-crypto/util": 1.2.2
-      "@aws-sdk/types": 3.577.0
+      "@aws-sdk/types": 3.598.0
       tslib: 1.14.1
 
   "@aws-crypto/util@1.2.2":
     dependencies:
-      "@aws-sdk/types": 3.577.0
+      "@aws-sdk/types": 3.598.0
       "@aws-sdk/util-utf8-browser": 3.259.0
       tslib: 1.14.1
 
-  "@aws-sdk/types@3.577.0":
+  "@aws-sdk/types@3.598.0":
     dependencies:
-      "@smithy/types": 3.0.0
+      "@smithy/types": 3.1.0
       tslib: 2.6.3
 
   "@aws-sdk/util-utf8-browser@3.259.0":
@@ -7748,7 +7748,7 @@ snapshots:
 
   "@eslint/js@8.57.0": {}
 
-  "@eslint/js@9.4.0": {}
+  "@eslint/js@9.5.0": {}
 
   "@ethereumjs/common@2.5.0":
     dependencies:
@@ -8509,14 +8509,14 @@ snapshots:
       "@openzeppelin/defender-sdk-base-client": 1.13.4
       "@openzeppelin/defender-sdk-deploy-client": 1.13.4(debug@4.3.5)
       "@openzeppelin/defender-sdk-network-client": 1.13.4(debug@4.3.5)
-      "@openzeppelin/upgrades-core": 1.33.1
+      "@openzeppelin/upgrades-core": 1.34.0
       chalk: 4.1.2
       debug: 4.3.5
       ethereumjs-util: 7.1.5
       ethers: 6.13.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       hardhat: 2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.2)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10)
       proper-lockfile: 4.1.2
-      undici: 6.18.2
+      undici: 6.19.0
     optionalDependencies:
       "@nomicfoundation/hardhat-verify": 2.0.8(hardhat@2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.2)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10))
     transitivePeerDependencies:
@@ -8525,7 +8525,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  "@openzeppelin/upgrades-core@1.33.1":
+  "@openzeppelin/upgrades-core@1.34.0":
     dependencies:
       cbor: 9.0.2
       chalk: 4.1.2
@@ -8553,40 +8553,40 @@ snapshots:
       "@pnpm/network.ca-file": 1.0.2
       config-chain: 1.1.13
 
-  "@scure/base@1.1.6": {}
+  "@scure/base@1.1.7": {}
 
   "@scure/bip32@1.1.5":
     dependencies:
       "@noble/hashes": 1.2.0
       "@noble/secp256k1": 1.7.1
-      "@scure/base": 1.1.6
+      "@scure/base": 1.1.7
 
   "@scure/bip32@1.3.2":
     dependencies:
       "@noble/curves": 1.2.0
       "@noble/hashes": 1.3.2
-      "@scure/base": 1.1.6
+      "@scure/base": 1.1.7
 
   "@scure/bip32@1.4.0":
     dependencies:
       "@noble/curves": 1.4.0
       "@noble/hashes": 1.4.0
-      "@scure/base": 1.1.6
+      "@scure/base": 1.1.7
 
   "@scure/bip39@1.1.1":
     dependencies:
       "@noble/hashes": 1.2.0
-      "@scure/base": 1.1.6
+      "@scure/base": 1.1.7
 
   "@scure/bip39@1.2.1":
     dependencies:
       "@noble/hashes": 1.3.2
-      "@scure/base": 1.1.6
+      "@scure/base": 1.1.7
 
   "@scure/bip39@1.3.0":
     dependencies:
       "@noble/hashes": 1.4.0
-      "@scure/base": 1.1.6
+      "@scure/base": 1.1.7
 
   "@sentry/core@5.30.0":
     dependencies:
@@ -8661,7 +8661,7 @@ snapshots:
 
   "@sinonjs/text-encoding@0.7.2": {}
 
-  "@smithy/types@3.0.0":
+  "@smithy/types@3.1.0":
     dependencies:
       tslib: 2.6.3
 
@@ -8682,7 +8682,7 @@ snapshots:
       "@ethersproject/bignumber": 5.7.0
       "@nomicfoundation/hardhat-ethers": 3.0.6(ethers@6.13.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.2)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10))
       "@openzeppelin/hardhat-upgrades": 3.1.1(@nomicfoundation/hardhat-ethers@3.0.6(ethers@6.13.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.2)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10)))(@nomicfoundation/hardhat-verify@2.0.8(hardhat@2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.2)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10)))(bufferutil@4.0.8)(ethers@6.13.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.2)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
-      "@openzeppelin/upgrades-core": 1.33.1
+      "@openzeppelin/upgrades-core": 1.34.0
       axios: 1.7.2(debug@4.3.5)
       ethers: 6.13.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       fs-extra: 10.1.0
@@ -9054,13 +9054,15 @@ snapshots:
       mime-types: 2.1.35
       negotiator: 0.6.3
 
-  acorn-jsx@5.3.2(acorn@8.11.3):
+  acorn-jsx@5.3.2(acorn@8.12.0):
     dependencies:
-      acorn: 8.11.3
+      acorn: 8.12.0
 
-  acorn-walk@8.3.2: {}
+  acorn-walk@8.3.3:
+    dependencies:
+      acorn: 8.12.0
 
-  acorn@8.11.3: {}
+  acorn@8.12.0: {}
 
   adm-zip@0.4.16: {}
 
@@ -9661,7 +9663,7 @@ snapshots:
   cpu-features@0.0.10:
     dependencies:
       buildcheck: 0.0.6
-      nan: 2.19.0
+      nan: 2.20.0
     optional: true
 
   crc-32@1.2.2: {}
@@ -10100,8 +10102,8 @@ snapshots:
 
   espree@9.6.1:
     dependencies:
-      acorn: 8.11.3
-      acorn-jsx: 5.3.2(acorn@8.11.3)
+      acorn: 8.12.0
+      acorn-jsx: 5.3.2(acorn@8.12.0)
       eslint-visitor-keys: 3.4.3
 
   esprima@2.7.3: {}
@@ -10421,7 +10423,7 @@ snapshots:
     dependencies:
       is-callable: 1.2.7
 
-  foreground-child@3.1.1:
+  foreground-child@3.2.1:
     dependencies:
       cross-spawn: 7.0.3
       signal-exit: 4.1.0
@@ -10564,7 +10566,7 @@ snapshots:
 
   glob@10.4.1:
     dependencies:
-      foreground-child: 3.1.1
+      foreground-child: 3.2.1
       jackspeak: 3.4.0
       minimatch: 9.0.4
       minipass: 7.1.2
@@ -11443,7 +11445,7 @@ snapshots:
       fmix: 0.1.0
       imul: 1.0.1
 
-  nan@2.19.0:
+  nan@2.20.0:
     optional: true
 
   nano-json-stream-parser@0.1.2: {}
@@ -11474,7 +11476,7 @@ snapshots:
       just-extend: 6.2.0
       path-to-regexp: 6.2.2
 
-  node-abi@3.64.0:
+  node-abi@3.65.0:
     dependencies:
       semver: 7.6.2
 
@@ -11711,7 +11713,7 @@ snapshots:
       minimist: 1.2.8
       mkdirp-classic: 0.5.3
       napi-build-utils: 1.0.2
-      node-abi: 3.64.0
+      node-abi: 3.65.0
       pump: 3.0.0
       rc: 1.2.8
       simple-get: 4.0.1
@@ -12262,7 +12264,7 @@ snapshots:
       bcrypt-pbkdf: 1.0.2
     optionalDependencies:
       cpu-features: 0.0.10
-      nan: 2.19.0
+      nan: 2.20.0
 
   sshpk@1.18.0:
     dependencies:
@@ -12517,8 +12519,8 @@ snapshots:
       "@tsconfig/node14": 1.0.3
       "@tsconfig/node16": 1.0.4
       "@types/node": 20.14.2
-      acorn: 8.11.3
-      acorn-walk: 8.3.2
+      acorn: 8.12.0
+      acorn-walk: 8.3.3
       arg: 4.1.3
       create-require: 1.1.1
       diff: 4.0.2
@@ -12659,7 +12661,7 @@ snapshots:
     dependencies:
       "@fastify/busboy": 2.1.1
 
-  undici@6.18.2: {}
+  undici@6.19.0: {}
 
   unfetch@4.2.0: {}
 
