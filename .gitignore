@@ -77,7 +77,7 @@ flattened.sol
 # Tenderly fork deployment directory
 deployments_tenderly
 
-# zkSync files
+# ZKsync files
 cache-zk
 cache_hardhat-zk
 artifacts-zk
