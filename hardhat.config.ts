@@ -88,11 +88,11 @@ const config: HardhatUserConfig = {
     },
   },
   zksolc: {
-    version: "1.4.1",
+    version: "1.5.0",
     compilerSource: "binary",
     settings: {
-      isSystem: false,
-      forceEvmla: false,
+      enableEraVMExtensions: false,
+      forceEVMLA: false,
       optimizer: {
         enabled: true,
         mode: "3",

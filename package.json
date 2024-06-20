@@ -139,10 +139,10 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.5.0",
-    "@matterlabs/hardhat-zksync-deploy": "^1.4.0",
-    "@matterlabs/hardhat-zksync-ethers": "1.0.0",
-    "@matterlabs/hardhat-zksync-solc": "^1.1.4",
-    "@matterlabs/hardhat-zksync-verify": "^1.4.3",
+    "@matterlabs/hardhat-zksync-deploy": "^1.5.0",
+    "@matterlabs/hardhat-zksync-ethers": "1.1.0",
+    "@matterlabs/hardhat-zksync-solc": "^1.2.0",
+    "@matterlabs/hardhat-zksync-verify": "^1.5.0",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.7",
     "@nomicfoundation/hardhat-ethers": "^3.0.6",
     "@nomicfoundation/hardhat-foundry": "^1.1.2",
@@ -159,7 +159,7 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.16",
     "@types/mocha": "^10.0.6",
-    "@types/node": "^20.14.5",
+    "@types/node": "^20.14.6",
     "chai": "^4.4.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
@@ -177,6 +177,6 @@
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.13.1",
     "xdeployer": "^3.0.12",
-    "zksync-ethers": "^6.8.0"
+    "zksync-ethers": "^6.9.0"
   }
 }
