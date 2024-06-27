@@ -130,6 +130,13 @@
     "deploy:xlayermain": "npx hardhat run --network xlayerMain scripts/deploy.ts",
     "deploy:bobtestnet": "npx hardhat run --network bobTestnet scripts/deploy.ts",
     "deploy:bobmain": "npx hardhat run --network bobMain scripts/deploy.ts",
+    "deploy:coretestnet": "npx hardhat run --network coreTestnet scripts/deploy.ts",
+    "deploy:coremain": "npx hardhat run --network coreMain scripts/deploy.ts",
+    "deploy:telostestnet": "npx hardhat run --network telosTestnet scripts/deploy.ts",
+    "deploy:telosmain": "npx hardhat run --network telosMain scripts/deploy.ts",
+    "deploy:rootstocktestnet": "npx hardhat run --network rootstockTestnet scripts/deploy.ts",
+    "deploy:rootstockmain": "npx hardhat run --network rootstockMain scripts/deploy.ts",
+    "deploy:chiliztestnet": "npx hardhat run --network chilizTestnet scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "npx solhint \"contracts/**/*.sol\"",
@@ -159,7 +166,7 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.16",
     "@types/mocha": "^10.0.7",
-    "@types/node": "^20.14.8",
+    "@types/node": "^20.14.9",
     "chai": "^4.4.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
@@ -176,7 +183,7 @@
     "typechain": "^8.3.2",
     "typescript": "^5.5.2",
     "typescript-eslint": "^7.14.1",
-    "xdeployer": "^3.0.12",
+    "xdeployer": "^3.0.13",
     "zksync-ethers": "^6.9.0"
   }
 }
