@@ -8,8 +8,8 @@ importers:
   .:
     devDependencies:
       "@eslint/js":
-        specifier: ^9.5.0
-        version: 9.5.0
+        specifier: ^9.6.0
+        version: 9.6.0
       "@matterlabs/hardhat-zksync-deploy":
         specifier: ^1.5.0
         version: 1.5.0(ethers@6.13.1(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.9)(typescript@5.5.2))(typescript@5.5.2)(utf-8-validate@5.0.10))(zksync-ethers@6.9.0(ethers@6.13.1(bufferutil@4.0.8)(utf-8-validate@5.0.10)))
@@ -223,10 +223,10 @@ packages:
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
 
-  "@eslint-community/regexpp@4.10.1":
+  "@eslint-community/regexpp@4.11.0":
     resolution:
       {
-        integrity: sha512-Zm2NGpWELsQAD1xsJzGQpYfvICSsFkEpU0jxBjfdC6uNEWXcHnfs9hScFWtXVDVl+rBQJGrl4g1vcKIejpH9dA==,
+        integrity: sha512-G/M/tIiMrTAxEWRfLfQJMmGNX28IxBg4PBz8XqQhqUHLFI6TL2htpIB1iQCj144V5ee/JaKyT9/WZ0MGZWfA7A==,
       }
     engines: { node: ^12.0.0 || ^14.0.0 || >=16.0.0 }
 
@@ -244,10 +244,10 @@ packages:
       }
     engines: { node: ^12.22.0 || ^14.17.0 || >=16.0.0 }
 
-  "@eslint/js@9.5.0":
+  "@eslint/js@9.6.0":
     resolution:
       {
-        integrity: sha512-A7+AOT2ICkodvtsWnxZP4Xxk3NbZ3VMHd8oihydLRGrJgqqdEz1qSeEgXYyT/Cu8h1TWWsQRejIx48mtjZ5y1w==,
+        integrity: sha512-D9B0/3vNg44ZeWbYMpBoXqNP4j6eQD5vNwIlGAuFRRzK/WtT/jvDQW3Bi9kkf3PMDMlM7Yi+73VLUsn5bJcl8A==,
       }
     engines: { node: ^18.18.0 || ^20.9.0 || >=21.1.0 }
 
@@ -531,10 +531,10 @@ packages:
         integrity: sha512-TUrMlWZJ+5AFp2lWMw4rGQoU+WtjIqlFX5SzQDL9phaUHrt4TFierAGHsaj5+tUHudhD4JhIaLI2cn1NOyq5NQ==,
       }
 
-  "@ledgerhq/domain-service@1.2.0":
+  "@ledgerhq/domain-service@1.2.1":
     resolution:
       {
-        integrity: sha512-+3xjhMSNJf6/fxnO/ugmSQ4qutMhX2iGy2AAENJRQBeEp8TC08cyObZ+cr81b1UiBN8DpTCm4m0QjTCp/S69bw==,
+        integrity: sha512-vZGTHbBlovwb0gg1uZ7XErf0jVU5RfHgMVWUk2Uuq8IjmJhNN3nPhy1hFfjczjGz1vr6dmZyiY5DuT5F0daguw==,
       }
 
   "@ledgerhq/errors@6.17.0":
@@ -555,16 +555,16 @@ packages:
         integrity: sha512-SbS4SvbMcpNquUsvN4Gd0bTi7ohySqIDMHFf2YLhYBRu1HviU3TG/p4zoFrJcFUiIX2/wOmUdHsWtaQFdMVGyQ==,
       }
 
-  "@ledgerhq/hw-transport-node-hid-noevents@6.30.0":
+  "@ledgerhq/hw-transport-node-hid-noevents@6.30.1":
     resolution:
       {
-        integrity: sha512-bKhhYF8SHBW0nh57xZMyHYCoZ3kkQnHZhlCpPJGRh3a6NDgb4wgKxVsvTzMxHAadZA357/3956/JFmddvdZqxQ==,
+        integrity: sha512-9Mb5vDBXfSaRhfl0U2DnJLN4FgosfQopkzjzZYYHT3+s9XMot4WN/eWWbv5Ksx5qsV8RLQ77dewFFomNthm/vQ==,
       }
 
-  "@ledgerhq/hw-transport-node-hid@6.29.0":
+  "@ledgerhq/hw-transport-node-hid@6.29.1":
     resolution:
       {
-        integrity: sha512-YZn7EfGAvZPJb6en19iiOuli5Gk9PpnAY62EvFIcTxYqMLQX4K/ZCBDc9xhXfhwMZva1In64HK353Zyq+DU9CQ==,
+        integrity: sha512-l+zAfsE0uvo2/Wni0TSW+n6HoFmZdPH6ukrjPocY6jvbhcaxhpbK7ERvDpnZMir/pHwsDoAsvwPY/0sFRBf7bw==,
       }
 
   "@ledgerhq/hw-transport@6.31.0":
@@ -579,10 +579,10 @@ packages:
         integrity: sha512-ExDoj1QV5eC6TEbMdLUMMk9cfvNKhhv5gXol4SmULRVCx/3iyCPhJ74nsb3S0Vb+/f+XujBEj3vQn5+cwS0fNA==,
       }
 
-  "@ledgerhq/types-live@6.48.0":
+  "@ledgerhq/types-live@6.48.1":
     resolution:
       {
-        integrity: sha512-1jLkzXgWURaXso/vqNt2lvi9wJL9qA/iGMlHu4AFbmvf60ufE9KDrw6k4EzifbGXf/I+XhbuPc9kI1IGs2mZEw==,
+        integrity: sha512-VB6FjeDC4dVxDT3up5JjUqOaUnAXO6tAwPZhlFtD5vAylb/YWeeBN0Onrvhkhir/JOhGcWHgER1i7jYCIHiNSg==,
       }
 
   "@matterlabs/hardhat-zksync-deploy@1.5.0":
@@ -4854,10 +4854,10 @@ packages:
       }
     engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
 
-  lru-cache@10.2.2:
+  lru-cache@10.3.0:
     resolution:
       {
-        integrity: sha512-9hp3Vp2/hFQUiIwKo8XCeFVnrg8Pk3TYNPIR7tJADKi5YfcF7vEaK7avFHTlSy3kOKYaJQaalfEo6YuXdceBOQ==,
+        integrity: sha512-CQl19J/g+Hbjbv4Y3mFNNXFEL/5t/KCg8POCuUqd4rMKjGG+j1ybER83hxV58zL+dFI1PTkt3GNFSHRt+d8qEQ==,
       }
     engines: { node: 14 || >=16.14 }
 
@@ -5293,10 +5293,10 @@ packages:
       }
     hasBin: true
 
-  node-hid@2.2.0:
+  node-hid@2.1.2:
     resolution:
       {
-        integrity: sha512-vj48zh9j555DZzUhMc8tk/qw6xPFrDyPBH1ST1Z/hWaA/juBJw7IuSxPeOgpzNFNU36mGYj+THioRMt1xOdm/g==,
+        integrity: sha512-qhCyQqrPpP93F/6Wc/xUR7L8mAJW0Z6R7HMQV8jCHHksAxNDe/4z4Un/H9CpLOT+5K39OPyt9tIQlavxWES3lg==,
       }
     engines: { node: ">=10" }
     hasBin: true
@@ -7706,7 +7706,7 @@ snapshots:
       eslint: 8.57.0
       eslint-visitor-keys: 3.4.3
 
-  "@eslint-community/regexpp@4.10.1": {}
+  "@eslint-community/regexpp@4.11.0": {}
 
   "@eslint/eslintrc@2.1.4":
     dependencies:
@@ -7724,7 +7724,7 @@ snapshots:
 
   "@eslint/js@8.57.0": {}
 
-  "@eslint/js@9.5.0": {}
+  "@eslint/js@9.6.0": {}
 
   "@ethereumjs/common@2.5.0":
     dependencies:
@@ -8050,11 +8050,11 @@ snapshots:
       rxjs: 7.8.1
       semver: 7.6.2
 
-  "@ledgerhq/domain-service@1.2.0(debug@4.3.5)":
+  "@ledgerhq/domain-service@1.2.1(debug@4.3.5)":
     dependencies:
       "@ledgerhq/errors": 6.17.0
       "@ledgerhq/logs": 6.12.0
-      "@ledgerhq/types-live": 6.48.0
+      "@ledgerhq/types-live": 6.48.1
       axios: 1.7.2(debug@4.3.5)
       eip55: 2.1.1
       react: 18.3.1
@@ -8069,7 +8069,7 @@ snapshots:
       "@ethersproject/abi": 5.7.0
       "@ethersproject/rlp": 5.7.0
       "@ledgerhq/cryptoassets": 9.13.0
-      "@ledgerhq/domain-service": 1.2.0(debug@4.3.5)
+      "@ledgerhq/domain-service": 1.2.1(debug@4.3.5)
       "@ledgerhq/errors": 6.17.0
       "@ledgerhq/hw-transport": 6.31.0
       "@ledgerhq/hw-transport-mocker": 6.29.0
@@ -8086,23 +8086,23 @@ snapshots:
       "@ledgerhq/logs": 6.12.0
       rxjs: 7.8.1
 
-  "@ledgerhq/hw-transport-node-hid-noevents@6.30.0":
+  "@ledgerhq/hw-transport-node-hid-noevents@6.30.1":
     dependencies:
       "@ledgerhq/devices": 8.4.0
       "@ledgerhq/errors": 6.17.0
       "@ledgerhq/hw-transport": 6.31.0
       "@ledgerhq/logs": 6.12.0
-      node-hid: 2.2.0
+      node-hid: 2.1.2
 
-  "@ledgerhq/hw-transport-node-hid@6.29.0":
+  "@ledgerhq/hw-transport-node-hid@6.29.1":
     dependencies:
       "@ledgerhq/devices": 8.4.0
       "@ledgerhq/errors": 6.17.0
       "@ledgerhq/hw-transport": 6.31.0
-      "@ledgerhq/hw-transport-node-hid-noevents": 6.30.0
+      "@ledgerhq/hw-transport-node-hid-noevents": 6.30.1
       "@ledgerhq/logs": 6.12.0
       lodash: 4.17.21
-      node-hid: 2.2.0
+      node-hid: 2.1.2
       usb: 2.9.0
 
   "@ledgerhq/hw-transport@6.31.0":
@@ -8114,7 +8114,7 @@ snapshots:
 
   "@ledgerhq/logs@6.12.0": {}
 
-  "@ledgerhq/types-live@6.48.0":
+  "@ledgerhq/types-live@6.48.1":
     dependencies:
       bignumber.js: 9.1.2
       rxjs: 7.8.1
@@ -8330,7 +8330,7 @@ snapshots:
       "@ledgerhq/errors": 6.17.0
       "@ledgerhq/hw-app-eth": 6.33.6(debug@4.3.5)
       "@ledgerhq/hw-transport": 6.31.0
-      "@ledgerhq/hw-transport-node-hid": 6.29.0
+      "@ledgerhq/hw-transport-node-hid": 6.29.1
       "@nomicfoundation/ethereumjs-util": 9.0.4
       chalk: 2.4.2
       debug: 4.3.5
@@ -8901,7 +8901,7 @@ snapshots:
 
   "@typescript-eslint/eslint-plugin@7.14.1(@typescript-eslint/parser@7.14.1(eslint@8.57.0)(typescript@5.5.2))(eslint@8.57.0)(typescript@5.5.2)":
     dependencies:
-      "@eslint-community/regexpp": 4.10.1
+      "@eslint-community/regexpp": 4.11.0
       "@typescript-eslint/parser": 7.14.1(eslint@8.57.0)(typescript@5.5.2)
       "@typescript-eslint/scope-manager": 7.14.1
       "@typescript-eslint/type-utils": 7.14.1(eslint@8.57.0)(typescript@5.5.2)
@@ -9985,7 +9985,7 @@ snapshots:
   eslint@8.57.0:
     dependencies:
       "@eslint-community/eslint-utils": 4.4.0(eslint@8.57.0)
-      "@eslint-community/regexpp": 4.10.1
+      "@eslint-community/regexpp": 4.11.0
       "@eslint/eslintrc": 2.1.4
       "@eslint/js": 8.57.0
       "@humanwhocodes/config-array": 0.11.14
@@ -11208,7 +11208,7 @@ snapshots:
 
   lowercase-keys@3.0.0: {}
 
-  lru-cache@10.2.2: {}
+  lru-cache@10.3.0: {}
 
   lru_map@0.3.3: {}
 
@@ -11431,7 +11431,7 @@ snapshots:
 
   node-gyp-build@4.8.1: {}
 
-  node-hid@2.2.0:
+  node-hid@2.1.2:
     dependencies:
       bindings: 1.5.0
       node-addon-api: 3.2.1
@@ -11603,7 +11603,7 @@ snapshots:
 
   path-scurry@1.11.1:
     dependencies:
-      lru-cache: 10.2.2
+      lru-cache: 10.3.0
       minipass: 7.1.2
 
   path-starts-with@2.0.1: {}
