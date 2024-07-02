@@ -773,6 +773,18 @@ const config: HardhatUserConfig = {
       accounts,
       ledgerAccounts,
     },
+    taraxaTestnet: {
+      chainId: 842,
+      url: vars.get("TARAXA_TESTNET_URL", "https://rpc.testnet.taraxa.io"),
+      accounts,
+      ledgerAccounts,
+    },
+    taraxaMain: {
+      chainId: 841,
+      url: vars.get("TARAXA_MAINNET_URL", "https://rpc.mainnet.taraxa.io"),
+      accounts,
+      ledgerAccounts,
+    },
   },
   xdeploy: {
     // Change this name to the name of your main contract
