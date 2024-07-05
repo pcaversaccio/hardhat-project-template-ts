@@ -207,6 +207,24 @@ const config: HardhatUserConfig = {
       accounts,
       ledgerAccounts,
     },
+    baseMain: {
+      chainId: 8453,
+      url: vars.get(
+        "BASE_MAINNET_URL", 
+        "https://8453.rpc.thirdweb.com"
+      ),
+      accounts,
+      ledgerAccounts,
+    },
+    baseSepolia: {
+      chainId: 84532,
+      url: vars.get(
+        "BASE_SEPOLIA_URL", 
+        "https://84532.rpc.thirdweb.com"
+      ),
+      accounts,
+      ledgerAccounts,
+    },
     arbitrumSepolia: {
       chainId: 421614,
       url: vars.get(
