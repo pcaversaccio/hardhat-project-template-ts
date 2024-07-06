@@ -555,10 +555,10 @@ const config: HardhatUserConfig = {
       ledgerAccounts,
     },
     mantaTestnet: {
-      chainId: 3441005,
+      chainId: 3441006,
       url: vars.get(
         "MANTA_TESTNET_URL",
-        "https://pacific-rpc.testnet.manta.network/http",
+        "https://pacific-rpc.sepolia-testnet.manta.network/http",
       ),
       accounts,
       ledgerAccounts,
@@ -1285,10 +1285,10 @@ const config: HardhatUserConfig = {
       },
       {
         network: "mantaTestnet",
-        chainId: 3441005,
+        chainId: 3441006,
         urls: {
-          apiURL: "https://pacific-explorer.testnet.manta.network/api",
-          browserURL: "https://pacific-explorer.testnet.manta.network",
+          apiURL: "https://pacific-explorer.sepolia-testnet.manta.network/api",
+          browserURL: "https://pacific-explorer.sepolia-testnet.manta.network",
         },
       },
       {
