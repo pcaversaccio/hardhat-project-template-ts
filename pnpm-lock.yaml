@@ -525,22 +525,22 @@ packages:
         integrity: sha512-MzGJyc48OGU/FLYGYwEJyfOgbJzlR8XJ9Oo6XpNpNUM1/E5NDqvD72V0D+0uWIJYN3e2NtyqHXShLZDu7P95YA==,
       }
 
-  "@ledgerhq/devices@8.4.0":
+  "@ledgerhq/devices@8.4.1":
     resolution:
       {
-        integrity: sha512-TUrMlWZJ+5AFp2lWMw4rGQoU+WtjIqlFX5SzQDL9phaUHrt4TFierAGHsaj5+tUHudhD4JhIaLI2cn1NOyq5NQ==,
+        integrity: sha512-Mbjzqlcj4Q2StxEmaYEb5wv6sK5Sk26L4xs0BC9io/AyvpXNTDAp67tryB/klNcvd+WwZPcPdYYvlNzfQ0WTUA==,
       }
 
-  "@ledgerhq/domain-service@1.2.1":
+  "@ledgerhq/domain-service@1.2.2":
     resolution:
       {
-        integrity: sha512-vZGTHbBlovwb0gg1uZ7XErf0jVU5RfHgMVWUk2Uuq8IjmJhNN3nPhy1hFfjczjGz1vr6dmZyiY5DuT5F0daguw==,
+        integrity: sha512-t5Nzi9ZKPAhGHdYwRJ/4ugKO9QCTDFgrx66evQ3sI+yDQyrP09e0Yxxr68JDlMp5IdhSObQrxaMIr4mBn4gr8w==,
       }
 
-  "@ledgerhq/errors@6.17.0":
+  "@ledgerhq/errors@6.18.0":
     resolution:
       {
-        integrity: sha512-xnOVpy/gUUkusEORdr2Qhw3Vd0MGfjyVGgkGR9Ck6FXE26OIdIQ3tNmG5BdZN+gwMMFJJVxxS4/hr0taQfZ43w==,
+        integrity: sha512-L3jQWAGyooxRDk/MRlW2v4Ji9+kloBtdmz9wBkHaj2j0n+05rweJSV3GHw9oye1BYMbVFqFffmT4H3hlXlCasw==,
       }
 
   "@ledgerhq/hw-app-eth@6.33.6":
@@ -549,28 +549,28 @@ packages:
         integrity: sha512-QzYvr5FNEWWd70Vg04A2i8CY0mtPgJrrX7/KePabjXrR8NjDyJ5Ej8qSQPBTp2dkR4TGiz5Y7+HIcWpdgYzjzg==,
       }
 
-  "@ledgerhq/hw-transport-mocker@6.29.0":
+  "@ledgerhq/hw-transport-mocker@6.29.1":
     resolution:
       {
-        integrity: sha512-SbS4SvbMcpNquUsvN4Gd0bTi7ohySqIDMHFf2YLhYBRu1HviU3TG/p4zoFrJcFUiIX2/wOmUdHsWtaQFdMVGyQ==,
+        integrity: sha512-NmQ1Z4Swq6YjIi99kAxtnsi3nDLjlRSn3Kb4G9nJZkM49RPoG0XsYNxpYhUoRj+5RPrXO4h8wFUkNQ6yHcmYvw==,
       }
 
-  "@ledgerhq/hw-transport-node-hid-noevents@6.30.1":
+  "@ledgerhq/hw-transport-node-hid-noevents@6.30.2":
     resolution:
       {
-        integrity: sha512-9Mb5vDBXfSaRhfl0U2DnJLN4FgosfQopkzjzZYYHT3+s9XMot4WN/eWWbv5Ksx5qsV8RLQ77dewFFomNthm/vQ==,
+        integrity: sha512-BsrzQr34x3sKCIr0G8x4AEMtoB8EYmlQXEpleEjC/nmK9wMIJPpuZSc54/6xHD/xiITOw57KpBrYbcVk7srk0w==,
       }
 
-  "@ledgerhq/hw-transport-node-hid@6.29.1":
+  "@ledgerhq/hw-transport-node-hid@6.29.2":
     resolution:
       {
-        integrity: sha512-l+zAfsE0uvo2/Wni0TSW+n6HoFmZdPH6ukrjPocY6jvbhcaxhpbK7ERvDpnZMir/pHwsDoAsvwPY/0sFRBf7bw==,
+        integrity: sha512-MuRIRjAeRV1ibhh5An16GUZ+a1+T2Df+g8hXuoN/KKVqN2iqn22CngrL7WAFz7MxXsHuCH2GBtsrtesc15Dfqw==,
       }
 
-  "@ledgerhq/hw-transport@6.31.0":
+  "@ledgerhq/hw-transport@6.31.1":
     resolution:
       {
-        integrity: sha512-BY1poLk8vlJdIYngp8Zfaa/V9n14dqgt1G7iNetVRhJVFEKp9EYONeC3x6q/N7x81LUpzBk6M+T+s46Z4UiXHw==,
+        integrity: sha512-0hVcrqUOM7AYV/JEq8yoeBiXLjpWrentgYt8MC3n+iNFfpORU/SUprcbu0s884IHzj+a8mx0JCZp9y7uPSLlzg==,
       }
 
   "@ledgerhq/logs@6.12.0":
@@ -579,10 +579,10 @@ packages:
         integrity: sha512-ExDoj1QV5eC6TEbMdLUMMk9cfvNKhhv5gXol4SmULRVCx/3iyCPhJ74nsb3S0Vb+/f+XujBEj3vQn5+cwS0fNA==,
       }
 
-  "@ledgerhq/types-live@6.48.1":
+  "@ledgerhq/types-live@6.49.0":
     resolution:
       {
-        integrity: sha512-VB6FjeDC4dVxDT3up5JjUqOaUnAXO6tAwPZhlFtD5vAylb/YWeeBN0Onrvhkhir/JOhGcWHgER1i7jYCIHiNSg==,
+        integrity: sha512-n4Qa1n1fbYO51nRfbZC14CkHyFFbdHbg4JiJVEWB2TbmU1a9BP49S4mSCcWiJcgwZTVfcI0GP2hNFBqU24GBbw==,
       }
 
   "@matterlabs/hardhat-zksync-deploy@1.5.0":
@@ -967,10 +967,10 @@ packages:
       "@nomicfoundation/hardhat-verify":
         optional: true
 
-  "@openzeppelin/upgrades-core@1.34.1":
+  "@openzeppelin/upgrades-core@1.34.3":
     resolution:
       {
-        integrity: sha512-LV3hHm60htmP3HJjn2VoGqXNPn1RLFSSInRyXNbm15Z2oWKGxOfAWSC4+okRckum0yVB5g3k4/SEyqjsJRB07A==,
+        integrity: sha512-C84afQ0DOFBCAo/D9HRSD38hqBpmzCTcfLpZPzDbnpQt6/b3FkgNiGsxqD8DSE3mjnsMPtJdNnvP2Gq7hh0G5A==,
       }
     hasBin: true
 
@@ -5055,10 +5055,10 @@ packages:
         integrity: sha512-bZTFT5rrPKtPJxj8KSV0WkPyNxl72vQepqqVUAW2ARUpUSF2qXMB6jZj7hW5/k7C1rtpzqbD/IIbJwLXUjCHeg==,
       }
 
-  mocha@10.6.0:
+  mocha@10.7.0:
     resolution:
       {
-        integrity: sha512-hxjt4+EEB0SA0ZDygSS015t65lJw/I2yRCS3Ae+SJ5FrbzrXgfYwJr96f0OvIXdj7h4lv/vLCrH3rkiuizFSvw==,
+        integrity: sha512-v8/rBWr2VO5YkspYINnvu81inSz2y3ODJrhO175/Exzor1RcEZZkizgE2A+w/CAXXoESS8Kys5E62dOHGHzULA==,
       }
     engines: { node: ">= 14.0.0" }
     hasBin: true
@@ -7990,18 +7990,18 @@ snapshots:
     dependencies:
       invariant: 2.2.4
 
-  "@ledgerhq/devices@8.4.0":
+  "@ledgerhq/devices@8.4.1":
     dependencies:
-      "@ledgerhq/errors": 6.17.0
+      "@ledgerhq/errors": 6.18.0
       "@ledgerhq/logs": 6.12.0
       rxjs: 7.8.1
       semver: 7.6.3
 
-  "@ledgerhq/domain-service@1.2.1(debug@4.3.5)":
+  "@ledgerhq/domain-service@1.2.2(debug@4.3.5)":
     dependencies:
-      "@ledgerhq/errors": 6.17.0
+      "@ledgerhq/errors": 6.18.0
       "@ledgerhq/logs": 6.12.0
-      "@ledgerhq/types-live": 6.48.1
+      "@ledgerhq/types-live": 6.49.0
       axios: 1.7.2(debug@4.3.5)
       eip55: 2.1.1
       react: 18.3.1
@@ -8009,17 +8009,17 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  "@ledgerhq/errors@6.17.0": {}
+  "@ledgerhq/errors@6.18.0": {}
 
   "@ledgerhq/hw-app-eth@6.33.6(debug@4.3.5)":
     dependencies:
       "@ethersproject/abi": 5.7.0
       "@ethersproject/rlp": 5.7.0
       "@ledgerhq/cryptoassets": 9.13.0
-      "@ledgerhq/domain-service": 1.2.1(debug@4.3.5)
-      "@ledgerhq/errors": 6.17.0
-      "@ledgerhq/hw-transport": 6.31.0
-      "@ledgerhq/hw-transport-mocker": 6.29.0
+      "@ledgerhq/domain-service": 1.2.2(debug@4.3.5)
+      "@ledgerhq/errors": 6.18.0
+      "@ledgerhq/hw-transport": 6.31.1
+      "@ledgerhq/hw-transport-mocker": 6.29.1
       "@ledgerhq/logs": 6.12.0
       axios: 1.7.2(debug@4.3.5)
       bignumber.js: 9.1.2
@@ -8027,41 +8027,41 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  "@ledgerhq/hw-transport-mocker@6.29.0":
+  "@ledgerhq/hw-transport-mocker@6.29.1":
     dependencies:
-      "@ledgerhq/hw-transport": 6.31.0
+      "@ledgerhq/hw-transport": 6.31.1
       "@ledgerhq/logs": 6.12.0
       rxjs: 7.8.1
 
-  "@ledgerhq/hw-transport-node-hid-noevents@6.30.1":
+  "@ledgerhq/hw-transport-node-hid-noevents@6.30.2":
     dependencies:
-      "@ledgerhq/devices": 8.4.0
-      "@ledgerhq/errors": 6.17.0
-      "@ledgerhq/hw-transport": 6.31.0
+      "@ledgerhq/devices": 8.4.1
+      "@ledgerhq/errors": 6.18.0
+      "@ledgerhq/hw-transport": 6.31.1
       "@ledgerhq/logs": 6.12.0
       node-hid: 2.1.2
 
-  "@ledgerhq/hw-transport-node-hid@6.29.1":
+  "@ledgerhq/hw-transport-node-hid@6.29.2":
     dependencies:
-      "@ledgerhq/devices": 8.4.0
-      "@ledgerhq/errors": 6.17.0
-      "@ledgerhq/hw-transport": 6.31.0
-      "@ledgerhq/hw-transport-node-hid-noevents": 6.30.1
+      "@ledgerhq/devices": 8.4.1
+      "@ledgerhq/errors": 6.18.0
+      "@ledgerhq/hw-transport": 6.31.1
+      "@ledgerhq/hw-transport-node-hid-noevents": 6.30.2
       "@ledgerhq/logs": 6.12.0
       lodash: 4.17.21
       node-hid: 2.1.2
       usb: 2.9.0
 
-  "@ledgerhq/hw-transport@6.31.0":
+  "@ledgerhq/hw-transport@6.31.1":
     dependencies:
-      "@ledgerhq/devices": 8.4.0
-      "@ledgerhq/errors": 6.17.0
+      "@ledgerhq/devices": 8.4.1
+      "@ledgerhq/errors": 6.18.0
       "@ledgerhq/logs": 6.12.0
       events: 3.3.0
 
   "@ledgerhq/logs@6.12.0": {}
 
-  "@ledgerhq/types-live@6.48.1":
+  "@ledgerhq/types-live@6.49.0":
     dependencies:
       bignumber.js: 9.1.2
       rxjs: 7.8.1
@@ -8269,10 +8269,10 @@ snapshots:
 
   "@nomicfoundation/hardhat-ledger@1.0.3(bufferutil@4.0.8)(hardhat@2.22.6(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.3))(typescript@5.5.3)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)":
     dependencies:
-      "@ledgerhq/errors": 6.17.0
+      "@ledgerhq/errors": 6.18.0
       "@ledgerhq/hw-app-eth": 6.33.6(debug@4.3.5)
-      "@ledgerhq/hw-transport": 6.31.0
-      "@ledgerhq/hw-transport-node-hid": 6.29.1
+      "@ledgerhq/hw-transport": 6.31.1
+      "@ledgerhq/hw-transport-node-hid": 6.29.2
       "@nomicfoundation/ethereumjs-util": 9.0.4
       chalk: 2.4.2
       debug: 4.3.5(supports-color@8.1.1)
@@ -8399,7 +8399,7 @@ snapshots:
       "@openzeppelin/defender-sdk-base-client": 1.14.1
       "@openzeppelin/defender-sdk-deploy-client": 1.14.1(debug@4.3.5)
       "@openzeppelin/defender-sdk-network-client": 1.14.1(debug@4.3.5)
-      "@openzeppelin/upgrades-core": 1.34.1
+      "@openzeppelin/upgrades-core": 1.34.3
       chalk: 4.1.2
       debug: 4.3.5(supports-color@8.1.1)
       ethereumjs-util: 7.1.5
@@ -8413,7 +8413,7 @@ snapshots:
       - encoding
       - supports-color
 
-  "@openzeppelin/upgrades-core@1.34.1":
+  "@openzeppelin/upgrades-core@1.34.3":
     dependencies:
       cbor: 9.0.2
       chalk: 4.1.2
@@ -8570,7 +8570,7 @@ snapshots:
       "@ethersproject/bignumber": 5.7.0
       "@nomicfoundation/hardhat-ethers": 3.0.6(ethers@6.13.1(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.6(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.3))(typescript@5.5.3)(utf-8-validate@5.0.10))
       "@openzeppelin/hardhat-upgrades": 3.2.0(@nomicfoundation/hardhat-ethers@3.0.6(ethers@6.13.1(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.6(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.3))(typescript@5.5.3)(utf-8-validate@5.0.10)))(@nomicfoundation/hardhat-verify@2.0.8(hardhat@2.22.6(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.3))(typescript@5.5.3)(utf-8-validate@5.0.10)))(ethers@6.13.1(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.6(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.3))(typescript@5.5.3)(utf-8-validate@5.0.10))
-      "@openzeppelin/upgrades-core": 1.34.1
+      "@openzeppelin/upgrades-core": 1.34.3
       axios: 1.7.2(debug@4.3.5)
       ethers: 6.13.1(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       fs-extra: 10.1.0
@@ -10690,7 +10690,7 @@ snapshots:
       keccak: 3.0.4
       lodash: 4.17.21
       mnemonist: 0.38.5
-      mocha: 10.6.0
+      mocha: 10.7.0
       p-map: 4.0.0
       raw-body: 2.5.2
       resolve: 1.17.0
@@ -11230,7 +11230,7 @@ snapshots:
     dependencies:
       obliterator: 2.0.4
 
-  mocha@10.6.0:
+  mocha@10.7.0:
     dependencies:
       ansi-colors: 4.1.3
       browser-stdout: 1.3.1
@@ -12076,7 +12076,7 @@ snapshots:
       hardhat: 2.22.6(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.3))(typescript@5.5.3)(utf-8-validate@5.0.10)
       jsonschema: 1.4.1
       lodash: 4.17.21
-      mocha: 10.6.0
+      mocha: 10.7.0
       node-emoji: 1.11.0
       pify: 4.0.1
       recursive-readdir: 2.2.3
