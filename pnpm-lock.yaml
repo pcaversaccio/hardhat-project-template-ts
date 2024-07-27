@@ -8,8 +8,8 @@ importers:
   .:
     devDependencies:
       "@eslint/js":
-        specifier: ^9.7.0
-        version: 9.7.0
+        specifier: ^9.8.0
+        version: 9.8.0
       "@matterlabs/hardhat-zksync-deploy":
         specifier: ^1.5.0
         version: 1.5.0(ethers@6.13.2(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.6(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.12)(typescript@5.5.4))(typescript@5.5.4)(utf-8-validate@5.0.10))(zksync-ethers@6.11.0(ethers@6.13.2(bufferutil@4.0.8)(utf-8-validate@5.0.10)))
@@ -187,10 +187,10 @@ packages:
       }
     engines: { node: ">=6.9.0" }
 
-  "@babel/runtime@7.24.8":
+  "@babel/runtime@7.25.0":
     resolution:
       {
-        integrity: sha512-5F7SDGs1T72ZczbRwbGO9lQi0NLjQxzl6i4lJxLxfW9U5UluCSyEJeniWvnhl3/euNiqQVbo8zruhsDfid0esA==,
+        integrity: sha512-7dRy4DwXwtzBrPbZflqxnvfxLF8kdZXPkhymtDeFoFqE6ldzjQFgYTtYIFARcLEYDrqfBfYcZt1WqFxRoyC9Rw==,
       }
     engines: { node: ">=6.9.0" }
 
@@ -244,10 +244,10 @@ packages:
       }
     engines: { node: ^12.22.0 || ^14.17.0 || >=16.0.0 }
 
-  "@eslint/js@9.7.0":
+  "@eslint/js@9.8.0":
     resolution:
       {
-        integrity: sha512-ChuWDQenef8OSFnvuxv0TCVxEwmu3+hPNKvM9B34qpM0rDRbjL8t5QkQeHHeAfsKQjuH9wS82WeCi1J/owatng==,
+        integrity: sha512-MfluB7EUfxXtv3i/++oh89uzAr4PDI4nn201hsp+qaXqsjAWzinlZEHEfPgAX4doIlKvPG/i0A9dpKxOLII8yA==,
       }
     engines: { node: ^18.18.0 || ^20.9.0 || >=21.1.0 }
 
@@ -7642,7 +7642,7 @@ snapshots:
       js-tokens: 4.0.0
       picocolors: 1.0.1
 
-  "@babel/runtime@7.24.8":
+  "@babel/runtime@7.25.0":
     dependencies:
       regenerator-runtime: 0.14.1
 
@@ -7678,7 +7678,7 @@ snapshots:
 
   "@eslint/js@8.57.0": {}
 
-  "@eslint/js@9.7.0": {}
+  "@eslint/js@9.8.0": {}
 
   "@ethereumjs/common@2.5.0":
     dependencies:
@@ -9115,7 +9115,7 @@ snapshots:
 
   axios-retry@3.9.1:
     dependencies:
-      "@babel/runtime": 7.24.8
+      "@babel/runtime": 7.25.0
       is-retry-allowed: 2.2.0
 
   axios@0.21.4(debug@4.3.5):
@@ -10992,7 +10992,7 @@ snapshots:
 
   iter-tools@7.5.3:
     dependencies:
-      "@babel/runtime": 7.24.8
+      "@babel/runtime": 7.25.0
 
   jackspeak@3.4.3:
     dependencies:
