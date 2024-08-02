@@ -187,6 +187,6 @@
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.0.0",
     "xdeployer": "^3.0.15",
-    "zksync-ethers": "^6.11.0"
+    "zksync-ethers": "^6.11.1"
   }
 }
