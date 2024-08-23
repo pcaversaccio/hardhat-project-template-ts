@@ -791,6 +791,45 @@ const config: HardhatUserConfig = {
       accounts,
       ledgerAccounts,
     },
+    gravityAlphaTestnet: {
+      chainId: 13505,
+      url: vars.get(
+        "GRAVITY_ALPHA_TESTNET_URL",
+        "https://rpc-sepolia.gravity.xyz",
+      ),
+      accounts,
+      ledgerAccounts,
+    },
+    gravityAlphaMain: {
+      chainId: 1625,
+      url: vars.get("GRAVITY_ALPHA_MAINNET_URL", "https://rpc.gravity.xyz"),
+      accounts,
+      ledgerAccounts,
+    },
+    taikoTestnet: {
+      chainId: 167009,
+      url: vars.get("TAIKO_TESTNET_URL", "https://rpc.hekla.taiko.xyz"),
+      accounts,
+      ledgerAccounts,
+    },
+    taikoMain: {
+      chainId: 167000,
+      url: vars.get("TAIKO_MAINNET_URL", "https://rpc.taiko.xyz"),
+      accounts,
+      ledgerAccounts,
+    },
+    zetaChainTestnet: {
+      chainId: 7001,
+      url: vars.get("ZETA_CHAIN_TESTNET_URL", "https://7001.rpc.thirdweb.com"),
+      accounts,
+      ledgerAccounts,
+    },
+    zetaChainMain: {
+      chainId: 7000,
+      url: vars.get("ZETA_CHAIN_MAINNET_URL", "https://7000.rpc.thirdweb.com"),
+      accounts,
+      ledgerAccounts,
+    },
   },
   xdeploy: {
     // Change this name to the name of your main contract
@@ -990,6 +1029,15 @@ const config: HardhatUserConfig = {
       // For Chiliz testnet & mainnet
       chiliz: vars.get("CHILIZ_API_KEY", ""),
       chilizTestnet: vars.get("CHILIZ_API_KEY", ""),
+      // For Gravity Alpha testnet & mainnet
+      gravityAlpha: vars.get("GRAVITY_ALPHA_API_KEY", ""),
+      gravityAlphaTestnet: vars.get("GRAVITY_ALPHA_API_KEY", ""),
+      // For Taiko testnet & mainnet
+      taiko: vars.get("TAIKO_API_KEY", ""),
+      taikoTestnet: vars.get("TAIKO_API_KEY", ""),
+      // For ZetaChain testnet & mainnet
+      zetaChain: vars.get("ZETA_CHAIN_API_KEY", ""),
+      zetaChainTestnet: vars.get("ZETA_CHAIN_API_KEY", ""),
     },
     customChains: [
       {
@@ -1548,6 +1596,54 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://explorer.testnet.harmony.one/api",
           browserURL: "https://explorer.testnet.harmony.one",
+        },
+      },
+      {
+        network: "gravityAlpha",
+        chainId: 1625,
+        urls: {
+          apiURL: "https://explorer.gravity.xyz/api",
+          browserURL: "https://explorer.gravity.xyz",
+        },
+      },
+      {
+        network: "gravityAlphaTestnet",
+        chainId: 13505,
+        urls: {
+          apiURL: "https://explorer-sepolia.gravity.xyz/api",
+          browserURL: "https://explorer-sepolia.gravity.xyz",
+        },
+      },
+      {
+        network: "taiko",
+        chainId: 167000,
+        urls: {
+          apiURL: "https://api.taikoscan.io/api",
+          browserURL: "https://taikoscan.io",
+        },
+      },
+      {
+        network: "taikoTestnet",
+        chainId: 167009,
+        urls: {
+          apiURL: "https://api-hekla.taikoscan.io/api",
+          browserURL: "https://hekla.taikoscan.io",
+        },
+      },
+      {
+        network: "zetaChain",
+        chainId: 7000,
+        urls: {
+          apiURL: "https://zetachain.blockscout.com/api",
+          browserURL: "https://zetachain.blockscout.com",
+        },
+      },
+      {
+        network: "zetaChainTestnet",
+        chainId: 7001,
+        urls: {
+          apiURL: "https://zetachain-athens-3.blockscout.com/api",
+          browserURL: "https://zetachain-athens-3.blockscout.com",
         },
       },
     ],
