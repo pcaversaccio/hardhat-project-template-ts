@@ -177,7 +177,7 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.19",
     "@types/mocha": "^10.0.7",
-    "@types/node": "^22.5.2",
+    "@types/node": "^22.5.3",
     "chai": "^4.5.0",
     "eslint": "^9.9.1",
     "eslint-config-prettier": "^9.1.0",
@@ -194,7 +194,7 @@
     "typechain": "^8.3.2",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.4.0",
-    "xdeployer": "^3.0.17",
+    "xdeployer": "^3.1.0",
     "zksync-ethers": "^6.12.0"
   }
 }
