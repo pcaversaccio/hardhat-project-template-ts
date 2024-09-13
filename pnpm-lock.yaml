@@ -69,8 +69,8 @@ importers:
         specifier: ^4.3.19
         version: 4.3.19
       '@types/mocha':
-        specifier: ^10.0.7
-        version: 10.0.7
+        specifier: ^10.0.8
+        version: 10.0.8
       '@types/node':
         specifier: ^22.5.4
         version: 22.5.4
@@ -143,8 +143,8 @@ packages:
   '@aws-crypto/util@1.2.2':
     resolution: {integrity: sha512-H8PjG5WJ4wz0UXAFXeJjWCW1vkvIJ3qUUD+rGRwJ2/hj+xT58Qle2MTql/2MGzkU+1JLAFuR6aJpLAjHwhmwwg==}
 
-  '@aws-sdk/types@3.609.0':
-    resolution: {integrity: sha512-+Tqnh9w0h2LcrUsdXyT1F8mNhXz+tVYBtP19LpeEGntmvHwa2XzvLUCWpoIAIVsHp5+HdB2X9Sn0KAtmbFXc2Q==}
+  '@aws-sdk/types@3.649.0':
+    resolution: {integrity: sha512-PuPw8RysbhJNlaD2d/PzOTf8sbf4Dsn2b7hwyGh7YVG3S75yTpxSAZxrnhKsz9fStgqFmnw/jUfV/G+uQAeTVw==}
     engines: {node: '>=16.0.0'}
 
   '@aws-sdk/util-utf8-browser@3.259.0':
@@ -629,14 +629,14 @@ packages:
   '@openzeppelin/contracts@5.0.2':
     resolution: {integrity: sha512-ytPc6eLGcHHnapAZ9S+5qsdomhjo6QBHTDRRBFfTxXIpsicMhVPouPgmUPebZZZGX7vt9USA+Z+0M0dSVtSUEA==}
 
-  '@openzeppelin/defender-sdk-base-client@1.14.3':
-    resolution: {integrity: sha512-4yG9E8N1c/ZP2jNR+Ah19wi7SBKpauAV/VcYcm7rg1dltDbzbH/oZnnXJlymT7IfjTPXkKHW8TPsaqz3EjS7tA==}
+  '@openzeppelin/defender-sdk-base-client@1.14.4':
+    resolution: {integrity: sha512-tOePVQLKpqfGQ1GMzHvSBNd2psPYd86LDNpvdl5gjD0Y2kW/zNh5qBXy29RraGtk/qc8zs9hzS5pAOh0vhGkGQ==}
 
-  '@openzeppelin/defender-sdk-deploy-client@1.14.3':
-    resolution: {integrity: sha512-51WIZJz251lndK7uQU4gBE0gBX+2ZNTgf+hemtJUEPCpHtkooBRFFMID3EPGMKXVqf872pU8K3Huu9PyYQu6bw==}
+  '@openzeppelin/defender-sdk-deploy-client@1.14.4':
+    resolution: {integrity: sha512-+diSoz1zid37LMsY2RDxI+uAsYx9Eryg8Vz+yfvuyd56fXrzjQEln7BBtYQw+2zp9yvyAByOL5XSQdrQga9OBQ==}
 
-  '@openzeppelin/defender-sdk-network-client@1.14.3':
-    resolution: {integrity: sha512-qrJLs2ubKSwrhP0x4V2QOPhlc1q8TYnkAcvjvk34VXMS8lhY1cpXSGoxnTw3Mi+eCSE1xOzKWISLi1UAOQOJIw==}
+  '@openzeppelin/defender-sdk-network-client@1.14.4':
+    resolution: {integrity: sha512-OS0H5b0vgYacJcwkvUFJUaRuyUaXhIRl916W5xLvGia5H6i/qn3dP8MZ7oLcPwKc8jB+ucRytO4H/AHsea0aVA==}
 
   '@openzeppelin/hardhat-upgrades@3.2.1':
     resolution: {integrity: sha512-Zy5M3QhkzwGdpzQmk+xbWdYOGJWjoTvwbBKYLhctu9B91DoprlhDRaZUwCtunwTdynkTDGdVfGr0kIkvycyKjw==}
@@ -727,17 +727,17 @@ packages:
     resolution: {integrity: sha512-TV7t8GKYaJWsn00tFDqBw8+Uqmr8A0fRU1tvTQhyZzGv0sJCGRQL3JGMI3ucuKo3XIZdUP+Lx7/gh2t3lewy7g==}
     engines: {node: '>=14.16'}
 
-  '@sinonjs/commons@2.0.0':
-    resolution: {integrity: sha512-uLa0j859mMrg2slwQYdO/AkrOfmH+X6LTVmNTS9CqexuE2IvVORIkSpJLqePAbEnKJ77aMmCwr1NUZ57120Xcg==}
-
   '@sinonjs/commons@3.0.1':
     resolution: {integrity: sha512-K3mCHKQ9sVh8o1C9cxkwxaOmXoAMlDxC1mYyHrjqOWEcBjYr76t96zL2zlj5dUGZ3HSw240X1qgH3Mjf1yJWpQ==}
 
-  '@sinonjs/fake-timers@11.3.1':
-    resolution: {integrity: sha512-EVJO7nW5M/F5Tur0Rf2z/QoMo+1Ia963RiMtapiQrEWvY0iBUvADo8Beegwjpnle5BHkyHuoxSTW3jF43H1XRA==}
+  '@sinonjs/fake-timers@11.2.2':
+    resolution: {integrity: sha512-G2piCSxQ7oWOxwGSAyFHfPIsyeJGXYtc6mFbnFA+kRXkiEnTl8c/8jul2S329iFBnDI9HGoeWWAZvuvOkZccgw==}
 
-  '@sinonjs/samsam@8.0.0':
-    resolution: {integrity: sha512-Bp8KUVlLp8ibJZrnvq2foVhP0IVX2CIprMJPK0vqGqgrDa0OHVKeZyBykqskkrdxV6yKBPmGasO8LVjAKR3Gew==}
+  '@sinonjs/fake-timers@13.0.2':
+    resolution: {integrity: sha512-4Bb+oqXZTSTZ1q27Izly9lv8B9dlV61CROxPiVtywwzv5SnytJqhvYe6FclHYuXml4cd1VHPo1zd5PmTeJozvA==}
+
+  '@sinonjs/samsam@8.0.2':
+    resolution: {integrity: sha512-v46t/fwnhejRSFTGqbpn9u+LQ9xJDse10gNnPgAcxgdoCDMXj/G2asWAC/8Qs+BAZDicX+MNZouXT1A7c83kVw==}
 
   '@sinonjs/text-encoding@0.7.3':
     resolution: {integrity: sha512-DE427ROAphMQzU4ENbliGYrBSYPXF+TtLg9S8vzeA+OF4ZKzoDdzfL8sxuMUGS/lgRhM6j1URSk9ghf7Xo1tyA==}
@@ -908,8 +908,8 @@ packages:
   '@types/minimatch@5.1.2':
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
 
-  '@types/mocha@10.0.7':
-    resolution: {integrity: sha512-GN8yJ1mNTcFcah/wKEFIJckJx9iJLoMSzWcfRRuxz/Jk+U6KQNnml+etbtxFK8lPjzOw3zp4Ha/kjSst9fsHYw==}
+  '@types/mocha@10.0.8':
+    resolution: {integrity: sha512-HfMcUmy9hTMJh66VNcmeC9iVErIZJli2bszuXc6julh5YGuRb/W5OnkHjwLNYdFlMis0sY3If5SEAp+PktdJjw==}
 
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
@@ -1945,8 +1945,8 @@ packages:
     resolution: {integrity: sha512-XYfuKMvj4O35f/pOXLObndIRvyQ+/+6AhODh+OKWj9S9498pHHn/IMszH+gt0fBCRWMNfk1ZSp5x3AifmnI2vg==}
     engines: {node: '>=6'}
 
-  express@4.20.0:
-    resolution: {integrity: sha512-pLdae7I6QqShF5PnNTCVn4hI91Dx0Grkn2+IAsMTgMIKuQVte2dN9PeGSSAME2FR8anOhVA62QDIUaWVfEXVLw==}
+  express@4.21.0:
+    resolution: {integrity: sha512-VqcNGcj/Id5ZT1LZ/cfihi3ttTn+NJmkli2eZADigjq29qTlWi/hAQ43t/VLPq8+UX06FCEx3ByOYet6ZFblng==}
     engines: {node: '>= 0.10.0'}
 
   ext@1.7.0:
@@ -1995,8 +1995,8 @@ packages:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
     engines: {node: '>=8'}
 
-  finalhandler@1.2.0:
-    resolution: {integrity: sha512-5uXcUVftlQMFnWC9qu/svkWv3GTd2PfUhK/3PLkYNAe7FbqJMt3515HaxE6eRL74GdsriiwujiawdaB1BpEISg==}
+  finalhandler@1.3.1:
+    resolution: {integrity: sha512-6BN9trH7bp3qvnrRyzsBz+g3lZxTNZTbVO2EV1CS0WIcDbawYVdYvGflME/9QP0h0pYlCDBCTjYa9nZzMDpyxQ==}
     engines: {node: '>= 0.8'}
 
   find-replace@3.0.0:
@@ -2869,8 +2869,8 @@ packages:
   next-tick@1.1.0:
     resolution: {integrity: sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ==}
 
-  nise@6.0.0:
-    resolution: {integrity: sha512-K8ePqo9BFvN31HXwEtTNGzgrPpmvgciDsFz8aztFjt4LqKO/JeFD8tBOeuDiCMXrIl/m1YvfH8auSpxfaD09wg==}
+  nise@6.1.1:
+    resolution: {integrity: sha512-aMSAzLVY7LyeM60gvBS423nBmIPP+Wy7St7hsb+8/fc1HmeoHJfLO8CKse4u3BtOZvQLJghYPI2i/1WZrEj5/g==}
 
   node-abi@3.67.0:
     resolution: {integrity: sha512-bLn/fU/ALVBE9wj+p4Y21ZJWYFjUXLXPi/IewyLZkx3ApxKDNBWCKdReeKOtD8dWpOdDCeMyLh6ZewzcLsG2Nw==}
@@ -3086,8 +3086,9 @@ packages:
   path-to-regexp@0.1.10:
     resolution: {integrity: sha512-7lf7qcQidTku0Gu3YDPc8DJ1q7OOucfa/BSsIwjuh56VU7katFvuM8hULfkwB3Fns/rsVF7PwPKVw1sl5KQS9w==}
 
-  path-to-regexp@6.2.2:
-    resolution: {integrity: sha512-GQX3SSMokngb36+whdpRXE+3f9V8UzyAorlYvOGx87ufGHehNTn5lCxrKtLyZ4Yl/wEKnNnr98ZzOwwDZV5ogw==}
+  path-to-regexp@8.1.0:
+    resolution: {integrity: sha512-Bqn3vc8CMHty6zuD+tG23s6v2kwxslHEhTj4eYaVKGIEB+YX/2wd0/rgXLFD9G9id9KCtbVy/3ZgmvZjpa0UdQ==}
+    engines: {node: '>=16'}
 
   path-type@4.0.0:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
@@ -3185,8 +3186,8 @@ packages:
   pump@1.0.3:
     resolution: {integrity: sha512-8k0JupWme55+9tCVE+FS5ULT3K6AbgqrGa58lTT49RpyfwwcGedHqaC5LlQNdEAumn/wFsu6aPwkuPMioy8kqw==}
 
-  pump@3.0.0:
-    resolution: {integrity: sha512-LwZy+p3SFs1Pytd/jYct4wpv49HiYCqd9Rlc5ZVdk0V+8Yzv6jR5Blk3TRmPL1ft69TxP0IMZGJ+WPFU2BFhww==}
+  pump@3.0.2:
+    resolution: {integrity: sha512-tUPXtzlGM8FE3P0ZL6DVs/3P58k9nk8/jZeQCurTJylQA8qFYzHFfhBJkuqyE0FifOsQ0uKWekiZ5g8wtr28cw==}
 
   punycode@2.1.0:
     resolution: {integrity: sha512-Yxz2kRwT90aPiWEMHVYnEf4+rhwF1tBmmZ4KepCP+Wkium9JxtWnUm1nqGwpiAHr/tnTSeHqr3wb++jgSkXjhA==}
@@ -3195,10 +3196,6 @@ packages:
   punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
-
-  qs@6.11.0:
-    resolution: {integrity: sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==}
-    engines: {node: '>=0.6'}
 
   qs@6.13.0:
     resolution: {integrity: sha512-+38qI9SOr8tfZ4QmJNplMUxqjbe7LKvvZgWdExBOmd+egZTtjLB67Gu0HRX3u/XOq7UU2Nx6nsjvS16Z9uwfpg==}
@@ -3394,10 +3391,6 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  send@0.18.0:
-    resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
-    engines: {node: '>= 0.8.0'}
-
   send@0.19.0:
     resolution: {integrity: sha512-dW41u5VfLXu8SJh5bwRmyYUbAoSB3c9uQh6L8h/KtsFREPWpbX1lrljJo186Jc4nmci/sGUZ9a0a0J2zgfq2hw==}
     engines: {node: '>= 0.8.0'}
@@ -3405,8 +3398,8 @@ packages:
   serialize-javascript@6.0.2:
     resolution: {integrity: sha512-Saa1xPByTTq2gdeFZYLLo+RFE35NHZkAbqZeWNd3BpzppeVisAqpDjcp8dyf6uIvEqJRd46jemmyA4iFIeVk8g==}
 
-  serve-static@1.16.0:
-    resolution: {integrity: sha512-pDLK8zwl2eKaYrs8mrPZBJua4hMplRWJ1tIFksVC3FtBEBnl8dxgeHtsaMS8DhS9i4fLObaon6ABoc4/hQGdPA==}
+  serve-static@1.16.2:
+    resolution: {integrity: sha512-VqpjJZKadQB/PEbEwvFdO43Ax5dFBZ2UECszz8bQ7pi7wt//PWe1P6MN7eCnjsatYtBT6EuiClbjSWP2WrIoTw==}
     engines: {node: '>= 0.8.0'}
 
   servify@0.1.12:
@@ -3472,8 +3465,8 @@ packages:
       chai: ^4.0.0
       sinon: '>=4.0.0'
 
-  sinon@18.0.0:
-    resolution: {integrity: sha512-+dXDXzD1sBO6HlmZDd7mXZCR/y5ECiEiGCBSGuFD/kZ0bDTofPYc6JaeGmPSF+1j1MejGUWkORbYOLDyvqCWpA==}
+  sinon@18.0.1:
+    resolution: {integrity: sha512-a2N2TDY1uGviajJ6r4D1CyRAkzE9NNVlYOV1wX5xQDuAk0ONgzgRl0EjCQuRCPxOwp13ghsMwt9Gdldujs39qw==}
 
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
@@ -4199,16 +4192,16 @@ snapshots:
   '@aws-crypto/sha256-js@1.2.2':
     dependencies:
       '@aws-crypto/util': 1.2.2
-      '@aws-sdk/types': 3.609.0
+      '@aws-sdk/types': 3.649.0
       tslib: 1.14.1
 
   '@aws-crypto/util@1.2.2':
     dependencies:
-      '@aws-sdk/types': 3.609.0
+      '@aws-sdk/types': 3.649.0
       '@aws-sdk/util-utf8-browser': 3.259.0
       tslib: 1.14.1
 
-  '@aws-sdk/types@3.609.0':
+  '@aws-sdk/types@3.649.0':
     dependencies:
       '@smithy/types': 3.4.0
       tslib: 2.7.0
@@ -4676,8 +4669,8 @@ snapshots:
       glob: 10.4.5
       hardhat: 2.22.10(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.5.4)(typescript@5.6.2))(typescript@5.6.2)(utf-8-validate@5.0.10)
       lodash: 4.17.21
-      sinon: 18.0.0
-      sinon-chai: 3.7.0(chai@4.5.0)(sinon@18.0.0)
+      sinon: 18.0.1
+      sinon-chai: 3.7.0(chai@4.5.0)(sinon@18.0.1)
       ts-morph: 22.0.0
       zksync-ethers: 6.12.1(ethers@6.13.2(bufferutil@4.0.8)(utf-8-validate@5.0.10))
     transitivePeerDependencies:
@@ -4713,8 +4706,8 @@ snapshots:
       hardhat: 2.22.10(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.5.4)(typescript@5.6.2))(typescript@5.6.2)(utf-8-validate@5.0.10)
       proper-lockfile: 4.1.2
       semver: 7.6.3
-      sinon: 18.0.0
-      sinon-chai: 3.7.0(chai@4.5.0)(sinon@18.0.0)
+      sinon: 18.0.1
+      sinon-chai: 3.7.0(chai@4.5.0)(sinon@18.0.1)
       undici: 6.19.8
     transitivePeerDependencies:
       - encoding
@@ -4733,8 +4726,8 @@ snapshots:
       debug: 4.3.7(supports-color@8.1.1)
       hardhat: 2.22.10(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.5.4)(typescript@5.6.2))(typescript@5.6.2)(utf-8-validate@5.0.10)
       semver: 7.6.3
-      sinon: 18.0.0
-      sinon-chai: 3.7.0(chai@4.5.0)(sinon@18.0.0)
+      sinon: 18.0.1
+      sinon-chai: 3.7.0(chai@4.5.0)(sinon@18.0.1)
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -5000,25 +4993,25 @@ snapshots:
 
   '@openzeppelin/contracts@5.0.2': {}
 
-  '@openzeppelin/defender-sdk-base-client@1.14.3':
+  '@openzeppelin/defender-sdk-base-client@1.14.4':
     dependencies:
       amazon-cognito-identity-js: 6.3.12
       async-retry: 1.3.3
     transitivePeerDependencies:
       - encoding
 
-  '@openzeppelin/defender-sdk-deploy-client@1.14.3(debug@4.3.7)':
+  '@openzeppelin/defender-sdk-deploy-client@1.14.4(debug@4.3.7)':
     dependencies:
-      '@openzeppelin/defender-sdk-base-client': 1.14.3
+      '@openzeppelin/defender-sdk-base-client': 1.14.4
       axios: 1.7.7(debug@4.3.7)
       lodash: 4.17.21
     transitivePeerDependencies:
       - debug
       - encoding
 
-  '@openzeppelin/defender-sdk-network-client@1.14.3(debug@4.3.7)':
+  '@openzeppelin/defender-sdk-network-client@1.14.4(debug@4.3.7)':
     dependencies:
-      '@openzeppelin/defender-sdk-base-client': 1.14.3
+      '@openzeppelin/defender-sdk-base-client': 1.14.4
       axios: 1.7.7(debug@4.3.7)
       lodash: 4.17.21
     transitivePeerDependencies:
@@ -5028,9 +5021,9 @@ snapshots:
   '@openzeppelin/hardhat-upgrades@3.2.1(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.2(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.10(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.5.4)(typescript@5.6.2))(typescript@5.6.2)(utf-8-validate@5.0.10)))(@nomicfoundation/hardhat-verify@2.0.10(hardhat@2.22.10(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.5.4)(typescript@5.6.2))(typescript@5.6.2)(utf-8-validate@5.0.10)))(ethers@6.13.2(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.10(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.5.4)(typescript@5.6.2))(typescript@5.6.2)(utf-8-validate@5.0.10))':
     dependencies:
       '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.2(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.10(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.5.4)(typescript@5.6.2))(typescript@5.6.2)(utf-8-validate@5.0.10))
-      '@openzeppelin/defender-sdk-base-client': 1.14.3
-      '@openzeppelin/defender-sdk-deploy-client': 1.14.3(debug@4.3.7)
-      '@openzeppelin/defender-sdk-network-client': 1.14.3(debug@4.3.7)
+      '@openzeppelin/defender-sdk-base-client': 1.14.4
+      '@openzeppelin/defender-sdk-deploy-client': 1.14.4(debug@4.3.7)
+      '@openzeppelin/defender-sdk-network-client': 1.14.4(debug@4.3.7)
       '@openzeppelin/upgrades-core': 1.37.1
       chalk: 4.1.2
       debug: 4.3.7(supports-color@8.1.1)
@@ -5163,21 +5156,21 @@ snapshots:
 
   '@sindresorhus/is@5.6.0': {}
 
-  '@sinonjs/commons@2.0.0':
-    dependencies:
-      type-detect: 4.0.8
-
   '@sinonjs/commons@3.0.1':
     dependencies:
       type-detect: 4.0.8
 
-  '@sinonjs/fake-timers@11.3.1':
+  '@sinonjs/fake-timers@11.2.2':
     dependencies:
       '@sinonjs/commons': 3.0.1
 
-  '@sinonjs/samsam@8.0.0':
+  '@sinonjs/fake-timers@13.0.2':
     dependencies:
-      '@sinonjs/commons': 2.0.0
+      '@sinonjs/commons': 3.0.1
+
+  '@sinonjs/samsam@8.0.2':
+    dependencies:
+      '@sinonjs/commons': 3.0.1
       lodash.get: 4.4.2
       type-detect: 4.1.0
 
@@ -5446,7 +5439,7 @@ snapshots:
 
   '@types/minimatch@5.1.2': {}
 
-  '@types/mocha@10.0.7': {}
+  '@types/mocha@10.0.8': {}
 
   '@types/node@12.20.55': {}
 
@@ -6669,7 +6662,7 @@ snapshots:
 
   expand-template@2.0.3: {}
 
-  express@4.20.0:
+  express@4.21.0:
     dependencies:
       accepts: 1.3.8
       array-flatten: 1.1.1
@@ -6683,7 +6676,7 @@ snapshots:
       encodeurl: 2.0.0
       escape-html: 1.0.3
       etag: 1.8.1
-      finalhandler: 1.2.0
+      finalhandler: 1.3.1
       fresh: 0.5.2
       http-errors: 2.0.0
       merge-descriptors: 1.0.3
@@ -6692,11 +6685,11 @@ snapshots:
       parseurl: 1.3.3
       path-to-regexp: 0.1.10
       proxy-addr: 2.0.7
-      qs: 6.11.0
+      qs: 6.13.0
       range-parser: 1.2.1
       safe-buffer: 5.2.1
       send: 0.19.0
-      serve-static: 1.16.0
+      serve-static: 1.16.2
       setprototypeof: 1.2.0
       statuses: 2.0.1
       type-is: 1.6.18
@@ -6747,10 +6740,10 @@ snapshots:
     dependencies:
       to-regex-range: 5.0.1
 
-  finalhandler@1.2.0:
+  finalhandler@1.3.1:
     dependencies:
       debug: 2.6.9
-      encodeurl: 1.0.2
+      encodeurl: 2.0.0
       escape-html: 1.0.3
       on-finished: 2.4.1
       parseurl: 1.3.3
@@ -6892,7 +6885,7 @@ snapshots:
 
   get-stream@5.2.0:
     dependencies:
-      pump: 3.0.0
+      pump: 3.0.2
 
   get-stream@6.0.1: {}
 
@@ -7731,13 +7724,13 @@ snapshots:
 
   next-tick@1.1.0: {}
 
-  nise@6.0.0:
+  nise@6.1.1:
     dependencies:
       '@sinonjs/commons': 3.0.1
-      '@sinonjs/fake-timers': 11.3.1
+      '@sinonjs/fake-timers': 13.0.2
       '@sinonjs/text-encoding': 0.7.3
       just-extend: 6.2.0
-      path-to-regexp: 6.2.2
+      path-to-regexp: 8.1.0
 
   node-abi@3.67.0:
     dependencies:
@@ -7931,7 +7924,7 @@ snapshots:
 
   path-to-regexp@0.1.10: {}
 
-  path-to-regexp@6.2.2: {}
+  path-to-regexp@8.1.0: {}
 
   path-type@4.0.0: {}
 
@@ -7970,7 +7963,7 @@ snapshots:
       mkdirp-classic: 0.5.3
       napi-build-utils: 1.0.2
       node-abi: 3.67.0
-      pump: 3.0.0
+      pump: 3.0.2
       rc: 1.2.8
       simple-get: 4.0.1
       tar-fs: 2.1.1
@@ -8021,7 +8014,7 @@ snapshots:
       end-of-stream: 1.4.4
       once: 1.4.0
 
-  pump@3.0.0:
+  pump@3.0.2:
     dependencies:
       end-of-stream: 1.4.4
       once: 1.4.0
@@ -8029,10 +8022,6 @@ snapshots:
   punycode@2.1.0: {}
 
   punycode@2.3.1: {}
-
-  qs@6.11.0:
-    dependencies:
-      side-channel: 1.0.6
 
   qs@6.13.0:
     dependencies:
@@ -8255,24 +8244,6 @@ snapshots:
 
   semver@7.6.3: {}
 
-  send@0.18.0:
-    dependencies:
-      debug: 2.6.9
-      depd: 2.0.0
-      destroy: 1.2.0
-      encodeurl: 1.0.2
-      escape-html: 1.0.3
-      etag: 1.8.1
-      fresh: 0.5.2
-      http-errors: 2.0.0
-      mime: 1.6.0
-      ms: 2.1.3
-      on-finished: 2.4.1
-      range-parser: 1.2.1
-      statuses: 2.0.1
-    transitivePeerDependencies:
-      - supports-color
-
   send@0.19.0:
     dependencies:
       debug: 2.6.9
@@ -8295,12 +8266,12 @@ snapshots:
     dependencies:
       randombytes: 2.1.0
 
-  serve-static@1.16.0:
+  serve-static@1.16.2:
     dependencies:
-      encodeurl: 1.0.2
+      encodeurl: 2.0.0
       escape-html: 1.0.3
       parseurl: 1.3.3
-      send: 0.18.0
+      send: 0.19.0
     transitivePeerDependencies:
       - supports-color
 
@@ -8308,7 +8279,7 @@ snapshots:
     dependencies:
       body-parser: 1.20.3
       cors: 2.8.5
-      express: 4.20.0
+      express: 4.21.0
       request: 2.88.2
       xhr: 2.6.0
     transitivePeerDependencies:
@@ -8376,18 +8347,18 @@ snapshots:
       once: 1.4.0
       simple-concat: 1.0.1
 
-  sinon-chai@3.7.0(chai@4.5.0)(sinon@18.0.0):
+  sinon-chai@3.7.0(chai@4.5.0)(sinon@18.0.1):
     dependencies:
       chai: 4.5.0
-      sinon: 18.0.0
+      sinon: 18.0.1
 
-  sinon@18.0.0:
+  sinon@18.0.1:
     dependencies:
       '@sinonjs/commons': 3.0.1
-      '@sinonjs/fake-timers': 11.3.1
-      '@sinonjs/samsam': 8.0.0
+      '@sinonjs/fake-timers': 11.2.2
+      '@sinonjs/samsam': 8.0.2
       diff: 5.2.0
-      nise: 6.0.0
+      nise: 6.1.1
       supports-color: 7.2.0
 
   sisteransi@1.0.5: {}
@@ -8624,14 +8595,14 @@ snapshots:
     dependencies:
       chownr: 1.1.4
       mkdirp-classic: 0.5.3
-      pump: 3.0.0
+      pump: 3.0.2
       tar-stream: 2.2.0
 
   tar-fs@2.1.1:
     dependencies:
       chownr: 1.1.4
       mkdirp-classic: 0.5.3
-      pump: 3.0.0
+      pump: 3.0.2
       tar-stream: 2.2.0
 
   tar-stream@1.6.2:
