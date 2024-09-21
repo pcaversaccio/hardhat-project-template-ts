@@ -907,6 +907,11 @@ const config: HardhatUserConfig = {
     apiUrl: "https://sourcify.dev/server",
     browserUrl: "https://repo.sourcify.dev",
   },
+  blockscout: {
+    // Disable Blockscout verification by default
+    // You can use the `customChains` property as in the `etherscan` configuration to add further chains if desired
+    enabled: false,
+  },
   etherscan: {
     // Add your own API key by getting an account at etherscan (https://etherscan.io), snowtrace (https://snowtrace.io) etc.
     // This is used for verification purposes when you want to `npx hardhat verify` your contract using Hardhat
