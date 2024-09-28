@@ -20,10 +20,9 @@ import "hardhat-gas-reporter";
 import "hardhat-abi-exporter";
 import "solidity-coverage";
 import "hardhat-contract-sizer";
-import * as tdly from "@tenderly/hardhat-tenderly";
-
-// Turning off the automatic Tenderly verification
-tdly.setup({ automaticVerifications: false });
+// Uncomment if you want to use the Hardhat Tenderly module
+// You must also uncomment the subsequent `tenderly` configuration in this file accordingly
+// import "@tenderly/hardhat-tenderly";
 
 const ethMainnetUrl = vars.get("ETH_MAINNET_URL", "https://rpc.ankr.com/eth");
 const accounts = [
@@ -860,6 +859,24 @@ const config: HardhatUserConfig = {
       accounts,
       ledgerAccounts,
     },
+    worldChainTestnet: {
+      chainId: 4801,
+      url: vars.get(
+        "WORLD_CHAIN_TESTNET_URL",
+        "https://worldchain-sepolia.g.alchemy.com/public",
+      ),
+      accounts,
+      ledgerAccounts,
+    },
+    worldChainMain: {
+      chainId: 480,
+      url: vars.get(
+        "WORLD_CHAIN_MAINNET_URL",
+        "https://worldchain-mainnet.g.alchemy.com/public",
+      ),
+      accounts,
+      ledgerAccounts,
+    },
   },
   xdeploy: {
     // Change this name to the name of your main contract
@@ -1079,6 +1096,9 @@ const config: HardhatUserConfig = {
       // For Oasis Sapphire testnet & mainnet
       sapphire: vars.get("SAPPHIRE_API_KEY", ""),
       sapphireTestnet: vars.get("SAPPHIRE_API_KEY", ""),
+      // For World Chain testnet & mainnet
+      worldChain: vars.get("WORLD_CHAIN_API_KEY", ""),
+      worldChainTestnet: vars.get("WORLD_CHAIN_API_KEY", ""),
     },
     customChains: [
       {
@@ -1719,15 +1739,31 @@ const config: HardhatUserConfig = {
           browserURL: "https://explorer.oasis.io/testnet/sapphire",
         },
       },
+      {
+        network: "worldChain",
+        chainId: 480,
+        urls: {
+          apiURL: "https://worldchain-mainnet.explorer.alchemy.com/api",
+          browserURL: "https://worldchain-mainnet.explorer.alchemy.com",
+        },
+      },
+      {
+        network: "worldChainTestnet",
+        chainId: 4801,
+        urls: {
+          apiURL: "https://worldchain-sepolia.explorer.alchemy.com/api",
+          browserURL: "https://worldchain-sepolia.explorer.alchemy.com",
+        },
+      },
     ],
   },
-  tenderly: {
-    username: "MyAwesomeUsername",
-    project: "super-awesome-project",
-    forkNetwork: "",
-    privateVerification: false,
-    deploymentsDir: "deployments_tenderly",
-  },
+  // tenderly: {
+  //   username: "MyAwesomeUsername",
+  //   project: "super-awesome-project",
+  //   forkNetwork: "",
+  //   privateVerification: false,
+  //   deploymentsDir: "deployments_tenderly",
+  // },
 };
 
 export default config;
