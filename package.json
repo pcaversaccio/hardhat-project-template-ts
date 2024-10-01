@@ -185,7 +185,7 @@
     "chai": "^4.5.0",
     "eslint": "^9.11.1",
     "eslint-config-prettier": "^9.1.0",
-    "ethers": "^6.13.2",
+    "ethers": "^6.13.3",
     "hardhat": "^2.22.12",
     "hardhat-abi-exporter": "^2.10.1",
     "hardhat-contract-sizer": "^2.10.0",
@@ -197,7 +197,7 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.6.2",
-    "typescript-eslint": "^8.7.0",
+    "typescript-eslint": "^8.8.0",
     "xdeployer": "^3.1.2",
     "zksync-ethers": "^6.13.0"
   }
