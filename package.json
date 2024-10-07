@@ -197,8 +197,8 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.6.2",
-    "typescript-eslint": "^8.8.0",
+    "typescript-eslint": "^8.8.1",
     "xdeployer": "^3.1.2",
-    "zksync-ethers": "^6.13.0"
+    "zksync-ethers": "^6.13.1"
   }
 }
