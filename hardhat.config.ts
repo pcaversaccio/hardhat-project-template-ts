@@ -901,6 +901,21 @@ const config: HardhatUserConfig = {
       accounts,
       ledgerAccounts,
     },
+    sxTestnet: {
+      chainId: 79479957,
+      url: vars.get(
+        "SX_TESTNET_URL",
+        "https://rpc.sx-rollup-testnet.t.raas.gelato.cloud",
+      ),
+      accounts,
+      ledgerAccounts,
+    },
+    sxMain: {
+      chainId: 4162,
+      url: vars.get("SX_MAINNET_URL", "https://rpc.sx-rollup.gelato.digital"),
+      accounts,
+      ledgerAccounts,
+    },
   },
   xdeploy: {
     // Change this name to the name of your main contract
@@ -1130,6 +1145,9 @@ const config: HardhatUserConfig = {
       // For XDC testnet & mainnet
       xdc: vars.get("XDC_API_KEY", ""),
       xdcTestnet: vars.get("XDC_API_KEY", ""),
+      // For SX testnet & mainnet
+      sx: vars.get("SX_API_KEY", ""),
+      sxTestnet: vars.get("SX_API_KEY", ""),
     },
     customChains: [
       {
@@ -1816,6 +1834,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-testnet.xdcscan.com/api",
           browserURL: "https://testnet.xdcscan.com",
+        },
+      },
+      {
+        network: "sx",
+        chainId: 4162,
+        urls: {
+          apiURL: "https://explorerl2.sx.technology/api",
+          browserURL: "https://explorerl2.sx.technology",
+        },
+      },
+      {
+        network: "sxTestnet",
+        chainId: 79479957,
+        urls: {
+          apiURL: "https://explorerl2.toronto.sx.technology/api",
+          browserURL: "https://explorerl2.toronto.sx.technology",
         },
       },
     ],
