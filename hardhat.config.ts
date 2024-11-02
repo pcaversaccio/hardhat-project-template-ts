@@ -456,7 +456,7 @@ const config: HardhatUserConfig = {
       zksync: true,
       verifyURL:
         "https://explorer.sepolia.era.zksync.dev/contract_verification",
-      browserURL: "https://sepolia.explorer.zksync.io",
+      browserVerifyURL: "https://sepolia.explorer.zksync.io",
       enableVerifyURL: true,
       accounts,
       ledgerAccounts,
@@ -468,7 +468,7 @@ const config: HardhatUserConfig = {
       zksync: true,
       verifyURL:
         "https://zksync2-mainnet-explorer.zksync.io/contract_verification",
-      browserURL: "https://explorer.zksync.io",
+      browserVerifyURL: "https://explorer.zksync.io",
       enableVerifyURL: true,
       accounts,
       ledgerAccounts,
