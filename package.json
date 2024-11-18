@@ -183,7 +183,7 @@
     "@nomicfoundation/hardhat-ignition-ethers": "^0.15.7",
     "@nomicfoundation/hardhat-ledger": "^1.0.3",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.12",
-    "@nomicfoundation/hardhat-verify": "^2.0.11",
+    "@nomicfoundation/hardhat-verify": "^2.0.12",
     "@nomicfoundation/ignition-core": "^0.15.7",
     "@openzeppelin/contracts": "^5.1.0",
     "@tenderly/hardhat-tenderly": "^2.4.0",
