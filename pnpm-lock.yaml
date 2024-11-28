@@ -13,40 +13,40 @@ importers:
         version: 9.15.0
       '@matterlabs/hardhat-zksync-deploy':
         specifier: ^1.6.0
-        version: 1.6.0(encoding@0.1.13)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(zksync-ethers@6.15.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)))
+        version: 1.6.0(encoding@0.1.13)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(zksync-ethers@6.15.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)))
       '@matterlabs/hardhat-zksync-ethers':
         specifier: 1.2.1
-        version: 1.2.1(bufferutil@4.0.8)(encoding@0.1.13)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)(zksync-ethers@6.15.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)))
+        version: 1.2.1(bufferutil@4.0.8)(encoding@0.1.13)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)(zksync-ethers@6.15.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)))
       '@matterlabs/hardhat-zksync-solc':
         specifier: ^1.2.5
-        version: 1.2.5(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+        version: 1.2.5(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       '@matterlabs/hardhat-zksync-verify':
         specifier: ^1.7.0
-        version: 1.7.0(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+        version: 1.7.0(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       '@nomicfoundation/hardhat-chai-matchers':
         specifier: ^2.0.8
-        version: 2.0.8(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(chai@4.5.0)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+        version: 2.0.8(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(chai@4.5.0)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       '@nomicfoundation/hardhat-ethers':
         specifier: ^3.0.8
-        version: 3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+        version: 3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       '@nomicfoundation/hardhat-foundry':
         specifier: ^1.1.3
-        version: 1.1.3(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+        version: 1.1.3(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       '@nomicfoundation/hardhat-ignition':
         specifier: ^0.15.8
-        version: 0.15.8(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
+        version: 0.15.8(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
       '@nomicfoundation/hardhat-ignition-ethers':
         specifier: ^0.15.8
-        version: 0.15.8(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(@nomicfoundation/hardhat-ignition@0.15.8(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10))(@nomicfoundation/ignition-core@0.15.8(bufferutil@4.0.8)(utf-8-validate@5.0.10))(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+        version: 0.15.8(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(@nomicfoundation/hardhat-ignition@0.15.8(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10))(@nomicfoundation/ignition-core@0.15.8(bufferutil@4.0.8)(utf-8-validate@5.0.10))(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       '@nomicfoundation/hardhat-ledger':
         specifier: ^1.0.3
-        version: 1.0.3(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
+        version: 1.0.3(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
       '@nomicfoundation/hardhat-network-helpers':
         specifier: ^1.0.12
-        version: 1.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+        version: 1.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       '@nomicfoundation/hardhat-verify':
         specifier: ^2.0.12
-        version: 2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+        version: 2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       '@nomicfoundation/ignition-core':
         specifier: ^0.15.8
         version: 0.15.8(bufferutil@4.0.8)(utf-8-validate@5.0.10)
@@ -55,16 +55,16 @@ importers:
         version: 5.1.0
       '@tenderly/hardhat-tenderly':
         specifier: ^2.5.1
-        version: 2.5.1(@types/node@22.10.0)(bufferutil@4.0.8)(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
+        version: 2.5.1(@types/node@22.10.1)(bufferutil@4.0.8)(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
       '@truffle/dashboard-hardhat-plugin':
         specifier: ^0.2.15
-        version: 0.2.15(bufferutil@4.0.8)(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
+        version: 0.2.15(bufferutil@4.0.8)(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
       '@typechain/ethers-v6':
         specifier: ^0.5.1
         version: 0.5.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(typechain@8.3.2(typescript@5.7.2))(typescript@5.7.2)
       '@typechain/hardhat':
         specifier: ^9.1.0
-        version: 9.1.0(@typechain/ethers-v6@0.5.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(typechain@8.3.2(typescript@5.7.2))(typescript@5.7.2))(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(typechain@8.3.2(typescript@5.7.2))
+        version: 9.1.0(@typechain/ethers-v6@0.5.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(typechain@8.3.2(typescript@5.7.2))(typescript@5.7.2))(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(typechain@8.3.2(typescript@5.7.2))
       '@types/chai':
         specifier: ^4.3.20
         version: 4.3.20
@@ -72,8 +72,8 @@ importers:
         specifier: ^10.0.10
         version: 10.0.10
       '@types/node':
-        specifier: ^22.10.0
-        version: 22.10.0
+        specifier: ^22.10.1
+        version: 22.10.1
       chai:
         specifier: ^4.5.0
         version: 4.5.0
@@ -88,31 +88,31 @@ importers:
         version: 6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       hardhat:
         specifier: ^2.22.16
-        version: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+        version: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       hardhat-abi-exporter:
         specifier: ^2.10.1
-        version: 2.10.1(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+        version: 2.10.1(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       hardhat-contract-sizer:
         specifier: ^2.10.0
-        version: 2.10.0(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+        version: 2.10.0(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       hardhat-gas-reporter:
         specifier: ^2.2.2
-        version: 2.2.2(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(typescript@5.7.2)(utf-8-validate@5.0.10)
+        version: 2.2.2(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(typescript@5.7.2)(utf-8-validate@5.0.10)
       prettier:
-        specifier: ^3.4.0
-        version: 3.4.0
+        specifier: ^3.4.1
+        version: 3.4.1
       prettier-plugin-solidity:
         specifier: ^1.4.1
-        version: 1.4.1(prettier@3.4.0)
+        version: 1.4.1(prettier@3.4.1)
       solhint:
         specifier: ^5.0.3
         version: 5.0.3(typescript@5.7.2)
       solidity-coverage:
         specifier: ^0.8.14
-        version: 0.8.14(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+        version: 0.8.14(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       ts-node:
         specifier: ^10.9.2
-        version: 10.9.2(@types/node@22.10.0)(typescript@5.7.2)
+        version: 10.9.2(@types/node@22.10.1)(typescript@5.7.2)
       typechain:
         specifier: ^8.3.2
         version: 8.3.2(typescript@5.7.2)
@@ -124,7 +124,7 @@ importers:
         version: 8.16.0(eslint@9.15.0)(typescript@5.7.2)
       xdeployer:
         specifier: ^3.1.6
-        version: 3.1.6(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+        version: 3.1.6(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       zksync-ethers:
         specifier: ^6.15.1
         version: 6.15.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))
@@ -926,8 +926,8 @@ packages:
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
 
-  '@types/node@22.10.0':
-    resolution: {integrity: sha512-XC70cRZVElFHfIUB40FgZOBbgJYFKKMa5nb9lxcwYstFG/Mi+/Y0bGS+rs6Dmhmkpq4pnNiLiuZAbc02YCOnmA==}
+  '@types/node@22.10.1':
+    resolution: {integrity: sha512-qKgsUwfHZV2WCWLAnVP1JqnpE6Im6h3Y0+fYgMTasNQ7V++CBX5OT1as0g0f+OyubbFqhf6XVNIsmN4IIhEgGQ==}
 
   '@types/node@22.7.5':
     resolution: {integrity: sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==}
@@ -1433,8 +1433,8 @@ packages:
     engines: {node: '>=4.0.0', npm: '>=3.0.0'}
     deprecated: This module has been superseded by the multiformats module
 
-  cipher-base@1.0.5:
-    resolution: {integrity: sha512-xq7ICKB4TMHUx7Tz1L9O2SGKOhYMOTR32oir45Bq28/AQTpHogKgHcoYFSdRbMtddl+ozNXfXY9jWcgYKmde0w==}
+  cipher-base@1.0.6:
+    resolution: {integrity: sha512-3Ek9H3X6pj5TgenXYtNWdaBon1tgYCaebd+XPg0keyjEbEfkD4KkmAxkQ/i1vYvxdcT5nscLBfq9VJRmCBcFSw==}
     engines: {node: '>= 0.10'}
 
   class-is@1.1.0:
@@ -3297,8 +3297,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  prettier@3.4.0:
-    resolution: {integrity: sha512-/OXNZcLyWkfo13ofOW5M7SLh+k5pnIs07owXK2teFpnfaOEcycnSy7HQxldaVX1ZP/7Q8oO1eDuQJNwbomQq5Q==}
+  prettier@3.4.1:
+    resolution: {integrity: sha512-G+YdqtITVZmOJje6QkXQWzl3fSfMxFwm1tjTyo9exhkmWSqC4Yhd1+lug++IlR2mvRVAxEDDWYkQdeSztajqgg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -3431,8 +3431,8 @@ packages:
   regenerator-runtime@0.14.1:
     resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
 
-  registry-auth-token@5.0.2:
-    resolution: {integrity: sha512-o/3ikDxtXaA59BmZuZrJZDJv8NMDGSj+6j6XaeBmHw8eY1i1qd9+6H+LjVvQXx3HN6aRCGa1cUdJ9RaJZUugnQ==}
+  registry-auth-token@5.0.3:
+    resolution: {integrity: sha512-1bpc9IyC+e+CNFRaWyn77tk4xGG4PPUyfakSmA6F6cvUDjrm58dfyJ3II+9yb10EDkHoy1LaPSmHaWLOH3m6HA==}
     engines: {node: '>=14'}
 
   registry-url@6.0.1:
@@ -4208,8 +4208,8 @@ packages:
   whatwg-url@5.0.0:
     resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
 
-  which-typed-array@1.1.15:
-    resolution: {integrity: sha512-oV0jmFtUky6CXfkqehVvBP/LSWJ2sy4vWMioiENyJLePrBO/yKyV9OyJySfAKosh+RYkIl5zJCNZ8/4JncrpdA==}
+  which-typed-array@1.1.16:
+    resolution: {integrity: sha512-g+N+GAWiRj66DngFwHvISJd+ITsyphZvD1vChfVg6cEdnzy53GzB3oy0fUNlvhz7H7+MiqhYr26qxQShCpKTTQ==}
     engines: {node: '>= 0.4'}
 
   which@1.3.1:
@@ -4863,15 +4863,15 @@ snapshots:
       bignumber.js: 9.1.2
       rxjs: 7.8.1
 
-  '@matterlabs/hardhat-zksync-deploy@1.6.0(encoding@0.1.13)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(zksync-ethers@6.15.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)))':
+  '@matterlabs/hardhat-zksync-deploy@1.6.0(encoding@0.1.13)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(zksync-ethers@6.15.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)))':
     dependencies:
-      '@matterlabs/hardhat-zksync-solc': 1.2.5(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+      '@matterlabs/hardhat-zksync-solc': 1.2.5(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       chai: 4.5.0
       chalk: 4.1.2
       ethers: 6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       fs-extra: 11.2.0
       glob: 10.4.5
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       lodash: 4.17.21
       sinon: 18.0.1
       sinon-chai: 3.7.0(chai@4.5.0)(sinon@18.0.1)
@@ -4881,15 +4881,15 @@ snapshots:
       - encoding
       - supports-color
 
-  '@matterlabs/hardhat-zksync-ethers@1.2.1(bufferutil@4.0.8)(encoding@0.1.13)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)(zksync-ethers@6.15.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)))':
+  '@matterlabs/hardhat-zksync-ethers@1.2.1(bufferutil@4.0.8)(encoding@0.1.13)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)(zksync-ethers@6.15.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)))':
     dependencies:
-      '@matterlabs/hardhat-zksync-deploy': 1.6.0(encoding@0.1.13)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(zksync-ethers@6.15.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)))
-      '@matterlabs/hardhat-zksync-solc': 1.2.5(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
-      '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+      '@matterlabs/hardhat-zksync-deploy': 1.6.0(encoding@0.1.13)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(zksync-ethers@6.15.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)))
+      '@matterlabs/hardhat-zksync-solc': 1.2.5(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+      '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       chai: 4.5.0
       chalk: 4.1.2
       ethers: 6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       zksync-ethers: 6.15.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))
     transitivePeerDependencies:
       - bufferutil
@@ -4900,7 +4900,7 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@matterlabs/hardhat-zksync-solc@1.2.5(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
+  '@matterlabs/hardhat-zksync-solc@1.2.5(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
     dependencies:
       '@nomiclabs/hardhat-docker': 2.0.2(encoding@0.1.13)
       chai: 4.5.0
@@ -4908,7 +4908,7 @@ snapshots:
       debug: 4.3.7(supports-color@8.1.1)
       dockerode: 4.0.2
       fs-extra: 11.2.0
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       proper-lockfile: 4.1.2
       semver: 7.6.3
       sinon: 18.0.1
@@ -4918,18 +4918,18 @@ snapshots:
       - encoding
       - supports-color
 
-  '@matterlabs/hardhat-zksync-verify@1.7.0(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
+  '@matterlabs/hardhat-zksync-verify@1.7.0(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
     dependencies:
       '@ethersproject/abi': 5.7.0
       '@ethersproject/address': 5.7.0
-      '@matterlabs/hardhat-zksync-solc': 1.2.5(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
-      '@nomicfoundation/hardhat-verify': 2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+      '@matterlabs/hardhat-zksync-solc': 1.2.5(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+      '@nomicfoundation/hardhat-verify': 2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       axios: 1.7.8(debug@4.3.7)
       cbor: 9.0.2
       chai: 4.5.0
       chalk: 4.1.2
       debug: 4.3.7(supports-color@8.1.1)
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       semver: 7.6.3
       sinon: 18.0.1
       sinon-chai: 3.7.0(chai@4.5.0)(sinon@18.0.1)
@@ -5019,48 +5019,48 @@ snapshots:
       '@nomicfoundation/ethereumjs-rlp': 5.0.4
       ethereum-cryptography: 0.1.3
 
-  '@nomicfoundation/hardhat-chai-matchers@2.0.8(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(chai@4.5.0)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
+  '@nomicfoundation/hardhat-chai-matchers@2.0.8(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(chai@4.5.0)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
     dependencies:
-      '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+      '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       '@types/chai-as-promised': 7.1.8
       chai: 4.5.0
       chai-as-promised: 7.1.2(chai@4.5.0)
       deep-eql: 4.1.4
       ethers: 6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       ordinal: 1.0.3
 
-  '@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
+  '@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
     dependencies:
       debug: 4.3.7(supports-color@8.1.1)
       ethers: 6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       lodash.isequal: 4.5.0
     transitivePeerDependencies:
       - supports-color
 
-  '@nomicfoundation/hardhat-foundry@1.1.3(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
+  '@nomicfoundation/hardhat-foundry@1.1.3(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
     dependencies:
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       picocolors: 1.1.1
 
-  '@nomicfoundation/hardhat-ignition-ethers@0.15.8(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(@nomicfoundation/hardhat-ignition@0.15.8(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10))(@nomicfoundation/ignition-core@0.15.8(bufferutil@4.0.8)(utf-8-validate@5.0.10))(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
+  '@nomicfoundation/hardhat-ignition-ethers@0.15.8(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(@nomicfoundation/hardhat-ignition@0.15.8(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10))(@nomicfoundation/ignition-core@0.15.8(bufferutil@4.0.8)(utf-8-validate@5.0.10))(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
     dependencies:
-      '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
-      '@nomicfoundation/hardhat-ignition': 0.15.8(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
+      '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+      '@nomicfoundation/hardhat-ignition': 0.15.8(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
       '@nomicfoundation/ignition-core': 0.15.8(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       ethers: 6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
 
-  '@nomicfoundation/hardhat-ignition@0.15.8(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
+  '@nomicfoundation/hardhat-ignition@0.15.8(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
     dependencies:
-      '@nomicfoundation/hardhat-verify': 2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+      '@nomicfoundation/hardhat-verify': 2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       '@nomicfoundation/ignition-core': 0.15.8(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       '@nomicfoundation/ignition-ui': 0.15.8
       chalk: 4.1.2
       debug: 4.3.7(supports-color@8.1.1)
       fs-extra: 10.1.0
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       json5: 2.2.3
       prompts: 2.4.2
     transitivePeerDependencies:
@@ -5068,7 +5068,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@nomicfoundation/hardhat-ledger@1.0.3(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
+  '@nomicfoundation/hardhat-ledger@1.0.3(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
     dependencies:
       '@ledgerhq/errors': 6.19.1
       '@ledgerhq/hw-app-eth': 6.33.6(debug@4.3.7)
@@ -5080,7 +5080,7 @@ snapshots:
       env-paths: 2.2.1
       ethers: 6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       fs-extra: 7.0.1
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       io-ts: 1.10.4
       ora: 5.4.1
     transitivePeerDependencies:
@@ -5089,18 +5089,18 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@nomicfoundation/hardhat-network-helpers@1.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
+  '@nomicfoundation/hardhat-network-helpers@1.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
     dependencies:
       ethereumjs-util: 7.1.5
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
 
-  '@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
+  '@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
     dependencies:
       '@ethersproject/abi': 5.7.0
       '@ethersproject/address': 5.7.0
       cbor: 8.1.0
       debug: 4.3.7(supports-color@8.1.1)
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       lodash.clonedeep: 4.5.0
       picocolors: 1.1.1
       semver: 6.3.1
@@ -5214,9 +5214,9 @@ snapshots:
       - debug
       - encoding
 
-  '@openzeppelin/hardhat-upgrades@3.6.0(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(encoding@0.1.13)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
+  '@openzeppelin/hardhat-upgrades@3.6.0(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(encoding@0.1.13)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))':
     dependencies:
-      '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+      '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       '@openzeppelin/defender-sdk-base-client': 1.15.2(encoding@0.1.13)
       '@openzeppelin/defender-sdk-deploy-client': 1.15.2(debug@4.3.7)(encoding@0.1.13)
       '@openzeppelin/defender-sdk-network-client': 1.15.2(debug@4.3.7)(encoding@0.1.13)
@@ -5225,11 +5225,11 @@ snapshots:
       debug: 4.3.7(supports-color@8.1.1)
       ethereumjs-util: 7.1.5
       ethers: 6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       proper-lockfile: 4.1.2
       undici: 6.21.0
     optionalDependencies:
-      '@nomicfoundation/hardhat-verify': 2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+      '@nomicfoundation/hardhat-verify': 2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -5388,7 +5388,7 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@tenderly/api-client@1.1.0(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)':
+  '@tenderly/api-client@1.1.0(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)':
     dependencies:
       axios: 0.27.2
       cli-table3: 0.6.5
@@ -5399,22 +5399,22 @@ snapshots:
       prompts: 2.4.2
       tslog: 4.9.3
     optionalDependencies:
-      ts-node: 10.9.2(@types/node@22.10.0)(typescript@5.7.2)
+      ts-node: 10.9.2(@types/node@22.10.1)(typescript@5.7.2)
       typescript: 5.7.2
     transitivePeerDependencies:
       - debug
 
-  '@tenderly/hardhat-integration@1.1.0(@types/node@22.10.0)(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
+  '@tenderly/hardhat-integration@1.1.0(@types/node@22.10.1)(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
     dependencies:
-      '@tenderly/api-client': 1.1.0(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)
+      '@tenderly/api-client': 1.1.0(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)
       axios: 1.7.8(debug@4.3.7)
       dotenv: 16.4.5
       fs-extra: 10.1.0
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       hardhat-deploy: 0.11.45(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       npm-registry-fetch: 17.1.0
       semver: 7.6.3
-      ts-node: 10.9.2(@types/node@22.10.0)(typescript@5.7.2)
+      ts-node: 10.9.2(@types/node@22.10.1)(typescript@5.7.2)
       tslog: 4.9.3
       typescript: 5.7.2
     transitivePeerDependencies:
@@ -5426,15 +5426,15 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@tenderly/hardhat-tenderly@2.5.1(@types/node@22.10.0)(bufferutil@4.0.8)(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
+  '@tenderly/hardhat-tenderly@2.5.1(@types/node@22.10.1)(bufferutil@4.0.8)(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
     dependencies:
       '@ethersproject/bignumber': 5.7.0
-      '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
-      '@nomicfoundation/hardhat-ignition': 0.15.8(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
-      '@nomicfoundation/hardhat-verify': 2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
-      '@openzeppelin/hardhat-upgrades': 3.6.0(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(encoding@0.1.13)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+      '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+      '@nomicfoundation/hardhat-ignition': 0.15.8(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
+      '@nomicfoundation/hardhat-verify': 2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+      '@openzeppelin/hardhat-upgrades': 3.6.0(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(encoding@0.1.13)(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       '@openzeppelin/upgrades-core': 1.41.0
-      '@tenderly/hardhat-integration': 1.1.0(@types/node@22.10.0)(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
+      '@tenderly/hardhat-integration': 1.1.0(@types/node@22.10.1)(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
       dotenv: 16.4.5
       ethers: 6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)
     transitivePeerDependencies:
@@ -5500,12 +5500,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@truffle/dashboard-hardhat-plugin@0.2.15(bufferutil@4.0.8)(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
+  '@truffle/dashboard-hardhat-plugin@0.2.15(bufferutil@4.0.8)(encoding@0.1.13)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
     dependencies:
       '@truffle/config': 1.3.61(bufferutil@4.0.8)(encoding@0.1.13)(utf-8-validate@5.0.10)
       '@truffle/dashboard-message-bus-client': 0.1.12(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       '@truffle/from-hardhat': 0.2.20(bufferutil@4.0.8)(encoding@0.1.13)(utf-8-validate@5.0.10)
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -5626,27 +5626,27 @@ snapshots:
       typechain: 8.3.2(typescript@5.7.2)
       typescript: 5.7.2
 
-  '@typechain/hardhat@9.1.0(@typechain/ethers-v6@0.5.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(typechain@8.3.2(typescript@5.7.2))(typescript@5.7.2))(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(typechain@8.3.2(typescript@5.7.2))':
+  '@typechain/hardhat@9.1.0(@typechain/ethers-v6@0.5.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(typechain@8.3.2(typescript@5.7.2))(typescript@5.7.2))(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(typechain@8.3.2(typescript@5.7.2))':
     dependencies:
       '@typechain/ethers-v6': 0.5.1(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(typechain@8.3.2(typescript@5.7.2))(typescript@5.7.2)
       ethers: 6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       fs-extra: 9.1.0
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       typechain: 8.3.2(typescript@5.7.2)
 
   '@types/bn.js@4.11.6':
     dependencies:
-      '@types/node': 22.10.0
+      '@types/node': 22.10.1
 
   '@types/bn.js@5.1.6':
     dependencies:
-      '@types/node': 22.10.0
+      '@types/node': 22.10.1
 
   '@types/cacheable-request@6.0.3':
     dependencies:
       '@types/http-cache-semantics': 4.0.4
       '@types/keyv': 3.1.4
-      '@types/node': 22.10.0
+      '@types/node': 22.10.1
       '@types/responselike': 1.0.3
 
   '@types/chai-as-promised@7.1.8':
@@ -5660,7 +5660,7 @@ snapshots:
   '@types/glob@7.2.0':
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 22.10.0
+      '@types/node': 22.10.1
 
   '@types/http-cache-semantics@4.0.4': {}
 
@@ -5668,7 +5668,7 @@ snapshots:
 
   '@types/keyv@3.1.4':
     dependencies:
-      '@types/node': 22.10.0
+      '@types/node': 22.10.1
 
   '@types/lru-cache@5.1.1': {}
 
@@ -5678,7 +5678,7 @@ snapshots:
 
   '@types/node@12.20.55': {}
 
-  '@types/node@22.10.0':
+  '@types/node@22.10.1':
     dependencies:
       undici-types: 6.20.0
 
@@ -5688,7 +5688,7 @@ snapshots:
 
   '@types/pbkdf2@3.1.2':
     dependencies:
-      '@types/node': 22.10.0
+      '@types/node': 22.10.1
 
   '@types/prettier@2.7.3': {}
 
@@ -5696,11 +5696,11 @@ snapshots:
 
   '@types/responselike@1.0.3':
     dependencies:
-      '@types/node': 22.10.0
+      '@types/node': 22.10.1
 
   '@types/secp256k1@4.0.6':
     dependencies:
-      '@types/node': 22.10.0
+      '@types/node': 22.10.1
 
   '@types/w3c-web-usb@1.0.10': {}
 
@@ -6084,7 +6084,7 @@ snapshots:
   browserify-aes@1.2.0:
     dependencies:
       buffer-xor: 1.0.3
-      cipher-base: 1.0.5
+      cipher-base: 1.0.6
       create-hash: 1.2.0
       evp_bytestokey: 1.0.3
       inherits: 2.0.4
@@ -6260,7 +6260,7 @@ snapshots:
       multicodec: 1.0.4
       multihashes: 0.4.21
 
-  cipher-base@1.0.5:
+  cipher-base@1.0.6:
     dependencies:
       inherits: 2.0.4
       safe-buffer: 5.2.1
@@ -6412,7 +6412,7 @@ snapshots:
 
   create-hash@1.2.0:
     dependencies:
-      cipher-base: 1.0.5
+      cipher-base: 1.0.6
       inherits: 2.0.4
       md5.js: 1.3.5
       ripemd160: 2.0.2
@@ -6420,7 +6420,7 @@ snapshots:
 
   create-hmac@1.1.7:
     dependencies:
-      cipher-base: 1.0.5
+      cipher-base: 1.0.6
       create-hash: 1.2.0
       inherits: 2.0.4
       ripemd160: 2.0.2
@@ -7343,17 +7343,17 @@ snapshots:
       ajv: 6.12.6
       har-schema: 2.0.0
 
-  hardhat-abi-exporter@2.10.1(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)):
+  hardhat-abi-exporter@2.10.1(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)):
     dependencies:
       '@ethersproject/abi': 5.7.0
       delete-empty: 3.0.0
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
 
-  hardhat-contract-sizer@2.10.0(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)):
+  hardhat-contract-sizer@2.10.0(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)):
     dependencies:
       chalk: 4.1.2
       cli-table3: 0.6.5
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       strip-ansi: 6.0.1
 
   hardhat-deploy@0.11.45(bufferutil@4.0.8)(utf-8-validate@5.0.10):
@@ -7387,7 +7387,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  hardhat-gas-reporter@2.2.2(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(typescript@5.7.2)(utf-8-validate@5.0.10):
+  hardhat-gas-reporter@2.2.2(bufferutil@4.0.8)(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))(typescript@5.7.2)(utf-8-validate@5.0.10):
     dependencies:
       '@ethersproject/abi': 5.7.0
       '@ethersproject/bytes': 5.7.0
@@ -7399,7 +7399,7 @@ snapshots:
       cli-table3: 0.6.5
       ethereum-cryptography: 2.2.1
       glob: 10.4.5
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       jsonschema: 1.4.1
       lodash: 4.17.21
       markdown-table: 2.0.0
@@ -7412,7 +7412,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10):
+  hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10):
     dependencies:
       '@ethersproject/abi': 5.7.0
       '@metamask/eth-sig-util': 4.0.1
@@ -7459,7 +7459,7 @@ snapshots:
       uuid: 8.3.2
       ws: 7.5.10(bufferutil@4.0.8)(utf-8-validate@5.0.10)
     optionalDependencies:
-      ts-node: 10.9.2(@types/node@22.10.0)(typescript@5.7.2)
+      ts-node: 10.9.2(@types/node@22.10.1)(typescript@5.7.2)
       typescript: 5.7.2
     transitivePeerDependencies:
       - bufferutil
@@ -7675,7 +7675,7 @@ snapshots:
 
   is-typed-array@1.1.13:
     dependencies:
-      which-typed-array: 1.1.15
+      which-typed-array: 1.1.16
 
   is-typedarray@1.0.0: {}
 
@@ -8282,7 +8282,7 @@ snapshots:
   package-json@8.1.1:
     dependencies:
       got: 12.6.1
-      registry-auth-token: 5.0.2
+      registry-auth-token: 5.0.3
       registry-url: 6.0.1
       semver: 7.6.3
 
@@ -8373,15 +8373,15 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-solidity@1.4.1(prettier@3.4.0):
+  prettier-plugin-solidity@1.4.1(prettier@3.4.1):
     dependencies:
       '@solidity-parser/parser': 0.18.0
-      prettier: 3.4.0
+      prettier: 3.4.1
       semver: 7.6.3
 
   prettier@2.8.8: {}
 
-  prettier@3.4.0: {}
+  prettier@3.4.1: {}
 
   proc-log@4.2.0: {}
 
@@ -8523,7 +8523,7 @@ snapshots:
 
   regenerator-runtime@0.14.1: {}
 
-  registry-auth-token@5.0.2:
+  registry-auth-token@5.0.3:
     dependencies:
       '@pnpm/npm-conf': 2.3.1
 
@@ -8852,7 +8852,7 @@ snapshots:
 
   solidity-ast@0.4.59: {}
 
-  solidity-coverage@0.8.14(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)):
+  solidity-coverage@0.8.14(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)):
     dependencies:
       '@ethersproject/abi': 5.7.0
       '@solidity-parser/parser': 0.19.0
@@ -8863,7 +8863,7 @@ snapshots:
       ghost-testrpc: 0.0.2
       global-modules: 2.0.0
       globby: 10.0.2
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       jsonschema: 1.4.1
       lodash: 4.17.21
       mocha: 10.8.2
@@ -9134,14 +9134,14 @@ snapshots:
       '@ts-morph/common': 0.23.0
       code-block-writer: 13.0.3
 
-  ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2):
+  ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 22.10.0
+      '@types/node': 22.10.1
       acorn: 8.14.0
       acorn-walk: 8.3.4
       arg: 4.1.3
@@ -9293,7 +9293,7 @@ snapshots:
       is-arguments: 1.1.1
       is-generator-function: 1.0.10
       is-typed-array: 1.1.13
-      which-typed-array: 1.1.15
+      which-typed-array: 1.1.16
 
   utils-merge@1.0.1: {}
 
@@ -9575,7 +9575,7 @@ snapshots:
       tr46: 0.0.3
       webidl-conversions: 3.0.1
 
-  which-typed-array@1.1.15:
+  which-typed-array@1.1.16:
     dependencies:
       available-typed-arrays: 1.0.7
       call-bind: 1.0.7
@@ -9649,11 +9649,11 @@ snapshots:
       bufferutil: 4.0.8
       utf-8-validate: 5.0.10
 
-  xdeployer@3.1.6(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)):
+  xdeployer@3.1.6(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)))(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)):
     dependencies:
-      '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
+      '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10))
       ethers: 6.13.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)
-      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
+      hardhat: 2.22.16(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
 
   xhr-request-promise@0.1.3:
     dependencies:
