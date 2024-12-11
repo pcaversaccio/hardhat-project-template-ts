@@ -165,6 +165,8 @@
     "deploy:superseedtestnet": "npx hardhat run --network superseedTestnet scripts/deploy.ts",
     "deploy:superseedmain": "npx hardhat run --network superseedMain scripts/deploy.ts",
     "deploy:storytestnet": "npx hardhat run --network storyTestnet scripts/deploy.ts",
+    "deploy:sonictestnet": "npx hardhat run --network sonicTestnet scripts/deploy.ts",
+    "deploy:sonicmain": "npx hardhat run --network sonicMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "npx solhint \"contracts/**/*.sol\"",
@@ -194,7 +196,7 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.20",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^22.10.1",
+    "@types/node": "^22.10.2",
     "chai": "^4.5.0",
     "eslint": "^9.16.0",
     "eslint-config-prettier": "^9.1.0",
@@ -210,8 +212,8 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.17.0",
-    "xdeployer": "^3.1.7",
+    "typescript-eslint": "^8.18.0",
+    "xdeployer": "^3.1.8",
     "zksync-ethers": "^6.15.3"
   }
 }
