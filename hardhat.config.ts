@@ -887,6 +887,12 @@ const config: HardhatUserConfig = {
       accounts,
       ledgerAccounts,
     },
+    plumeMain: {
+      chainId: 98865,
+      url: vars.get("PLUME_MAINNET_URL", "https://rpc.plumenetwork.xyz"),
+      accounts,
+      ledgerAccounts,
+    },
     unichainTestnet: {
       chainId: 1301,
       url: vars.get("UNICHAIN_TESTNET_URL", "	https://sepolia.unichain.org"),
@@ -1196,7 +1202,8 @@ const config: HardhatUserConfig = {
       // For World Chain testnet & mainnet
       worldChain: vars.get("WORLD_CHAIN_API_KEY", ""),
       worldChainTestnet: vars.get("WORLD_CHAIN_API_KEY", ""),
-      // For Plume testnet
+      // For Plume testnet & mainnet
+      plume: vars.get("PLUME_API_KEY", ""),
       plumeTestnet: vars.get("PLUME_API_KEY", ""),
       // For Unichain testnet
       unichainTestnet: vars.get("UNICHAIN_API_KEY", ""),
@@ -1877,6 +1884,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://worldchain-sepolia.explorer.alchemy.com/api",
           browserURL: "https://worldchain-sepolia.explorer.alchemy.com",
+        },
+      },
+      {
+        network: "plume",
+        chainId: 98865,
+        urls: {
+          apiURL: "https://explorer.plumenetwork.xyz/api",
+          browserURL: "https://explorer.plumenetwork.xyz",
         },
       },
       {
