@@ -54,8 +54,8 @@ importers:
         specifier: ^5.2.0
         version: 5.2.0
       '@tenderly/hardhat-tenderly':
-        specifier: ^2.5.1
-        version: 2.5.1(@types/node@22.10.5)(bufferutil@4.0.9)(encoding@0.1.13)(hardhat@2.22.17(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
+        specifier: ^2.5.2
+        version: 2.5.2(@types/node@22.10.5)(bufferutil@4.0.9)(encoding@0.1.13)(hardhat@2.22.17(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
       '@truffle/dashboard-hardhat-plugin':
         specifier: ^0.2.15
         version: 0.2.15(bufferutil@4.0.9)(encoding@0.1.13)(hardhat@2.22.17(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
@@ -805,8 +805,8 @@ packages:
     peerDependencies:
       hardhat: ^2.22.6
 
-  '@tenderly/hardhat-tenderly@2.5.1':
-    resolution: {integrity: sha512-RdDl4gY5W2ZYistPkIIdHZRe3vHqs6JOgqQjqmI2OaE9y5FRlPeVUHRLAqoroVU+PkQhFPrgjBv5er/pJSonLA==}
+  '@tenderly/hardhat-tenderly@2.5.2':
+    resolution: {integrity: sha512-JCG1UkFBRZE2fL8g4jfbKUsju7gK3Dg6CxksJO9Db9ckM1EkL4wCY9G5KTLwh/UL0cT04J8ZK1RmaZ6hG8wfKA==}
 
   '@truffle/compile-common@0.9.8':
     resolution: {integrity: sha512-DTpiyo32t/YhLI1spn84D3MHYHrnoVqO+Gp7ZHrYNwDs86mAxtNiH5lsVzSb8cPgiqlvNsRCU9nm9R0YmKMTBQ==}
@@ -5550,7 +5550,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@tenderly/hardhat-tenderly@2.5.1(@types/node@22.10.5)(bufferutil@4.0.9)(encoding@0.1.13)(hardhat@2.22.17(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
+  '@tenderly/hardhat-tenderly@2.5.2(@types/node@22.10.5)(bufferutil@4.0.9)(encoding@0.1.13)(hardhat@2.22.17(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
     dependencies:
       '@ethersproject/bignumber': 5.7.0
       '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.17(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))
