@@ -1064,6 +1064,24 @@ const config: HardhatUserConfig = {
       accounts,
       ledgerAccounts,
     },
+    swellTestnet: {
+      chainId: 1924,
+      url: vars.get(
+        "SWELL_TESTNET_URL",
+        "https://swell-testnet.alt.technology",
+      ),
+      accounts,
+      ledgerAccounts,
+    },
+    swellMain: {
+      chainId: 1923,
+      url: vars.get(
+        "SWELL_MAINNET_URL",
+        "https://swell-mainnet.alt.technology",
+      ),
+      accounts,
+      ledgerAccounts,
+    },
   },
   xdeploy: {
     // Change this name to the name of your main contract
@@ -1332,6 +1350,9 @@ const config: HardhatUserConfig = {
       // For Soneium testnet & mainnet
       soneium: vars.get("SONEIUM_API_KEY", ""),
       soneiumTestnet: vars.get("SONEIUM_API_KEY", ""),
+      // For Swellchain testnet & mainnet
+      swell: vars.get("SWELL_API_KEY", ""),
+      swellTestnet: vars.get("SWELL_API_KEY", ""),
     },
     customChains: [
       {
@@ -2226,6 +2247,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://soneium-minato.blockscout.com/api",
           browserURL: "https://soneium-minato.blockscout.com",
+        },
+      },
+      {
+        network: "swell",
+        chainId: 1923,
+        urls: {
+          apiURL: "https://explorer.swellnetwork.io/api",
+          browserURL: "https://explorer.swellnetwork.io",
+        },
+      },
+      {
+        network: "swellTestnet",
+        chainId: 1924,
+        urls: {
+          apiURL: "https://swell-testnet-explorer.alt.technology/api",
+          browserURL: "https://swell-testnet-explorer.alt.technology",
         },
       },
     ],
