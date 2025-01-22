@@ -479,8 +479,8 @@ packages:
   '@ledgerhq/devices@8.4.4':
     resolution: {integrity: sha512-sz/ryhe/R687RHtevIE9RlKaV8kkKykUV4k29e7GAVwzHX1gqG+O75cu1NCJUHLbp3eABV5FdvZejqRUlLis9A==}
 
-  '@ledgerhq/domain-service@1.2.15':
-    resolution: {integrity: sha512-878CF79/vau/6OLrlBAG9O+aefyue9joW67GTTO9Kd1tbMb2RHyyLif2sImJp+hpuRXzMyEuJ6Prb4AjPQvpJA==}
+  '@ledgerhq/domain-service@1.2.16':
+    resolution: {integrity: sha512-ppsPEytiHSRgRDJGEfdK3j57tocElhZ9sf5W/6QQ8rXWTJtfoUyL/iOu5PZwgnf6BHUzx/i8dwhLNQegLZ+8PQ==}
 
   '@ledgerhq/errors@6.19.1':
     resolution: {integrity: sha512-75yK7Nnit/Gp7gdrJAz0ipp31CCgncRp+evWt6QawQEtQKYEDfGo10QywgrrBBixeRxwnMy1DP6g2oCWRf1bjw==}
@@ -503,8 +503,8 @@ packages:
   '@ledgerhq/logs@6.12.0':
     resolution: {integrity: sha512-ExDoj1QV5eC6TEbMdLUMMk9cfvNKhhv5gXol4SmULRVCx/3iyCPhJ74nsb3S0Vb+/f+XujBEj3vQn5+cwS0fNA==}
 
-  '@ledgerhq/types-live@6.56.0':
-    resolution: {integrity: sha512-7YgNvTr1J3zgqHBDtBKzrFgGe3cHh3WLsI4EkrckRDcrUDbKd/sr+qku7jwlqsgrfMLebGeyC0CKdK/ut2WYjQ==}
+  '@ledgerhq/types-live@6.57.0':
+    resolution: {integrity: sha512-rgbWDSak3bgy7F4F6zjZzgNLoi4sQLLlJ4zHMtcVge3qVC6mirYkAetekfgqPif8CVbCXMQjX2qxo9u4CTstoQ==}
 
   '@matterlabs/hardhat-zksync-deploy@1.6.0':
     resolution: {integrity: sha512-yaOfhw7hmLOriBc+TnHrFOVKyi79XFqJN5D1Z4T6CadaSNLeq7pgBV81kkgVzaCJVoA/La2RGxPowsG7riZGbw==}
@@ -3331,8 +3331,8 @@ packages:
   nano-json-stream-parser@0.1.2:
     resolution: {integrity: sha512-9MqxMH/BSJC7dnLsEMPyfN5Dvoo49IsPFYMcHw3Bcfc2kN0lpHRBSzlMSVx4HGyJ7s9B31CyBTVehWJoQ8Ctew==}
 
-  napi-build-utils@1.0.2:
-    resolution: {integrity: sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg==}
+  napi-build-utils@2.0.0:
+    resolution: {integrity: sha512-GEbrYkbfF7MoNaoh2iGG84Mnf/WZfB0GdGEsM8wz7Expx/LlWf5U8t9nvJKXSp3qr5IsEbK04cBGhol/KwOsWA==}
 
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
@@ -3629,8 +3629,8 @@ packages:
     resolution: {integrity: sha512-d7Uw+eZoloe0EHDIYoe+bQ5WXnGMOpmiZFTuMWCwpjzzkL2nTjcKiAk4hh8TjnGye2TwWOk3UXucZ+3rbmBa8Q==}
     engines: {node: '>= 0.4'}
 
-  prebuild-install@7.1.2:
-    resolution: {integrity: sha512-UnNke3IQb6sgarcZIDU3gbMeTp/9SSU1DAIkil7PrqG1vZlBtY5msYccSKSHDqa3hNg436IXK+SNImReuA1wEQ==}
+  prebuild-install@7.1.3:
+    resolution: {integrity: sha512-8Mf2cbV7x1cXPUILADGI3wuhfqWvtiLA1iclTDbFRZkgRQS0NqsPZphna9V+HyTEadheuPmjaJMsbzKQFOzLug==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -5546,11 +5546,11 @@ snapshots:
       rxjs: 7.8.1
       semver: 7.6.3
 
-  '@ledgerhq/domain-service@1.2.15(debug@4.4.0)':
+  '@ledgerhq/domain-service@1.2.16(debug@4.4.0)':
     dependencies:
       '@ledgerhq/errors': 6.19.1
       '@ledgerhq/logs': 6.12.0
-      '@ledgerhq/types-live': 6.56.0
+      '@ledgerhq/types-live': 6.57.0
       axios: 1.7.7(debug@4.4.0)
       eip55: 2.1.1
       react: 18.3.1
@@ -5565,7 +5565,7 @@ snapshots:
       '@ethersproject/abi': 5.7.0
       '@ethersproject/rlp': 5.7.0
       '@ledgerhq/cryptoassets': 9.13.0
-      '@ledgerhq/domain-service': 1.2.15(debug@4.4.0)
+      '@ledgerhq/domain-service': 1.2.16(debug@4.4.0)
       '@ledgerhq/errors': 6.19.1
       '@ledgerhq/hw-transport': 6.31.4
       '@ledgerhq/hw-transport-mocker': 6.29.4
@@ -5610,7 +5610,7 @@ snapshots:
 
   '@ledgerhq/logs@6.12.0': {}
 
-  '@ledgerhq/types-live@6.56.0':
+  '@ledgerhq/types-live@6.57.0':
     dependencies:
       bignumber.js: 9.1.2
       rxjs: 7.8.1
@@ -9200,7 +9200,7 @@ snapshots:
 
   nano-json-stream-parser@0.1.2: {}
 
-  napi-build-utils@1.0.2: {}
+  napi-build-utils@2.0.0: {}
 
   natural-compare@1.4.0: {}
 
@@ -9258,7 +9258,7 @@ snapshots:
     dependencies:
       bindings: 1.5.0
       node-addon-api: 3.2.1
-      prebuild-install: 7.1.2
+      prebuild-install: 7.1.3
 
   nofilter@3.1.0: {}
 
@@ -9476,14 +9476,14 @@ snapshots:
 
   possible-typed-array-names@1.0.0: {}
 
-  prebuild-install@7.1.2:
+  prebuild-install@7.1.3:
     dependencies:
       detect-libc: 2.0.3
       expand-template: 2.0.3
       github-from-package: 0.0.0
       minimist: 1.2.8
       mkdirp-classic: 0.5.3
-      napi-build-utils: 1.0.2
+      napi-build-utils: 2.0.0
       node-abi: 3.73.0
       pump: 3.0.2
       rc: 1.2.8
