@@ -233,5 +233,22 @@
     "typescript-eslint": "^8.23.0",
     "xdeployer": "^3.1.10",
     "zksync-ethers": "^6.16.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "bufferutil",
+      "cpu-features",
+      "es5-ext",
+      "keccak",
+      "node-hid",
+      "protobufjs",
+      "secp256k1",
+      "ssh2",
+      "usb",
+      "utf-8-validate",
+      "web3",
+      "web3-bzz",
+      "web3-shh"
+    ]
   }
 }
