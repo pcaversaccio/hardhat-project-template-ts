@@ -21,7 +21,7 @@
   },
   "author": "Pascal Marco Caversaccio <pascal.caversaccio@hotmail.ch>",
   "license": "MIT",
-  "packageManager": "pnpm@10.2.0",
+  "packageManager": "pnpm@10.2.1",
   "scripts": {
     "help": "npx hardhat help",
     "accounts": "npx hardhat accounts",
@@ -185,6 +185,8 @@
     "deploy:swellmain": "npx hardhat run --network swellMain scripts/deploy.ts",
     "deploy:hemitestnet": "npx hardhat run --network hemiTestnet scripts/deploy.ts",
     "deploy:hemimain": "npx hardhat run --network hemiMain scripts/deploy.ts",
+    "deploy:berachaintestnet": "npx hardhat run --network berachainTestnet scripts/deploy.ts",
+    "deploy:berachainmain": "npx hardhat run --network berachainMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "npx solhint \"contracts/**/*.sol\"",
