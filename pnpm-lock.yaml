@@ -13,10 +13,10 @@ importers:
         version: 9.20.0
       '@matterlabs/hardhat-zksync-deploy':
         specifier: ^1.6.0
-        version: 1.6.0(encoding@0.1.13)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))(zksync-ethers@6.16.0(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
+        version: 1.6.0(encoding@0.1.13)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))(zksync-ethers@6.16.1(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
       '@matterlabs/hardhat-zksync-ethers':
         specifier: 1.2.1
-        version: 1.2.1(bufferutil@4.0.9)(encoding@0.1.13)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10)(zksync-ethers@6.16.0(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
+        version: 1.2.1(bufferutil@4.0.9)(encoding@0.1.13)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10)(zksync-ethers@6.16.1(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
       '@matterlabs/hardhat-zksync-solc':
         specifier: ^1.2.5
         version: 1.2.5(encoding@0.1.13)(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))
@@ -78,11 +78,11 @@ importers:
         specifier: ^4.5.0
         version: 4.5.0
       eslint:
-        specifier: ^9.20.0
-        version: 9.20.0
+        specifier: ^9.20.1
+        version: 9.20.1
       eslint-config-prettier:
         specifier: ^10.0.1
-        version: 10.0.1(eslint@9.20.0)
+        version: 10.0.1(eslint@9.20.1)
       ethers:
         specifier: ^6.13.5
         version: 6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)
@@ -121,13 +121,13 @@ importers:
         version: 5.7.3
       typescript-eslint:
         specifier: ^8.24.0
-        version: 8.24.0(eslint@9.20.0)(typescript@5.7.3)
+        version: 8.24.0(eslint@9.20.1)(typescript@5.7.3)
       xdeployer:
-        specifier: ^3.1.10
-        version: 3.1.10(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10)))(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))
+        specifier: ^3.1.11
+        version: 3.1.11(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10)))(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))
       zksync-ethers:
-        specifier: ^6.16.0
-        version: 6.16.0(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))
+        specifier: ^6.16.1
+        version: 6.16.1(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))
 
 packages:
 
@@ -740,14 +740,14 @@ packages:
   '@openzeppelin/contracts@5.2.0':
     resolution: {integrity: sha512-bxjNie5z89W1Ea0NZLZluFh8PrFNn9DH8DQlujEok2yjsOlraUPKID5p1Wk3qdNbf6XkQ1Os2RvfiHrrXLHWKA==}
 
-  '@openzeppelin/defender-sdk-base-client@2.1.0':
-    resolution: {integrity: sha512-YxrOgjESsbmxArLoe8kRA6lKwz/Qm/OtaZBfquzAg+w0jgOG9ogFuXA3NI6w2sVw1w/PzI1dWKe30u62p5vLXw==}
+  '@openzeppelin/defender-sdk-base-client@2.2.0':
+    resolution: {integrity: sha512-aZm8aP7HCcaczzO54JiOVZ6kmwoog1qmajwDGU+DJGshszYwy2x3TRtnRG1tyfAXmeu8yNSOpP5N+fuTt8X5rg==}
 
-  '@openzeppelin/defender-sdk-deploy-client@2.1.0':
-    resolution: {integrity: sha512-tg1EIqFVQ59UNbEV7a5XHVvsGM1dL0tVrwXMB4EzlDnDRS70l6jjeCgl6d0SUQqK8Cob1AzjdLn9+Ax+oFcceQ==}
+  '@openzeppelin/defender-sdk-deploy-client@2.2.0':
+    resolution: {integrity: sha512-7LWY6DwHOjI0VlgvAVbPV4udWm3Q4de58EMLQvm1DG6eAaXIIZtfd3tV4mk6MYVLgBaiRbtSX0L9F9LH4p17OA==}
 
-  '@openzeppelin/defender-sdk-network-client@2.1.0':
-    resolution: {integrity: sha512-ebtSmihHMlcjFTtXyB/IFr+CjCcjdW0nV+ijG24SNnRvOaHn2BNORs6CwhdEZc8ok9YHWnKouGKdfzmxX+mp/A==}
+  '@openzeppelin/defender-sdk-network-client@2.2.0':
+    resolution: {integrity: sha512-d8sCjRBTEek+LKog2zVY3rtYVN8BsVGFcEh5g6VLJV3Ljmdf5SppjP6WPFlD7+IRKqmpiZ3R4EdzuhqOKMKKMA==}
 
   '@openzeppelin/hardhat-upgrades@3.9.0':
     resolution: {integrity: sha512-7YYBSxRnO/X+tsQkVgtz3/YbwZuQPjbjQ3m0A/8+vgQzdPfulR93NaFKgZfMonnrriXb5O/ULjIDPI+8nuqtyQ==}
@@ -2222,8 +2222,8 @@ packages:
     resolution: {integrity: sha512-UyLnSehNt62FFhSwjZlHmeokpRK59rcz29j+F1/aDgbkbRTk7wIc9XzdoasMUbRNKDM0qQt/+BJ4BrpFeABemw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  eslint@9.20.0:
-    resolution: {integrity: sha512-aL4F8167Hg4IvsW89ejnpTwx+B/UQRzJPGgbIOl+4XqffWsahVVsLEWoZvnrVuwpWmnRd7XeXmQI1zlKcFDteA==}
+  eslint@9.20.1:
+    resolution: {integrity: sha512-m1mM33o6dBUjxl2qb6wv6nGNwCAsns1eKtaQ4l/NPHeTvhiUPbtdfMyktxN4B3fgHIgsYh1VT3V9txblpQHq+g==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     hasBin: true
     peerDependencies:
@@ -4701,8 +4701,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  xdeployer@3.1.10:
-    resolution: {integrity: sha512-LLpxuUjy0AXeEH9gFHqZ/IOvzjkMLRrWscUBuvx7s0MQuqNALBnHl7WkaTJqsGAgIagwFuxz/XU1jsVzpVroKA==}
+  xdeployer@3.1.11:
+    resolution: {integrity: sha512-nh1HADH95uc+Hapq8Zrgodycorvl1g4n2UiNBIhVh6KKIZHW+9mpSXHdRqw/Lxg2f/qsOeK4rnnAi8Q3uleyow==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@nomicfoundation/hardhat-ethers': ^3.0.8
@@ -4768,8 +4768,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zksync-ethers@6.16.0:
-    resolution: {integrity: sha512-XkuP1a9i9kS95nsUGJ9WxNxeAZnrEMG+CAkSpM0lGXNrmY7fGg4Uyuurx+z7kTriKjtnAdxdHGLPWHBaNCWFLg==}
+  zksync-ethers@6.16.1:
+    resolution: {integrity: sha512-D5fcs34P4b87+XMs7E+E4ZeASMPl0wAqWqp0RV/pztH14pVWrwS+C/rN63oIOD825GL+FmRmyZb4SrA1Ifff4A==}
     engines: {node: '>=18.9.0'}
     peerDependencies:
       ethers: ^6.7.1
@@ -5176,9 +5176,9 @@ snapshots:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
 
-  '@eslint-community/eslint-utils@4.4.1(eslint@9.20.0)':
+  '@eslint-community/eslint-utils@4.4.1(eslint@9.20.1)':
     dependencies:
-      eslint: 9.20.0
+      eslint: 9.20.1
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.12.1': {}
@@ -5630,7 +5630,7 @@ snapshots:
       bignumber.js: 9.1.2
       rxjs: 7.8.1
 
-  '@matterlabs/hardhat-zksync-deploy@1.6.0(encoding@0.1.13)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))(zksync-ethers@6.16.0(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)))':
+  '@matterlabs/hardhat-zksync-deploy@1.6.0(encoding@0.1.13)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))(zksync-ethers@6.16.1(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)))':
     dependencies:
       '@matterlabs/hardhat-zksync-solc': 1.2.5(encoding@0.1.13)(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))
       chai: 4.5.0
@@ -5643,21 +5643,21 @@ snapshots:
       sinon: 18.0.1
       sinon-chai: 3.7.0(chai@4.5.0)(sinon@18.0.1)
       ts-morph: 22.0.0
-      zksync-ethers: 6.16.0(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))
+      zksync-ethers: 6.16.1(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@matterlabs/hardhat-zksync-ethers@1.2.1(bufferutil@4.0.9)(encoding@0.1.13)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10)(zksync-ethers@6.16.0(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)))':
+  '@matterlabs/hardhat-zksync-ethers@1.2.1(bufferutil@4.0.9)(encoding@0.1.13)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10)(zksync-ethers@6.16.1(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)))':
     dependencies:
-      '@matterlabs/hardhat-zksync-deploy': 1.6.0(encoding@0.1.13)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))(zksync-ethers@6.16.0(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
+      '@matterlabs/hardhat-zksync-deploy': 1.6.0(encoding@0.1.13)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))(zksync-ethers@6.16.1(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
       '@matterlabs/hardhat-zksync-solc': 1.2.5(encoding@0.1.13)(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))
       '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))
       chai: 4.5.0
       chalk: 4.1.2
       ethers: 6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       hardhat: 2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10)
-      zksync-ethers: 6.16.0(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))
+      zksync-ethers: 6.16.1(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))
     transitivePeerDependencies:
       - bufferutil
       - c-kzg
@@ -5956,7 +5956,7 @@ snapshots:
 
   '@openzeppelin/contracts@5.2.0': {}
 
-  '@openzeppelin/defender-sdk-base-client@2.1.0(encoding@0.1.13)':
+  '@openzeppelin/defender-sdk-base-client@2.2.0(encoding@0.1.13)':
     dependencies:
       '@aws-sdk/client-lambda': 3.744.0
       amazon-cognito-identity-js: 6.3.12(encoding@0.1.13)
@@ -5965,9 +5965,9 @@ snapshots:
       - aws-crt
       - encoding
 
-  '@openzeppelin/defender-sdk-deploy-client@2.1.0(debug@4.4.0)(encoding@0.1.13)':
+  '@openzeppelin/defender-sdk-deploy-client@2.2.0(debug@4.4.0)(encoding@0.1.13)':
     dependencies:
-      '@openzeppelin/defender-sdk-base-client': 2.1.0(encoding@0.1.13)
+      '@openzeppelin/defender-sdk-base-client': 2.2.0(encoding@0.1.13)
       axios: 1.7.9(debug@4.4.0)
       lodash: 4.17.21
     transitivePeerDependencies:
@@ -5975,9 +5975,9 @@ snapshots:
       - debug
       - encoding
 
-  '@openzeppelin/defender-sdk-network-client@2.1.0(debug@4.4.0)(encoding@0.1.13)':
+  '@openzeppelin/defender-sdk-network-client@2.2.0(debug@4.4.0)(encoding@0.1.13)':
     dependencies:
-      '@openzeppelin/defender-sdk-base-client': 2.1.0(encoding@0.1.13)
+      '@openzeppelin/defender-sdk-base-client': 2.2.0(encoding@0.1.13)
       axios: 1.7.9(debug@4.4.0)
       lodash: 4.17.21
     transitivePeerDependencies:
@@ -5988,9 +5988,9 @@ snapshots:
   '@openzeppelin/hardhat-upgrades@3.9.0(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10)))(@nomicfoundation/hardhat-verify@2.0.12(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10)))(encoding@0.1.13)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))':
     dependencies:
       '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))
-      '@openzeppelin/defender-sdk-base-client': 2.1.0(encoding@0.1.13)
-      '@openzeppelin/defender-sdk-deploy-client': 2.1.0(debug@4.4.0)(encoding@0.1.13)
-      '@openzeppelin/defender-sdk-network-client': 2.1.0(debug@4.4.0)(encoding@0.1.13)
+      '@openzeppelin/defender-sdk-base-client': 2.2.0(encoding@0.1.13)
+      '@openzeppelin/defender-sdk-deploy-client': 2.2.0(debug@4.4.0)(encoding@0.1.13)
+      '@openzeppelin/defender-sdk-network-client': 2.2.0(debug@4.4.0)(encoding@0.1.13)
       '@openzeppelin/upgrades-core': 1.42.1
       chalk: 4.1.2
       debug: 4.4.0(supports-color@8.1.1)
@@ -6797,15 +6797,15 @@ snapshots:
 
   '@types/w3c-web-usb@1.0.10': {}
 
-  '@typescript-eslint/eslint-plugin@8.24.0(@typescript-eslint/parser@8.24.0(eslint@9.20.0)(typescript@5.7.3))(eslint@9.20.0)(typescript@5.7.3)':
+  '@typescript-eslint/eslint-plugin@8.24.0(@typescript-eslint/parser@8.24.0(eslint@9.20.1)(typescript@5.7.3))(eslint@9.20.1)(typescript@5.7.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.1
-      '@typescript-eslint/parser': 8.24.0(eslint@9.20.0)(typescript@5.7.3)
+      '@typescript-eslint/parser': 8.24.0(eslint@9.20.1)(typescript@5.7.3)
       '@typescript-eslint/scope-manager': 8.24.0
-      '@typescript-eslint/type-utils': 8.24.0(eslint@9.20.0)(typescript@5.7.3)
-      '@typescript-eslint/utils': 8.24.0(eslint@9.20.0)(typescript@5.7.3)
+      '@typescript-eslint/type-utils': 8.24.0(eslint@9.20.1)(typescript@5.7.3)
+      '@typescript-eslint/utils': 8.24.0(eslint@9.20.1)(typescript@5.7.3)
       '@typescript-eslint/visitor-keys': 8.24.0
-      eslint: 9.20.0
+      eslint: 9.20.1
       graphemer: 1.4.0
       ignore: 5.3.2
       natural-compare: 1.4.0
@@ -6814,14 +6814,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.24.0(eslint@9.20.0)(typescript@5.7.3)':
+  '@typescript-eslint/parser@8.24.0(eslint@9.20.1)(typescript@5.7.3)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.24.0
       '@typescript-eslint/types': 8.24.0
       '@typescript-eslint/typescript-estree': 8.24.0(typescript@5.7.3)
       '@typescript-eslint/visitor-keys': 8.24.0
       debug: 4.4.0(supports-color@8.1.1)
-      eslint: 9.20.0
+      eslint: 9.20.1
       typescript: 5.7.3
     transitivePeerDependencies:
       - supports-color
@@ -6831,12 +6831,12 @@ snapshots:
       '@typescript-eslint/types': 8.24.0
       '@typescript-eslint/visitor-keys': 8.24.0
 
-  '@typescript-eslint/type-utils@8.24.0(eslint@9.20.0)(typescript@5.7.3)':
+  '@typescript-eslint/type-utils@8.24.0(eslint@9.20.1)(typescript@5.7.3)':
     dependencies:
       '@typescript-eslint/typescript-estree': 8.24.0(typescript@5.7.3)
-      '@typescript-eslint/utils': 8.24.0(eslint@9.20.0)(typescript@5.7.3)
+      '@typescript-eslint/utils': 8.24.0(eslint@9.20.1)(typescript@5.7.3)
       debug: 4.4.0(supports-color@8.1.1)
-      eslint: 9.20.0
+      eslint: 9.20.1
       ts-api-utils: 2.0.1(typescript@5.7.3)
       typescript: 5.7.3
     transitivePeerDependencies:
@@ -6858,13 +6858,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/utils@8.24.0(eslint@9.20.0)(typescript@5.7.3)':
+  '@typescript-eslint/utils@8.24.0(eslint@9.20.1)(typescript@5.7.3)':
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.1(eslint@9.20.0)
+      '@eslint-community/eslint-utils': 4.4.1(eslint@9.20.1)
       '@typescript-eslint/scope-manager': 8.24.0
       '@typescript-eslint/types': 8.24.0
       '@typescript-eslint/typescript-estree': 8.24.0(typescript@5.7.3)
-      eslint: 9.20.0
+      eslint: 9.20.1
       typescript: 5.7.3
     transitivePeerDependencies:
       - supports-color
@@ -7711,7 +7711,7 @@ snapshots:
     dependencies:
       bn.js: 4.12.1
       brorand: 1.1.0
-      hash.js: 1.1.3
+      hash.js: 1.1.7
       hmac-drbg: 1.0.1
       inherits: 2.0.4
       minimalistic-assert: 1.0.1
@@ -7806,9 +7806,9 @@ snapshots:
     optionalDependencies:
       source-map: 0.2.0
 
-  eslint-config-prettier@10.0.1(eslint@9.20.0):
+  eslint-config-prettier@10.0.1(eslint@9.20.1):
     dependencies:
-      eslint: 9.20.0
+      eslint: 9.20.1
 
   eslint-scope@8.2.0:
     dependencies:
@@ -7819,9 +7819,9 @@ snapshots:
 
   eslint-visitor-keys@4.2.0: {}
 
-  eslint@9.20.0:
+  eslint@9.20.1:
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.1(eslint@9.20.0)
+      '@eslint-community/eslint-utils': 4.4.1(eslint@9.20.1)
       '@eslint-community/regexpp': 4.12.1
       '@eslint/config-array': 0.19.2
       '@eslint/core': 0.11.0
@@ -10404,12 +10404,12 @@ snapshots:
 
   typedarray@0.0.6: {}
 
-  typescript-eslint@8.24.0(eslint@9.20.0)(typescript@5.7.3):
+  typescript-eslint@8.24.0(eslint@9.20.1)(typescript@5.7.3):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.24.0(@typescript-eslint/parser@8.24.0(eslint@9.20.0)(typescript@5.7.3))(eslint@9.20.0)(typescript@5.7.3)
-      '@typescript-eslint/parser': 8.24.0(eslint@9.20.0)(typescript@5.7.3)
-      '@typescript-eslint/utils': 8.24.0(eslint@9.20.0)(typescript@5.7.3)
-      eslint: 9.20.0
+      '@typescript-eslint/eslint-plugin': 8.24.0(@typescript-eslint/parser@8.24.0(eslint@9.20.1)(typescript@5.7.3))(eslint@9.20.1)(typescript@5.7.3)
+      '@typescript-eslint/parser': 8.24.0(eslint@9.20.1)(typescript@5.7.3)
+      '@typescript-eslint/utils': 8.24.0(eslint@9.20.1)(typescript@5.7.3)
+      eslint: 9.20.1
       typescript: 5.7.3
     transitivePeerDependencies:
       - supports-color
@@ -10836,7 +10836,7 @@ snapshots:
       bufferutil: 4.0.9
       utf-8-validate: 5.0.10
 
-  xdeployer@3.1.10(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10)))(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10)):
+  xdeployer@3.1.11(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10)))(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10)):
     dependencies:
       '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.18(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)(utf-8-validate@5.0.10))
       ethers: 6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)
@@ -10910,7 +10910,7 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zksync-ethers@6.16.0(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)):
+  zksync-ethers@6.16.1(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)):
     dependencies:
       ethers: 6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)
 
