@@ -1137,11 +1137,13 @@ const config: HardhatUserConfig = {
         "https://rpc.arena-z.t.raas.gelato.cloud",
       ),
       accounts,
+      ledgerAccounts,
     },
     arenazMain: {
       chainId: 7897,
       url: vars.get("ARENAZ_MAINNET_URL", "https://rpc.arena-z.gg"),
       accounts,
+      ledgerAccounts,
     },
   },
   xdeploy: {
