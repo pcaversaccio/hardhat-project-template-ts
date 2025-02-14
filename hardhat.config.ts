@@ -969,8 +969,8 @@ const config: HardhatUserConfig = {
       ledgerAccounts,
     },
     storyTestnet: {
-      chainId: 1516,
-      url: vars.get("STORY_TESTNET_URL", "https://odyssey.storyrpc.io"),
+      chainId: 1315,
+      url: vars.get("STORY_TESTNET_URL", "https://aeneid.storyrpc.io"),
       accounts,
       ledgerAccounts,
     },
@@ -1129,6 +1129,19 @@ const config: HardhatUserConfig = {
       url: vars.get("CORN_MAINNET_URL", "https://mainnet.corn-rpc.com"),
       accounts,
       ledgerAccounts,
+    },
+    arenazTestnet: {
+      chainId: 9897,
+      url: vars.get(
+        "ARENAZ_TESTNET_URL",
+        "https://rpc.arena-z.t.raas.gelato.cloud",
+      ),
+      accounts,
+    },
+    arenazMain: {
+      chainId: 7897,
+      url: vars.get("ARENAZ_MAINNET_URL", "https://rpc.arena-z.gg"),
+      accounts,
     },
   },
   xdeploy: {
@@ -1411,6 +1424,9 @@ const config: HardhatUserConfig = {
       // For Corn testnet & mainnet
       corn: vars.get("CORN_API_KEY", ""),
       cornTestnet: vars.get("CORN_API_KEY", ""),
+      // For Arena-Z testnet & mainnet
+      arenaz: vars.get("ARENAZ_API_KEY", ""),
+      arenazTestnet: vars.get("ARENAZ_API_KEY", ""),
     },
     customChains: [
       {
@@ -2197,10 +2213,10 @@ const config: HardhatUserConfig = {
       },
       {
         network: "storyTestnet",
-        chainId: 1516,
+        chainId: 1315,
         urls: {
-          apiURL: "https://odyssey.storyscan.xyz/api",
-          browserURL: "https://odyssey.storyscan.xyz",
+          apiURL: "https://aeneid.storyscan.xyz/api",
+          browserURL: "https://aeneid.storyscan.xyz",
         },
       },
       {
@@ -2380,6 +2396,22 @@ const config: HardhatUserConfig = {
           apiURL:
             "https://api.routescan.io/v2/network/testnet/evm/21000001/etherscan",
           browserURL: "https://testnet.cornscan.io",
+        },
+      },
+      {
+        network: "arenaz",
+        chainId: 7897,
+        urls: {
+          apiURL: "https://explorer.arena-z.gg/api",
+          browserURL: "https://explorer.arena-z.gg",
+        },
+      },
+      {
+        network: "arenazTestnet",
+        chainId: 9897,
+        urls: {
+          apiURL: "https://arena-z.blockscout.com/api",
+          browserURL: "https://arena-z.blockscout.com",
         },
       },
     ],
