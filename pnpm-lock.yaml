@@ -81,8 +81,8 @@ importers:
         specifier: ^9.21.0
         version: 9.21.0
       eslint-config-prettier:
-        specifier: ^10.0.2
-        version: 10.0.2(eslint@9.21.0)
+        specifier: ^10.1.1
+        version: 10.1.1(eslint@9.21.0)
       ethers:
         specifier: ^6.13.5
         version: 6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)
@@ -739,14 +739,14 @@ packages:
   '@openzeppelin/contracts@5.2.0':
     resolution: {integrity: sha512-bxjNie5z89W1Ea0NZLZluFh8PrFNn9DH8DQlujEok2yjsOlraUPKID5p1Wk3qdNbf6XkQ1Os2RvfiHrrXLHWKA==}
 
-  '@openzeppelin/defender-sdk-base-client@2.3.0':
-    resolution: {integrity: sha512-j/JyhYFONQiJmW7fvDqxjwhCjBsXvKxI5rUV9LF/47Ex0EnxQuypauptGi1ffegORh/U/Ya/5pqAZayMYeyu6w==}
+  '@openzeppelin/defender-sdk-base-client@2.4.0':
+    resolution: {integrity: sha512-oB18M3DNR/nREQhHLEXdcCsxv04DPbezBHzFz6APIez+MEpQQl2SwHYxA16vOyZ6A/zV0b8sFDqAjq0oogUMyA==}
 
-  '@openzeppelin/defender-sdk-deploy-client@2.3.0':
-    resolution: {integrity: sha512-A73HnkhNDamWaX7p4VrQZ1loBrchcRvoj1tU7CA8wSPCUn8JRJQKXIpELooEi1cUPga5A6tSBYz9UlCSsqSxKQ==}
+  '@openzeppelin/defender-sdk-deploy-client@2.4.0':
+    resolution: {integrity: sha512-7brIWq7uW6ejYuxdBE6kQnZJQSF4v8g9Jed4/leXtPFjCowhDtIldhcYUfI+UPcZnDKdbvxnxXVJM2AWyVTNtQ==}
 
-  '@openzeppelin/defender-sdk-network-client@2.3.0':
-    resolution: {integrity: sha512-VGBAd+XSYZ4HqYkQnWFDiolHWWmtE94bfP0ViQRRsKlTLgJQ/9VGVKDSafWIdFqSkIUMcJZNeUsvuNqHrzhctA==}
+  '@openzeppelin/defender-sdk-network-client@2.4.0':
+    resolution: {integrity: sha512-+19/J7NiW7EC8yN3DbqA290JBzbdu1/iHpz9lE5RJ5YTPv50eReou0v7vZSBhKRN10P7AKM3V263W1zoVGpVdA==}
 
   '@openzeppelin/hardhat-upgrades@3.9.0':
     resolution: {integrity: sha512-7YYBSxRnO/X+tsQkVgtz3/YbwZuQPjbjQ3m0A/8+vgQzdPfulR93NaFKgZfMonnrriXb5O/ULjIDPI+8nuqtyQ==}
@@ -1366,8 +1366,8 @@ packages:
     resolution: {integrity: sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==}
     engines: {node: '>=0.4.0'}
 
-  acorn@8.14.0:
-    resolution: {integrity: sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==}
+  acorn@8.14.1:
+    resolution: {integrity: sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -1539,8 +1539,8 @@ packages:
   axios@1.7.7:
     resolution: {integrity: sha512-S4kL7XrjgBmvdGut0sN3yJxqYzrDOnivkBiN0OFs6hLiUam3UPvswUo0kqGyhqUZGEOytHyumEdXsAkgCOUf3Q==}
 
-  axios@1.8.1:
-    resolution: {integrity: sha512-NN+fvwH/kV01dYUQ3PTOZns4LWtWhOFCAhQ/pHb88WQ1hNe5V/dvFwc4VJcDL11LT9xSX0QtsR8sWUuyOuOq7g==}
+  axios@1.8.2:
+    resolution: {integrity: sha512-ls4GYBm5aig9vWx8AWDSGLpnpDQRtWAfrjU+EuytuODrFBkqesN2RkOQCBzrA1RQNHw1SmRMSDDDSwzNAYQ6Rg==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -2207,8 +2207,8 @@ packages:
     engines: {node: '>=0.12.0'}
     hasBin: true
 
-  eslint-config-prettier@10.0.2:
-    resolution: {integrity: sha512-1105/17ZIMjmCOJOPNfVdbXafLCLj3hPmkmB7dLgt7XsQ/zkxSuDerE/xgO3RxoHysR1N1whmquY0lSn2O0VLg==}
+  eslint-config-prettier@10.1.1:
+    resolution: {integrity: sha512-4EQQr6wXwS+ZJSzaR5ZCrYgLxqvUjdXctaEtBqHcbkW944B1NQyO4qpdHQbXBONfwxXdkAY81HH4+LUfrg+zPw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -4736,6 +4736,7 @@ packages:
   yaeti@0.0.6:
     resolution: {integrity: sha512-MvQa//+KcZCUkBTIC9blM+CU9J2GzuTytsOUwf2lidtvkx/6gnEp1QvJv34t9vdjhFmha/mUiNDbN0D0mJWdug==}
     engines: {node: '>=0.10.32'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
@@ -5592,7 +5593,7 @@ snapshots:
       '@ledgerhq/hw-transport': 6.31.4
       '@ledgerhq/hw-transport-mocker': 6.29.4
       '@ledgerhq/logs': 6.12.0
-      axios: 1.8.1(debug@4.4.0)
+      axios: 1.8.2(debug@4.4.0)
       bignumber.js: 9.1.2
       crypto-js: 4.2.0
     transitivePeerDependencies:
@@ -5698,7 +5699,7 @@ snapshots:
       '@ethersproject/address': 5.7.0
       '@matterlabs/hardhat-zksync-solc': 1.2.6(encoding@0.1.13)(hardhat@2.22.19(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.9)(typescript@5.8.2))(typescript@5.8.2)(utf-8-validate@5.0.10))
       '@nomicfoundation/hardhat-verify': 2.0.13(hardhat@2.22.19(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.9)(typescript@5.8.2))(typescript@5.8.2)(utf-8-validate@5.0.10))
-      axios: 1.8.1(debug@4.4.0)
+      axios: 1.8.2(debug@4.4.0)
       cbor: 9.0.2
       chai: 4.5.0
       chalk: 4.1.2
@@ -5963,7 +5964,7 @@ snapshots:
 
   '@openzeppelin/contracts@5.2.0': {}
 
-  '@openzeppelin/defender-sdk-base-client@2.3.0(encoding@0.1.13)':
+  '@openzeppelin/defender-sdk-base-client@2.4.0(encoding@0.1.13)':
     dependencies:
       '@aws-sdk/client-lambda': 3.758.0
       amazon-cognito-identity-js: 6.3.12(encoding@0.1.13)
@@ -5972,20 +5973,20 @@ snapshots:
       - aws-crt
       - encoding
 
-  '@openzeppelin/defender-sdk-deploy-client@2.3.0(debug@4.4.0)(encoding@0.1.13)':
+  '@openzeppelin/defender-sdk-deploy-client@2.4.0(debug@4.4.0)(encoding@0.1.13)':
     dependencies:
-      '@openzeppelin/defender-sdk-base-client': 2.3.0(encoding@0.1.13)
-      axios: 1.8.1(debug@4.4.0)
+      '@openzeppelin/defender-sdk-base-client': 2.4.0(encoding@0.1.13)
+      axios: 1.8.2(debug@4.4.0)
       lodash: 4.17.21
     transitivePeerDependencies:
       - aws-crt
       - debug
       - encoding
 
-  '@openzeppelin/defender-sdk-network-client@2.3.0(debug@4.4.0)(encoding@0.1.13)':
+  '@openzeppelin/defender-sdk-network-client@2.4.0(debug@4.4.0)(encoding@0.1.13)':
     dependencies:
-      '@openzeppelin/defender-sdk-base-client': 2.3.0(encoding@0.1.13)
-      axios: 1.8.1(debug@4.4.0)
+      '@openzeppelin/defender-sdk-base-client': 2.4.0(encoding@0.1.13)
+      axios: 1.8.2(debug@4.4.0)
       lodash: 4.17.21
     transitivePeerDependencies:
       - aws-crt
@@ -5995,9 +5996,9 @@ snapshots:
   '@openzeppelin/hardhat-upgrades@3.9.0(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.19(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.9)(typescript@5.8.2))(typescript@5.8.2)(utf-8-validate@5.0.10)))(@nomicfoundation/hardhat-verify@2.0.13(hardhat@2.22.19(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.9)(typescript@5.8.2))(typescript@5.8.2)(utf-8-validate@5.0.10)))(encoding@0.1.13)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.19(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.9)(typescript@5.8.2))(typescript@5.8.2)(utf-8-validate@5.0.10))':
     dependencies:
       '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.22.19(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.9)(typescript@5.8.2))(typescript@5.8.2)(utf-8-validate@5.0.10))
-      '@openzeppelin/defender-sdk-base-client': 2.3.0(encoding@0.1.13)
-      '@openzeppelin/defender-sdk-deploy-client': 2.3.0(debug@4.4.0)(encoding@0.1.13)
-      '@openzeppelin/defender-sdk-network-client': 2.3.0(debug@4.4.0)(encoding@0.1.13)
+      '@openzeppelin/defender-sdk-base-client': 2.4.0(encoding@0.1.13)
+      '@openzeppelin/defender-sdk-deploy-client': 2.4.0(debug@4.4.0)(encoding@0.1.13)
+      '@openzeppelin/defender-sdk-network-client': 2.4.0(debug@4.4.0)(encoding@0.1.13)
       '@openzeppelin/upgrades-core': 1.42.1
       chalk: 4.1.2
       debug: 4.4.0(supports-color@8.1.1)
@@ -6506,7 +6507,7 @@ snapshots:
   '@tenderly/hardhat-integration@1.1.1(@types/node@22.13.9)(bufferutil@4.0.9)(hardhat@2.22.19(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.9)(typescript@5.8.2))(typescript@5.8.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
     dependencies:
       '@tenderly/api-client': 1.1.0(ts-node@10.9.2(@types/node@22.13.9)(typescript@5.8.2))(typescript@5.8.2)
-      axios: 1.8.1(debug@4.4.0)
+      axios: 1.8.2(debug@4.4.0)
       dotenv: 16.4.7
       fs-extra: 10.1.0
       hardhat: 2.22.19(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.13.9)(typescript@5.8.2))(typescript@5.8.2)(utf-8-validate@5.0.10)
@@ -6899,15 +6900,15 @@ snapshots:
       mime-types: 2.1.35
       negotiator: 0.6.3
 
-  acorn-jsx@5.3.2(acorn@8.14.0):
+  acorn-jsx@5.3.2(acorn@8.14.1):
     dependencies:
-      acorn: 8.14.0
+      acorn: 8.14.1
 
   acorn-walk@8.3.4:
     dependencies:
-      acorn: 8.14.0
+      acorn: 8.14.1
 
-  acorn@8.14.0: {}
+  acorn@8.14.1: {}
 
   adm-zip@0.4.16: {}
 
@@ -7074,7 +7075,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  axios@1.8.1(debug@4.4.0):
+  axios@1.8.2(debug@4.4.0):
     dependencies:
       follow-redirects: 1.15.9(debug@4.4.0)
       form-data: 4.0.2
@@ -7820,7 +7821,7 @@ snapshots:
     optionalDependencies:
       source-map: 0.2.0
 
-  eslint-config-prettier@10.0.2(eslint@9.21.0):
+  eslint-config-prettier@10.1.1(eslint@9.21.0):
     dependencies:
       eslint: 9.21.0
 
@@ -7881,8 +7882,8 @@ snapshots:
 
   espree@10.3.0:
     dependencies:
-      acorn: 8.14.0
-      acorn-jsx: 5.3.2(acorn@8.14.0)
+      acorn: 8.14.1
+      acorn-jsx: 5.3.2(acorn@8.14.1)
       eslint-visitor-keys: 4.2.0
 
   esprima@2.7.3: {}
@@ -8537,7 +8538,7 @@ snapshots:
       '@ethersproject/bytes': 5.8.0
       '@ethersproject/units': 5.8.0
       '@solidity-parser/parser': 0.19.0
-      axios: 1.8.1(debug@4.4.0)
+      axios: 1.8.2(debug@4.4.0)
       brotli-wasm: 2.0.1
       chalk: 4.1.2
       cli-table3: 0.6.5
@@ -10342,7 +10343,7 @@ snapshots:
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
       '@types/node': 22.13.9
-      acorn: 8.14.0
+      acorn: 8.14.1
       acorn-walk: 8.3.4
       arg: 4.1.3
       create-require: 1.1.1
