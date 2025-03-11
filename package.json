@@ -239,7 +239,7 @@
     "typechain": "^8.3.2",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.26.1",
-    "xdeployer": "^3.1.11",
+    "xdeployer": "^3.1.12",
     "zksync-ethers": "^6.16.1"
   },
   "pnpm": {
