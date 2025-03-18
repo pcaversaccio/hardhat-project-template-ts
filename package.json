@@ -21,7 +21,7 @@
   },
   "author": "Pascal Marco Caversaccio <pascal.caversaccio@hotmail.ch>",
   "license": "MIT",
-  "packageManager": "pnpm@10.6.3",
+  "packageManager": "pnpm@10.6.4",
   "scripts": {
     "help": "npx hardhat help",
     "accounts": "npx hardhat accounts",
@@ -240,7 +240,7 @@
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.26.1",
     "xdeployer": "^3.1.12",
-    "zksync-ethers": "^6.16.1"
+    "zksync-ethers": "^6.16.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
