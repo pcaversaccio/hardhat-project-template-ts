@@ -238,7 +238,7 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.29.0",
+    "typescript-eslint": "^8.29.1",
     "xdeployer": "^3.1.12",
     "zksync-ethers": "^6.17.0"
   },
