@@ -1826,8 +1826,8 @@ packages:
   bech32@1.1.4:
     resolution: {integrity: sha512-s0IrSOzLlbvX7yp4WBfPITzpAU8sqQcpsmwXDiKwrG4r491vwCO/XpejasRNl0piBMe/DvP4Tz0mIS/X1DPJBQ==}
 
-  bignumber.js@9.2.1:
-    resolution: {integrity: sha512-+NzaKgOUvInq9TIUZ1+DRspzf/HApkCwD4btfuasFTdrfnOxqx853TgDpMolp+uv4RpRp7bPcEU2zKr9+fRmyw==}
+  bignumber.js@9.3.0:
+    resolution: {integrity: sha512-EM7aMFTXbptt/wZdMlBv2t8IViwQL+h6SLHosp8Yf0dqJMTnY6iL32opnAB6kAdL0SZPuvcAzFr31o0c/R3/RA==}
 
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
@@ -2351,8 +2351,8 @@ packages:
     resolution: {integrity: sha512-+7iOUYBeDTScmOmQqpUYQaE7F4vvIt6+gIZNHWhqAQEI887tiPFB9OvXI/HzQYqfUNvukMK+9myLW63oTJPZpw==}
     engines: {node: '>= 0.8'}
 
-  dockerode@4.0.5:
-    resolution: {integrity: sha512-ZPmKSr1k1571Mrh7oIBS/j0AqAccoecY2yH420ni5j1KyNMgnoTh4Nu4FWunh0HZIJmRSmSysJjBIpa/zyWUEA==}
+  dockerode@4.0.6:
+    resolution: {integrity: sha512-FbVf3Z8fY/kALB9s+P9epCpWhfi/r0N2DgYYcYpsAUlaTxPjdsitsFobnltb+lyCgAIvf9C+4PSWlTnHlJMf1w==}
     engines: {node: '>= 8.0'}
 
   dom-walk@0.1.2:
@@ -4556,8 +4556,8 @@ packages:
   tiny-typed-emitter@2.1.0:
     resolution: {integrity: sha512-qVtvMxeXbVej0cQWKqVSSAHmKZEHAvxdF8HEUBFWts8h+xEo5m/lEiPakuyZ3BnCBjOD8i24kzNOiOLLgsSxhA==}
 
-  tinyglobby@0.2.12:
-    resolution: {integrity: sha512-qkf4trmKSIiMTs/E63cxH+ojC2unam7rJ0WrauAzpT3ECNTxGRMlaXxVbfxMUC/w0LaYk6jQ4y/nGR9uBO3tww==}
+  tinyglobby@0.2.13:
+    resolution: {integrity: sha512-mEwzpUgrLySlveBwEVDMKk5B57bhLPYovRfPAXD5gA/98Opn0rCDj3GtLwFvCvH5RK9uPCExUROW5NjDwvqkxw==}
     engines: {node: '>=12.0.0'}
 
   tmp@0.0.33:
@@ -5931,7 +5931,7 @@ snapshots:
       '@ledgerhq/hw-transport-mocker': 6.29.4
       '@ledgerhq/logs': 6.12.0
       axios: 1.8.4(debug@4.4.0)
-      bignumber.js: 9.2.1
+      bignumber.js: 9.3.0
       crypto-js: 4.2.0
     transitivePeerDependencies:
       - debug
@@ -5972,7 +5972,7 @@ snapshots:
 
   '@ledgerhq/types-live@6.67.0':
     dependencies:
-      bignumber.js: 9.2.1
+      bignumber.js: 9.3.0
       rxjs: 7.8.2
 
   '@matterlabs/hardhat-zksync-deploy@1.7.0(encoding@0.1.13)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.23.0(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10))(zksync-ethers@6.17.0(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)))':
@@ -6022,7 +6022,7 @@ snapshots:
       chai: 4.5.0
       chalk: 4.1.2
       debug: 4.4.0(supports-color@8.1.1)
-      dockerode: 4.0.5
+      dockerode: 4.0.6
       fs-extra: 11.3.0
       hardhat: 2.23.0(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10)
       proper-lockfile: 4.1.2
@@ -6641,7 +6641,7 @@ snapshots:
   '@openzeppelin/upgrades-core@1.44.0':
     dependencies:
       '@nomicfoundation/slang': 0.18.3
-      bignumber.js: 9.2.1
+      bignumber.js: 9.3.0
       cbor: 10.0.3
       chalk: 4.1.2
       compare-versions: 6.1.1
@@ -7808,7 +7808,7 @@ snapshots:
 
   bech32@1.1.4: {}
 
-  bignumber.js@9.2.1: {}
+  bignumber.js@9.3.0: {}
 
   binary-extensions@2.3.0: {}
 
@@ -8389,7 +8389,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  dockerode@4.0.5:
+  dockerode@4.0.6:
     dependencies:
       '@balena/dockerignore': 1.0.2
       '@grpc/grpc-js': 1.13.3
@@ -9293,7 +9293,7 @@ snapshots:
       solc: 0.8.26(debug@4.4.0)
       source-map-support: 0.5.21
       stacktrace-parser: 0.1.11
-      tinyglobby: 0.2.12
+      tinyglobby: 0.2.13
       tsort: 0.0.1
       undici: 5.29.0
       uuid: 8.3.2
@@ -11051,7 +11051,7 @@ snapshots:
 
   tiny-typed-emitter@2.1.0: {}
 
-  tinyglobby@0.2.12:
+  tinyglobby@0.2.13:
     dependencies:
       fdir: 6.4.4(picomatch@4.0.2)
       picomatch: 4.0.2
@@ -11347,7 +11347,7 @@ snapshots:
     dependencies:
       '@types/bn.js': 5.1.6
       '@types/node': 12.20.55
-      bignumber.js: 9.2.1
+      bignumber.js: 9.3.0
       web3-core-helpers: 1.10.0
       web3-core-method: 1.10.0
       web3-core-requestmanager: 1.10.0(encoding@0.1.13)
