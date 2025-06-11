@@ -205,6 +205,15 @@
     "deploy:bitlayermain": "npx hardhat run --network bitlayerMain scripts/deploy.ts",
     "deploy:ronintestnet": "npx hardhat run --network roninTestnet scripts/deploy.ts",
     "deploy:roninmain": "npx hardhat run --network roninMain scripts/deploy.ts",
+    "deploy:immutablezkevmtestnet": "npx hardhat run --network immutableZkEVMTestnet scripts/deploy.ts",
+    "deploy:immutablezkevmmain": "npx hardhat run --network immutableZkEVMMain scripts/deploy.ts",
+    "deploy:abstracttestnet": "npx hardhat run --network abstractTestnet scripts/deploy.ts",
+    "deploy:abstractmain": "npx hardhat run --network abstractMain scripts/deploy.ts",
+    "deploy:hyperevmtestnet": "npx hardhat run --network hyperevmTestnet scripts/deploy.ts",
+    "deploy:hyperevmmain": "npx hardhat run --network hyperevmMain scripts/deploy.ts",
+    "deploy:kaiamain": "npx hardhat run --network kaiaMain scripts/deploy.ts",
+    "deploy:apechaintestnet": "npx hardhat run --network apeChainTestnet scripts/deploy.ts",
+    "deploy:apechainmain": "npx hardhat run --network apeChainMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "npx solhint \"contracts/**/*.sol\"",
@@ -257,17 +266,13 @@
     "onlyBuiltDependencies": [
       "bufferutil",
       "cpu-features",
-      "es5-ext",
       "keccak",
       "node-hid",
       "protobufjs",
       "secp256k1",
       "ssh2",
       "usb",
-      "utf-8-validate",
-      "web3",
-      "web3-bzz",
-      "web3-shh"
+      "utf-8-validate"
     ]
   }
 }

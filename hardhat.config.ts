@@ -1220,6 +1220,72 @@ const config: HardhatUserConfig = {
       accounts,
       ledgerAccounts,
     },
+    immutableZkEVMTestnet: {
+      chainId: 13473,
+      url: vars.get(
+        "IMMUTABLEZKEVM_TESTNET_URL",
+        "https://rpc.testnet.immutable.com",
+      ),
+      accounts,
+      ledgerAccounts,
+    },
+    immutableZkEVMMain: {
+      chainId: 13371,
+      url: vars.get("IMMUTABLEZKEVM_MAINNET_URL", "https://rpc.immutable.com"),
+      accounts,
+      ledgerAccounts,
+    },
+    abstractTestnet: {
+      chainId: 11124,
+      url: vars.get("ABSTRACT_TESTNET_URL", "https://api.testnet.abs.xyz"),
+      accounts,
+      ledgerAccounts,
+    },
+    abstractMain: {
+      chainId: 2741,
+      url: vars.get("ABSTRACT_MAINNET_URL", "https://api.mainnet.abs.xyz"),
+      accounts,
+      ledgerAccounts,
+    },
+    hyperevmTestnet: {
+      chainId: 998,
+      url: vars.get(
+        "HYPEREVM_TESTNET_URL",
+        "https://rpc.hyperliquid-testnet.xyz/evm",
+      ),
+      accounts,
+      ledgerAccounts,
+    },
+    hyperevmMain: {
+      chainId: 999,
+      url: vars.get("HYPEREVM_MAINNET_URL", "https://rpc.hyperliquid.xyz/evm"),
+      accounts,
+      ledgerAccounts,
+    },
+    kaiaMain: {
+      chainId: 8217,
+      url: vars.get("KAIA_MAINNET_URL", "https://rpc.ankr.com/kaia"),
+      accounts,
+      ledgerAccounts,
+    },
+    apeChainTestnet: {
+      chainId: 33111,
+      url: vars.get(
+        "APECHAIN_TESTNET_URL",
+        "https://curtis.rpc.caldera.xyz/http",
+      ),
+      accounts,
+      ledgerAccounts,
+    },
+    apeChainMain: {
+      chainId: 33139,
+      url: vars.get(
+        "APECHAIN_MAINNET_URL",
+        "https://apechain.calderachain.xyz/http",
+      ),
+      accounts,
+      ledgerAccounts,
+    },
   },
   xdeploy: {
     // Change this name to the name of your main contract
@@ -1516,6 +1582,17 @@ const config: HardhatUserConfig = {
       // For Bitlayer testnet & mainnet
       bitlayer: vars.get("BITLAYER_API_KEY", ""),
       bitlayerTestnet: vars.get("BITLAYER_API_KEY", ""),
+      // For Immutable zkEVM testnet & mainnet
+      immutableZkEVM: vars.get("IMMUTABLEZKEVM_API_KEY", ""),
+      immutableZkEVMTestnet: vars.get("IMMUTABLEZKEVM_API_KEY", ""),
+      // For Abstract testnet & mainnet
+      abstract: vars.get("ABSTRACT_API_KEY", ""),
+      abstractTestnet: vars.get("ABSTRACT_API_KEY", ""),
+      // For Kaia mainnet
+      kaia: vars.get("OKLINK_API_KEY", ""),
+      // For ApeChain testnet & mainnet
+      apeChain: vars.get("APECHAIN_API_KEY", ""),
+      apeChainTestnet: vars.get("APECHAIN_API_KEY", ""),
     },
     customChains: [
       {
@@ -2574,6 +2651,63 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-testnet.btrscan.com/scan/api",
           browserURL: "https://testnet.btrscan.com",
+        },
+      },
+      {
+        network: "immutableZkEVM",
+        chainId: 13371,
+        urls: {
+          apiURL: "https://explorer.immutable.com/api",
+          browserURL: "https://explorer.immutable.com",
+        },
+      },
+      {
+        network: "immutableZkEVMTestnet",
+        chainId: 13473,
+        urls: {
+          apiURL: "https://explorer.testnet.immutable.com/api",
+          browserURL: "https://explorer.testnet.immutable.com",
+        },
+      },
+      {
+        network: "abstract",
+        chainId: 2741,
+        urls: {
+          apiURL: "https://api.abscan.org/api",
+          browserURL: "https://abscan.org",
+        },
+      },
+      {
+        network: "abstractTestnet",
+        chainId: 11124,
+        urls: {
+          apiURL: "https://api-sepolia.abscan.org/api",
+          browserURL: "https://sepolia.abscan.org",
+        },
+      },
+      {
+        network: "kaia",
+        chainId: 8217,
+        urls: {
+          apiURL:
+            "https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/KAIA",
+          browserURL: "https://www.oklink.com/kaia",
+        },
+      },
+      {
+        network: "apeChain",
+        chainId: 33139,
+        urls: {
+          apiURL: "https://api.apescan.io/api",
+          browserURL: "https://apescan.io",
+        },
+      },
+      {
+        network: "apeChainTestnet",
+        chainId: 33111,
+        urls: {
+          apiURL: "https://api-curtis.apescan.io/api",
+          browserURL: "https://curtis.apescan.io",
         },
       },
     ],

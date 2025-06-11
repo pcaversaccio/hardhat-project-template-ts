@@ -18,8 +18,7 @@ read contract
 echo Enter the constructor arguments separated by spaces \(e.g. hello 0xacc4de8d4ca96c3f0c91b58f1d6c0d80cf8cc146 1\):
 read -ra args
 
-if [ -z "$args" ]
-then
+if [ -z "$args" ]; then
   forge create -i ./contracts/src/${contract}.sol:${contract} --rpc-url $rpc --private-key $key
 else
   forge create -i ./contracts/src/${contract}.sol:${contract} --rpc-url $rpc --private-key $key --constructor-args ${args}
