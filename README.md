@@ -5,7 +5,7 @@
 
 ## Installation
 
-It is recommended to install [`pnpm`](https://pnpm.io) through the `npm` package manager, which comes bundled with [Node.js](https://nodejs.org/en) when you install it on your system. It is recommended to use a Node.js version `>=22.11.0`.
+It is recommended to install [`pnpm`](https://pnpm.io) through the `npm` package manager, which comes bundled with [Node.js](https://nodejs.org/en) when you install it on your system. It is recommended to use a Node.js version `>=24.2.0`.
 
 Once you have `npm` installed, you can run the following both to install and upgrade `pnpm`:
 
@@ -24,10 +24,10 @@ pnpm install
 > [!NOTE]
 > The deployment script [`deploy.ts`](./scripts/deploy.ts) attempts to automatically verify the contract on the target chain after deployment. If you have not configured an API key, the verification will fail.
 
-**Example Goerli:**
+**Example Sepolia:**
 
 ```console
-pnpm deploy:goerli
+pnpm deploy:sepolia
 ```
 
 > The deployment script [`deploy.ts`](./scripts/deploy.ts) includes the `tenderly` Hardhat Runtime Environment (HRE) extension with the `verify` method. Please consider uncommenting and configuring the Tenderly `project`, `username`, `forkNetwork`, `privateVerification`, and `deploymentsDir` attributes in the [`hardhat.config.ts`](./hardhat.config.ts) file before deploying or remove this call. Also, for this plugin to function you need to create a `config.yaml` file at `$HOME/.tenderly/config.yaml` or `%HOMEPATH%\.tenderly\config.yaml` and add an `access_key` field to it. For further information, see [here](https://github.com/Tenderly/hardhat-tenderly/tree/master/packages/hre-extender-v2#installing-tenderly-cli).
@@ -51,35 +51,6 @@ You can also run `npx hardhat vars setup` to see which other [configuration vari
 ## Using a Ledger Hardware Wallet
 
 This template implements the [`hardhat-ledger`](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-ledger) plugin. Run `npx hardhat set LEDGER_ACCOUNT` and enter the address of the Ledger account you want to use.
-
-## Using the Truffle Dashboard
-
-> [!IMPORTANT]
-> Truffle has been [sunsetted](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat) by Consensys, but I still keep it in the template as I find it a very valuable tool. Please note that due to the lengthy loading time of Truffle Dashboard's `npm` package [`@truffle/dashboard-hardhat-plugin`](https://www.npmjs.com/package/@truffle/dashboard-hardhat-plugin), the module is disabled by default in the [`hardhat.config.ts`](./hardhat.config.ts) file. If you want to use it, you must uncomment the module import and the `truffle` configuration accordingly.
-
-[Truffle](https://archive.trufflesuite.com) developed the [Truffle Dashboard](https://archive.trufflesuite.com/docs/truffle/how-to/use-the-truffle-dashboard/) to provide an easy way to use your existing MetaMask wallet for your deployments and for other transactions that you need to send from a command line context. Because the Truffle Dashboard connects directly to MetaMask it is also possible to use it in combination with hardware wallets like [Ledger](https://www.ledger.com) or [Trezor](https://trezor.io).
-
-First, it is recommended that you install Truffle globally by running:
-
-```console
-npm install -g truffle
-```
-
-> If you have already installed Truffle, you need to ensure that you have at least version [`5.11.5`](https://github.com/trufflesuite/truffle/releases/tag/v5.11.5) installed and otherwise upgrade.
-
-To start a Truffle Dashboard, you need to run the following command in a separate terminal window:
-
-```console
-truffle dashboard
-```
-
-By default, the command above starts a Truffle Dashboard at `http://localhost:24012` and opens the Dashboard in a new tab in your default browser. The Dashboard then prompts you to connect your wallet and confirm that you're connected to the right network. **You should double check your connected network at this point, since switching to a different network during a deployment can have unintended consequences.**
-
-Eventually, in order to deploy with the Truffle Dashboard, you can simply run:
-
-```console
-pnpm deploy:dashboard
-```
 
 ## Mainnet Forking
 
@@ -106,7 +77,7 @@ Change the contract address to your contract after the deployment has been succe
 **Example:**
 
 ```console
-npx hardhat verify --network fantomMain --constructor-args arguments.js <YOUR_CONTRACT_ADDRESS>
+npx hardhat verify --network ethMain --constructor-args arguments.js <YOUR_CONTRACT_ADDRESS>
 ```
 
 ## Contract Interaction
