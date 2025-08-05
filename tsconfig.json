@@ -18,7 +18,8 @@
     "./deploy/**/*.ts",
     "./test/**/*.js",
     "./test/**/*.ts",
-    "./typechain-types/**/*.ts"
+    "./typechain-types/**/*.ts",
+    "slippy.config.js"
   ],
   "files": [
     "hardhat.config.ts",
