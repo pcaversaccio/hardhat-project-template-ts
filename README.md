@@ -1,6 +1,6 @@
 # Fully-Fledged Hardhat Project Template Based on TypeScript
 
-[![🕵️‍♂️ Test smart contracts](https://github.com/pcaversaccio/hardhat-project-template-ts/actions/workflows/test-contracts.yml/badge.svg)](https://github.com/pcaversaccio/hardhat-project-template-ts/actions/workflows/test-contracts.yml)
+[![🕵️‍♂️ Test smart contracts](https://github.com/blokk-studio/hardhat-project-template-ts/actions/workflows/test-contracts.yml/badge.svg)](https://github.com/blokk-studio/hardhat-project-template-ts/actions/workflows/test-contracts.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/license/mit)
 
 ## Installation
@@ -151,3 +151,7 @@ Inside the [`scripts/`](./scripts) folder are a few preconfigured scripts that c
 ```console
 make scripts
 ```
+
+## Acknowledgement
+
+This template is a public fork of [pcaversaccio](https://github.com/pcaversaccio)'s [template](https://github.com/pcaversaccio/hardhat-project-template-ts), licensed under the [MIT License](https://github.com/pcaversaccio/hardhat-project-template-ts/blob/main/LICENSE).
