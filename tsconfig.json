@@ -18,14 +18,14 @@
     "./deploy/**/*.ts",
     "./test/**/*.js",
     "./test/**/*.ts",
-    "./typechain-types/**/*.ts",
-    "slippy.config.js"
+    "./typechain-types/**/*.ts"
   ],
   "files": [
     "hardhat.config.ts",
     "deploy-args.ts",
     "eslint.config.js",
     "arguments.js",
-    ".solcover.js"
+    ".solcover.js",
+    "slippy.config.js"
   ]
 }
