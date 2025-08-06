@@ -1,0 +1,21 @@
+module.exports = {
+  ignores: ["contracts/lib/**/*"],
+  rules: {
+    "explicit-types": "error",
+    "id-denylist": "error",
+    "imports-on-top": "error",
+    "max-state-vars": "error",
+    "naming-convention": "error",
+    "no-console": "error",
+    "no-default-visibility": "error",
+    "no-duplicate-imports": "error",
+    "no-empty-blocks": "error",
+    "no-global-imports": "error",
+    "no-tx-origin": "error",
+    "no-uninitialized-immutable-references": "error",
+    "no-unused-vars": "error",
+    "require-revert-reason": "error",
+    "sort-imports": "error",
+    "sort-modifiers": "error",
+  },
+};

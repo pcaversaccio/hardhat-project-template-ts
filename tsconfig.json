@@ -25,6 +25,7 @@
     "deploy-args.ts",
     "eslint.config.js",
     "arguments.js",
-    ".solcover.js"
+    ".solcover.js",
+    "slippy.config.js"
   ]
 }
