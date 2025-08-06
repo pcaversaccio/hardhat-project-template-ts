@@ -4107,8 +4107,8 @@ packages:
   zod@3.24.4:
     resolution: {integrity: sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg==}
 
-  zod@4.0.14:
-    resolution: {integrity: sha512-nGFJTnJN6cM2v9kXL+SOBq3AtjQby3Mv5ySGFof5UGRHrRioSJ5iG680cYNjE/yWk671nROcpPj4hAS8nyLhSw==}
+  zod@4.0.15:
+    resolution: {integrity: sha512-2IVHb9h4Mt6+UXkyMs0XbfICUh1eUrlJJAOupBHUhLRnKkruawyDddYRCs0Eizt900ntIMk9/4RksYl+FgSpcQ==}
 
 snapshots:
 
@@ -5859,7 +5859,7 @@ snapshots:
       micromatch: 4.0.8
       minimist: 1.2.8
       workerpool: 9.3.3
-      zod: 4.0.14
+      zod: 4.0.15
 
   '@smithy/abort-controller@4.0.4':
     dependencies:
@@ -9370,4 +9370,4 @@ snapshots:
   zod@3.24.4:
     optional: true
 
-  zod@4.0.14: {}
+  zod@4.0.15: {}
