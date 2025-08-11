@@ -54,8 +54,8 @@ importers:
         specifier: ^5.4.0
         version: 5.4.0
       '@slippy-lint/slippy':
-        specifier: ^0.0.10
-        version: 0.0.10
+        specifier: ^0.0.12
+        version: 0.0.12
       '@tenderly/hardhat-tenderly':
         specifier: ^2.5.2
         version: 2.5.2(@types/node@24.2.0)(bufferutil@4.0.9)(encoding@0.1.13)(hardhat@2.26.2(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@24.2.0)(typescript@5.9.2))(typescript@5.9.2)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
@@ -1115,8 +1115,8 @@ packages:
   '@sinonjs/text-encoding@0.7.3':
     resolution: {integrity: sha512-DE427ROAphMQzU4ENbliGYrBSYPXF+TtLg9S8vzeA+OF4ZKzoDdzfL8sxuMUGS/lgRhM6j1URSk9ghf7Xo1tyA==}
 
-  '@slippy-lint/slippy@0.0.10':
-    resolution: {integrity: sha512-17Rypgbf3+mhHL1Z7iffhB3TENFq8iDDcQfHBMbKDzpckwa4/0KkUfCxhvGe6JGwMGVwKUAli3DFhtQWp3Cmwg==}
+  '@slippy-lint/slippy@0.0.12':
+    resolution: {integrity: sha512-p0HAY23a+pEhWfpam7CMsc0wPOXecoRVforvtk2CYTMDeV+U8EkEgeT8Qngu8UCAlCZl3HLltnt/8bSCnGQaHg==}
     hasBin: true
 
   '@smithy/abort-controller@4.0.5':
@@ -4110,8 +4110,8 @@ packages:
   zod@3.24.4:
     resolution: {integrity: sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg==}
 
-  zod@4.0.15:
-    resolution: {integrity: sha512-2IVHb9h4Mt6+UXkyMs0XbfICUh1eUrlJJAOupBHUhLRnKkruawyDddYRCs0Eizt900ntIMk9/4RksYl+FgSpcQ==}
+  zod@4.0.17:
+    resolution: {integrity: sha512-1PHjlYRevNxxdy2JZ8JcNAw7rX8V9P1AKkP+x/xZfxB0K5FYfuV+Ug6P/6NVSR2jHQ+FzDDoDHS04nYUsOIyLQ==}
 
 snapshots:
 
@@ -5854,7 +5854,7 @@ snapshots:
 
   '@sinonjs/text-encoding@0.7.3': {}
 
-  '@slippy-lint/slippy@0.0.10':
+  '@slippy-lint/slippy@0.0.12':
     dependencies:
       '@nomicfoundation/slang': 1.2.1
       chalk: 5.5.0
@@ -5862,7 +5862,7 @@ snapshots:
       micromatch: 4.0.8
       minimist: 1.2.8
       workerpool: 9.3.3
-      zod: 4.0.15
+      zod: 4.0.17
 
   '@smithy/abort-controller@4.0.5':
     dependencies:
@@ -9378,4 +9378,4 @@ snapshots:
   zod@3.24.4:
     optional: true
 
-  zod@4.0.15: {}
+  zod@4.0.17: {}
