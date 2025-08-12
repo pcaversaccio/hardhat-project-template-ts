@@ -93,8 +93,8 @@ importers:
         specifier: ^2.11.0
         version: 2.11.0(hardhat@2.26.2(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@24.2.0)(typescript@5.9.2))(typescript@5.9.2)(utf-8-validate@5.0.10))
       hardhat-contract-sizer:
-        specifier: ^2.10.0
-        version: 2.10.0(hardhat@2.26.2(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@24.2.0)(typescript@5.9.2))(typescript@5.9.2)(utf-8-validate@5.0.10))
+        specifier: ^2.10.1
+        version: 2.10.1(hardhat@2.26.2(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@24.2.0)(typescript@5.9.2))(typescript@5.9.2)(utf-8-validate@5.0.10))
       hardhat-gas-reporter:
         specifier: ^2.3.0
         version: 2.3.0(bufferutil@4.0.9)(hardhat@2.26.2(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@24.2.0)(typescript@5.9.2))(typescript@5.9.2)(utf-8-validate@5.0.10))(typescript@5.9.2)(utf-8-validate@5.0.10)(zod@3.24.4)
@@ -2472,8 +2472,8 @@ packages:
     peerDependencies:
       hardhat: ^2.0.0
 
-  hardhat-contract-sizer@2.10.0:
-    resolution: {integrity: sha512-QiinUgBD5MqJZJh1hl1jc9dNnpJg7eE/w4/4GEnrcmZJJTDbVFNe3+/3Ep24XqISSkYxRz36czcPHKHd/a0dwA==}
+  hardhat-contract-sizer@2.10.1:
+    resolution: {integrity: sha512-/PPQQbUMgW6ERzk8M0/DA8/v2TEM9xRRAnF9qKPNMYF6FX5DFWcnxBsQvtp8uBz+vy7rmLyV9Elti2wmmhgkbg==}
     peerDependencies:
       hardhat: ^2.0.0
 
@@ -7586,7 +7586,7 @@ snapshots:
       delete-empty: 3.0.0
       hardhat: 2.26.2(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@24.2.0)(typescript@5.9.2))(typescript@5.9.2)(utf-8-validate@5.0.10)
 
-  hardhat-contract-sizer@2.10.0(hardhat@2.26.2(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@24.2.0)(typescript@5.9.2))(typescript@5.9.2)(utf-8-validate@5.0.10)):
+  hardhat-contract-sizer@2.10.1(hardhat@2.26.2(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@24.2.0)(typescript@5.9.2))(typescript@5.9.2)(utf-8-validate@5.0.10)):
     dependencies:
       chalk: 4.1.2
       cli-table3: 0.6.5
