@@ -244,7 +244,7 @@
     "@types/mocha": "^10.0.10",
     "@types/node": "^24.2.0",
     "chai": "^4.5.0",
-    "eslint": "^9.32.0",
+    "eslint": "^9.33.0",
     "eslint-config-prettier": "^10.1.8",
     "ethers": "^6.15.0",
     "hardhat": "^2.26.2",
