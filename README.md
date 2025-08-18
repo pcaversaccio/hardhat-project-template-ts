@@ -46,11 +46,11 @@ This template uses the [`xdeployer`](https://github.com/pcaversaccio/xdeployer) 
 
 Run `npx hardhat vars set PRIVATE_KEY` to set the private key of your wallet. This allows secure access to your wallet to use with both testnet and mainnet funds during Hardhat deployments.
 
-You can also run `npx hardhat vars setup` to see which other [configuration variables](https://hardhat.org/hardhat-runner/docs/guides/configuration-variables) are available.
+You can also run `npx hardhat vars setup` to see which other [configuration variables](https://v2.hardhat.org/hardhat-runner/docs/guides/configuration-variables) are available.
 
 ## Using a Ledger Hardware Wallet
 
-This template implements the [`hardhat-ledger`](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-ledger) plugin. Run `npx hardhat set LEDGER_ACCOUNT` and enter the address of the Ledger account you want to use.
+This template implements the [`hardhat-ledger`](https://v2.hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-ledger) plugin. Run `npx hardhat set LEDGER_ACCOUNT` and enter the address of the Ledger account you want to use.
 
 ## Mainnet Forking
 
@@ -90,7 +90,7 @@ npx hardhat run scripts/interact.ts --network <network_name>
 
 ## Foundry
 
-This template repository also includes the [Foundry](https://github.com/foundry-rs/foundry) toolkit as well as the [`@nomicfoundation/hardhat-foundry`](https://hardhat.org/hardhat-runner/docs/advanced/hardhat-and-foundry) plugin.
+This template repository also includes the [Foundry](https://github.com/foundry-rs/foundry) toolkit as well as the [`@nomicfoundation/hardhat-foundry`](https://v2.hardhat.org/hardhat-runner/docs/advanced/hardhat-and-foundry) plugin.
 
 > If you need help getting started with Foundry, I recommend reading the [📖 Foundry Book](https://getfoundry.sh).
 
