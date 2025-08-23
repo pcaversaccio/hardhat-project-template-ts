@@ -21,7 +21,7 @@
   },
   "author": "Pascal Marco Caversaccio <pascal.caversaccio@hotmail.ch>",
   "license": "MIT",
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.15.0",
   "scripts": {
     "help": "npx hardhat help",
     "accounts": "npx hardhat accounts",
@@ -221,7 +221,7 @@
     "lint:fix": "pnpm prettier:fix && npx eslint . --fix"
   },
   "devDependencies": {
-    "@eslint/js": "^9.33.0",
+    "@eslint/js": "^9.34.0",
     "@matterlabs/hardhat-zksync-deploy": "^1.8.0",
     "@matterlabs/hardhat-zksync-ethers": "^1.4.0",
     "@matterlabs/hardhat-zksync-solc": "^1.5.1",
@@ -244,7 +244,7 @@
     "@types/mocha": "^10.0.10",
     "@types/node": "^24.3.0",
     "chai": "^4.5.0",
-    "eslint": "^9.33.0",
+    "eslint": "^9.34.0",
     "eslint-config-prettier": "^10.1.8",
     "ethers": "^6.15.0",
     "hardhat": "^2.26.3",
