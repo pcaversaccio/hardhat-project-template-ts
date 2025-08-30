@@ -236,7 +236,7 @@
     "@nomicfoundation/hardhat-verify": "^2.1.1",
     "@nomicfoundation/ignition-core": "^0.15.13",
     "@openzeppelin/contracts": "^5.4.0",
-    "@slippy-lint/slippy": "^0.0.12",
+    "@slippy-lint/slippy": "^0.1.0",
     "@tenderly/hardhat-tenderly": "^2.5.2",
     "@typechain/ethers-v6": "^0.5.1",
     "@typechain/hardhat": "^9.1.0",
