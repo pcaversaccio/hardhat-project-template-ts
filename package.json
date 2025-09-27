@@ -258,7 +258,7 @@
     "typechain": "^8.3.2",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.44.1",
-    "xdeployer": "^3.1.16",
+    "xdeployer": "^3.1.17",
     "zksync-ethers": "^6.21.0"
   },
   "pnpm": {
