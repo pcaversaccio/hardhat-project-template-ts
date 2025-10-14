@@ -21,7 +21,7 @@
   },
   "author": "Pascal Marco Caversaccio <pascal.caversaccio@hotmail.ch>",
   "license": "MIT",
-  "packageManager": "pnpm@10.18.2",
+  "packageManager": "pnpm@10.18.3",
   "scripts": {
     "help": "npx hardhat help",
     "accounts": "npx hardhat accounts",
@@ -242,7 +242,7 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.20",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^24.7.1",
+    "@types/node": "^24.7.2",
     "chai": "^4.5.0",
     "eslint": "^9.37.0",
     "eslint-config-prettier": "^10.1.8",
@@ -257,7 +257,7 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.0",
+    "typescript-eslint": "^8.46.1",
     "xdeployer": "^3.1.17",
     "zksync-ethers": "^6.21.0"
   },
