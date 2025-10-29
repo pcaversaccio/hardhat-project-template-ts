@@ -1,0 +1,8 @@
+{
+  "contracts/lib/forge-std": {
+    "branch": {
+      "name": "master",
+      "rev": "100b0d756adda67bc70aab816fa5a1a95dcf78b6"
+    }
+  }
+}
