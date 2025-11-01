@@ -30,8 +30,8 @@
     "clean": "npx hardhat clean && forge clean",
     "snapshot": "forge snapshot --out forge-artifacts",
     "coverage:hh": "npx hardhat coverage",
-    "coverage:forge": "forge coverage --report summary --out forge-artifacts --lcov-version 2.3.1",
-    "coverage:forge:report": "forge coverage --report lcov --out forge-artifacts --lcov-version 2.3.1 && lcov --branch-coverage --remove lcov.info \"test/*\" \"script/*\" \"node_modules/*\" --output-file lcov.info --ignore-errors unused,unused && genhtml lcov.info --branch-coverage --output-dir coverage",
+    "coverage:forge": "forge coverage --report summary --out forge-artifacts --lcov-version 2.3.2",
+    "coverage:forge:report": "forge coverage --report lcov --out forge-artifacts --lcov-version 2.3.2 && lcov --branch-coverage --remove lcov.info \"test/*\" \"script/*\" \"node_modules/*\" --output-file lcov.info --ignore-errors unused,unused && genhtml lcov.info --branch-coverage --output-dir coverage",
     "test:hh": "npx hardhat test",
     "test:forge": "forge test -vvv --root . -C contracts/src --match-path \"contracts/test/*\" --out forge-artifacts",
     "compile": "npx hardhat compile && forge build --root . -C contracts/src --optimize --out forge-artifacts",
@@ -221,7 +221,7 @@
     "lint:fix": "pnpm prettier:fix && npx eslint . --fix"
   },
   "devDependencies": {
-    "@eslint/js": "^9.38.0",
+    "@eslint/js": "^9.39.0",
     "@matterlabs/hardhat-zksync-deploy": "^1.8.0",
     "@matterlabs/hardhat-zksync-ethers": "^1.4.0",
     "@matterlabs/hardhat-zksync-solc": "^1.5.1",
@@ -244,7 +244,7 @@
     "@types/mocha": "^10.0.10",
     "@types/node": "^24.9.2",
     "chai": "^4.5.0",
-    "eslint": "^9.38.0",
+    "eslint": "^9.39.0",
     "eslint-config-prettier": "^10.1.8",
     "ethers": "^6.15.0",
     "hardhat": "^2.26.5",
