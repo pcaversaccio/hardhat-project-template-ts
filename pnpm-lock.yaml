@@ -53,9 +53,6 @@ importers:
       '@openzeppelin/contracts':
         specifier: ^5.4.0
         version: 5.4.0
-      '@slippy-lint/slippy':
-        specifier: ^0.2.1
-        version: 0.2.1
       '@tenderly/hardhat-tenderly':
         specifier: ^2.5.2
         version: 2.5.2(@types/node@24.10.1)(bufferutil@4.0.9)(encoding@0.1.13)(hardhat@2.27.0(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@24.10.1)(typescript@5.9.3))(typescript@5.9.3)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
@@ -104,6 +101,9 @@ importers:
       prettier-plugin-solidity:
         specifier: ^2.2.0
         version: 2.2.0(prettier@3.6.2)
+      slippy:
+        specifier: ^0.3.0
+        version: 0.3.0
       solidity-coverage:
         specifier: ^0.8.16
         version: 0.8.16(hardhat@2.27.0(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@24.10.1)(typescript@5.9.3))(typescript@5.9.3)(utf-8-validate@5.0.10))
@@ -1116,10 +1116,6 @@ packages:
 
   '@sinonjs/text-encoding@0.7.3':
     resolution: {integrity: sha512-DE427ROAphMQzU4ENbliGYrBSYPXF+TtLg9S8vzeA+OF4ZKzoDdzfL8sxuMUGS/lgRhM6j1URSk9ghf7Xo1tyA==}
-
-  '@slippy-lint/slippy@0.2.1':
-    resolution: {integrity: sha512-EshfotrF8bpONybjlyHhItTDHrxLoc7uDAc7aKGzWIsnHBSyikc+AvOtmG+x6D2mh/EuoRT+tddXtNtZrWX4YQ==}
-    hasBin: true
 
   '@smithy/abort-controller@4.2.5':
     resolution: {integrity: sha512-j7HwVkBw68YW8UmFRcjZOmssE77Rvk0GWAIN1oFBhsaovQmZWYCIcGa9/pwRB0ExI8Sk9MWNALTjftjHZea7VA==}
@@ -3542,6 +3538,10 @@ packages:
     resolution: {integrity: sha512-qMCMfhY040cVHT43K9BFygqYbUPFZKHOg7K73mtTWJRb8pyP3fzf4Ixd5SzdEJQ6MRUg/WBnOLxghZtKKurENQ==}
     engines: {node: '>=10'}
 
+  slippy@0.3.0:
+    resolution: {integrity: sha512-OtVm7Xa4iA4UWmYO7f27CAfyp/UBCQKFSIKOOVrD6md9xqKrZpjCZzEg8X+BSeVxn0XYEYvELeLEBoU6+cDOqg==}
+    hasBin: true
+
   smart-buffer@4.2.0:
     resolution: {integrity: sha512-94hK0Hh8rPqQl2xXc3HsaBoOXKV20MToPkcXvwbISWLEs+64sBq5kFgn2kJDHb1Pry9yrP0dxrCI9RRci7RXKg==}
     engines: {node: '>= 6.0.0', npm: '>= 3.0.0'}
@@ -5840,20 +5840,6 @@ snapshots:
       type-detect: 4.1.0
 
   '@sinonjs/text-encoding@0.7.3': {}
-
-  '@slippy-lint/slippy@0.2.1':
-    dependencies:
-      '@nomicfoundation/slang': 1.3.0
-      chalk: 5.6.2
-      debug: 4.4.3(supports-color@8.1.1)
-      fast-glob: 3.3.3
-      micromatch: 4.0.8
-      minimist: 1.2.8
-      semver: 7.7.3
-      workerpool: 9.3.4
-      zod: 4.1.12
-    transitivePeerDependencies:
-      - supports-color
 
   '@smithy/abort-controller@4.2.5':
     dependencies:
@@ -8761,6 +8747,20 @@ snapshots:
       ansi-styles: 4.3.0
       astral-regex: 2.0.0
       is-fullwidth-code-point: 3.0.0
+
+  slippy@0.3.0:
+    dependencies:
+      '@nomicfoundation/slang': 1.3.0
+      chalk: 5.6.2
+      debug: 4.4.3(supports-color@8.1.1)
+      fast-glob: 3.3.3
+      micromatch: 4.0.8
+      minimist: 1.2.8
+      semver: 7.7.3
+      workerpool: 9.3.4
+      zod: 4.1.12
+    transitivePeerDependencies:
+      - supports-color
 
   smart-buffer@4.2.0: {}
 
