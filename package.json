@@ -257,8 +257,8 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.47.0",
-    "xdeployer": "^3.1.18",
+    "typescript-eslint": "^8.48.0",
+    "xdeployer": "^3.1.19",
     "zksync-ethers": "^6.21.0"
   },
   "pnpm": {
