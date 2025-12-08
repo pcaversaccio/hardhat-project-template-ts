@@ -234,7 +234,7 @@
     "@nomicfoundation/hardhat-ledger": "^1.2.2",
     "@nomicfoundation/hardhat-network-helpers": "^1.1.2",
     "@nomicfoundation/hardhat-verify": "^2.1.3",
-    "@nomicfoundation/ignition-core": "^0.15.14",
+    "@nomicfoundation/ignition-core": "^0.15.15",
     "@openzeppelin/contracts": "^5.4.0",
     "@tenderly/hardhat-tenderly": "^2.5.2",
     "@typechain/ethers-v6": "^0.5.1",
