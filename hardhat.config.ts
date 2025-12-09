@@ -70,17 +70,21 @@ const config: HardhatUserConfig = {
     sources: "./contracts/src",
   },
   solidity: {
+    // Only use Solidity default versions `>=0.8.31` for EVM networks that support the new `osaka` opcode `CLZ` and precompiled contract `P256VERIFY`:
+    // https://github.com/ethereum/execution-specs/blob/forks/osaka/src/ethereum/forks/osaka/__init__.py
+    // Only use Solidity default versions `>=0.8.30` for EVM networks that support the new `prague` precompiled contracts:
+    // https://github.com/ethereum/execution-specs/blob/forks/osaka/src/ethereum/forks/prague/__init__.py
     // Only use Solidity default versions `>=0.8.25` for EVM networks that support the new `cancun` opcodes:
-    // https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md
+    // https://github.com/ethereum/execution-specs/blob/forks/osaka/src/ethereum/forks/cancun/__init__.py
     // Only use Solidity default versions `>=0.8.20` for EVM networks that support the opcode `PUSH0`
     // Otherwise, use the versions `<=0.8.19`
-    version: "0.8.30",
+    version: "0.8.31",
     settings: {
       optimizer: {
         enabled: true,
         runs: 999_999,
       },
-      evmVersion: "paris", // Prevent using the `PUSH0` and `cancun` opcodes
+      evmVersion: "osaka",
     },
   },
   zksolc: {
