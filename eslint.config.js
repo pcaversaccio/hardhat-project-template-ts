@@ -34,7 +34,7 @@ module.exports = defineConfig(
     ignores: [
       "node_modules/**",
       "pnpm-lock.yaml",
-      "lib/**",
+      "contracts/lib/**",
       "cache/**",
       "cache_hardhat/**",
       "cache_hardhat-zk/**",
