@@ -21,7 +21,7 @@
   },
   "author": "Pascal Marco Caversaccio <pascal.caversaccio@hotmail.ch>",
   "license": "MIT",
-  "packageManager": "pnpm@10.26.0",
+  "packageManager": "pnpm@10.26.1",
   "scripts": {
     "help": "npx hardhat help",
     "accounts": "npx hardhat accounts",
@@ -252,7 +252,7 @@
     "hardhat-contract-sizer": "^2.10.1",
     "hardhat-gas-reporter": "^2.3.0",
     "prettier": "^3.7.4",
-    "prettier-plugin-solidity": "^2.2.0",
+    "prettier-plugin-solidity": "^2.2.1",
     "slippy": "^0.3.1",
     "solidity-coverage": "^0.8.17",
     "ts-node": "^10.9.2",
