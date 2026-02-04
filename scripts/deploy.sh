@@ -2,7 +2,7 @@
 
 # Read the RPC URL
 echo Enter your RPC URL \(script uses silent mode\;\ i.e. not printed to the console\):
-echo Example: "https://eth-mainnet.alchemyapi.io/v2/XXXXXXXXXX"
+echo Example: "https://eth-mainnet.g.alchemy.com/v2/XXXXXXXXXX"
 read -s rpc
 
 # Read the private key
