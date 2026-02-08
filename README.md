@@ -92,7 +92,7 @@ npx hardhat run scripts/interact.ts --network <network_name>
 
 This template repository also includes the [Foundry](https://github.com/foundry-rs/foundry) toolkit as well as the [`@nomicfoundation/hardhat-foundry`](https://v2.hardhat.org/hardhat-runner/docs/advanced/hardhat-and-foundry) plugin.
 
-> If you need help getting started with Foundry, I recommend reading the [📖 Foundry Book](https://getfoundry.sh).
+> If you need help getting started with Foundry, I recommend reading the [📖 Foundry Book](https://www.getfoundry.sh).
 
 ### Dependencies
 
