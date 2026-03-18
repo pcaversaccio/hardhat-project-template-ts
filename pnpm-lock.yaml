@@ -123,8 +123,8 @@ importers:
         specifier: ^8.57.1
         version: 8.57.1(eslint@10.0.3)(typescript@5.9.3)
       xdeployer:
-        specifier: ^3.1.22
-        version: 3.1.22(@nomicfoundation/hardhat-ethers@3.1.3(ethers@6.16.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.28.6(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@25.5.0)(typescript@5.9.3))(typescript@5.9.3)(utf-8-validate@5.0.10)))(ethers@6.16.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.28.6(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@25.5.0)(typescript@5.9.3))(typescript@5.9.3)(utf-8-validate@5.0.10))
+        specifier: ^3.1.23
+        version: 3.1.23(@nomicfoundation/hardhat-ethers@3.1.3(ethers@6.16.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.28.6(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@25.5.0)(typescript@5.9.3))(typescript@5.9.3)(utf-8-validate@5.0.10)))(ethers@6.16.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.28.6(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@25.5.0)(typescript@5.9.3))(typescript@5.9.3)(utf-8-validate@5.0.10))
       zksync-ethers:
         specifier: ^6.21.1
         version: 6.21.1(ethers@6.16.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
@@ -160,8 +160,8 @@ packages:
   '@aws-crypto/util@5.2.0':
     resolution: {integrity: sha512-4RkU9EsI6ZpBve5fseQlGNUWKMa1RLPQ1dnjnQoe07ldfIzcsGb5hC5W0Dm7u423KWzawlrpbjXBrXCEv9zazQ==}
 
-  '@aws-sdk/client-lambda@3.1010.0':
-    resolution: {integrity: sha512-PSXcGjUd68umeJp5cneeIsWRMGDf9l9vRiKVHK90CANZxie5boQce3ldBJ+4+OHov5pCbN8dr8yd4Umq3U+yWw==}
+  '@aws-sdk/client-lambda@3.1011.0':
+    resolution: {integrity: sha512-qX8QYpTU4jSiYQB/zEguvGLKAkwhFf60Gp+xtkO4yJNpu6680DsXHX3UND/seYXL5zOyUXIwsiH14oUditvu4Q==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/core@3.973.20':
@@ -484,44 +484,44 @@ packages:
   '@js-sdsl/ordered-map@4.4.2':
     resolution: {integrity: sha512-iUKgm52T8HOE/makSxjqoWhe95ZJA1/G1sYsGev2JDKUSS14KAgg1LHb+Ba+IPow0xflbnSkOsZcO08C7w1gYw==}
 
-  '@ledgerhq/client-ids@0.7.0':
-    resolution: {integrity: sha512-3TM590rpCSpncVBY0pXYvQjppCNJxIEZXSnvvumiNmjfDendDZrfxVK7jN1BYJI3SQETvo6+8+FLIyzI3aydwA==}
+  '@ledgerhq/client-ids@0.8.0':
+    resolution: {integrity: sha512-COxmSvDAtyRlgitKcCfbq7+dqOnwzbyaasUgBj7AdVtswUwPOLLBbq1y/E/dg5TNjfXTV3zMCOu7WpNq0PdVTg==}
 
   '@ledgerhq/cryptoassets@9.13.0':
     resolution: {integrity: sha512-MzGJyc48OGU/FLYGYwEJyfOgbJzlR8XJ9Oo6XpNpNUM1/E5NDqvD72V0D+0uWIJYN3e2NtyqHXShLZDu7P95YA==}
 
-  '@ledgerhq/devices@8.11.0':
-    resolution: {integrity: sha512-R4tSytEZBbvAnePrDsJzD9vltxmmKBdR5+ur4usqlGY7dwNH+WB4frZO0MoHhI646DVQY5jktbcZd4Ls3gv13g==}
+  '@ledgerhq/devices@8.12.0':
+    resolution: {integrity: sha512-E6msvdhwHax6mseoOzuPp/z7+X41KE2PWBzmmmrrJ+pNNp7KIb/FZbGuwNu1Vjeg3ekbExVwQYJXdwQLuGwRKw==}
 
-  '@ledgerhq/domain-service@1.7.0':
-    resolution: {integrity: sha512-fqQEpqEvjdRT0Wm+zL0h5EQACHf11IooRQJarvsRXfhdJca3bojQxSTO4+YJzNc+ylLbEGz71ghBcwN/0DyGgQ==}
+  '@ledgerhq/domain-service@1.7.1':
+    resolution: {integrity: sha512-CXI9UaJN+UCtTFU/+/Z5pmEWI/dQ4CCJSqCCpX3i+BY8M6JWhgCgLA4EDum2zmtvlCuQuIAh59ZW7pb6JtVFLg==}
 
-  '@ledgerhq/errors@6.30.0':
-    resolution: {integrity: sha512-MnN0JDIcGRJRjLTt9bTXYhuWsoyeUXMkC/UcjG/HbukYAZx28o3Y8eRxu1Zfi4cL7lInuBuc8Nq2wwngHjg6jw==}
+  '@ledgerhq/errors@6.31.0':
+    resolution: {integrity: sha512-aGyE0HLzM8VwWikWEETfHdOzRyUsHuXHs9n+OCBNj11Tg0LeU05iuRvfL7SiXxYNN2fE45JzPfuMFsI5dp5G7w==}
 
   '@ledgerhq/hw-app-eth@6.33.6':
     resolution: {integrity: sha512-QzYvr5FNEWWd70Vg04A2i8CY0mtPgJrrX7/KePabjXrR8NjDyJ5Ej8qSQPBTp2dkR4TGiz5Y7+HIcWpdgYzjzg==}
 
-  '@ledgerhq/hw-transport-mocker@6.32.0':
-    resolution: {integrity: sha512-LLpuf55O0gZqd5Dc4ld1WDuLOm194EgoB0yrS/O6ZI/8txVgHDGfmJv4854BSCIQHV1mXIPe5zf87iBoOjIojw==}
+  '@ledgerhq/hw-transport-mocker@6.33.0':
+    resolution: {integrity: sha512-/WB3VXm2gq77xKPyKPEazFC+rcsLgfSZqRCGK7NSr5TJ/ZElz43FNhzPN8ZoFQ2M7tpB7HxyQVq71muAYcvM/g==}
 
-  '@ledgerhq/hw-transport-node-hid-noevents@6.32.0':
-    resolution: {integrity: sha512-votE6/E86A+qdK8BbmvcpZ8HxmMZYJGlvx8kmCFJkiBvKfoBBXzfrgqziYD5sNn2aTbdXPqp5ozXJCHhW1wXkw==}
+  '@ledgerhq/hw-transport-node-hid-noevents@6.33.0':
+    resolution: {integrity: sha512-HLdIErIdqaCJzzIxvgNyr4Zl/BKZTwC8hcWUq66P6vd67VWVkL2pgdqoZWU+z8GJ4r1Sr/p7kagFuAvWdPTREQ==}
 
-  '@ledgerhq/hw-transport-node-hid@6.31.0':
-    resolution: {integrity: sha512-W+Wmgyad2/VGjkUMu2AbKCQvKAcHN4O7xq7bRAMaQm/VRfJvWKFFltcjVi91Ms/KAbPAcZALqoN6kD95+8fgpg==}
+  '@ledgerhq/hw-transport-node-hid@6.32.0':
+    resolution: {integrity: sha512-UZ1nKEaOfj8P3lT7tc6a7Da+nEymxlNR/zya4+TktL0TSPcs/UDtYo77Yx2KxhXFtBTEX3GJ3EfxVpkzPy90sw==}
 
-  '@ledgerhq/hw-transport@6.33.0':
-    resolution: {integrity: sha512-pRlINA4FTF2Yt/tzjlIHBL89Zf3Y5GQ7Binra2zHM7eeXcRpD5OizuBkSddfKwXqroNKut9zZt365s//Q2DMjQ==}
+  '@ledgerhq/hw-transport@6.34.0':
+    resolution: {integrity: sha512-BHpsf2n0/JnHsGSLGT3x3dEgOk7oLO3QYXYrzrn4RVDdiYAEyXbERYJeS1D4WbINN0/LBmTM0n4M8raRJBxxSg==}
 
-  '@ledgerhq/live-env@2.29.0':
-    resolution: {integrity: sha512-n6or6Lf0YisMymk33Ycoq80ZqX9lSVGbTQKYQCxSw14oTuTIStoxRKHAgM+IoGB11fqNigmu1wwevBFf+/dddg==}
+  '@ledgerhq/live-env@2.30.0':
+    resolution: {integrity: sha512-cs+MOC1oWv6b6Iuu0NiIjH78ecX4UAAFHgEHipdcojdsuOCRbPUxGmj/l3vpATkyEwTZEjIAVGFFtJ830KQDAw==}
 
-  '@ledgerhq/logs@6.15.0':
-    resolution: {integrity: sha512-AJSXELFIDTyKkMs8udR9B3YxftQIibceeZFWC36pGkAXDnY53vPR8s25IgQefEANGr8e2ZdAEwTL1tLOYAHqSw==}
+  '@ledgerhq/logs@6.16.0':
+    resolution: {integrity: sha512-v/PLfb1dq1En35kkpbfRWp8jLYgbPUXxGhmd4pmvPSIe0nRGkNTomsZASmWQAv6pRonVGqHIBVlte7j1MBbOww==}
 
-  '@ledgerhq/types-live@6.100.0':
-    resolution: {integrity: sha512-gyTEI6n3h70RKFYcd6G3V1xRWjDa5CXcgKluxvB/1U1HousAFmd/DZu8f5+GL7YsBMUngt2TbC7Po8r9jo6ghQ==}
+  '@ledgerhq/types-live@6.101.0':
+    resolution: {integrity: sha512-lojGdktKcwWpy6sElA9Mbl1LlmJn3ZsCxFSv7TT6ptBJwjUTatlbFu9YWaodoZ6/vJKNCdm6eehBldkgHbhqiw==}
 
   '@matterlabs/hardhat-zksync-deploy@1.8.0':
     resolution: {integrity: sha512-9yrDYGvD7Itgi01fxp9DKZpjzu9mM1U6HhJ6BZVRDgUsN+kTYxjHlRsQLH9Z/q/CT7SSLPZ2TvLj1mBSAlDskQ==}
@@ -2329,8 +2329,8 @@ packages:
     resolution: {integrity: sha512-b6suED+5/3rTpUBdG1gupIl8MPFCAMA0QXwmljLhvCUKcUvdE4gWky9zpuGCcXHOsz4J9wPGNWq6OKpmIzz3hQ==}
     hasBin: true
 
-  flatted@3.4.1:
-    resolution: {integrity: sha512-IxfVbRFVlV8V/yRaGzk0UVIcsKKHMSfYw66T/u4nTwlWteQePsxe//LjudR1AMX4tZW3WFCh3Zqa/sjlqpbURQ==}
+  flatted@3.4.2:
+    resolution: {integrity: sha512-PjDse7RzhcPkIJwy5t7KPWQSZ9cAbzQXcafsetQoD7sOJRQlGikNbx7yZp2OotDnJyrDcbyRq3Ttb18iYOqkxA==}
 
   fmix@0.1.0:
     resolution: {integrity: sha512-Y6hyofImk9JdzU8k5INtTXX1cu8LDlePWDFU5sftm9H+zKCr5SGrVjdhkvsim646cw5zD0nADj8oHyXMZmCZ9w==}
@@ -3009,8 +3009,8 @@ packages:
   murmur-128@0.2.1:
     resolution: {integrity: sha512-WseEgiRkI6aMFBbj8Cg9yBj/y+OdipwVC7zUo3W2W1JAJITwouUOtpqsmGSg67EQmwwSyod7hsVsWY5LsrfQVg==}
 
-  nan@2.25.0:
-    resolution: {integrity: sha512-0M90Ag7Xn5KMLLZ7zliPWP3rT90P6PN+IzVFS0VqmnPktBk3700xUVv8Ikm9EUaUE5SDWdp/BIxdENzVznpm1g==}
+  nan@2.26.2:
+    resolution: {integrity: sha512-0tTvBTYkt3tdGw22nrAy50x7gpbGCCFH3AFcyS5WiUu7Eu4vWlri1woE6qHBSfy11vksDqkiwjOnlR7WV8G1Hw==}
 
   napi-build-utils@2.0.0:
     resolution: {integrity: sha512-GEbrYkbfF7MoNaoh2iGG84Mnf/WZfB0GdGEsM8wz7Expx/LlWf5U8t9nvJKXSp3qr5IsEbK04cBGhol/KwOsWA==}
@@ -3960,8 +3960,8 @@ packages:
     resolution: {integrity: sha512-OljLrQ9SQdOUqTaQxqL5dEfZWrXExyyWsozYlAWFawPVNuD83igl7uJD2RTkNMbniIYgt8l81eCJGIdQF7avLQ==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
 
-  viem@2.47.4:
-    resolution: {integrity: sha512-h0Wp/SYmJO/HB4B/em1OZ3W1LaKrmr7jzaN7talSlZpo0LCn0V6rZ5g923j6sf4VUSrqp/gUuWuHFc7UcoIp8A==}
+  viem@2.47.5:
+    resolution: {integrity: sha512-nVrJEQ8GL4JoVIrMBF3wwpTUZun0cpojfnOZ+96GtDWhqxZkVdy6vOEgu+jwfXqfTA/+wrR+YsN9TBQmhDUk0g==}
     peerDependencies:
       typescript: '>=5.0.4'
     peerDependenciesMeta:
@@ -4074,8 +4074,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  xdeployer@3.1.22:
-    resolution: {integrity: sha512-LdLekAzmllX863zsJjd0/SwVF5rNLewF4BEx+EVzHHF3yIVzDB3nEBlYJEgeSEnePdBDGZA6g2jD/Qo7hUzuAg==}
+  xdeployer@3.1.23:
+    resolution: {integrity: sha512-2cw6zJpG2IXu8n00q48j7uY3Gts2M7jOqqsoArz/R8XTs7rJC+cyj2yadFV7SccRnV1tYQi3lYjUNeKajliTQQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@nomicfoundation/hardhat-ethers': ^3.1.3
@@ -4190,7 +4190,7 @@ snapshots:
       '@smithy/util-utf8': 2.3.0
       tslib: 2.8.1
 
-  '@aws-sdk/client-lambda@3.1010.0':
+  '@aws-sdk/client-lambda@3.1011.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -4884,9 +4884,9 @@ snapshots:
 
   '@js-sdsl/ordered-map@4.4.2': {}
 
-  '@ledgerhq/client-ids@0.7.0(react@19.0.0)':
+  '@ledgerhq/client-ids@0.8.0(react@19.0.0)':
     dependencies:
-      '@ledgerhq/live-env': 2.29.0
+      '@ledgerhq/live-env': 2.30.0
       '@reduxjs/toolkit': 2.11.2(react@19.0.0)
       uuid: 9.0.1
     transitivePeerDependencies:
@@ -4897,18 +4897,18 @@ snapshots:
     dependencies:
       invariant: 2.2.4
 
-  '@ledgerhq/devices@8.11.0':
+  '@ledgerhq/devices@8.12.0':
     dependencies:
-      '@ledgerhq/errors': 6.30.0
-      '@ledgerhq/logs': 6.15.0
+      '@ledgerhq/errors': 6.31.0
+      '@ledgerhq/logs': 6.16.0
       rxjs: 7.8.2
       semver: 7.7.3
 
-  '@ledgerhq/domain-service@1.7.0(debug@4.4.3)':
+  '@ledgerhq/domain-service@1.7.1(debug@4.4.3)':
     dependencies:
-      '@ledgerhq/errors': 6.30.0
-      '@ledgerhq/logs': 6.15.0
-      '@ledgerhq/types-live': 6.100.0(react@19.0.0)
+      '@ledgerhq/errors': 6.31.0
+      '@ledgerhq/logs': 6.16.0
+      '@ledgerhq/types-live': 6.101.0(react@19.0.0)
       axios: 1.13.2(debug@4.4.3)
       eip55: 2.1.1
       react: 19.0.0
@@ -4917,18 +4917,18 @@ snapshots:
       - debug
       - react-redux
 
-  '@ledgerhq/errors@6.30.0': {}
+  '@ledgerhq/errors@6.31.0': {}
 
   '@ledgerhq/hw-app-eth@6.33.6(debug@4.4.3)':
     dependencies:
       '@ethersproject/abi': 5.8.0
       '@ethersproject/rlp': 5.8.0
       '@ledgerhq/cryptoassets': 9.13.0
-      '@ledgerhq/domain-service': 1.7.0(debug@4.4.3)
-      '@ledgerhq/errors': 6.30.0
-      '@ledgerhq/hw-transport': 6.33.0
-      '@ledgerhq/hw-transport-mocker': 6.32.0
-      '@ledgerhq/logs': 6.15.0
+      '@ledgerhq/domain-service': 1.7.1(debug@4.4.3)
+      '@ledgerhq/errors': 6.31.0
+      '@ledgerhq/hw-transport': 6.34.0
+      '@ledgerhq/hw-transport-mocker': 6.33.0
+      '@ledgerhq/logs': 6.16.0
       axios: 1.13.6(debug@4.4.3)
       bignumber.js: 9.3.1
       crypto-js: 4.2.0
@@ -4936,48 +4936,48 @@ snapshots:
       - debug
       - react-redux
 
-  '@ledgerhq/hw-transport-mocker@6.32.0':
+  '@ledgerhq/hw-transport-mocker@6.33.0':
     dependencies:
-      '@ledgerhq/hw-transport': 6.33.0
-      '@ledgerhq/logs': 6.15.0
+      '@ledgerhq/hw-transport': 6.34.0
+      '@ledgerhq/logs': 6.16.0
       rxjs: 7.8.2
 
-  '@ledgerhq/hw-transport-node-hid-noevents@6.32.0':
+  '@ledgerhq/hw-transport-node-hid-noevents@6.33.0':
     dependencies:
-      '@ledgerhq/devices': 8.11.0
-      '@ledgerhq/errors': 6.30.0
-      '@ledgerhq/hw-transport': 6.33.0
-      '@ledgerhq/logs': 6.15.0
+      '@ledgerhq/devices': 8.12.0
+      '@ledgerhq/errors': 6.31.0
+      '@ledgerhq/hw-transport': 6.34.0
+      '@ledgerhq/logs': 6.16.0
       node-hid: 2.1.2
 
-  '@ledgerhq/hw-transport-node-hid@6.31.0':
+  '@ledgerhq/hw-transport-node-hid@6.32.0':
     dependencies:
-      '@ledgerhq/devices': 8.11.0
-      '@ledgerhq/errors': 6.30.0
-      '@ledgerhq/hw-transport': 6.33.0
-      '@ledgerhq/hw-transport-node-hid-noevents': 6.32.0
-      '@ledgerhq/logs': 6.15.0
+      '@ledgerhq/devices': 8.12.0
+      '@ledgerhq/errors': 6.31.0
+      '@ledgerhq/hw-transport': 6.34.0
+      '@ledgerhq/hw-transport-node-hid-noevents': 6.33.0
+      '@ledgerhq/logs': 6.16.0
       lodash: 4.17.23
       node-hid: 2.1.2
       usb: 2.9.0
 
-  '@ledgerhq/hw-transport@6.33.0':
+  '@ledgerhq/hw-transport@6.34.0':
     dependencies:
-      '@ledgerhq/devices': 8.11.0
-      '@ledgerhq/errors': 6.30.0
-      '@ledgerhq/logs': 6.15.0
+      '@ledgerhq/devices': 8.12.0
+      '@ledgerhq/errors': 6.31.0
+      '@ledgerhq/logs': 6.16.0
       events: 3.3.0
 
-  '@ledgerhq/live-env@2.29.0':
+  '@ledgerhq/live-env@2.30.0':
     dependencies:
       rxjs: 7.8.2
       utility-types: 3.11.0
 
-  '@ledgerhq/logs@6.15.0': {}
+  '@ledgerhq/logs@6.16.0': {}
 
-  '@ledgerhq/types-live@6.100.0(react@19.0.0)':
+  '@ledgerhq/types-live@6.101.0(react@19.0.0)':
     dependencies:
-      '@ledgerhq/client-ids': 0.7.0(react@19.0.0)
+      '@ledgerhq/client-ids': 0.8.0(react@19.0.0)
       bignumber.js: 9.3.1
       rxjs: 7.8.2
     transitivePeerDependencies:
@@ -5190,10 +5190,10 @@ snapshots:
   '@nomicfoundation/hardhat-ledger@1.2.2(bufferutil@4.0.9)(hardhat@2.28.6(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@25.5.0)(typescript@5.9.3))(typescript@5.9.3)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
     dependencies:
       '@ethereumjs/util': 9.1.0
-      '@ledgerhq/errors': 6.30.0
+      '@ledgerhq/errors': 6.31.0
       '@ledgerhq/hw-app-eth': 6.33.6(debug@4.4.3)
-      '@ledgerhq/hw-transport': 6.33.0
-      '@ledgerhq/hw-transport-node-hid': 6.31.0
+      '@ledgerhq/hw-transport': 6.34.0
+      '@ledgerhq/hw-transport-node-hid': 6.32.0
       chalk: 2.4.2
       debug: 4.4.3(supports-color@8.1.1)
       env-paths: 2.2.1
@@ -5607,7 +5607,7 @@ snapshots:
 
   '@openzeppelin/defender-sdk-base-client@2.7.1(debug@4.4.3)(encoding@0.1.13)':
     dependencies:
-      '@aws-sdk/client-lambda': 3.1010.0
+      '@aws-sdk/client-lambda': 3.1011.0
       amazon-cognito-identity-js: 6.3.16(encoding@0.1.13)
       async-retry: 1.3.3
       axios: 1.13.6(debug@4.4.3)
@@ -6940,7 +6940,7 @@ snapshots:
   cpu-features@0.0.10:
     dependencies:
       buildcheck: 0.0.7
-      nan: 2.25.0
+      nan: 2.26.2
     optional: true
 
   create-hash@1.2.0:
@@ -7390,12 +7390,12 @@ snapshots:
 
   flat-cache@4.0.1:
     dependencies:
-      flatted: 3.4.1
+      flatted: 3.4.2
       keyv: 4.5.4
 
   flat@5.0.2: {}
 
-  flatted@3.4.1: {}
+  flatted@3.4.2: {}
 
   fmix@0.1.0:
     dependencies:
@@ -7653,7 +7653,7 @@ snapshots:
       lodash: 4.17.23
       markdown-table: 2.0.0
       sha1: 1.1.1
-      viem: 2.47.4(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.3.6)
+      viem: 2.47.5(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.3.6)
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -8181,7 +8181,7 @@ snapshots:
       fmix: 0.1.0
       imul: 1.0.1
 
-  nan@2.25.0:
+  nan@2.26.2:
     optional: true
 
   napi-build-utils@2.0.0: {}
@@ -8879,7 +8879,7 @@ snapshots:
       bcrypt-pbkdf: 1.0.2
     optionalDependencies:
       cpu-features: 0.0.10
-      nan: 2.25.0
+      nan: 2.26.2
 
   ssri@10.0.6:
     dependencies:
@@ -9211,7 +9211,7 @@ snapshots:
 
   validate-npm-package-name@5.0.1: {}
 
-  viem@2.47.4(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.3.6):
+  viem@2.47.5(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.3.6):
     dependencies:
       '@noble/curves': 1.9.1
       '@noble/hashes': 1.8.0
@@ -9319,7 +9319,7 @@ snapshots:
       bufferutil: 4.0.9
       utf-8-validate: 5.0.10
 
-  xdeployer@3.1.22(@nomicfoundation/hardhat-ethers@3.1.3(ethers@6.16.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.28.6(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@25.5.0)(typescript@5.9.3))(typescript@5.9.3)(utf-8-validate@5.0.10)))(ethers@6.16.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.28.6(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@25.5.0)(typescript@5.9.3))(typescript@5.9.3)(utf-8-validate@5.0.10)):
+  xdeployer@3.1.23(@nomicfoundation/hardhat-ethers@3.1.3(ethers@6.16.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.28.6(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@25.5.0)(typescript@5.9.3))(typescript@5.9.3)(utf-8-validate@5.0.10)))(ethers@6.16.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.28.6(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@25.5.0)(typescript@5.9.3))(typescript@5.9.3)(utf-8-validate@5.0.10)):
     dependencies:
       '@nomicfoundation/hardhat-ethers': 3.1.3(ethers@6.16.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(hardhat@2.28.6(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@25.5.0)(typescript@5.9.3))(typescript@5.9.3)(utf-8-validate@5.0.10))
       ethers: 6.16.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
