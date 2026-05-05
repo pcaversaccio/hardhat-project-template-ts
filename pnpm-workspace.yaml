@@ -1,0 +1,11 @@
+minimumReleaseAge: 720 # Only install package versions that have been published for at least 12 hours.
+minimumReleaseAgeStrict: true
+blockExoticSubdeps: false # Allow exotic subdependencies (required for ZKsync dependency `@matterlabs/zksync-telemetry-js` (resolved via git repository)).
+allowBuilds:
+  cpu-features: true
+  keccak: true
+  node-hid: true
+  protobufjs: true
+  secp256k1: true
+  ssh2: true
+  usb: true
