@@ -13,10 +13,10 @@ importers:
         version: 10.0.1(eslint@10.4.0)
       '@matterlabs/hardhat-zksync-deploy':
         specifier: ^1.8.0
-        version: 1.8.0(encoding@0.1.13)(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))(zksync-ethers@6.21.1(ethers@6.16.0))
+        version: 1.8.0(encoding@0.1.13)(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))(zksync-ethers@6.21.2(ethers@6.16.0))
       '@matterlabs/hardhat-zksync-ethers':
         specifier: ^1.4.0
-        version: 1.4.0(encoding@0.1.13)(ethers@6.16.0)(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)(zksync-ethers@6.21.1(ethers@6.16.0))
+        version: 1.4.0(encoding@0.1.13)(ethers@6.16.0)(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)(zksync-ethers@6.21.2(ethers@6.16.0))
       '@matterlabs/hardhat-zksync-solc':
         specifier: ^1.5.1
         version: 1.5.1(encoding@0.1.13)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))
@@ -126,8 +126,8 @@ importers:
         specifier: ^3.1.24
         version: 3.1.24(@nomicfoundation/hardhat-ethers@3.1.3(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))
       zksync-ethers:
-        specifier: ^6.21.1
-        version: 6.21.1(ethers@6.16.0)
+        specifier: ^6.21.2
+        version: 6.21.2(ethers@6.16.0)
 
 packages:
 
@@ -3053,8 +3053,8 @@ packages:
     resolution: {integrity: sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==}
     engines: {node: '>=4.0.0'}
 
-  pg-protocol@1.13.0:
-    resolution: {integrity: sha512-zzdvXfS6v89r6v7OcFCHfHlyG/wvry1ALxZo4LqgUoy7W9xhBDMaqOuMiF3qEV45VqsN6rdlcehHrfDtlCPc8w==}
+  pg-protocol@1.14.0:
+    resolution: {integrity: sha512-n5taZ1kO3s9ngDTVxsEznOqCyToTgz0FLuPq0B33COy5pPpuWJpY3/2oRBVETuOgzdqRXfWpM9HIhp2LBBT1BA==}
 
   pg-types@2.2.0:
     resolution: {integrity: sha512-qTAAlrEsl8s4OiEQY69wDvcMIdQN6wdz5ojQiOy6YRMuynxenON0O5oCpJI6lshc6scgAY8qvJ2On/p+CXY0GA==}
@@ -3984,8 +3984,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zksync-ethers@6.21.1:
-    resolution: {integrity: sha512-26DXEd7aX5dU8RpvJv2YAfqi03xdahAYFgl4LciOlgWA7JNAF/0r0jxcwzKhbzThh62AfhgK2a5iftdofu1VPw==}
+  zksync-ethers@6.21.2:
+    resolution: {integrity: sha512-YYDb/9lN334QggcLMCJhB50SGQ3QQNo2E5XSY1UgU8r8uDiJOqp89FTgZgXOIwUxamE+GoOpNfOYglT+TVh+tg==}
     engines: {node: '>=18.9.0'}
     peerDependencies:
       ethers: ^6.7.1
@@ -4793,7 +4793,7 @@ snapshots:
       - react
       - react-redux
 
-  '@matterlabs/hardhat-zksync-deploy@1.8.0(encoding@0.1.13)(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))(zksync-ethers@6.21.1(ethers@6.16.0))':
+  '@matterlabs/hardhat-zksync-deploy@1.8.0(encoding@0.1.13)(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))(zksync-ethers@6.21.2(ethers@6.16.0))':
     dependencies:
       '@matterlabs/hardhat-zksync-solc': 1.5.1(encoding@0.1.13)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))
       '@matterlabs/hardhat-zksync-telemetry': 1.1.1(debug@4.4.3)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))
@@ -4807,15 +4807,15 @@ snapshots:
       sinon: 18.0.1
       sinon-chai: 3.7.0(chai@4.5.0)(sinon@18.0.1)
       ts-morph: 22.0.0
-      zksync-ethers: 6.21.1(ethers@6.16.0)
+      zksync-ethers: 6.21.2(ethers@6.16.0)
     transitivePeerDependencies:
       - debug
       - encoding
       - supports-color
 
-  '@matterlabs/hardhat-zksync-ethers@1.4.0(encoding@0.1.13)(ethers@6.16.0)(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)(zksync-ethers@6.21.1(ethers@6.16.0))':
+  '@matterlabs/hardhat-zksync-ethers@1.4.0(encoding@0.1.13)(ethers@6.16.0)(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)(zksync-ethers@6.21.2(ethers@6.16.0))':
     dependencies:
-      '@matterlabs/hardhat-zksync-deploy': 1.8.0(encoding@0.1.13)(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))(zksync-ethers@6.21.1(ethers@6.16.0))
+      '@matterlabs/hardhat-zksync-deploy': 1.8.0(encoding@0.1.13)(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))(zksync-ethers@6.21.2(ethers@6.16.0))
       '@matterlabs/hardhat-zksync-solc': 1.5.1(encoding@0.1.13)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))
       '@matterlabs/hardhat-zksync-telemetry': 1.1.1(debug@4.4.3)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))
       '@nomicfoundation/hardhat-ethers': 3.1.3(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))
@@ -4823,7 +4823,7 @@ snapshots:
       chalk: 4.1.2
       ethers: 6.16.0
       hardhat: 2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)
-      zksync-ethers: 6.21.1(ethers@6.16.0)
+      zksync-ethers: 6.21.2(ethers@6.16.0)
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -5891,7 +5891,7 @@ snapshots:
   '@types/pg@8.6.1':
     dependencies:
       '@types/node': 25.8.0
-      pg-protocol: 1.13.0
+      pg-protocol: 1.14.0
       pg-types: 2.2.0
 
   '@types/prettier@2.7.3': {}
@@ -7943,7 +7943,7 @@ snapshots:
 
   pg-int8@1.0.1: {}
 
-  pg-protocol@1.13.0: {}
+  pg-protocol@1.14.0: {}
 
   pg-types@2.2.0:
     dependencies:
@@ -8931,7 +8931,7 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zksync-ethers@6.21.1(ethers@6.16.0):
+  zksync-ethers@6.21.2(ethers@6.16.0):
     dependencies:
       ethers: 6.16.0
 
