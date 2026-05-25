@@ -36,8 +36,8 @@ importers:
         specifier: ^0.15.16
         version: 0.15.16(@nomicfoundation/hardhat-verify@2.1.3(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))
       '@nomicfoundation/hardhat-ignition-ethers':
-        specifier: ^0.15.17
-        version: 0.15.17(@nomicfoundation/hardhat-ethers@3.1.3(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(@nomicfoundation/hardhat-ignition@0.15.16(@nomicfoundation/hardhat-verify@2.1.3(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(@nomicfoundation/ignition-core@0.15.15)(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))
+        specifier: ^3.1.5
+        version: 3.1.5(@nomicfoundation/hardhat-ethers@3.1.3(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(@nomicfoundation/hardhat-ignition@0.15.16(@nomicfoundation/hardhat-verify@2.1.3(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(@nomicfoundation/hardhat-verify@2.1.3(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(@nomicfoundation/ignition-core@0.15.15)(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))
       '@nomicfoundation/hardhat-ledger':
         specifier: ^1.2.2
         version: 1.2.2(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))
@@ -656,6 +656,9 @@ packages:
       ethers: ^6.14.0
       hardhat: ^2.26.0
 
+  '@nomicfoundation/hardhat-errors@3.0.12':
+    resolution: {integrity: sha512-2viEq1D19FHWKpfB2vVeL0R6d+iZR2E5h0EhKQQMc1ukDUV2fel/7fRjlWuCOx2CFC+5mHL2saRcN8KlYsX8hg==}
+
   '@nomicfoundation/hardhat-ethers@3.1.3':
     resolution: {integrity: sha512-208JcDeVIl+7Wu3MhFUUtiA8TJ7r2Rn3Wr+lSx9PfsDTKkbsAsWPY6N6wQ4mtzDv0/pB9nIbJhkjoHe1EsgNsA==}
     peerDependencies:
@@ -667,14 +670,15 @@ packages:
     peerDependencies:
       hardhat: ^2.26.0
 
-  '@nomicfoundation/hardhat-ignition-ethers@0.15.17':
-    resolution: {integrity: sha512-io6Wrp1dUsJ94xEI3pw6qkPfhc9TFA+e6/+o16yQ8pvBTFMjgK5x8wIHKrrIHr9L3bkuTMtmDjyN4doqO2IqFQ==}
+  '@nomicfoundation/hardhat-ignition-ethers@3.1.5':
+    resolution: {integrity: sha512-htPuD3bUpQTn+jUweL9o9laoeXEhSLOZotKbgLUonEhP9frGrMuiCoV16ULbwQZZ/it5UH8ntkTPkVl5IuPPJQ==}
     peerDependencies:
-      '@nomicfoundation/hardhat-ethers': ^3.1.0
-      '@nomicfoundation/hardhat-ignition': ^0.15.16
-      '@nomicfoundation/ignition-core': ^0.15.15
+      '@nomicfoundation/hardhat-ethers': ^4.0.0
+      '@nomicfoundation/hardhat-ignition': ^3.1.2
+      '@nomicfoundation/hardhat-verify': ^3.0.0
+      '@nomicfoundation/ignition-core': ^3.0.7
       ethers: ^6.14.0
-      hardhat: ^2.26.0
+      hardhat: ^3.4.0
 
   '@nomicfoundation/hardhat-ignition@0.15.16':
     resolution: {integrity: sha512-T0JTnuib7QcpsWkHCPLT7Z6F483EjTdcdjb1e00jqS9zTGCPqinPB66LLtR/duDLdvgoiCVS6K8WxTQkA/xR1Q==}
@@ -691,6 +695,9 @@ packages:
     resolution: {integrity: sha512-p7HaUVDbLj7ikFivQVNhnfMHUBgiHYMwQWvGn9AriieuopGOELIrwj2KjyM2a6z70zai5YKO264Vwz+3UFJZPQ==}
     peerDependencies:
       hardhat: ^2.26.0
+
+  '@nomicfoundation/hardhat-utils@4.1.1':
+    resolution: {integrity: sha512-yKUMIhwzNlrl9wfe0WlAjXjRPfHh8JdCu6Iv4o+oi6Q9ovyCGj+66JzFsALNIMBo6L19Nf40DFICqUZef02Yrg==}
 
   '@nomicfoundation/hardhat-verify@2.1.3':
     resolution: {integrity: sha512-danbGjPp2WBhLkJdQy9/ARM3WQIK+7vwzE0urNem1qZJjh9f54Kf5f1xuQv8DvqewUAkuPxVt/7q4Grz5WjqSg==}
@@ -1186,6 +1193,12 @@ packages:
 
   '@standard-schema/utils@0.3.0':
     resolution: {integrity: sha512-e7Mew686owMaPJVNNLs55PUvgz371nKgwsc4vxE49zsODpJEnxgxRo2y/OKrqueavXgZNMDVj3DdHFlaSAeU8g==}
+
+  '@streamparser/json-node@0.0.22':
+    resolution: {integrity: sha512-sJT2ptNRwqB1lIsQrQlCoWk5rF4tif9wDh+7yluAGijJamAhrHGYpFB/Zg3hJeceoZypi74ftXk8DHzwYpbZSg==}
+
+  '@streamparser/json@0.0.22':
+    resolution: {integrity: sha512-b6gTSBjJ8G8SuO3Gbbj+zXbVx8NSs1EbpbMKpzGLWMdkR+98McH9bEjSz3+0mPJf68c5nxa3CrJHp5EQNXM6zQ==}
 
   '@tenderly/api-client@1.1.0':
     resolution: {integrity: sha512-kyye7TQ+RbDbJ7bSUjNf/O9fTtRYNUDIEUZQSrmNonowMw5/EpNi664eWaOoC00NEzxgttVrtme/GHvIOu7rNg==}
@@ -2121,6 +2134,10 @@ packages:
   fast-deep-equal@3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
 
+  fast-equals@5.4.0:
+    resolution: {integrity: sha512-jt2DW/aNFNwke7AUd+Z+e6pz39KO5rzdbbFCg2sGafS4mk13MI7Z8O5z9cADNn5lhGODIgLwug6TZO2ctf7kcw==}
+    engines: {node: '>=6.0.0'}
+
   fast-glob@3.3.3:
     resolution: {integrity: sha512-7MptL8U0cqcFdzIzwOTHoilX9x5BrNqye7Z/LuC7kCMRio1EMSyqRK3BEAUD7sXRq4iT4AzTVuZdhgQ2TCvYLg==}
     engines: {node: '>=8.6.0'}
@@ -3053,8 +3070,8 @@ packages:
     resolution: {integrity: sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==}
     engines: {node: '>=4.0.0'}
 
-  pg-protocol@1.13.0:
-    resolution: {integrity: sha512-zzdvXfS6v89r6v7OcFCHfHlyG/wvry1ALxZo4LqgUoy7W9xhBDMaqOuMiF3qEV45VqsN6rdlcehHrfDtlCPc8w==}
+  pg-protocol@1.14.0:
+    resolution: {integrity: sha512-n5taZ1kO3s9ngDTVxsEznOqCyToTgz0FLuPq0B33COy5pPpuWJpY3/2oRBVETuOgzdqRXfWpM9HIhp2LBBT1BA==}
 
   pg-types@2.2.0:
     resolution: {integrity: sha512-qTAAlrEsl8s4OiEQY69wDvcMIdQN6wdz5ojQiOy6YRMuynxenON0O5oCpJI6lshc6scgAY8qvJ2On/p+CXY0GA==}
@@ -3282,6 +3299,9 @@ packages:
   reusify@1.1.0:
     resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
+
+  rfdc@1.4.1:
+    resolution: {integrity: sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==}
 
   rimraf@2.7.1:
     resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
@@ -4960,6 +4980,10 @@ snapshots:
       hardhat: 2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)
       ordinal: 1.0.3
 
+  '@nomicfoundation/hardhat-errors@3.0.12':
+    dependencies:
+      '@nomicfoundation/hardhat-utils': 4.1.1
+
   '@nomicfoundation/hardhat-ethers@3.1.3(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))':
     dependencies:
       debug: 4.4.3(supports-color@8.1.1)
@@ -4974,10 +4998,12 @@ snapshots:
       hardhat: 2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)
       picocolors: 1.1.1
 
-  '@nomicfoundation/hardhat-ignition-ethers@0.15.17(@nomicfoundation/hardhat-ethers@3.1.3(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(@nomicfoundation/hardhat-ignition@0.15.16(@nomicfoundation/hardhat-verify@2.1.3(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(@nomicfoundation/ignition-core@0.15.15)(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))':
+  '@nomicfoundation/hardhat-ignition-ethers@3.1.5(@nomicfoundation/hardhat-ethers@3.1.3(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(@nomicfoundation/hardhat-ignition@0.15.16(@nomicfoundation/hardhat-verify@2.1.3(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(@nomicfoundation/hardhat-verify@2.1.3(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(@nomicfoundation/ignition-core@0.15.15)(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))':
     dependencies:
+      '@nomicfoundation/hardhat-errors': 3.0.12
       '@nomicfoundation/hardhat-ethers': 3.1.3(ethers@6.16.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))
       '@nomicfoundation/hardhat-ignition': 0.15.16(@nomicfoundation/hardhat-verify@2.1.3(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)))(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))
+      '@nomicfoundation/hardhat-verify': 2.1.3(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))
       '@nomicfoundation/ignition-core': 0.15.15
       ethers: 6.16.0
       hardhat: 2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)
@@ -5023,6 +5049,16 @@ snapshots:
     dependencies:
       ethereumjs-util: 7.1.5
       hardhat: 2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3)
+
+  '@nomicfoundation/hardhat-utils@4.1.1':
+    dependencies:
+      '@streamparser/json-node': 0.0.22
+      env-paths: 2.2.1
+      ethereum-cryptography: 2.2.1
+      fast-equals: 5.4.0
+      json-stream-stringify: 3.1.6
+      rfdc: 1.4.1
+      undici: 6.25.0
 
   '@nomicfoundation/hardhat-verify@2.1.3(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@6.0.3))':
     dependencies:
@@ -5745,6 +5781,12 @@ snapshots:
 
   '@standard-schema/utils@0.3.0': {}
 
+  '@streamparser/json-node@0.0.22':
+    dependencies:
+      '@streamparser/json': 0.0.22
+
+  '@streamparser/json@0.0.22': {}
+
   '@tenderly/api-client@1.1.0(ts-node@10.9.2(@types/node@25.8.0)(typescript@6.0.3))(typescript@5.9.3)':
     dependencies:
       axios: 0.27.2
@@ -5891,7 +5933,7 @@ snapshots:
   '@types/pg@8.6.1':
     dependencies:
       '@types/node': 25.8.0
-      pg-protocol: 1.13.0
+      pg-protocol: 1.14.0
       pg-types: 2.2.0
 
   '@types/prettier@2.7.3': {}
@@ -6889,6 +6931,8 @@ snapshots:
   fast-base64-decode@1.0.0: {}
 
   fast-deep-equal@3.1.3: {}
+
+  fast-equals@5.4.0: {}
 
   fast-glob@3.3.3:
     dependencies:
@@ -7943,7 +7987,7 @@ snapshots:
 
   pg-int8@1.0.1: {}
 
-  pg-protocol@1.13.0: {}
+  pg-protocol@1.14.0: {}
 
   pg-types@2.2.0:
     dependencies:
@@ -8178,6 +8222,8 @@ snapshots:
   retry@0.13.1: {}
 
   reusify@1.1.0: {}
+
+  rfdc@1.4.1: {}
 
   rimraf@2.7.1:
     dependencies:
