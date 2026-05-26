@@ -2,7 +2,7 @@
   "contracts/lib/forge-std": {
     "branch": {
       "name": "master",
-      "rev": "7e403a0723847e71b326a05e1bff9cabd4e75ccc"
+      "rev": "b3bc8b154382a75d0b0ef22d7fd4a0a5f0feee0e"
     }
   }
 }

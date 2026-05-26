@@ -21,7 +21,7 @@
   },
   "author": "pcaversaccio",
   "license": "MIT",
-  "packageManager": "pnpm@11.2.2",
+  "packageManager": "pnpm@11.3.0",
   "scripts": {
     "help": "hardhat help",
     "accounts": "hardhat accounts",
@@ -241,7 +241,7 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.20",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^25.8.0",
+    "@types/node": "^25.9.0",
     "chai": "^4.5.0",
     "eslint": "^10.4.0",
     "eslint-config-prettier": "^10.1.8",
@@ -258,8 +258,8 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.59.3",
+    "typescript-eslint": "^8.59.4",
     "xdeployer": "^3.1.24",
-    "zksync-ethers": "^6.21.1"
+    "zksync-ethers": "^6.21.2"
   }
 }
