@@ -71,13 +71,13 @@ const config: HardhatUserConfig = {
   },
   solidity: {
     // Only use Solidity default versions `>=0.8.31` for EVM networks that support the new `osaka` opcode `CLZ` and precompiled contract `P256VERIFY`:
-    // https://github.com/ethereum/execution-specs/blob/forks/osaka/src/ethereum/forks/osaka/__init__.py
+    // https://github.com/ethereum/execution-specs/blob/forks/amsterdam/src/ethereum/forks/osaka/__init__.py
     // Only use Solidity default versions `>=0.8.30` for EVM networks that support the new `prague` precompiled contracts:
-    // https://github.com/ethereum/execution-specs/blob/forks/osaka/src/ethereum/forks/prague/__init__.py
+    // https://github.com/ethereum/execution-specs/blob/forks/amsterdam/src/ethereum/forks/prague/__init__.py
     // Only use Solidity default versions `>=0.8.25` for EVM networks that support the new `cancun` opcodes:
-    // https://github.com/ethereum/execution-specs/blob/forks/osaka/src/ethereum/forks/cancun/__init__.py
+    // https://github.com/ethereum/execution-specs/blob/forks/amsterdam/src/ethereum/forks/cancun/__init__.py
     // Only use Solidity default versions `>=0.8.20` for EVM networks that support the new `shanghai` opcode `PUSH0`:
-    // https://github.com/ethereum/execution-specs/blob/forks/osaka/src/ethereum/forks/shanghai/__init__.py
+    // https://github.com/ethereum/execution-specs/blob/forks/amsterdam/src/ethereum/forks/shanghai/__init__.py
     // Otherwise, use the versions `<=0.8.19`
     version: "0.8.35",
     settings: {
