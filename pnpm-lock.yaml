@@ -3930,7 +3930,7 @@ packages:
       ethers: ^6.7.1
 
   zksync-telemetry@https://codeload.github.com/matter-labs/zksync-telemetry-js/tar.gz/2fd9edbe6b9a5e0c2caeda4b04dd5631d7546a11:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/matter-labs/zksync-telemetry-js/tar.gz/2fd9edbe6b9a5e0c2caeda4b04dd5631d7546a11}
+    resolution: {gitHosted: true, integrity: sha512-Sje2cKmJvDb4KXyahM5eaeqQejv5gMhT1v1AscUaP0gPqQPdhgANBe9QNWxZD6vsb4vcZzaE0xCXBKE4y0ksLQ==, tarball: https://codeload.github.com/matter-labs/zksync-telemetry-js/tar.gz/2fd9edbe6b9a5e0c2caeda4b04dd5631d7546a11}
     version: 1.0.0
 
   zksync-web3@0.14.4:
