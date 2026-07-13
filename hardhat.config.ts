@@ -79,7 +79,7 @@ const config: HardhatUserConfig = {
     // Only use Solidity default versions `>=0.8.20` for EVM networks that support the new `shanghai` opcode `PUSH0`:
     // https://github.com/ethereum/execution-specs/blob/forks/amsterdam/src/ethereum/forks/shanghai/__init__.py
     // Otherwise, use the versions `<=0.8.19`
-    version: "0.8.35",
+    version: "0.8.36",
     settings: {
       optimizer: {
         enabled: true,
