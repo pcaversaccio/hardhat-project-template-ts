@@ -252,7 +252,7 @@
     "hardhat-contract-sizer": "^2.10.1",
     "hardhat-gas-reporter": "^2.3.0",
     "prettier": "^3.9.6",
-    "prettier-plugin-solidity": "^2.3.1",
+    "prettier-plugin-solidity": "^2.4.0",
     "slippy": "^0.3.1",
     "solidity-coverage": "^0.8.17",
     "ts-node": "^10.9.2",
