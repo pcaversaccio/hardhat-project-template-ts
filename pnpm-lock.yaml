@@ -257,11 +257,11 @@ importers:
         specifier: ^2.3.0
         version: 2.3.0(debug@4.4.3(supports-color@8.1.1))(hardhat@2.29.1(supports-color@8.1.1)(ts-node@10.9.2(@types/node@26.6.4)(typescript@6.0.3))(typescript@6.0.3))(supports-color@8.1.1)(typescript@6.0.3)(zod@4.6.5)
       prettier:
-        specifier: ^3.9.9
-        version: 3.9.9
+        specifier: ^3.9.10
+        version: 3.9.10
       prettier-plugin-solidity:
         specifier: ^2.4.1
-        version: 2.4.1(prettier@3.9.9)
+        version: 2.4.1(prettier@3.9.10)
       slippy:
         specifier: ^0.3.1
         version: 0.3.1(supports-color@8.1.1)
@@ -3261,8 +3261,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  prettier@3.9.9:
-    resolution: {integrity: sha512-Z/CJHIkdujO/OtN7nXUii0Rf3VT5SRuhjBA82Xvu2XhBUgX3nhP67T0LHceBdQLex7OOFGTox+Q5Yg8Jk2Qivg==}
+  prettier@3.9.10:
+    resolution: {integrity: sha512-skGHTH1Yb9QvaTC4hWnRTzEYtCpApF0UMBPz+t/0ZPzP8ihefo/btKd+QA7pUE0fEwA1SbS/NmhyEcstdXOIdA==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -7976,16 +7976,16 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-solidity@2.4.1(prettier@3.9.9):
+  prettier-plugin-solidity@2.4.1(prettier@3.9.10):
     dependencies:
       '@nomicfoundation/slang': 1.3.8
       '@solidity-parser/parser': 0.20.2
-      prettier: 3.9.9
+      prettier: 3.9.10
       semver: 7.8.5
 
   prettier@2.8.8: {}
 
-  prettier@3.9.9: {}
+  prettier@3.9.10: {}
 
   proc-log@4.2.0: {}
 
